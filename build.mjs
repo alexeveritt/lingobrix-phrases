@@ -16,22 +16,25 @@ import languages from './languages.mjs';
 const DOMAIN = 'lingobrix.com';
 const only = process.argv.slice(2);
 const app = readFileSync('src/app.html', 'utf8');
-const sites = [];
 let failed = false;
 
 if (!only.length) rmSync('dist', { recursive: true, force: true });
 
+// every site, for the home page and each app's language switcher
+const datasets = Object.fromEntries(languages.map((l) => [l.code, JSON.parse(readFileSync(l.data, 'utf8'))]));
+const sites = languages.map((l) => ({
+  code: l.code,
+  host: `${l.subdomain}.${DOMAIN}`,
+  language: l.page.language,
+  nativeName: l.nativeName,
+  flag: l.app.flag,
+  phrases: datasets[l.code].phrases.length,
+  topics: datasets[l.code].categories.length,
+}));
+const switcher = { apex: DOMAIN, sites: sites.map(({ code, host, language, nativeName, flag }) => ({ code, host, language, nativeName, flag })) };
+
 for (const lang of languages) {
-  const data = JSON.parse(readFileSync(lang.data, 'utf8'));
-  sites.push({
-    code: lang.code,
-    host: `${lang.subdomain}.${DOMAIN}`,
-    language: lang.page.language,
-    nativeName: lang.nativeName,
-    flag: lang.app.flag,
-    phrases: data.phrases.length,
-    topics: data.categories.length,
-  });
+  const data = datasets[lang.code];
   if (only.length && !only.includes(lang.code)) continue;
 
   const errors = check(data, lang);
@@ -52,7 +55,7 @@ for (const lang of languages) {
   };
   const html = fill(app, page, `languages.mjs (${lang.code}.page)`)
     .replace('/*PHRASES*/', () => json(phrases))
-    .replace('/*LANG*/', () => json(lang.app));
+    .replace('/*LANG*/', () => json({ ...lang.app, ...switcher }));
   write(`dist/${lang.code}/index.html`, html);
   console.log(`Built dist/${lang.code}/ — ${lang.page.title}, ${data.phrases.length} phrases, ${kb(html)}`);
 }

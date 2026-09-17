@@ -70,6 +70,20 @@ for (const lang of languages) {
     await page.click('#welcome [data-icon="⚽"]');
     await page.click('#welcomeOk');
 
+    await check('header shows the language flag', async (p) => (await p.textContent('#langBtn')).trim() === lang.app.flag);
+    await page.click('#langBtn');
+    await check('switcher lists every language, this one marked', async (p) =>
+      (await p.locator('#langList .choice').count()) === languages.length &&
+      (await p.textContent('#langList [aria-current]')).includes(lang.page.language));
+    await check('switcher links to the other languages and home', async (p) => {
+      const hrefs = await p.$$eval('#langList a', (as) => as.map((a) => a.getAttribute('href')));
+      const others = languages.filter((l) => l.code !== lang.code).map((l) => `/${l.code}/`);
+      return JSON.stringify(hrefs) === JSON.stringify(others) && (await p.getAttribute('#langs [data-home]', 'href')) === '/';
+    });
+    await page.click('#langs [data-close-sheet]');
+    await check('switcher closes', async (p) => !(await p.locator('#langs').isVisible()));
+    await check('home screen has a switch-language link', visible('.more [data-open-langs]'));
+
     await page.fill('#q', SEARCH[lang.code]);
     await check(`search "${SEARCH[lang.code]}" finds phrases`, count('#results .row', 3));
     await page.locator('#results .row').first().click();

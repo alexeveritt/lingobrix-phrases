@@ -91,6 +91,12 @@ mark{background:color-mix(in srgb,var(--sun) 55%,transparent);color:inherit;bord
 .choice small{color:var(--muted);font-size:14px}
 .choice i{font-style:normal;font-size:26px;color:var(--muted)}
 .choice:active{transform:scale(.98)}
+a.choice{text-decoration:none;color:inherit}
+.choice[aria-current]{border:2px solid var(--brand);box-shadow:none}
+.choice[aria-current] i{font-size:12px;font-weight:700;color:var(--brand)}
+.lang-btn{font-size:22px}
+.more{display:flex;justify-content:center;align-items:center;gap:8px;margin:22px 0 4px;font-size:14px;color:var(--muted)}
+.more button,.more a{color:var(--ink);font-weight:700;text-decoration:none}
 .btn{height:48px;border-radius:14px;padding:0 18px;font-weight:700;background:var(--surface-2);display:inline-flex;align-items:center;justify-content:center;gap:8px}
 .btn.primary{background:var(--brand);color:var(--brand-ink);box-shadow:0 6px 16px color-mix(in srgb,var(--brand) 35%,transparent)}
 .btn.good{background:var(--good);color:#fff}
@@ -236,6 +242,7 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
 <header class="top"><div class="wrap">
   <a class="logo" href="#search" id="logo" aria-label="Home"><i>{{logo}}</i> {{title}}</a>
   <div class="sp"></div>
+  <button class="icon-btn lang-btn" id="langBtn" aria-label="Switch language" data-open-langs></button>
   <button class="icon-btn" id="helpBtn" aria-label="How to read the pronunciation">ⓘ</button>
 </div></header>
 
@@ -256,6 +263,7 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
       </div>
       <div class="sub">Today's phrase</div>
       <div id="potd"></div>
+      <p class="more"><button data-open-langs>🌍 Switch language</button><span>·</span><a data-home href="/">LingoBrix home</a></p>
     </div>
     <div id="results" hidden></div>
   </section>
@@ -350,7 +358,15 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
   <button class="btn primary block" id="welcomeOk" style="height:54px">OK, let's go</button>
 </div></div>
 
-<div class="sheet" id="help" hidden><div>
+<div class="sheet dismissable" id="langs" hidden role="dialog" aria-modal="true" aria-labelledby="langsTitle"><div>
+  <h3 id="langsTitle" style="margin-bottom:12px">Switch language</h3>
+  <div class="choices" id="langList"></div>
+  <a class="choice" data-home href="/" style="margin-top:10px;text-decoration:none;color:inherit"><span>🏠</span><div><b>LingoBrix home</b><small>About the app and all the languages</small></div><i>›</i></a>
+  <p style="color:var(--muted);font-size:13.5px;margin:12px 2px 14px">Each language keeps its own saved phrases and scores.</p>
+  <button class="btn block" data-close-sheet>Close</button>
+</div></div>
+
+<div class="sheet dismissable" id="help" hidden><div>
   <h3>Reading the pronunciation</h3>
   <p style="margin:0;color:var(--muted)">{{helpIntro}}</p>
   <table>
@@ -481,7 +497,27 @@ $('#logo').onclick = e => {
   if (location.hash && location.hash !== '#search') location.hash = '#search';
   else { route(); window.scrollTo(0, 0); }
 };
-$('#help').onclick = e => { if (e.target.id === 'help' || e.target.closest('[data-close-sheet]')) $('#help').hidden = true; };
+// sheets close from their button or by tapping the backdrop (not the welcome popup)
+$$('.sheet.dismissable').forEach(sheet => {
+  sheet.onclick = e => { if (e.target === sheet || e.target.closest('[data-close-sheet]')) sheet.hidden = true; };
+});
+
+/* ---------- language switcher ---------- */
+// on lingobrix.com each language has its own subdomain; locally (npm run dev) they live at /<code>/
+const onLive = location.hostname === L.apex || location.hostname.endsWith('.' + L.apex);
+const siteUrl = site => (onLive ? `https://${site.host}/` : `/${site.code}/`);
+$('#langBtn').textContent = L.flag;
+$$('[data-home]').forEach(a => { a.href = onLive ? `https://${L.apex}/` : '/'; });
+$('#langList').innerHTML = L.sites.map(site => {
+  const here = site.code === L.code;
+  const inner = `<span>${site.flag}</span><div><b>${esc(site.language)}</b><small>${esc(site.nativeName)}</small></div><i>${here ? "You're here" : '›'}</i>`;
+  return here
+    ? `<div class="choice" aria-current="true">${inner}</div>`
+    : `<a class="choice" href="${siteUrl(site)}">${inner}</a>`;
+}).join('');
+document.addEventListener('click', e => {
+  if (e.target.closest('[data-open-langs]')) $('#langs').hidden = false;
+});
 
 /* ---------- shared bits ---------- */
 function chips(el, options, value, onChange) {
