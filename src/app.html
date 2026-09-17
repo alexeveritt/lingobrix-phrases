@@ -69,6 +69,8 @@ h2{font-size:22px}
 .row{display:flex;gap:12px;align-items:center;width:100%;text-align:left;background:var(--surface);border-radius:16px;
   padding:12px 14px;box-shadow:var(--shadow);border-left:5px solid hsl(var(--hue) 75% var(--band-l))}
 .row:active{transform:scale(.99)}
+.tx .w{border-radius:6px;transition:background .12s}
+.tx .w.on{background:color-mix(in srgb,var(--sun) 55%,transparent)}
 .row .go{flex:none;font-size:24px;line-height:1;color:var(--muted);opacity:.5;margin-right:-4px}
 @media (hover:hover){
   .row:hover,.choice:hover,.tile:hover,.big-btn:hover{background:color-mix(in srgb,var(--ink) 4%,var(--surface))}
@@ -463,9 +465,9 @@ const WHO = {
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const foldChar = c => c.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() || c;
-// one-to-one per character, so highlight() can map positions back
-const foldChars = s => [...s.normalize('NFC')].map(foldChar).join('');
+// strip accents and lower-case; keeps one character per character (for our Latin text), so highlight()
+// can map positions back
+const foldChars = s => s.normalize('NFC').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 // for matching: also treat ß as ss and (in German) ue/oe/ae as ü/ö/ä
 const fold = s => {
   let f = foldChars(s).replace(/ß/g, 'ss').replace(/œ/g, 'oe').replace(/æ/g, 'ae');
@@ -475,7 +477,7 @@ const fold = s => {
 const tidy = s => s.normalize('NFC').replace(/[¿¡?!.,;:"“”«»…()\-–—]/g, ' ').replace(/[’']/g, "'").replace(/\s+/g, ' ').trim();
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
 const clean = s => tidy(s).toLowerCase();
-const key = p => fold(p.tx) + '|' + fold(p.en);
+const key = p => (p._key ??= fold(p.tx) + '|' + fold(p.en));
 const unique = list => { const seen = new Set(); return list.filter(p => !seen.has(key(p)) && seen.add(key(p))); };
 
 /* ---------- storage ---------- */
@@ -522,13 +524,56 @@ function pickVoice() {
   }
 }
 if (canSpeak) { pickVoice(); speechSynthesis.addEventListener?.('voiceschanged', pickVoice); }
-function speak(text, slow) {
+// Speech runs as a queue of parts (a whole phrase, single words, or letter names).
+// Starting a new run cancels the current one.
+let speechRun = 0;
+let undoHighlight = null;
+function stopSpeech() {
+  speechRun++;
+  if (canSpeak) speechSynthesis.cancel();
+  undoHighlight?.(); undoHighlight = null;
+}
+function speakParts(parts, opts) {
+  stopSpeech();
+  queueParts(parts, opts);
+}
+// like speakParts, but doesn't stop what's already set up (speak() prepares the highlight first)
+function queueParts(parts, { rate = 0.95, gap = () => 0, onPart } = {}) {
   if (!canSpeak) return toast('Speech isn’t available in this browser');
-  speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.lang = L.speech; if (voice) u.voice = voice;
-  u.rate = slow ? 0.6 : 0.92;
-  speechSynthesis.speak(u);
+  const run = speechRun;
+  let i = 0;
+  const next = () => {
+    if (run !== speechRun) return;
+    if (i >= parts.length) { onPart?.(-1); undoHighlight?.(); undoHighlight = null; return; }
+    const k = i++;
+    onPart?.(k);
+    const u = new SpeechSynthesisUtterance(parts[k]);
+    u.lang = L.speech; if (voice) u.voice = voice;
+    u.rate = rate;
+    let done = false;
+    const finish = () => { if (done) return; done = true; clearTimeout(guard); setTimeout(next, gap(k)); };
+    // some browsers occasionally never fire onend; don't get stuck
+    const guard = setTimeout(finish, 1500 + parts[k].length * 150);
+    u.onend = finish; u.onerror = finish;
+    speechSynthesis.speak(u);
+  };
+  next();
+}
+// normal: the whole phrase in one go. slow: word by word with gaps (longer at commas and full stops),
+// highlighting each word in `el` (the phrase on the card) if given
+function speak(text, slow, el) {
+  if (!slow) return speakParts([text]);
+  const words = text.split(/\s+/).filter(Boolean);
+  if (words.length < 2) return speakParts(words, { rate: 0.65 });
+  stopSpeech();
+  let onPart;
+  if (el) {
+    const original = el.innerHTML;
+    el.innerHTML = words.map((w, i) => `<span class="w" data-w="${i}">${esc(w)}</span>`).join(' ');
+    undoHighlight = () => { el.innerHTML = original; };
+    onPart = k => $$('.w', el).forEach((w, i) => w.classList.toggle('on', i === k));
+  }
+  queueParts(words, { rate: 0.8, gap: k => (/[,.;:!?…]$/.test(words[k]) ? 650 : 320), onPart });
 }
 
 /* ---------- toast / sheet ---------- */
@@ -601,6 +646,7 @@ function chips(el, options, value, onChange) {
 function highlight(text, terms) {
   if (!terms.length) return esc(text);
   const t = text.normalize('NFC'); const f = foldChars(t);
+  if (f.length !== t.length) return esc(text);
   const marks = new Array(t.length).fill(false);
   for (const term of terms) { let i = -1; while ((i = f.indexOf(term, i + 1)) > -1) for (let k = 0; k < term.length; k++) marks[i + k] = true; }
   let out = '', open = false; const chars = [...t];
@@ -643,7 +689,7 @@ document.addEventListener('click', e => {
   if (!t) return;
   if (t.dataset.speak) speak(t.dataset.speak, t.dataset.speed === 'slow');
   else if (t.dataset.say) speak(BY_ID.get(+t.dataset.say).tx);
-  else if (t.dataset.slow) speak(BY_ID.get(+t.dataset.slow).tx, true);
+  else if (t.dataset.slow) speak(BY_ID.get(+t.dataset.slow).tx, true, t.closest('.card')?.querySelector('.tx'));
   else if (t.dataset.fav) { const on = toggleFav(+t.dataset.fav); t.classList.toggle('on', on); t.textContent = on ? '⭐' : '☆'; }
   else if (t.classList.contains('covered')) $$('.covered', t.closest('.card')).forEach(x => x.classList.remove('covered'));
   else if (t.dataset.href) location.hash = t.dataset.href;
@@ -657,7 +703,7 @@ function search(q) {
   if (!terms.length) return { terms, marks, list: [] };
   const scored = [];
   for (const p of ALL) {
-    const hay = ' ' + fold(clean(p.en)) + ' | ' + fold(clean(p.tx)) + ' ';
+    const hay = (p._hay ??= ' ' + fold(clean(p.en)) + ' | ' + fold(clean(p.tx)) + ' ');
     let score = 0;
     for (const t of terms) {
       const i = hay.indexOf(t);
@@ -671,6 +717,8 @@ function search(q) {
   scored.sort((a, b) => b[0] - a[0]);
   return { terms, marks, list: unique(scored.map(x => x[1])) };
 }
+const SHOW = 60; // rows drawn at first; the rest on request
+let showAll = false;
 function renderSearch() {
   const q = qEl.value;
   $('#qClear').hidden = !q;
@@ -682,9 +730,12 @@ function renderSearch() {
   const el = $('#results');
   el.innerHTML = (topicHits.length ? `<div class="chips">${topicHits.map(c => `<button class="chip-btn" data-href="#topic/${c.id}">${c.emoji} ${esc(c.name)}</button>`).join('')}</div>` : '')
     + (list.length
-      ? `<p class="count">${list.length} phrase${list.length === 1 ? '' : 's'}</p>${tipHtml('list')}${rows(list.slice(0, 200), marks)}`
+      ? `<p class="count">${list.length} phrase${list.length === 1 ? '' : 's'}</p>${tipHtml('list')}${rows(showAll ? list : list.slice(0, SHOW), marks)}`
+        + (!showAll && list.length > SHOW ? `<button class="btn block" id="showAll" style="margin-top:10px">Show all ${list.length}</button>` : '')
       : `<div class="empty"><b>🤔</b>No matches for “${esc(q)}”.<br>Try a single word like ${L.noMatchExample}.</div>`);
   bindRows(el, list, `“${q.trim()}”`);
+  const more = $('#showAll');
+  if (more) more.onclick = e => { e.stopPropagation(); showAll = true; renderSearch(); };
 }
 function renderHome() {
   const day = Math.floor((Date.now() - new Date().getTimezoneOffset() * 6e4) / 864e5);
@@ -694,7 +745,13 @@ function renderHome() {
   el.innerHTML = rows(today);
   bindRows(el, today, "Today's phrase");
 }
-qEl.addEventListener('input', renderSearch);
+// wait for a short pause in typing before searching, so fast typing stays smooth
+let searchTimer;
+qEl.addEventListener('input', () => {
+  showAll = false;
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(renderSearch, qEl.value.trim() ? 90 : 0);
+});
 qEl.addEventListener('keydown', e => { if (e.key === 'Enter') qEl.blur(); });
 $('#qClear').onclick = () => { qEl.value = ''; renderSearch(); qEl.focus(); };
 $('#goRandom').onclick = () => openViewer(shuffle(unique(ALL)), 0, '🎲 Random phrases');
@@ -768,7 +825,7 @@ function openOverlay(el) {
 function hideOverlays() {
   $$('.overlay').forEach(o => o.hidden = true);
   document.body.classList.remove('locked');
-  if (canSpeak) speechSynthesis.cancel();
+  stopSpeech();
   route();
 }
 function closeOverlay() { if (history.state?.ov) history.back(); else hideOverlays(); }
@@ -820,6 +877,7 @@ function openViewer(list, i, title) {
 }
 function drawCard(from) {
   const p = V.list[V.i];
+  stopSpeech();
   stage.innerHTML = cardHtml(p, { cover: S.cover });
   const card = stage.firstElementChild;
   if (from) {
@@ -1120,7 +1178,6 @@ const nameOf = ch => ABC_NAMES.get(ch) || ABC_NAMES.get(ch.toLowerCase()) || nul
 const sayBtn = (text, label = '🔊') => canSpeak ? `<button class="tool" data-speak="${esc(text)}" aria-label="Listen">${label}</button>` : '';
 
 // read a word letter by letter, highlighting each letter as it's spoken
-let spellRun = 0;
 function spellOut(word, holder, slow) {
   const chars = [...word.normalize('NFC')];
   holder.innerHTML = chars.map((ch, i) => {
@@ -1129,26 +1186,13 @@ function spellOut(word, holder, slow) {
     return `<span data-i="${i}"><b>${esc(ch)}</b><small>${n ? esc(n.name) : '·'}</small></span>`;
   }).join('');
   if (!canSpeak) return;
-  const run = ++spellRun;
-  speechSynthesis.cancel();
-  let i = 0;
-  const next = () => {
-    if (run !== spellRun) return;
-    $$('span.on', holder).forEach(x => x.classList.remove('on'));
-    while (i < chars.length && !nameOf(chars[i])) i++;
-    if (i >= chars.length) return;
-    const el = $(`[data-i="${i}"]`, holder);
-    el?.classList.add('on');
-    const pause = /\s/.test(chars[i + 1] || '') ? 450 : 160;
-    const u = new SpeechSynthesisUtterance(nameOf(chars[i]).say);
-    u.lang = L.speech; if (voice) u.voice = voice;
-    u.rate = slow ? 0.6 : 0.85;
-    u.onend = () => setTimeout(next, pause);
-    u.onerror = () => setTimeout(next, pause);
-    i++;
-    speechSynthesis.speak(u);
-  };
-  setTimeout(next, 150);
+  const spoken = chars.map((ch, i) => [ch, i]).filter(([ch]) => nameOf(ch));
+  speakParts(spoken.map(([ch]) => nameOf(ch).say), {
+    rate: slow ? 0.6 : 0.85,
+    // a longer pause between words
+    gap: k => (spoken[k + 1] && spoken[k + 1][1] - spoken[k][1] > 1 ? 450 : 160),
+    onPart: k => $$('span[data-i]', holder).forEach(el => el.classList.toggle('on', k >= 0 && +el.dataset.i === spoken[k][1])),
+  });
 }
 
 function renderAlphabet() {
@@ -1251,7 +1295,7 @@ function drawSpell(p) {
       $('.answer-row', body).hidden = true;
       $('.keys', body).hidden = true;
       spellOut(p.tx, $('#spShown'), false);
-      $('#tNext').onclick = () => { spellRun++; answer(p, level === 'right', level !== 'wrong' && level !== 'right'); };
+      $('#tNext').onclick = () => { stopSpeech(); answer(p, level === 'right', level !== 'wrong' && level !== 'right'); };
       $('#tNext').focus({ preventScroll: true });
     };
     ta.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); ($('#tNext') || $('#tCheck')).click(); } });
@@ -1268,7 +1312,7 @@ function drawSpell(p) {
         <div class="answer-row"><button class="btn bad" data-a="0">😅 Not yet</button><button class="btn ok" data-a="1">😎 Got it</button></div>`;
       spellOut(p.tx, $('#spShown'), false);
       $('#spAgain').onclick = () => spellOut(p.tx, $('#spShown'), false);
-      $('#fcAns').onclick = ev => { const b = ev.target.closest('[data-a]'); if (!b) return; spellRun++; answer(p, b.dataset.a === '1'); };
+      $('#fcAns').onclick = ev => { const b = ev.target.closest('[data-a]'); if (!b) return; stopSpeech(); answer(p, b.dataset.a === '1'); };
     };
   }
   body.scrollTop = 0;

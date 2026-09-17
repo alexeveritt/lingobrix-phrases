@@ -85,6 +85,7 @@ for (const lang of languages) {
     await check('home screen has a switch-language link', visible('.more [data-open-langs]'));
 
     await page.fill('#q', SEARCH[lang.code]);
+    await page.waitForSelector('#results .row', { timeout: 3000 }).catch(() => {}); // search waits for a pause in typing
     await check(`search "${SEARCH[lang.code]}" finds phrases`, count('#results .row', 3));
     await check('rows show a › so they look tappable', count('#results .row .go', 3));
     await check('list tip shows', visible('#results [data-tip="tap"]'));
