@@ -26,6 +26,7 @@
     { "pattern": "www.lingobrix.com", "custom_domain": true },
     { "pattern": "spanish.lingobrix.com", "custom_domain": true },
     { "pattern": "german.lingobrix.com", "custom_domain": true },
-    { "pattern": "french.lingobrix.com", "custom_domain": true }
+    { "pattern": "french.lingobrix.com", "custom_domain": true },
+    { "pattern": "portuguese.lingobrix.com", "custom_domain": true }
   ]
 }

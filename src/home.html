@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>LingoBrix — everyday languages at home</title>
-<meta name="description" content="Everyday Spanish, German and French phrases for families with children aged 11–16: search, learn by topic, hear it, and test yourself.">
+<meta name="description" content="Everyday {{languageList}} phrases for families with children aged 11–16: search, learn by topic, hear it, and test yourself.">
 <meta name="theme-color" content="#1f2433">
 <link rel="icon" href="{{favicon}}">
 <style>
@@ -32,7 +32,7 @@ h1,h2,h3{margin:0;letter-spacing:-.015em;line-height:1.15}
 .hero p{font-size:18px;color:var(--muted);margin:12px 0 0;max-width:36em}
 .sub{margin:36px 2px 12px;font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
 .langs{display:grid;gap:12px}
-@media (min-width:620px){.langs{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:620px){.langs{grid-template-columns:repeat(2,1fr)}}
 .lang{display:flex;align-items:center;gap:14px;background:var(--surface);border-radius:20px;padding:16px;box-shadow:var(--shadow);
   color:inherit;text-decoration:none;border:2px solid transparent;transition:transform .15s,border-color .15s}
 @media (min-width:620px){.lang{flex-direction:column;align-items:flex-start;padding:20px}}
@@ -91,6 +91,7 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:40px 16px cal
       <div>☕ <b>¿Has hecho los deberes?</b> <em>— Have you done your homework?</em></div>
       <div>🎒 <b>Noch fünf Minuten!</b> <em>— Five more minutes!</em></div>
       <div>☕ <b>Arrête de chanter !</b> <em>— Stop singing!</em></div>
+      <div>☕ <b>Larga o telemóvel.</b> <em>— Get off your phone.</em></div>
     </div>
   </div>
 
@@ -105,7 +106,7 @@ footer{color:var(--muted);font-size:13px;text-align:center;padding:40px 16px cal
   </div>
 </main>
 
-<footer>© LingoBrix · Everyday Spanish, German and French for families</footer>
+<footer>© LingoBrix · Everyday {{languageList}} for families</footer>
 
 <div class="sheet" id="welcome" hidden role="dialog" aria-modal="true" aria-labelledby="welcomeTitle"><div>
   <div style="font-size:40px">👋</div>

@@ -11,7 +11,7 @@ import { resolve } from 'node:path';
 import languages from '../languages.mjs';
 
 const only = process.argv.slice(2);
-const SEARCH = { es: 'móvil', de: 'Handy', fr: 'portable' };
+const SEARCH = { es: 'móvil', de: 'Handy', fr: 'portable', pt: 'telemóvel' };
 const pageUrl = (path) => pathToFileURL(resolve('dist', path, 'index.html')).href;
 
 const browser = await chromium.launch({ channel: 'chrome' });

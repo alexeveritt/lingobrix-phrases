@@ -64,6 +64,7 @@ const home = fill(readFileSync('src/home.html', 'utf8'), {
   favicon: favicon({ stripes: ['#e5484d', '#f5b82e', '#2e5bd8'], logo: 'LB', logoInk: '#ffffff', logoHalo: 'rgba(0,0,0,.45)' }),
   phrases: Math.min(...sites.map((s) => s.phrases)).toLocaleString('en-GB'),
   topics: Math.min(...sites.map((s) => s.topics)),
+  languageList: new Intl.ListFormat('en-GB').format(sites.map((s) => s.language)),
   cards: sites.map((s) => `
     <a class="lang" data-code="${s.code}" href="https://${s.host}/"><span class="flag">${s.flag}</span>
       <div><b>${s.language}</b><small>${s.nativeName} · ${s.phrases.toLocaleString('en-GB')} phrases</small></div>

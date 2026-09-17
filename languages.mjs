@@ -7,6 +7,7 @@
 import { phrasePh as spanishPh } from './tools/phonetic-es.mjs';
 import { phrasePh as germanPh } from './tools/phonetic-de.mjs';
 import { phrasePh as frenchPh } from './tools/phonetic-fr.mjs';
+import { phrasePh as portuguesePh } from './tools/phonetic-pt.mjs';
 
 export default [
   {
@@ -155,6 +156,57 @@ export default [
       umlautSpelling: false,
       results: ['Incroyable ! Perfect score', 'Très bien ! Great work', 'Bien joué ! Keep going', 'Courage ! Practice makes perfect'],
       noMatchExample: '<i>phone</i>, <i>dîner</i> or <i>tired</i>',
+    },
+  },
+  {
+    code: 'pt',
+    data: 'data/pt.json',
+    field: 'pt',
+    subdomain: 'portuguese',
+    nativeName: 'Português (Portugal)',
+    phonetic: portuguesePh,
+    page: {
+      title: 'Portuguese at Home',
+      language: 'Portuguese',
+      shortTitle: 'Portuguese',
+      description: 'Everyday European Portuguese phrases for families: search, browse, flashcards and spelling practice.',
+      logo: 'H!',
+      // Portugal's flag: green then red
+      stripes: ['#1b7f47', '#1b7f47', '#e5484d'],
+      vertical: true,
+      logoInk: '#ffffff',
+      logoHalo: 'rgba(0,0,0,.55)',
+      brand: '#1b7f47',
+      sun: '#f5c518',
+      hello: 'Olá!',
+      searchExample: 'phone or jantar',
+      helpIntro: 'Written for English speakers, using the accent from <b>Portugal</b> (not Brazil). <b>CAPITALS</b> show which part of the word to stress. Unstressed vowels are very short or silent, so words sound shorter than they look.',
+      helpRows: `
+    <tr><td>ah / uh</td><td>Stressed a is <i>ah</i> as in "father"; unstressed a is a short <i>uh</i>. <i>KAH-zuh</i> = casa.</td></tr>
+    <tr><td>eh / ay / uh</td><td>Open é is <i>eh</i> as in "bed", closed ê is <i>ay</i> as in "day", and unstressed e is a tiny <i>uh</i> or disappears: <i>noyt</i> = noite.</td></tr>
+    <tr><td>ee / o / oh / oo</td><td><i>ee</i> as in "see", <i>o</i> as in "hot" (ó), <i>oh</i> as in "go" (ô, ou), and unstressed o is <i>oo</i>: <i>oh-bree-GAH-doo</i> = obrigado.</td></tr>
+    <tr><td>sh / zh</td><td>s at the end of a word or before a consonant sounds like "sh" — a big Portugal sound: <i>doysh</i> = dois, <i>sh-TOH</i> = estou. j and g before e/i are "zh", like the s in "mea<b>s</b>ure": <i>zhah</i> = já.</td></tr>
+    <tr><td>own / ayn / oyn</td><td>Nasal sounds (ão, ãe, õe): <b>don't say the n</b> — let the sound come through your nose. <i>nown</i> = não, <i>mayn</i> = mãe, <i>kaynsh</i> = cães.</td></tr>
+    <tr><td>ahn / an / een / ohn / oon</td><td>Other nasal vowels (am/an, em, im/in, om/on, um/un), again without really saying the n: <i>bohn</i> = bom, <i>seen</i> = sim.</td></tr>
+    <tr><td>ly / ny</td><td>lh is like the "lli" in "million" (<i>FEE-lyoo</i> = filho); nh is like "ca<b>ny</b>on" (<i>muh-NYAHN</i> = manhã).</td></tr>
+    <tr><td>rr / r</td><td><i>rr</i> (rr, or r at the start of a word) is a throaty sound at the back of the mouth; a single r between vowels is a quick tap.</td></tr>
+    <tr><td>t / d</td><td>Always a plain t and d — never the "ch"/"j" sound you hear in Brazil: <i>tard</i> = tarde.</td></tr>
+    <tr><td>(silent)</td><td>h is never said: <i>ohzh</i> = hoje.</td></tr>`,
+    },
+    app: {
+      code: 'pt',
+      speech: 'pt-PT', // a Brazilian voice is only used if the phone has no Portugal voice
+      flag: '🇵🇹',
+      language: 'Portuguese',
+      storeKey: 'pah.v1',
+      keys: ['á', 'à', 'â', 'ã', 'é', 'ê', 'í', 'ó', 'ô', 'õ', 'ú', 'ç'],
+      perfect: 'Perfeito!',
+      accentsMsg: 'Nearly — check the accents (the wavy words)',
+      accentsCountAsRight: false, // avó and avô are different people
+      checkCapitals: false,
+      umlautSpelling: false,
+      results: ['Incrível! Perfect score', 'Muito bem! Great work', 'Boa! Keep going', 'Força! Practice makes perfect'],
+      noMatchExample: '<i>phone</i>, <i>jantar</i> or <i>tired</i>',
     },
   },
 ];

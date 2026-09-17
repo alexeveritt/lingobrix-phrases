@@ -17,6 +17,8 @@ const cases = [
   ['https://spanish.lingobrix.com/', 200, 'asset /es/'],
   ['https://german.lingobrix.com/', 200, 'asset /de/'],
   ['https://french.lingobrix.com/', 200, 'asset /fr/'],
+  ['https://portuguese.lingobrix.com/', 200, 'asset /pt/'],
+  ['https://lingobrix.com/pt/', 301, 'https://portuguese.lingobrix.com/'],
   ['https://german.lingobrix.com/anything', 302, 'https://german.lingobrix.com/'],
   ['https://spanish.lingobrix.com/robots.txt', 404, 'Not found'],
   ['https://lingobrix.com/sites.json', 404, 'Not found'],

@@ -1,6 +1,6 @@
 # LingoBrix
 
-Everyday Spanish, German and French phrases for families with children aged 11–16: search, learn by topic, hear it, flashcards and spelling practice. Each language is a single-file, mobile-first web app.
+Everyday Spanish, German, French and European Portuguese phrases for families with children aged 11–16: search, learn by topic, hear it, flashcards and spelling practice. Each language is a single-file, mobile-first web app.
 
 | Site | Serves |
 | --- | --- |
@@ -8,6 +8,7 @@ Everyday Spanish, German and French phrases for families with children aged 11�
 | https://spanish.lingobrix.com | Spanish app |
 | https://german.lingobrix.com | German app |
 | https://french.lingobrix.com | French app |
+| https://portuguese.lingobrix.com | European Portuguese app (Portugal, not Brazil) |
 
 All of them are served by one Cloudflare Worker, which picks the site from the hostname. Every language shares the same app code, topics and phrase ids.
 
@@ -15,14 +16,16 @@ All of them are served by one Cloudflare Worker, which picks the site from the h
 
 | Path | What it is |
 | --- | --- |
-| `data/es.json`, `data/de.json`, `data/fr.json` | The phrase lists. **Edit these.** |
+| `data/es.json`, `de.json`, `fr.json`, `pt.json` | The phrase lists. **Edit these.** |
 | `languages.mjs` | Per-language settings: data file, subdomain, text, colours, speech voice, accent keys, pronunciation help. |
 | `src/app.html` | The language app (HTML, CSS and JS in one file). The build fills in `{{…}}`, `/*PHRASES*/` and `/*LANG*/`. |
 | `src/home.html` | The lingobrix.com home page. |
 | `src/worker.js` | The Cloudflare Worker: hostname → site, `www` redirect, caching headers. |
 | `tools/phonetic-es.mjs` | Spanish pronunciation, generated from the spelling. |
 | `tools/phonetic-de.mjs` + `de-lexicon.json` | German pronunciation, one entry per word. |
-| `tools/phonetic-fr.mjs` + `fr-pronunciation.json` | French pronunciation, one entry per phrase (French links words together). |
+| `tools/phonetic-fr.mjs` + `fr-pronunciation.json` | French pronunciation, one entry per phrase, no capitals (French links words together). |
+| `tools/phonetic-pt.mjs` + `pt-pronunciation.json` | European Portuguese pronunciation, one entry per phrase, stress in CAPITALS. |
+| `tools/phrase-table.mjs` | Shared lookup and format check for the per-phrase pronunciation files. |
 | `build.mjs` | Checks the data, regenerates pronunciations and builds everything into `dist/`. |
 | `tests/` | `worker.test.mjs` (routing) and `smoke.mjs` (clicks through every site in Chrome). |
 | `wrangler.jsonc` | Worker config, including the custom domains. |
@@ -40,13 +43,13 @@ npm run dev     # build, then serve at http://localhost:8787 (and on your Wi-Fi)
 npm test        # build, test the Worker routing, then click through every site in Chrome
 ```
 
-`npm run dev` serves the home page at `/`, and the language apps at `/es/`, `/de/` and `/fr/`. To try it on a phone, connect it to the same Wi-Fi and open `http://<your-computer-ip>:8787` (on a Mac, `ipconfig getifaddr en0` shows the IP). Refresh after each rebuild.
+`npm run dev` serves the home page at `/`, and the language apps at `/es/`, `/de/`, `/fr/` and `/pt/`. To try it on a phone, connect it to the same Wi-Fi and open `http://<your-computer-ip>:8787` (on a Mac, `ipconfig getifaddr en0` shows the IP). Refresh after each rebuild.
 
 `npm test` uses your installed Google Chrome (through `playwright-core`), so no browsers are downloaded.
 
 ## Editing phrases
 
-Each phrase looks like this (German and French use `de` and `fr` in place of `es`):
+Each phrase looks like this (the other files use `de`, `fr` and `pt` in place of `es`):
 
 ```json
 { "id": 12, "cat": "morning", "dir": "p", "en": "Time to get up.", "es": "Es hora de levantarse.", "ph": "...", "note": "..." }
@@ -58,7 +61,8 @@ Each phrase looks like this (German and French use `de` and `fr` in place of `es
 - `ph`: leave it empty. The build fills it in.
   - Spanish: if a word isn't spelled the Spanish way (a brand or name), add it to `OVERRIDES` in `tools/phonetic-es.mjs`.
   - German: every word must be in `tools/de-lexicon.json`. The build lists any that are missing.
-  - French: every phrase must be in `tools/fr-pronunciation.json`, keyed by its exact French text. The build names any that are missing.
+  - French and Portuguese: every phrase must be in `tools/fr-pronunciation.json` / `pt-pronunciation.json`, keyed by its exact text. The build names any that are missing.
+  - Portuguese is European Portuguese: telemóvel, cão, casa de banho, `tu` with its own verb forms, `estar a` + verb.
   - The sound keys are in each site's ⓘ panel.
 
 Then run `npm test`, commit and push. The build fails, and nothing deploys, if a phrase is incomplete.
@@ -92,4 +96,4 @@ Pages load with `Cache-Control: public, max-age=3600, stale-while-revalidate=604
 
 ## Privacy
 
-No cookies, no tracking, no accounts. Each site stores saved phrases, practice results and settings in the browser's `localStorage` (`lb.v1` on the home page, `sah.v1` / `gah.v1` / `fah.v1` on the language sites). The privacy notice is shown once per site.
+No cookies, no tracking, no accounts. Each site stores saved phrases, practice results and settings in the browser's `localStorage` (`lb.v1` on the home page, `sah.v1` / `gah.v1` / `fah.v1` / `pah.v1` on the language sites). The privacy notice is shown once per site.
