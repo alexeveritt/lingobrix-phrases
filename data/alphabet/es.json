@@ -1,0 +1,636 @@
+{
+  "phrases": [
+    {
+      "en": "How do you spell it?",
+      "tx": "¿Cómo se escribe?",
+      "ph": "KOH-moh seh ehs-KREE-beh"
+    },
+    {
+      "en": "How do you spell your name?",
+      "tx": "¿Cómo se escribe tu nombre?",
+      "ph": "KOH-moh seh ehs-KREE-beh too NOHM-breh"
+    },
+    {
+      "en": "It's spelled …",
+      "tx": "Se escribe…",
+      "ph": "seh ehs-KREE-beh"
+    },
+    {
+      "en": "Can you spell that?",
+      "tx": "¿Me lo puedes deletrear?",
+      "ph": "meh loh PWEH-dehs deh-leh-treh-AHR"
+    },
+    {
+      "en": "with a capital letter",
+      "tx": "con mayúscula",
+      "ph": "kohn mah-YOOS-koo-lah"
+    },
+    {
+      "en": "with double r (two r's)",
+      "tx": "con dos erres",
+      "ph": "kohn dohs EH-rrehs"
+    }
+  ],
+  "letters": [
+    {
+      "letter": "a",
+      "name": "a",
+      "say": "a",
+      "ph": "ah",
+      "word": "agua",
+      "wordEn": "water",
+      "tip": "Said 'ah' as in 'father' — not like the English letter A.",
+      "alt": []
+    },
+    {
+      "letter": "b",
+      "name": "be",
+      "say": "be",
+      "ph": "beh",
+      "word": "baño",
+      "wordEn": "bathroom",
+      "tip": "",
+      "alt": [
+        {
+          "name": "be larga",
+          "say": "be larga",
+          "ph": "beh LAHR-gah",
+          "why": "In Spain people say 'be larga' (long b) to tell b from v. In Latin America it's 'be alta' or 'be grande'."
+        }
+      ]
+    },
+    {
+      "letter": "c",
+      "name": "ce",
+      "say": "ce",
+      "ph": "theh",
+      "word": "cena",
+      "wordEn": "dinner",
+      "tip": "In Spain it's said 'theh', with a 'th' like 'think' — not like English 'see'.",
+      "alt": []
+    },
+    {
+      "letter": "d",
+      "name": "de",
+      "say": "de",
+      "ph": "deh",
+      "word": "dinero",
+      "wordEn": "money",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "e",
+      "name": "e",
+      "say": "e",
+      "ph": "eh",
+      "word": "examen",
+      "wordEn": "exam",
+      "tip": "Said 'eh' — it sounds like the English letter A, not English E. Easy to mix up!",
+      "alt": []
+    },
+    {
+      "letter": "f",
+      "name": "efe",
+      "say": "efe",
+      "ph": "EH-feh",
+      "word": "fiesta",
+      "wordEn": "party",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "g",
+      "name": "ge",
+      "say": "ge",
+      "ph": "heh",
+      "word": "gracias",
+      "wordEn": "thanks",
+      "tip": "Said 'heh' with a breathy h — English speakers often confuse it with j (jota).",
+      "alt": []
+    },
+    {
+      "letter": "h",
+      "name": "hache",
+      "say": "hache",
+      "ph": "AH-cheh",
+      "word": "hora",
+      "wordEn": "time / hour",
+      "tip": "The letter is called 'hache', but h is silent in Spanish words.",
+      "alt": []
+    },
+    {
+      "letter": "i",
+      "name": "i",
+      "say": "i",
+      "ph": "ee",
+      "word": "instituto",
+      "wordEn": "secondary school",
+      "tip": "Said 'ee' — it sounds like the English letter E, not English I.",
+      "alt": [
+        {
+          "name": "i latina",
+          "say": "i latina",
+          "ph": "ee lah-TEE-nah",
+          "why": "Some people say 'i latina' (Latin i) to make clear they mean i, not y ('i griega')."
+        }
+      ]
+    },
+    {
+      "letter": "j",
+      "name": "jota",
+      "say": "jota",
+      "ph": "HOH-tah",
+      "word": "jugar",
+      "wordEn": "to play",
+      "tip": "Said 'HOH-tah' with a strong, breathy h — nothing like English j.",
+      "alt": []
+    },
+    {
+      "letter": "k",
+      "name": "ka",
+      "say": "ka",
+      "ph": "kah",
+      "word": "kétchup",
+      "wordEn": "ketchup",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "l",
+      "name": "ele",
+      "say": "ele",
+      "ph": "EH-leh",
+      "word": "leche",
+      "wordEn": "milk",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "m",
+      "name": "eme",
+      "say": "eme",
+      "ph": "EH-meh",
+      "word": "mañana",
+      "wordEn": "tomorrow",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "n",
+      "name": "ene",
+      "say": "ene",
+      "ph": "EH-neh",
+      "word": "noche",
+      "wordEn": "night",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "ñ",
+      "name": "eñe",
+      "say": "eñe",
+      "ph": "EH-nyeh",
+      "word": "mañana",
+      "wordEn": "tomorrow",
+      "tip": "A separate letter that comes after n in the Spanish alphabet and in dictionaries.",
+      "alt": []
+    },
+    {
+      "letter": "o",
+      "name": "o",
+      "say": "o",
+      "ph": "oh",
+      "word": "ojos",
+      "wordEn": "eyes",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "p",
+      "name": "pe",
+      "say": "pe",
+      "ph": "peh",
+      "word": "perro",
+      "wordEn": "dog",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "q",
+      "name": "cu",
+      "say": "cu",
+      "ph": "koo",
+      "word": "quiero",
+      "wordEn": "I want",
+      "tip": "Said 'koo', a bit like English Q. In words it's always followed by u, as in qué.",
+      "alt": []
+    },
+    {
+      "letter": "r",
+      "name": "erre",
+      "say": "erre",
+      "ph": "EH-rreh",
+      "word": "ropa",
+      "wordEn": "clothes",
+      "tip": "The name has a rolled rr sound. A single r in the middle of a word is just a quick tap.",
+      "alt": [
+        {
+          "name": "ere",
+          "say": "ere",
+          "ph": "EH-reh",
+          "why": "Older people sometimes call it 'ere'. 'Erre' is the official name since 2010 and what schools teach."
+        }
+      ]
+    },
+    {
+      "letter": "s",
+      "name": "ese",
+      "say": "ese",
+      "ph": "EH-seh",
+      "word": "salir",
+      "wordEn": "to go out",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "t",
+      "name": "te",
+      "say": "te",
+      "ph": "teh",
+      "word": "tarde",
+      "wordEn": "late",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "u",
+      "name": "u",
+      "say": "u",
+      "ph": "oo",
+      "word": "uniforme",
+      "wordEn": "uniform",
+      "tip": "Said 'oo' as in 'food' — not 'you' like the English letter U.",
+      "alt": []
+    },
+    {
+      "letter": "v",
+      "name": "uve",
+      "say": "uve",
+      "ph": "OO-beh",
+      "word": "ventana",
+      "wordEn": "window",
+      "tip": "Sounds exactly like b in Spanish, so take care when spelling.",
+      "alt": [
+        {
+          "name": "ve",
+          "say": "ve",
+          "ph": "beh",
+          "why": "'Ve' is the usual name in most of Latin America. In Spain people say 'uve' so it doesn't sound like 'be'."
+        },
+        {
+          "name": "ve baja",
+          "say": "ve baja",
+          "ph": "beh BAH-hah",
+          "why": "In Latin America people say 've baja' or 've corta' (low/short v) to tell it from b ('be alta'). Spain says 'uve'."
+        }
+      ]
+    },
+    {
+      "letter": "w",
+      "name": "uve doble",
+      "say": "uve doble",
+      "ph": "OO-beh DOH-bleh",
+      "word": "wifi",
+      "wordEn": "wifi",
+      "tip": "Only used in borrowed words like wifi and web.",
+      "alt": [
+        {
+          "name": "doble uve",
+          "say": "doble uve",
+          "ph": "DOH-bleh OO-beh",
+          "why": "Many people in Spain say 'doble uve' — it means the same, 'double v'."
+        },
+        {
+          "name": "doble ve",
+          "say": "doble ve",
+          "ph": "DOH-bleh beh",
+          "why": "The usual name in Latin America ('double v'). In Spain you'll hear 'uve doble' instead."
+        }
+      ]
+    },
+    {
+      "letter": "x",
+      "name": "equis",
+      "say": "equis",
+      "ph": "EH-kees",
+      "word": "xilófono",
+      "wordEn": "xylophone",
+      "tip": "Said 'EH-kees'. In most words x sounds like 'ks', as in examen.",
+      "alt": []
+    },
+    {
+      "letter": "y",
+      "name": "ye",
+      "say": "ye",
+      "ph": "yeh",
+      "word": "yo",
+      "wordEn": "I",
+      "tip": "",
+      "alt": [
+        {
+          "name": "i griega",
+          "say": "i griega",
+          "ph": "ee GRYEH-gah",
+          "why": "'Ye' is the official name since 2010, but many teachers and older textbooks still say 'i griega' ('Greek i')."
+        }
+      ]
+    },
+    {
+      "letter": "z",
+      "name": "zeta",
+      "say": "zeta",
+      "ph": "THEH-tah",
+      "word": "zapatos",
+      "wordEn": "shoes",
+      "tip": "In Spain z is said with a 'th' like 'think': THEH-tah.",
+      "alt": []
+    }
+  ],
+  "extras": [
+    {
+      "letter": "ll",
+      "name": "doble ele",
+      "say": "doble ele",
+      "ph": "DOH-bleh EH-leh",
+      "word": "llaves",
+      "wordEn": "keys",
+      "what": "Two l's together, said like 'y'. It used to count as its own letter (elle).",
+      "tip": "",
+      "alt": [
+        {
+          "name": "elle",
+          "say": "elle",
+          "ph": "EH-yeh",
+          "why": "Its old name from when ll counted as its own letter. Some older people still call it 'elle'."
+        }
+      ]
+    },
+    {
+      "letter": "ch",
+      "name": "ce hache",
+      "say": "ce hache",
+      "ph": "theh AH-cheh",
+      "word": "coche",
+      "wordEn": "car",
+      "what": "c + h together, said like English 'ch'. It used to count as its own letter (che).",
+      "tip": "",
+      "alt": [
+        {
+          "name": "che",
+          "say": "che",
+          "ph": "cheh",
+          "why": "Its old name from when ch counted as its own letter. You may still hear it."
+        }
+      ]
+    },
+    {
+      "letter": "rr",
+      "name": "doble erre",
+      "say": "doble erre",
+      "ph": "DOH-bleh EH-rreh",
+      "word": "perro",
+      "wordEn": "dog",
+      "what": "Two r's together, always strongly rolled. When spelling, say 'doble erre'.",
+      "tip": "",
+      "alt": []
+    }
+  ],
+  "accents": [
+    {
+      "char": "á",
+      "name": "a con tilde",
+      "say": "a con tilde",
+      "ph": "ah kohn TEEL-deh",
+      "what": "a with an accent — the accent shows where the stress goes"
+    },
+    {
+      "char": "é",
+      "name": "e con tilde",
+      "say": "e con tilde",
+      "ph": "eh kohn TEEL-deh",
+      "what": "e with an accent — the accent shows where the stress goes"
+    },
+    {
+      "char": "í",
+      "name": "i con tilde",
+      "say": "i con tilde",
+      "ph": "ee kohn TEEL-deh",
+      "what": "i with an accent — the accent shows where the stress goes"
+    },
+    {
+      "char": "ó",
+      "name": "o con tilde",
+      "say": "o con tilde",
+      "ph": "oh kohn TEEL-deh",
+      "what": "o with an accent — the accent shows where the stress goes"
+    },
+    {
+      "char": "ú",
+      "name": "u con tilde",
+      "say": "u con tilde",
+      "ph": "oo kohn TEEL-deh",
+      "what": "u with an accent — the accent shows where the stress goes"
+    },
+    {
+      "char": "ü",
+      "name": "u con diéresis",
+      "say": "u con diéresis",
+      "ph": "oo kohn DYEH-reh-sees",
+      "what": "u with two dots — the u is said out loud, as in vergüenza"
+    },
+    {
+      "char": "´",
+      "name": "tilde",
+      "say": "tilde",
+      "ph": "TEEL-deh",
+      "what": "The accent mark: it shows the stressed syllable, or tells apart words like tu/tú."
+    },
+    {
+      "char": "¨",
+      "name": "diéresis",
+      "say": "diéresis",
+      "ph": "DYEH-reh-sees",
+      "what": "Two dots on u after g (güe, güi), so the u is said: vergüenza."
+    },
+    {
+      "char": "~",
+      "name": "virgulilla",
+      "say": "virgulilla",
+      "ph": "beer-goo-LEE-yah",
+      "what": "The squiggle on ñ. When spelling, people just say 'eñe'."
+    }
+  ],
+  "words": [
+    {
+      "tx": "hoy",
+      "en": "today"
+    },
+    {
+      "tx": "llaves",
+      "en": "keys"
+    },
+    {
+      "tx": "vergüenza",
+      "en": "embarrassment"
+    },
+    {
+      "tx": "árbol",
+      "en": "tree"
+    },
+    {
+      "tx": "música",
+      "en": "music"
+    },
+    {
+      "tx": "hermano",
+      "en": "brother"
+    },
+    {
+      "tx": "hielo",
+      "en": "ice"
+    },
+    {
+      "tx": "guapa",
+      "en": "pretty"
+    },
+    {
+      "tx": "gente",
+      "en": "people"
+    },
+    {
+      "tx": "cepillo",
+      "en": "brush"
+    },
+    {
+      "tx": "lluvia",
+      "en": "rain"
+    },
+    {
+      "tx": "pizza",
+      "en": "pizza"
+    },
+    {
+      "tx": "jersey",
+      "en": "jumper"
+    },
+    {
+      "tx": "coche",
+      "en": "car"
+    },
+    {
+      "tx": "también",
+      "en": "also"
+    },
+    {
+      "tx": "móvil",
+      "en": "mobile phone"
+    },
+    {
+      "tx": "después",
+      "en": "after"
+    },
+    {
+      "tx": "cariño",
+      "en": "love"
+    },
+    {
+      "tx": "ducha",
+      "en": "shower"
+    },
+    {
+      "tx": "toalla",
+      "en": "towel"
+    },
+    {
+      "tx": "silla",
+      "en": "chair"
+    },
+    {
+      "tx": "hambre",
+      "en": "hunger"
+    },
+    {
+      "tx": "abuela",
+      "en": "grandma"
+    },
+    {
+      "tx": "verdad",
+      "en": "true"
+    },
+    {
+      "tx": "playa",
+      "en": "beach"
+    },
+    {
+      "tx": "zapatos",
+      "en": "shoes"
+    },
+    {
+      "tx": "ahora",
+      "en": "now"
+    },
+    {
+      "tx": "pijama",
+      "en": "pyjamas"
+    },
+    {
+      "tx": "examen",
+      "en": "exam"
+    },
+    {
+      "tx": "vez",
+      "en": "time"
+    },
+    {
+      "tx": "agua",
+      "en": "water"
+    },
+    {
+      "tx": "cena",
+      "en": "dinner"
+    },
+    {
+      "tx": "perro",
+      "en": "dog"
+    },
+    {
+      "tx": "noche",
+      "en": "night"
+    },
+    {
+      "tx": "mañana",
+      "en": "tomorrow"
+    },
+    {
+      "tx": "leche",
+      "en": "milk"
+    },
+    {
+      "tx": "fiesta",
+      "en": "party"
+    },
+    {
+      "tx": "gracias",
+      "en": "thanks"
+    },
+    {
+      "tx": "ventana",
+      "en": "window"
+    },
+    {
+      "tx": "ropa",
+      "en": "clothes"
+    }
+  ]
+}

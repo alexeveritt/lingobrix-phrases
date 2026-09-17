@@ -1,0 +1,569 @@
+{
+  "phrases": [
+    {
+      "en": "How do you spell it?",
+      "tx": "Wie schreibt man das?",
+      "ph": "vee shrypt man das"
+    },
+    {
+      "en": "How do you spell your name?",
+      "tx": "Wie schreibt man deinen Namen?",
+      "ph": "vee shrypt man DYE-nen NAH-men"
+    },
+    {
+      "en": "It's spelled …",
+      "tx": "Das schreibt man …",
+      "ph": "das shrypt man"
+    },
+    {
+      "en": "Can you spell that?",
+      "tx": "Kannst du das buchstabieren?",
+      "ph": "kanst doo das bookh-shta-BEE-ren"
+    },
+    {
+      "en": "capital letter",
+      "tx": "großer Buchstabe",
+      "ph": "GROH-ser BOOKH-shtah-buh"
+    },
+    {
+      "en": "double l",
+      "tx": "Doppel-L",
+      "ph": "DO-pel el"
+    }
+  ],
+  "letters": [
+    {
+      "letter": "a",
+      "name": "a",
+      "say": "A",
+      "ph": "ah",
+      "word": "Abend",
+      "wordEn": "evening",
+      "tip": "Said 'ah' as in 'father', never 'ay'.",
+      "alt": []
+    },
+    {
+      "letter": "b",
+      "name": "be",
+      "say": "Beh",
+      "ph": "bay",
+      "word": "Bett",
+      "wordEn": "bed",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "c",
+      "name": "ce",
+      "say": "Zeh",
+      "ph": "tsay",
+      "word": "Computer",
+      "wordEn": "computer",
+      "tip": "Said 'tsay' – easy to mix up with z ('tset').",
+      "alt": []
+    },
+    {
+      "letter": "d",
+      "name": "de",
+      "say": "Deh",
+      "ph": "day",
+      "word": "Danke",
+      "wordEn": "thank you",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "e",
+      "name": "e",
+      "say": "E",
+      "ph": "ay",
+      "word": "Essen",
+      "wordEn": "food",
+      "tip": "German e sounds like English 'a' (ay) – easy to mix up with i.",
+      "alt": []
+    },
+    {
+      "letter": "f",
+      "name": "ef",
+      "say": "Eff",
+      "ph": "ef",
+      "word": "Fenster",
+      "wordEn": "window",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "g",
+      "name": "ge",
+      "say": "Geh",
+      "ph": "gay",
+      "word": "Geld",
+      "wordEn": "money",
+      "tip": "A hard g as in 'get': 'gay', not 'jee'.",
+      "alt": []
+    },
+    {
+      "letter": "h",
+      "name": "ha",
+      "say": "Ha",
+      "ph": "hah",
+      "word": "Hund",
+      "wordEn": "dog",
+      "tip": "Said 'hah', not 'aitch'.",
+      "alt": []
+    },
+    {
+      "letter": "i",
+      "name": "i",
+      "say": "I",
+      "ph": "ee",
+      "word": "immer",
+      "wordEn": "always",
+      "tip": "German i sounds like English 'e' (ee) – easy to mix up with e.",
+      "alt": []
+    },
+    {
+      "letter": "j",
+      "name": "jot",
+      "say": "Jott",
+      "ph": "yot",
+      "word": "Jacke",
+      "wordEn": "jacket",
+      "tip": "Said 'yot', not 'jay' – German j sounds like English y.",
+      "alt": [
+        {
+          "name": "je",
+          "say": "Je",
+          "ph": "yay",
+          "why": "'Jot' is the usual name in Germany; in Austria and parts of southern Germany people often say 'je' (yay)."
+        }
+      ]
+    },
+    {
+      "letter": "k",
+      "name": "ka",
+      "say": "Ka",
+      "ph": "kah",
+      "word": "Kino",
+      "wordEn": "cinema",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "l",
+      "name": "el",
+      "say": "Ell",
+      "ph": "el",
+      "word": "Licht",
+      "wordEn": "light",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "m",
+      "name": "em",
+      "say": "Emm",
+      "ph": "em",
+      "word": "Mama",
+      "wordEn": "Mum",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "n",
+      "name": "en",
+      "say": "Enn",
+      "ph": "en",
+      "word": "Nase",
+      "wordEn": "nose",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "o",
+      "name": "o",
+      "say": "O",
+      "ph": "oh",
+      "word": "Oma",
+      "wordEn": "grandma",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "p",
+      "name": "pe",
+      "say": "Peh",
+      "ph": "pay",
+      "word": "Pizza",
+      "wordEn": "pizza",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "q",
+      "name": "qu",
+      "say": "Kuh",
+      "ph": "koo",
+      "word": "Quatsch",
+      "wordEn": "nonsense",
+      "tip": "Said 'koo' (like Kuh, 'cow'). In words, qu sounds like 'kv'.",
+      "alt": [
+        {
+          "name": "que",
+          "say": "Kweh",
+          "ph": "kvay",
+          "why": "In Austria the letter is usually called 'que' (kvay) instead of 'qu' (koo)."
+        }
+      ]
+    },
+    {
+      "letter": "r",
+      "name": "er",
+      "say": "Err",
+      "ph": "er",
+      "word": "Regen",
+      "wordEn": "rain",
+      "tip": "Said 'er' with a German r from the back of the throat, not 'ar'.",
+      "alt": []
+    },
+    {
+      "letter": "s",
+      "name": "es",
+      "say": "Ess",
+      "ph": "es",
+      "word": "Schule",
+      "wordEn": "school",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "t",
+      "name": "te",
+      "say": "Teh",
+      "ph": "tay",
+      "word": "Tisch",
+      "wordEn": "table",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "u",
+      "name": "u",
+      "say": "U",
+      "ph": "oo",
+      "word": "Uhr",
+      "wordEn": "clock",
+      "tip": "Said 'oo', not 'you'.",
+      "alt": []
+    },
+    {
+      "letter": "v",
+      "name": "vau",
+      "say": "Fau",
+      "ph": "fow",
+      "word": "viel",
+      "wordEn": "a lot",
+      "tip": "Called 'fau' (fow) – German v usually sounds like f.",
+      "alt": []
+    },
+    {
+      "letter": "w",
+      "name": "we",
+      "say": "Weh",
+      "ph": "vay",
+      "word": "Wasser",
+      "wordEn": "water",
+      "tip": "Called 'we' (vay) – German w sounds like English v. Don't mix it up with v!",
+      "alt": []
+    },
+    {
+      "letter": "x",
+      "name": "ix",
+      "say": "Ix",
+      "ph": "iks",
+      "word": "Xylofon",
+      "wordEn": "xylophone",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "y",
+      "name": "Ypsilon",
+      "say": "Ypsilon",
+      "ph": "EWP-si-lon",
+      "word": "Yoga",
+      "wordEn": "yoga",
+      "tip": "Called 'Ypsilon', not 'why'.",
+      "alt": []
+    },
+    {
+      "letter": "z",
+      "name": "zet",
+      "say": "Zett",
+      "ph": "tset",
+      "word": "Zimmer",
+      "wordEn": "room",
+      "tip": "Called 'tset', not 'zed' – German z sounds like ts.",
+      "alt": []
+    }
+  ],
+  "extras": [
+    {
+      "letter": "ä",
+      "name": "ä",
+      "say": "Ä",
+      "ph": "ay",
+      "word": "Zähne",
+      "wordEn": "teeth",
+      "what": "a with two dots (an Umlaut) on top",
+      "tip": "Say the sound itself, like 'ay' in 'day'.",
+      "alt": [
+        {
+          "name": "a Umlaut",
+          "say": "A Umlaut",
+          "ph": "ah OOM-lowt",
+          "why": "Many people spell it out as 'a Umlaut' so it's clear it isn't a plain a."
+        }
+      ]
+    },
+    {
+      "letter": "ö",
+      "name": "ö",
+      "say": "Ö",
+      "ph": "ur",
+      "word": "schön",
+      "wordEn": "nice",
+      "what": "o with two dots (an Umlaut) on top",
+      "tip": "Like 'fur' without the r, with rounded lips.",
+      "alt": [
+        {
+          "name": "o Umlaut",
+          "say": "O Umlaut",
+          "ph": "oh OOM-lowt",
+          "why": "Many people spell it out as 'o Umlaut' so it's clear it isn't a plain o."
+        }
+      ]
+    },
+    {
+      "letter": "ü",
+      "name": "ü",
+      "say": "Ü",
+      "ph": "ew",
+      "word": "müde",
+      "wordEn": "tired",
+      "what": "u with two dots (an Umlaut) on top",
+      "tip": "Say 'ee' with your lips pushed into a tight circle.",
+      "alt": [
+        {
+          "name": "u Umlaut",
+          "say": "U Umlaut",
+          "ph": "oo OOM-lowt",
+          "why": "Many people spell it out as 'u Umlaut' so it's clear it isn't a plain u."
+        }
+      ]
+    },
+    {
+      "letter": "ß",
+      "name": "Eszett",
+      "say": "Eszett",
+      "ph": "es-TSET",
+      "word": "heiß",
+      "wordEn": "hot",
+      "what": "a sharp double s, used after long vowels and ei/au",
+      "tip": "It looks like a B but sounds like ss.",
+      "alt": [
+        {
+          "name": "scharfes S",
+          "say": "scharfes S",
+          "ph": "SHAR-fes es",
+          "why": "'Scharfes S' ('sharp s') means the same letter; both names are common, and Swiss German uses ss instead."
+        }
+      ]
+    }
+  ],
+  "accents": [
+    {
+      "char": "í",
+      "name": "i mit Akzent",
+      "say": "i mit Akzent",
+      "ph": "ee mit ak-TSENT",
+      "what": "i with an accent – only in foreign names like Lucía"
+    },
+    {
+      "char": "´",
+      "name": "Akzent",
+      "say": "Akzent",
+      "ph": "ak-TSENT",
+      "what": "The accent mark isn't used in German words, only in borrowed names and words."
+    },
+    {
+      "char": "¨",
+      "name": "Umlaut",
+      "say": "Umlaut",
+      "ph": "OOM-lowt",
+      "what": "The two dots on ä, ö and ü, which change how the vowel sounds."
+    }
+  ],
+  "words": [
+    {
+      "tx": "Handy",
+      "en": "mobile phone"
+    },
+    {
+      "tx": "Bett",
+      "en": "bed"
+    },
+    {
+      "tx": "Hund",
+      "en": "dog"
+    },
+    {
+      "tx": "Zähne",
+      "en": "teeth"
+    },
+    {
+      "tx": "müde",
+      "en": "tired"
+    },
+    {
+      "tx": "heiß",
+      "en": "hot"
+    },
+    {
+      "tx": "schön",
+      "en": "nice"
+    },
+    {
+      "tx": "Spaß",
+      "en": "fun"
+    },
+    {
+      "tx": "Straße",
+      "en": "street"
+    },
+    {
+      "tx": "Stuhl",
+      "en": "chair"
+    },
+    {
+      "tx": "Brot",
+      "en": "bread"
+    },
+    {
+      "tx": "Milch",
+      "en": "milk"
+    },
+    {
+      "tx": "Uhr",
+      "en": "clock"
+    },
+    {
+      "tx": "Kopf",
+      "en": "head"
+    },
+    {
+      "tx": "Tür",
+      "en": "door"
+    },
+    {
+      "tx": "Kakao",
+      "en": "hot chocolate"
+    },
+    {
+      "tx": "Wetter",
+      "en": "weather"
+    },
+    {
+      "tx": "Schule",
+      "en": "school"
+    },
+    {
+      "tx": "Wasser",
+      "en": "water"
+    },
+    {
+      "tx": "Kino",
+      "en": "cinema"
+    },
+    {
+      "tx": "Tasche",
+      "en": "bag"
+    },
+    {
+      "tx": "Jacke",
+      "en": "jacket"
+    },
+    {
+      "tx": "Nacht",
+      "en": "night"
+    },
+    {
+      "tx": "Licht",
+      "en": "light"
+    },
+    {
+      "tx": "Geld",
+      "en": "money"
+    },
+    {
+      "tx": "Pause",
+      "en": "break"
+    },
+    {
+      "tx": "Jahr",
+      "en": "year"
+    },
+    {
+      "tx": "Bruder",
+      "en": "brother"
+    },
+    {
+      "tx": "Fenster",
+      "en": "window"
+    },
+    {
+      "tx": "Zimmer",
+      "en": "room"
+    },
+    {
+      "tx": "Nase",
+      "en": "nose"
+    },
+    {
+      "tx": "leer",
+      "en": "empty"
+    },
+    {
+      "tx": "Müll",
+      "en": "rubbish"
+    },
+    {
+      "tx": "Gabel",
+      "en": "fork"
+    },
+    {
+      "tx": "Brille",
+      "en": "glasses"
+    },
+    {
+      "tx": "Kuchen",
+      "en": "cake"
+    },
+    {
+      "tx": "Gemüse",
+      "en": "vegetables"
+    },
+    {
+      "tx": "Musik",
+      "en": "music"
+    },
+    {
+      "tx": "Pizza",
+      "en": "pizza"
+    },
+    {
+      "tx": "Vorsicht",
+      "en": "careful"
+    }
+  ]
+}

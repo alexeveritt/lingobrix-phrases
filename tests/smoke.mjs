@@ -111,6 +111,33 @@ for (const lang of languages) {
     await check('next time the cards show the next tip', visible('#vTip [data-tip="listen"]'));
     await page.goBack();
 
+    await page.fill('#q', '');
+    await page.click('.choice[data-href="#alphabet"]');
+    await check('alphabet page lists every letter', count('.abc-grid .abc', 26));
+    await page.locator('.abc-grid .abc').nth(2).click();
+    await check('tapping a letter shows its name and an example', async (p) =>
+      (await p.locator('#abcSheet').isVisible()) && (await p.textContent('#abcSheetBody h3')).trim().length > 0);
+    await page.click('#abcSheet [data-close-sheet]');
+    await page.fill('#spellIn', 'Sam Lee');
+    await page.click('#spellGo');
+    await check('spell it out shows each letter with its name', async (p) =>
+      (await p.locator('#spellOut span:not(.gap)').count()) === 6 && (await p.locator('#spellOut span.gap').count()) === 1);
+    await page.click('#spellListen');
+    const words = await page.evaluate(() => JSON.parse(document.getElementById('abc').textContent).words.map((w) => w.tx));
+    await check('listen and write asks for a practice word', visible('#tIn'));
+    await page.waitForTimeout(600); // the word is spelled out just after the question appears
+    const secret = await page.evaluate(() => [...document.querySelectorAll('#spHidden b')].map((b) => b.textContent).join(''));
+    await check('the hidden word is one of the practice words', async () => words.includes(secret));
+    await page.fill('#tIn', secret);
+    await page.click('#tCheck');
+    await check('typing the spelled word is right', async (p) => (await p.getAttribute('.fb', 'class')).includes('right'));
+    await page.click('#quiz [data-close]');
+    await page.click('#spellSay');
+    await page.click('#flip .prompt');
+    await check('spell it aloud reveals the letters', count('#spShown span', 2));
+    await page.click('#fcAns [data-a="1"]');
+    await page.click('#quiz [data-close]');
+
     await page.click('[data-tab=topics]');
     await check('topic tiles', count('.tile', 10));
     await page.locator('.tile').nth(2).click();

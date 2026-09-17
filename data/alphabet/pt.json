@@ -1,0 +1,608 @@
+{
+  "phrases": [
+    {
+      "en": "How do you spell it?",
+      "tx": "Como se escreve?",
+      "ph": "KOH-moo suh sh-KREV"
+    },
+    {
+      "en": "How do you spell your name?",
+      "tx": "Como se escreve o teu nome?",
+      "ph": "KOH-moo suh sh-KREV oo TEH-oo NOHM"
+    },
+    {
+      "en": "It's spelled …",
+      "tx": "Escreve-se …",
+      "ph": "sh-KREV-suh"
+    },
+    {
+      "en": "Can you spell that?",
+      "tx": "Podes soletrar isso?",
+      "ph": "PO-dush soo-luh-TRAR EE-soo"
+    },
+    {
+      "en": "capital letter",
+      "tx": "letra maiúscula",
+      "ph": "LAY-truh my-OOSH-koo-luh"
+    },
+    {
+      "en": "double s (two s's)",
+      "tx": "dois esses",
+      "ph": "doyz EH-sush"
+    }
+  ],
+  "letters": [
+    {
+      "letter": "a",
+      "name": "a",
+      "say": "á",
+      "ph": "ah",
+      "word": "agora",
+      "wordEn": "now",
+      "tip": "Said \"ah\", never \"ay\" like in English.",
+      "alt": []
+    },
+    {
+      "letter": "b",
+      "name": "bê",
+      "say": "bê",
+      "ph": "bay",
+      "word": "bom",
+      "wordEn": "good",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "c",
+      "name": "cê",
+      "say": "cê",
+      "ph": "say",
+      "word": "casa",
+      "wordEn": "home",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "d",
+      "name": "dê",
+      "say": "dê",
+      "ph": "day",
+      "word": "dia",
+      "wordEn": "day",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "e",
+      "name": "é",
+      "say": "é",
+      "ph": "eh",
+      "word": "escola",
+      "wordEn": "school",
+      "tip": "Said \"eh\" as in \"bed\" — not \"ee\" like the English letter e.",
+      "alt": []
+    },
+    {
+      "letter": "f",
+      "name": "efe",
+      "say": "efe",
+      "ph": "EH-fuh",
+      "word": "fome",
+      "wordEn": "hunger",
+      "tip": "",
+      "alt": [
+        {
+          "name": "fê",
+          "say": "fê",
+          "ph": "fay",
+          "why": "An older way of naming letters (fê, lê, mê, nê, rê, sê) that some parents and grandparents in Portugal still use."
+        }
+      ]
+    },
+    {
+      "letter": "g",
+      "name": "gê",
+      "say": "gê",
+      "ph": "zhay",
+      "word": "gelo",
+      "wordEn": "ice",
+      "tip": "Sounds like \"zhay\" — easy to mix up with English j. The Portuguese j is jota.",
+      "alt": [
+        {
+          "name": "guê",
+          "say": "guê",
+          "ph": "gay",
+          "why": "Also accepted in Portugal: guê uses the hard g sound of gato, while gê uses the soft sound of gelo."
+        }
+      ]
+    },
+    {
+      "letter": "h",
+      "name": "agá",
+      "say": "agá",
+      "ph": "uh-GAH",
+      "word": "hoje",
+      "wordEn": "today",
+      "tip": "The letter h is never said in a word: hoje sounds like \"ohzh\".",
+      "alt": []
+    },
+    {
+      "letter": "i",
+      "name": "i",
+      "say": "í",
+      "ph": "ee",
+      "word": "irmão",
+      "wordEn": "brother",
+      "tip": "Said \"ee\", not \"eye\" like in English.",
+      "alt": []
+    },
+    {
+      "letter": "j",
+      "name": "jota",
+      "say": "jota",
+      "ph": "ZHO-tuh",
+      "word": "jantar",
+      "wordEn": "dinner",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "k",
+      "name": "capa",
+      "say": "capa",
+      "ph": "KAH-puh",
+      "word": "ketchup",
+      "wordEn": "ketchup",
+      "tip": "k, w and y only became official letters in 2009; they appear mostly in foreign words.",
+      "alt": []
+    },
+    {
+      "letter": "l",
+      "name": "ele",
+      "say": "ele",
+      "ph": "EH-luh",
+      "word": "luz",
+      "wordEn": "light",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "m",
+      "name": "eme",
+      "say": "eme",
+      "ph": "EH-muh",
+      "word": "mãe",
+      "wordEn": "mum",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "n",
+      "name": "ene",
+      "say": "ene",
+      "ph": "EH-nuh",
+      "word": "noite",
+      "wordEn": "night",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "o",
+      "name": "ó",
+      "say": "ó",
+      "ph": "o",
+      "word": "olhos",
+      "wordEn": "eyes",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "p",
+      "name": "pê",
+      "say": "pê",
+      "ph": "pay",
+      "word": "porta",
+      "wordEn": "door",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "q",
+      "name": "quê",
+      "say": "quê",
+      "ph": "kay",
+      "word": "quarto",
+      "wordEn": "bedroom",
+      "tip": "Said \"kay\" — not \"kyoo\" like the English letter q.",
+      "alt": []
+    },
+    {
+      "letter": "r",
+      "name": "erre",
+      "say": "erre",
+      "ph": "EH-rruh",
+      "word": "roupa",
+      "wordEn": "clothes",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "s",
+      "name": "esse",
+      "say": "esse",
+      "ph": "EH-suh",
+      "word": "sapatos",
+      "wordEn": "shoes",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "t",
+      "name": "tê",
+      "say": "tê",
+      "ph": "tay",
+      "word": "tarde",
+      "wordEn": "afternoon",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "u",
+      "name": "u",
+      "say": "ú",
+      "ph": "oo",
+      "word": "uma",
+      "wordEn": "one",
+      "tip": "Said \"oo\", not \"yoo\" like in English.",
+      "alt": []
+    },
+    {
+      "letter": "v",
+      "name": "vê",
+      "say": "vê",
+      "ph": "vay",
+      "word": "vez",
+      "wordEn": "time (turn)",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "w",
+      "name": "dáblio",
+      "say": "dáblio",
+      "ph": "DAH-blyoo",
+      "word": "wi-fi",
+      "wordEn": "Wi-Fi",
+      "tip": "",
+      "alt": [
+        {
+          "name": "duplo vê",
+          "say": "duplo vê",
+          "ph": "DOO-ploo vay",
+          "why": "Many people in Portugal say duplo vê ('double v'). w only became an official letter in 2009."
+        }
+      ]
+    },
+    {
+      "letter": "x",
+      "name": "xis",
+      "say": "xis",
+      "ph": "sheesh",
+      "word": "xixi",
+      "wordEn": "wee",
+      "tip": "x is often said \"sh\" in words: xixi sounds like \"shee-SHEE\".",
+      "alt": []
+    },
+    {
+      "letter": "y",
+      "name": "ípsilon",
+      "say": "ípsilon",
+      "ph": "EEP-see-lohn",
+      "word": "yoga",
+      "wordEn": "yoga",
+      "tip": "",
+      "alt": [
+        {
+          "name": "i grego",
+          "say": "i grego",
+          "ph": "ee GRAY-goo",
+          "why": "Means 'Greek i'. Older name many people still use; y only became an official letter in 2009."
+        }
+      ]
+    },
+    {
+      "letter": "z",
+      "name": "zê",
+      "say": "zê",
+      "ph": "zay",
+      "word": "zero",
+      "wordEn": "zero",
+      "tip": "Said \"zay\" — not \"zed\" or \"zee\".",
+      "alt": []
+    }
+  ],
+  "extras": [],
+  "accents": [
+    {
+      "char": "à",
+      "name": "a com acento grave",
+      "say": "a com acento grave",
+      "ph": "ah kohn uh-SAYN-too GRAHV",
+      "what": "a with a grave accent — marks a + a joined, as in à (to the)"
+    },
+    {
+      "char": "á",
+      "name": "a com acento agudo",
+      "say": "a com acento agudo",
+      "ph": "ah kohn uh-SAYN-too uh-GOO-doo",
+      "what": "a with an acute accent — a stressed, open \"ah\""
+    },
+    {
+      "char": "â",
+      "name": "a com acento circunflexo",
+      "say": "a com acento circunflexo",
+      "ph": "ah kohn uh-SAYN-too seer-koon-FLEK-soo",
+      "what": "a with a circumflex — a stressed, closed \"uh\""
+    },
+    {
+      "char": "ã",
+      "name": "a com til",
+      "say": "a com til",
+      "ph": "ah kohn teel",
+      "what": "a with a tilde — a nasal sound, as in mãe and não"
+    },
+    {
+      "char": "ç",
+      "name": "c cedilha",
+      "say": "cê cedilha",
+      "ph": "say suh-DEE-lyuh",
+      "what": "c with a little tail — always sounds like s, as in almoço"
+    },
+    {
+      "char": "é",
+      "name": "e com acento agudo",
+      "say": "e com acento agudo",
+      "ph": "eh kohn uh-SAYN-too uh-GOO-doo",
+      "what": "e with an acute accent — a stressed, open \"eh\""
+    },
+    {
+      "char": "ê",
+      "name": "e com acento circunflexo",
+      "say": "e com acento circunflexo",
+      "ph": "eh kohn uh-SAYN-too seer-koon-FLEK-soo",
+      "what": "e with a circumflex — a stressed, closed \"ay\""
+    },
+    {
+      "char": "í",
+      "name": "i com acento agudo",
+      "say": "i com acento agudo",
+      "ph": "ee kohn uh-SAYN-too uh-GOO-doo",
+      "what": "i with an acute accent — shows the stress is on this \"ee\""
+    },
+    {
+      "char": "ó",
+      "name": "o com acento agudo",
+      "say": "o com acento agudo",
+      "ph": "o kohn uh-SAYN-too uh-GOO-doo",
+      "what": "o with an acute accent — a stressed, open \"o\" as in hot"
+    },
+    {
+      "char": "ô",
+      "name": "o com acento circunflexo",
+      "say": "o com acento circunflexo",
+      "ph": "o kohn uh-SAYN-too seer-koon-FLEK-soo",
+      "what": "o with a circumflex — a stressed, closed \"oh\" as in go"
+    },
+    {
+      "char": "õ",
+      "name": "o com til",
+      "say": "o com til",
+      "ph": "o kohn teel",
+      "what": "o with a tilde — a nasal sound, as in põe"
+    },
+    {
+      "char": "ú",
+      "name": "u com acento agudo",
+      "say": "u com acento agudo",
+      "ph": "oo kohn uh-SAYN-too uh-GOO-doo",
+      "what": "u with an acute accent — shows the stress is on this \"oo\""
+    },
+    {
+      "char": "´",
+      "name": "acento agudo",
+      "say": "acento agudo",
+      "ph": "uh-SAYN-too uh-GOO-doo",
+      "what": "The acute accent marks the stressed syllable and an open vowel sound."
+    },
+    {
+      "char": "`",
+      "name": "acento grave",
+      "say": "acento grave",
+      "ph": "uh-SAYN-too GRAHV",
+      "what": "The grave accent only goes on à, when a (to) and a (the) join together."
+    },
+    {
+      "char": "^",
+      "name": "acento circunflexo",
+      "say": "acento circunflexo",
+      "ph": "uh-SAYN-too seer-koon-FLEK-soo",
+      "what": "The circumflex marks the stressed syllable and a closed vowel sound."
+    },
+    {
+      "char": "~",
+      "name": "til",
+      "say": "til",
+      "ph": "teel",
+      "what": "The tilde on ã or õ means the vowel is nasal, said through the nose."
+    },
+    {
+      "char": "¸",
+      "name": "cedilha",
+      "say": "cedilha",
+      "ph": "suh-DEE-lyuh",
+      "what": "The cedilla goes under c before a, o or u to make it sound like s."
+    }
+  ],
+  "words": [
+    {
+      "tx": "casa",
+      "en": "home"
+    },
+    {
+      "tx": "hoje",
+      "en": "today"
+    },
+    {
+      "tx": "horas",
+      "en": "hours"
+    },
+    {
+      "tx": "noite",
+      "en": "night"
+    },
+    {
+      "tx": "amanhã",
+      "en": "tomorrow"
+    },
+    {
+      "tx": "irmão",
+      "en": "brother"
+    },
+    {
+      "tx": "mãe",
+      "en": "mum"
+    },
+    {
+      "tx": "cão",
+      "en": "dog"
+    },
+    {
+      "tx": "escola",
+      "en": "school"
+    },
+    {
+      "tx": "janela",
+      "en": "window"
+    },
+    {
+      "tx": "jantar",
+      "en": "dinner"
+    },
+    {
+      "tx": "gelo",
+      "en": "ice"
+    },
+    {
+      "tx": "gente",
+      "en": "people"
+    },
+    {
+      "tx": "queres",
+      "en": "you want"
+    },
+    {
+      "tx": "quarto",
+      "en": "bedroom"
+    },
+    {
+      "tx": "carro",
+      "en": "car"
+    },
+    {
+      "tx": "roupa",
+      "en": "clothes"
+    },
+    {
+      "tx": "chaves",
+      "en": "keys"
+    },
+    {
+      "tx": "banho",
+      "en": "bath"
+    },
+    {
+      "tx": "olhos",
+      "en": "eyes"
+    },
+    {
+      "tx": "loiça",
+      "en": "dishes"
+    },
+    {
+      "tx": "almoço",
+      "en": "lunch"
+    },
+    {
+      "tx": "cabeça",
+      "en": "head"
+    },
+    {
+      "tx": "música",
+      "en": "music"
+    },
+    {
+      "tx": "rápido",
+      "en": "quick"
+    },
+    {
+      "tx": "sapatos",
+      "en": "shoes"
+    },
+    {
+      "tx": "lixo",
+      "en": "rubbish"
+    },
+    {
+      "tx": "bebé",
+      "en": "baby"
+    },
+    {
+      "tx": "avó",
+      "en": "grandma"
+    },
+    {
+      "tx": "porquê",
+      "en": "why"
+    },
+    {
+      "tx": "ecrã",
+      "en": "screen"
+    },
+    {
+      "tx": "põe",
+      "en": "put"
+    },
+    {
+      "tx": "sério",
+      "en": "serious"
+    },
+    {
+      "tx": "dinheiro",
+      "en": "money"
+    },
+    {
+      "tx": "obrigada",
+      "en": "thank you"
+    },
+    {
+      "tx": "pequeno",
+      "en": "small"
+    },
+    {
+      "tx": "cedo",
+      "en": "early"
+    },
+    {
+      "tx": "cinco",
+      "en": "five"
+    },
+    {
+      "tx": "três",
+      "en": "three"
+    },
+    {
+      "tx": "lençóis",
+      "en": "sheets"
+    }
+  ]
+}

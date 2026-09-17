@@ -1,0 +1,587 @@
+{
+  "phrases": [
+    {
+      "en": "How do you spell it?",
+      "tx": "Ça s'écrit comment ?",
+      "ph": "sa say-kree ko-mahn"
+    },
+    {
+      "en": "How do you spell your name?",
+      "tx": "Comment tu écris ton nom ?",
+      "ph": "ko-mahn tew ay-kree tohn nohn"
+    },
+    {
+      "en": "It's spelled …",
+      "tx": "Ça s'écrit …",
+      "ph": "sa say-kree"
+    },
+    {
+      "en": "Can you spell that?",
+      "tx": "Tu peux l'épeler ?",
+      "ph": "tew puh lay-play"
+    },
+    {
+      "en": "capital letter",
+      "tx": "majuscule",
+      "ph": "ma-zhew-skewl"
+    },
+    {
+      "en": "double l (two of the same letter)",
+      "tx": "deux l",
+      "ph": "duh zel"
+    }
+  ],
+  "letters": [
+    {
+      "letter": "a",
+      "name": "a",
+      "say": "a",
+      "ph": "a",
+      "word": "avec",
+      "wordEn": "with",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "b",
+      "name": "bé",
+      "say": "bé",
+      "ph": "bay",
+      "word": "bonjour",
+      "wordEn": "hello",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "c",
+      "name": "cé",
+      "say": "cé",
+      "ph": "say",
+      "word": "chien",
+      "wordEn": "dog",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "d",
+      "name": "dé",
+      "say": "dé",
+      "ph": "day",
+      "word": "demain",
+      "wordEn": "tomorrow",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "e",
+      "name": "e",
+      "say": "e",
+      "ph": "uh",
+      "word": "eau",
+      "wordEn": "water",
+      "tip": "French e is a short \"uh\", not \"ee\" — it's easy to mix up with i.",
+      "alt": []
+    },
+    {
+      "letter": "f",
+      "name": "effe",
+      "say": "effe",
+      "ph": "ef",
+      "word": "frère",
+      "wordEn": "brother",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "g",
+      "name": "gé",
+      "say": "gé",
+      "ph": "zhay",
+      "word": "gâteau",
+      "wordEn": "cake",
+      "tip": "g is \"zhay\" and j is \"zhee\" — the opposite way round to English.",
+      "alt": []
+    },
+    {
+      "letter": "h",
+      "name": "ache",
+      "say": "ache",
+      "ph": "ash",
+      "word": "heure",
+      "wordEn": "hour",
+      "tip": "Sounds like English \"ash\", with no h sound.",
+      "alt": []
+    },
+    {
+      "letter": "i",
+      "name": "i",
+      "say": "i",
+      "ph": "ee",
+      "word": "ici",
+      "wordEn": "here",
+      "tip": "French i is said \"ee\", like the English letter e.",
+      "alt": []
+    },
+    {
+      "letter": "j",
+      "name": "ji",
+      "say": "ji",
+      "ph": "zhee",
+      "word": "jour",
+      "wordEn": "day",
+      "tip": "j is \"zhee\" and g is \"zhay\" — the opposite way round to English.",
+      "alt": []
+    },
+    {
+      "letter": "k",
+      "name": "ka",
+      "say": "ka",
+      "ph": "ka",
+      "word": "ketchup",
+      "wordEn": "ketchup",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "l",
+      "name": "elle",
+      "say": "elle",
+      "ph": "el",
+      "word": "lait",
+      "wordEn": "milk",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "m",
+      "name": "emme",
+      "say": "emme",
+      "ph": "em",
+      "word": "maison",
+      "wordEn": "house",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "n",
+      "name": "enne",
+      "say": "enne",
+      "ph": "en",
+      "word": "nuit",
+      "wordEn": "night",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "o",
+      "name": "o",
+      "say": "o",
+      "ph": "oh",
+      "word": "oui",
+      "wordEn": "yes",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "p",
+      "name": "pé",
+      "say": "pé",
+      "ph": "pay",
+      "word": "pain",
+      "wordEn": "bread",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "q",
+      "name": "qu",
+      "say": "ku",
+      "ph": "kew",
+      "word": "quinze",
+      "wordEn": "fifteen",
+      "tip": "Said like French u with a k in front — not \"kyoo\".",
+      "alt": []
+    },
+    {
+      "letter": "r",
+      "name": "erre",
+      "say": "erre",
+      "ph": "ehr",
+      "word": "rien",
+      "wordEn": "nothing",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "s",
+      "name": "esse",
+      "say": "esse",
+      "ph": "es",
+      "word": "soir",
+      "wordEn": "evening",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "t",
+      "name": "té",
+      "say": "té",
+      "ph": "tay",
+      "word": "tête",
+      "wordEn": "head",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "u",
+      "name": "u",
+      "say": "u",
+      "ph": "ew",
+      "word": "uniforme",
+      "wordEn": "uniform",
+      "tip": "Say \"ee\" with tightly rounded lips — not \"you\", and not \"oo\".",
+      "alt": []
+    },
+    {
+      "letter": "v",
+      "name": "vé",
+      "say": "vé",
+      "ph": "vay",
+      "word": "ville",
+      "wordEn": "town",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "w",
+      "name": "double vé",
+      "say": "double vé",
+      "ph": "doobl vay",
+      "word": "wifi",
+      "wordEn": "wifi",
+      "tip": "It's 'double v' in French, not 'double u'.",
+      "alt": []
+    },
+    {
+      "letter": "x",
+      "name": "ixe",
+      "say": "ixe",
+      "ph": "eeks",
+      "word": "xylophone",
+      "wordEn": "xylophone",
+      "tip": "",
+      "alt": []
+    },
+    {
+      "letter": "y",
+      "name": "i grec",
+      "say": "i grec",
+      "ph": "ee grek",
+      "word": "yeux",
+      "wordEn": "eyes",
+      "tip": "Means 'Greek i'.",
+      "alt": []
+    },
+    {
+      "letter": "z",
+      "name": "zède",
+      "say": "zède",
+      "ph": "zed",
+      "word": "zéro",
+      "wordEn": "zero",
+      "tip": "",
+      "alt": []
+    }
+  ],
+  "extras": [],
+  "accents": [
+    {
+      "char": "à",
+      "name": "a accent grave",
+      "say": "a accent grave",
+      "ph": "a ak-sahn grav",
+      "what": "a with a grave accent — à (to/at) is a different word from a (has)"
+    },
+    {
+      "char": "â",
+      "name": "a accent circonflexe",
+      "say": "a accent circonflexe",
+      "ph": "a ak-sahn seer-kohn-fleks",
+      "what": "a with a little hat, as in gâteau"
+    },
+    {
+      "char": "ç",
+      "name": "c cédille",
+      "say": "c cédille",
+      "ph": "say say-deey",
+      "what": "c with a little tail — it makes the c sound like s, as in ça"
+    },
+    {
+      "char": "è",
+      "name": "e accent grave",
+      "say": "e accent grave",
+      "ph": "uh ak-sahn grav",
+      "what": "e with a grave accent, said \"eh\" as in frère"
+    },
+    {
+      "char": "é",
+      "name": "e accent aigu",
+      "say": "e accent aigu",
+      "ph": "uh ak-sahn-tay-gew",
+      "what": "e with an acute accent, said \"ay\" as in déjà"
+    },
+    {
+      "char": "ê",
+      "name": "e accent circonflexe",
+      "say": "e accent circonflexe",
+      "ph": "uh ak-sahn seer-kohn-fleks",
+      "what": "e with a little hat, said \"eh\" as in fête"
+    },
+    {
+      "char": "ë",
+      "name": "e tréma",
+      "say": "e tréma",
+      "ph": "uh tray-ma",
+      "what": "e with two dots — say it separately from the vowel before, as in Noël"
+    },
+    {
+      "char": "í",
+      "name": "i accent aigu",
+      "say": "i accent aigu",
+      "ph": "ee ak-sahn-tay-gew",
+      "what": "i with an acute accent — not French, only in foreign names like Lucía"
+    },
+    {
+      "char": "î",
+      "name": "i accent circonflexe",
+      "say": "i accent circonflexe",
+      "ph": "ee ak-sahn seer-kohn-fleks",
+      "what": "i with a little hat, as in dîner"
+    },
+    {
+      "char": "ô",
+      "name": "o accent circonflexe",
+      "say": "o accent circonflexe",
+      "ph": "oh ak-sahn seer-kohn-fleks",
+      "what": "o with a little hat, as in tôt"
+    },
+    {
+      "char": "ù",
+      "name": "u accent grave",
+      "say": "u accent grave",
+      "ph": "ew ak-sahn grav",
+      "what": "u with a grave accent — only in où (where), to tell it from ou (or)"
+    },
+    {
+      "char": "û",
+      "name": "u accent circonflexe",
+      "say": "u accent circonflexe",
+      "ph": "ew ak-sahn seer-kohn-fleks",
+      "what": "u with a little hat, as in sûr"
+    },
+    {
+      "char": "œ",
+      "name": "o e collés",
+      "say": "o e collés",
+      "ph": "oh uh ko-lay",
+      "what": "o and e joined together, as in cœur"
+    },
+    {
+      "char": "´",
+      "name": "accent aigu",
+      "say": "accent aigu",
+      "ph": "ak-sahn-tay-gew",
+      "what": "Only goes on e (é), which it makes sound like \"ay\"."
+    },
+    {
+      "char": "`",
+      "name": "accent grave",
+      "say": "accent grave",
+      "ph": "ak-sahn grav",
+      "what": "Goes on e to make \"eh\", or on a and u to tell words apart (à, où)."
+    },
+    {
+      "char": "^",
+      "name": "accent circonflexe",
+      "say": "accent circonflexe",
+      "ph": "ak-sahn seer-kohn-fleks",
+      "what": "A little hat on any vowel, often where an s used to be (fête = feast)."
+    },
+    {
+      "char": "¨",
+      "name": "tréma",
+      "say": "tréma",
+      "ph": "tray-ma",
+      "what": "Two dots telling you to say the vowel separately (Noël)."
+    },
+    {
+      "char": "¸",
+      "name": "cédille",
+      "say": "cédille",
+      "ph": "say-deey",
+      "what": "A tail under c before a, o or u to make it sound like s (ça, garçon)."
+    }
+  ],
+  "words": [
+    {
+      "tx": "chien",
+      "en": "dog"
+    },
+    {
+      "tx": "maison",
+      "en": "house"
+    },
+    {
+      "tx": "frère",
+      "en": "brother"
+    },
+    {
+      "tx": "heure",
+      "en": "hour"
+    },
+    {
+      "tx": "eau",
+      "en": "water"
+    },
+    {
+      "tx": "lait",
+      "en": "milk"
+    },
+    {
+      "tx": "pain",
+      "en": "bread"
+    },
+    {
+      "tx": "fête",
+      "en": "party"
+    },
+    {
+      "tx": "tête",
+      "en": "head"
+    },
+    {
+      "tx": "plaît",
+      "en": "please"
+    },
+    {
+      "tx": "très",
+      "en": "very"
+    },
+    {
+      "tx": "déjà",
+      "en": "already"
+    },
+    {
+      "tx": "Noël",
+      "en": "Christmas"
+    },
+    {
+      "tx": "gâteau",
+      "en": "cake"
+    },
+    {
+      "tx": "fenêtre",
+      "en": "window"
+    },
+    {
+      "tx": "ville",
+      "en": "town"
+    },
+    {
+      "tx": "beaucoup",
+      "en": "a lot"
+    },
+    {
+      "tx": "toujours",
+      "en": "always"
+    },
+    {
+      "tx": "merci",
+      "en": "thank you"
+    },
+    {
+      "tx": "bonjour",
+      "en": "hello"
+    },
+    {
+      "tx": "pourquoi",
+      "en": "why"
+    },
+    {
+      "tx": "jamais",
+      "en": "never"
+    },
+    {
+      "tx": "cinq",
+      "en": "five"
+    },
+    {
+      "tx": "dix",
+      "en": "ten"
+    },
+    {
+      "tx": "onze",
+      "en": "eleven"
+    },
+    {
+      "tx": "quinze",
+      "en": "fifteen"
+    },
+    {
+      "tx": "vingt",
+      "en": "twenty"
+    },
+    {
+      "tx": "froid",
+      "en": "cold"
+    },
+    {
+      "tx": "faim",
+      "en": "hungry"
+    },
+    {
+      "tx": "nuit",
+      "en": "night"
+    },
+    {
+      "tx": "yeux",
+      "en": "eyes"
+    },
+    {
+      "tx": "jour",
+      "en": "day"
+    },
+    {
+      "tx": "hier",
+      "en": "yesterday"
+    },
+    {
+      "tx": "ici",
+      "en": "here"
+    },
+    {
+      "tx": "soir",
+      "en": "evening"
+    },
+    {
+      "tx": "cœur",
+      "en": "heart"
+    },
+    {
+      "tx": "sûr",
+      "en": "sure"
+    },
+    {
+      "tx": "dehors",
+      "en": "outside"
+    },
+    {
+      "tx": "demain",
+      "en": "tomorrow"
+    },
+    {
+      "tx": "clés",
+      "en": "keys"
+    }
+  ]
+}

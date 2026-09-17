@@ -17,6 +17,7 @@ All of them are served by one Cloudflare Worker, which picks the site from the h
 | Path | What it is |
 | --- | --- |
 | `data/es.json`, `de.json`, `fr.json`, `pt.json` | The phrase lists. **Edit these.** |
+| `data/alphabet/<code>.json` | Alphabet & spelling page: letter names (and other names in use), accents, spelling phrases and 40 practice words taken from the phrases. |
 | `languages.mjs` | Per-language settings: data file, subdomain, text, colours, speech voice, accent keys, pronunciation help. |
 | `src/app.html` | The language app (HTML, CSS and JS in one file). The build fills in `{{…}}`, `/*PHRASES*/` and `/*LANG*/`. |
 | `src/home.html` | The lingobrix.com home page. |
@@ -67,10 +68,16 @@ Each phrase looks like this (the other files use `de`, `fr` and `pt` in place of
 
 Then run `npm test`, commit and push. The build fails, and nothing deploys, if a phrase is incomplete.
 
+## Alphabet & spelling
+
+Each app has an **Alphabet & spelling** page (linked from its home screen): tap a letter to hear its name and see an example, "Spell it out" reads any name or word letter by letter, and two practice modes (listen and write, spell it aloud) use the `words` list.
+
+The build checks each `data/alphabet/<code>.json`: every letter a–z is listed, every letter or accent used in the phrases has a spoken name, and every practice word appears in the phrases. Spanish pronunciations are generated; the others are written by hand in the same style as the phrases.
+
 ## Adding a language
 
 1. Add an entry to `languages.mjs` (copy an existing one) with a new `code` and `subdomain`.
-2. Create `data/<code>.json` with the same ids, and a pronunciation module in `tools/`.
+2. Create `data/<code>.json` with the same ids, `data/alphabet/<code>.json`, and a pronunciation module in `tools/`.
 3. Add `{ "pattern": "<subdomain>.lingobrix.com", "custom_domain": true }` to `routes` in `wrangler.jsonc`.
 4. Add a search word for it in `tests/smoke.mjs`, then `npm test`.
 

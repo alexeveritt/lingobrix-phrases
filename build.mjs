@@ -12,6 +12,7 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs';
 import { dirname } from 'node:path';
 import languages from './languages.mjs';
+import { phrasePh as spanishPh } from './tools/phonetic-es.mjs';
 
 const DOMAIN = 'lingobrix.com';
 const only = process.argv.slice(2);
@@ -37,7 +38,9 @@ for (const lang of languages) {
   const data = datasets[lang.code];
   if (only.length && !only.includes(lang.code)) continue;
 
-  const errors = check(data, lang);
+  const abcFile = `data/alphabet/${lang.code}.json`;
+  const abc = JSON.parse(readFileSync(abcFile, 'utf8'));
+  const errors = [...check(data, lang), ...checkAlphabet(abc, data, lang).map((e) => `${abcFile}: ${e}`)];
   if (errors.length) {
     console.error(`${lang.data}:\n  ${errors.join('\n  ')}`);
     failed = true;
@@ -47,6 +50,8 @@ for (const lang of languages) {
   // only write when something changed, so `npm run watch` doesn't loop
   const updated = JSON.stringify(data, null, 2) + '\n';
   if (updated !== readFileSync(lang.data, 'utf8')) writeFileSync(lang.data, updated);
+  const abcUpdated = JSON.stringify(abc, null, 2) + '\n';
+  if (abcUpdated !== readFileSync(abcFile, 'utf8')) writeFileSync(abcFile, abcUpdated);
 
   const page = { ...lang.page, logoGradient: gradient(lang.page), favicon: favicon(lang.page) };
   const phrases = {
@@ -55,7 +60,8 @@ for (const lang of languages) {
   };
   const html = fill(app, page, `languages.mjs (${lang.code}.page)`)
     .replace('/*PHRASES*/', () => json(phrases))
-    .replace('/*LANG*/', () => json({ ...lang.app, ...switcher }));
+    .replace('/*LANG*/', () => json({ ...lang.app, ...switcher }))
+    .replace('/*ALPHABET*/', () => json(abc));
   write(`dist/${lang.code}/index.html`, html);
   console.log(`Built dist/${lang.code}/ — ${lang.page.title}, ${data.phrases.length} phrases, ${kb(html)}`);
 }
@@ -91,6 +97,34 @@ function check(data, lang) {
     } catch (e) {
       errors.push(`#${p.id} (${p[lang.field]}): ${e.message}`);
     }
+  }
+  return errors;
+}
+
+// data/alphabet/<code>.json: letter names, accents and spelling words (see the Alphabet & spelling page)
+function checkAlphabet(abc, data, lang) {
+  const errors = [];
+  const text = data.phrases.map((p) => p[lang.field]).join(' ');
+  const words = new Set((text.match(/[\p{L}]+/gu) || []).map((w) => w.toLowerCase()));
+  const letters = abc.letters.map((x) => x.letter);
+  const missing = [...'abcdefghijklmnopqrstuvwxyz'].filter((c) => !letters.includes(c));
+  if (missing.length) errors.push(`letters missing: ${missing.join(' ')}`);
+  if (new Set(letters).size !== letters.length) errors.push('a letter is listed twice');
+  const named = new Set([...letters, ...abc.extras.map((x) => x.letter), ...abc.accents.map((x) => x.char)]);
+  const unnamed = [...new Set([...text.toLowerCase()].filter((c) => /\p{L}/u.test(c) && !named.has(c)))];
+  if (unnamed.length) errors.push(`no spoken name for: ${unnamed.join(' ')} (add them to accents)`);
+  if (abc.words.length < 10) errors.push('needs at least 10 practice words');
+  for (const w of abc.words) if (!words.has(w.tx.toLowerCase())) errors.push(`practice word "${w.tx}" isn't in ${lang.data}`);
+  // pronunciation: generated for Spanish, hand-written (and format-checked) for the others
+  const shape = /^[a-zA-Z]+(-[a-zA-Z]+)*( [a-zA-Z]+(-[a-zA-Z]+)*)*$/;
+  const entries = [...abc.phrases.map((x) => [x, x.tx]),
+    ...[...abc.letters, ...abc.extras, ...abc.accents].map((x) => [x, x.say]),
+    ...[...abc.letters, ...abc.extras].flatMap((x) => (x.alt || []).map((a) => [a, a.say]))];
+  for (const [x, spoken] of entries) {
+    if (!spoken?.trim()) { errors.push(`missing text for ${JSON.stringify(x).slice(0, 60)}`); continue; }
+    if (lang.code === 'es') {
+      try { x.ph = spanishPh(spoken); } catch (e) { errors.push(`"${spoken}": ${e.message}`); }
+    } else if (!shape.test(x.ph || '')) errors.push(`bad or missing ph for "${spoken}"`);
   }
   return errors;
 }
