@@ -1,0 +1,3732 @@
+{
+  "schema_version": "1.0.0",
+  "title": "Everyday Household Spanish",
+  "locale": "es-ES",
+  "audience": "Parent and 14-year-old daughter",
+  "pronunciation_guide": "English-friendly approximation. CAPITAL letters mark the stressed syllable. th approximates Spain Spanish c/z; h approximates the Spanish j sound; b may also sound between English b and v.",
+  "generated": "2026-09-17",
+  "phrase_count": 525,
+  "directions": {
+    "parent_to_teenager": {
+      "getting_up_and_morning": [
+        {
+          "english": "Get up.",
+          "spanish": "Levántate.",
+          "phonetic": "le-VAN-ta-te",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-getting-up-and-morning-get-up"
+        },
+        {
+          "english": "Time to get up.",
+          "spanish": "Es hora de levantarse.",
+          "phonetic": "es O-ra de le-van-TAR-se",
+          "explanation": "The reflexive verb is the natural Spanish way to describe doing this to or for yourself.",
+          "id": "p2t-getting-up-and-morning-time-to-get-up"
+        },
+        {
+          "english": "Get out of bed.",
+          "spanish": "Sal de la cama.",
+          "phonetic": "sal de la KA-ma",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-getting-up-and-morning-get-out-of-bed"
+        },
+        {
+          "english": "Get out of bed, now.",
+          "spanish": "Sal de la cama, ya.",
+          "phonetic": "sal de la KA-ma, ya",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "p2t-getting-up-and-morning-get-out-of-bed-now"
+        },
+        {
+          "english": "Come on, get up.",
+          "spanish": "Venga, levántate.",
+          "phonetic": "VEN-ga, le-VAN-ta-te",
+          "explanation": "Venga is an extremely common informal prompt meaning “come on” or “let’s get moving”.",
+          "id": "p2t-getting-up-and-morning-come-on-get-up"
+        },
+        {
+          "english": "You're going to be late.",
+          "spanish": "Vas a llegar tarde.",
+          "phonetic": "bas a ye-GAR TAR-de",
+          "explanation": "Ir a + infinitive is the simple, everyday way to say what is going to happen.",
+          "id": "p2t-getting-up-and-morning-you-re-going-to-be-late"
+        },
+        {
+          "english": "You're already late.",
+          "spanish": "Ya llegas tarde.",
+          "phonetic": "ya YE-gas TAR-de",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "p2t-getting-up-and-morning-you-re-already-late"
+        },
+        {
+          "english": "Are you awake?",
+          "spanish": "¿Estás despierta?",
+          "phonetic": "es-TAS des-PYER-ta",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "p2t-getting-up-and-morning-are-you-awake"
+        },
+        {
+          "english": "Did you sleep well?",
+          "spanish": "¿Has dormido bien?",
+          "phonetic": "as dor-MEE-do byen",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-getting-up-and-morning-did-you-sleep-well"
+        },
+        {
+          "english": "What time did you go to sleep?",
+          "spanish": "¿A qué hora te dormiste?",
+          "phonetic": "a ke O-ra te dor-MEES-te",
+          "explanation": "The reflexive verb is the natural Spanish way to describe doing this to or for yourself.",
+          "id": "p2t-getting-up-and-morning-what-time-did-you-go-to-sleep"
+        },
+        {
+          "english": "Have you had a shower?",
+          "spanish": "¿Te has duchado?",
+          "phonetic": "te as doo-CHA-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-getting-up-and-morning-have-you-had-a-shower"
+        },
+        {
+          "english": "Go and have a shower.",
+          "spanish": "Ve a ducharte.",
+          "phonetic": "be a doo-CHAR-te",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-getting-up-and-morning-go-and-have-a-shower"
+        },
+        {
+          "english": "Get dressed.",
+          "spanish": "Vístete.",
+          "phonetic": "BEES-te-te",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-getting-up-and-morning-get-dressed"
+        },
+        {
+          "english": "Are you dressed?",
+          "spanish": "¿Estás vestida?",
+          "phonetic": "es-TAS bes-TEE-da",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "p2t-getting-up-and-morning-are-you-dressed"
+        },
+        {
+          "english": "Have you brushed your teeth?",
+          "spanish": "¿Te has lavado los dientes?",
+          "phonetic": "te as la-BA-do los DYEN-tes",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-getting-up-and-morning-have-you-brushed-your-teeth"
+        },
+        {
+          "english": "Have you done your hair?",
+          "spanish": "¿Te has arreglado el pelo?",
+          "phonetic": "te as a-re-GLA-do el PE-lo",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-getting-up-and-morning-have-you-done-your-hair"
+        },
+        {
+          "english": "Have you got everything?",
+          "spanish": "¿Lo tienes todo?",
+          "phonetic": "lo TYE-nes TO-do",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-getting-up-and-morning-have-you-got-everything"
+        },
+        {
+          "english": "Where are your shoes?",
+          "spanish": "¿Dónde están tus zapatos?",
+          "phonetic": "DON-de es-TAN toos tha-PA-tos",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "p2t-getting-up-and-morning-where-are-your-shoes"
+        },
+        {
+          "english": "Where's your coat?",
+          "spanish": "¿Dónde está tu abrigo?",
+          "phonetic": "DON-de es-TA too a-BREE-go",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "p2t-getting-up-and-morning-where-s-your-coat"
+        },
+        {
+          "english": "Don't forget your bag.",
+          "spanish": "No te olvides de la mochila.",
+          "phonetic": "no te ol-BEE-des de la mo-CHEE-la",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-getting-up-and-morning-don-t-forget-your-bag"
+        },
+        {
+          "english": "Don't forget your lunch.",
+          "spanish": "No te olvides de la comida.",
+          "phonetic": "no te ol-BEE-des de la ko-MEE-da",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-getting-up-and-morning-don-t-forget-your-lunch"
+        },
+        {
+          "english": "Have you got your phone?",
+          "spanish": "¿Tienes el móvil?",
+          "phonetic": "TYE-nes el MO-beel",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-getting-up-and-morning-have-you-got-your-phone"
+        },
+        {
+          "english": "Have you got your keys?",
+          "spanish": "¿Tienes las llaves?",
+          "phonetic": "TYE-nes las YA-bes",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-getting-up-and-morning-have-you-got-your-keys"
+        },
+        {
+          "english": "What time do you need to leave?",
+          "spanish": "¿A qué hora tienes que salir?",
+          "phonetic": "a ke O-ra TYE-nes ke sa-LEER",
+          "explanation": "Tener que + infinitive is the standard simple pattern for “have to/need to”.",
+          "id": "p2t-getting-up-and-morning-what-time-do-you-need-to-leave"
+        },
+        {
+          "english": "What time do you need to be there?",
+          "spanish": "¿A qué hora tienes que estar allí?",
+          "phonetic": "a ke O-ra TYE-nes ke es-TAR a-YEE",
+          "explanation": "Tener que + infinitive is the standard simple pattern for “have to/need to”.",
+          "id": "p2t-getting-up-and-morning-what-time-do-you-need-to-be-there"
+        },
+        {
+          "english": "Are you ready?",
+          "spanish": "¿Estás lista?",
+          "phonetic": "es-TAS LEES-ta",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "p2t-getting-up-and-morning-are-you-ready"
+        },
+        {
+          "english": "Are you nearly ready?",
+          "spanish": "¿Ya casi estás lista?",
+          "phonetic": "ya KA-see es-TAS LEES-ta",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "p2t-getting-up-and-morning-are-you-nearly-ready"
+        },
+        {
+          "english": "Come on!",
+          "spanish": "¡Venga!",
+          "phonetic": "VEN-ga",
+          "explanation": "Venga is an extremely common informal prompt meaning “come on” or “let’s get moving”.",
+          "id": "p2t-getting-up-and-morning-come-on"
+        },
+        {
+          "english": "Hurry up.",
+          "spanish": "Date prisa.",
+          "phonetic": "DA-te PREE-sa",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-getting-up-and-morning-hurry-up"
+        },
+        {
+          "english": "We need to go.",
+          "spanish": "Tenemos que irnos.",
+          "phonetic": "te-NE-mos ke EER-nos",
+          "explanation": "Tener que + infinitive is the standard simple pattern for “have to/need to”.",
+          "id": "p2t-getting-up-and-morning-we-need-to-go"
+        },
+        {
+          "english": "I'm waiting for you.",
+          "spanish": "Te estoy esperando.",
+          "phonetic": "te es-TOY es-pe-RAN-do",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-getting-up-and-morning-i-m-waiting-for-you"
+        },
+        {
+          "english": "Everyone's waiting for you.",
+          "spanish": "Todos te están esperando.",
+          "phonetic": "TO-dos te es-TAN es-pe-RAN-do",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-getting-up-and-morning-everyone-s-waiting-for-you"
+        },
+        {
+          "english": "We're leaving in five minutes.",
+          "spanish": "Nos vamos en cinco minutos.",
+          "phonetic": "nos BA-mos en THEEN-ko mee-NOO-tos",
+          "explanation": "Ir a + infinitive is the simple, everyday way to say what is going to happen.",
+          "id": "p2t-getting-up-and-morning-we-re-leaving-in-five-minutes"
+        },
+        {
+          "english": "We're leaving now.",
+          "spanish": "Nos vamos ya.",
+          "phonetic": "nos BA-mos ya",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "p2t-getting-up-and-morning-we-re-leaving-now"
+        },
+        {
+          "english": "Get in the car.",
+          "spanish": "Sube al coche.",
+          "phonetic": "SOO-be al KO-che",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-getting-up-and-morning-get-in-the-car"
+        }
+      ],
+      "food_and_kitchen": [
+        {
+          "english": "Breakfast is ready.",
+          "spanish": "El desayuno está listo.",
+          "phonetic": "el de-sa-YOO-no es-TA LEES-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-breakfast-is-ready"
+        },
+        {
+          "english": "Lunch is ready.",
+          "spanish": "La comida está lista.",
+          "phonetic": "la ko-MEE-da es-TA LEES-ta",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-lunch-is-ready"
+        },
+        {
+          "english": "Dinner is ready.",
+          "spanish": "La cena está lista.",
+          "phonetic": "la THE-na es-TA LEES-ta",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-dinner-is-ready"
+        },
+        {
+          "english": "Food's ready.",
+          "spanish": "La comida está lista.",
+          "phonetic": "la ko-MEE-da es-TA LEES-ta",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-food-s-ready"
+        },
+        {
+          "english": "Come and eat.",
+          "spanish": "Ven a comer.",
+          "phonetic": "ben a ko-MER",
+          "explanation": "Spanish uses venir when movement is towards the speaker, so it often matches English “come”.",
+          "id": "p2t-food-and-kitchen-come-and-eat"
+        },
+        {
+          "english": "Come and get your dinner.",
+          "spanish": "Ven a por la cena.",
+          "phonetic": "ben a por la THE-na",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-food-and-kitchen-come-and-get-your-dinner"
+        },
+        {
+          "english": "What do you want for breakfast?",
+          "spanish": "¿Qué quieres desayunar?",
+          "phonetic": "ke KYE-res de-sa-yoo-NAR",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-what-do-you-want-for-breakfast"
+        },
+        {
+          "english": "What do you want for lunch?",
+          "spanish": "¿Qué quieres comer?",
+          "phonetic": "ke KYE-res ko-MER",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-what-do-you-want-for-lunch"
+        },
+        {
+          "english": "Are you hungry?",
+          "spanish": "¿Tienes hambre?",
+          "phonetic": "TYE-nes AM-bre",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-food-and-kitchen-are-you-hungry"
+        },
+        {
+          "english": "Do you want something to eat?",
+          "spanish": "¿Quieres algo de comer?",
+          "phonetic": "KYE-res AL-go de ko-MER",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-do-you-want-something-to-eat"
+        },
+        {
+          "english": "Do you want a drink?",
+          "spanish": "¿Quieres algo de beber?",
+          "phonetic": "KYE-res AL-go de be-BER",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-do-you-want-a-drink"
+        },
+        {
+          "english": "What do you want to drink?",
+          "spanish": "¿Qué quieres beber?",
+          "phonetic": "ke KYE-res be-BER",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-what-do-you-want-to-drink"
+        },
+        {
+          "english": "Do you want some water?",
+          "spanish": "¿Quieres agua?",
+          "phonetic": "KYE-res A-gwa",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-do-you-want-some-water"
+        },
+        {
+          "english": "Do you want some more?",
+          "spanish": "¿Quieres más?",
+          "phonetic": "KYE-res mas",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-do-you-want-some-more"
+        },
+        {
+          "english": "Is that enough?",
+          "spanish": "¿Es suficiente?",
+          "phonetic": "es soo-fee-THYEN-te",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-is-that-enough"
+        },
+        {
+          "english": "Have you finished?",
+          "spanish": "¿Has terminado?",
+          "phonetic": "as ter-mee-NA-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-food-and-kitchen-have-you-finished"
+        },
+        {
+          "english": "Eat your dinner.",
+          "spanish": "Cómete la cena.",
+          "phonetic": "KO-me-te la THE-na",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-food-and-kitchen-eat-your-dinner"
+        },
+        {
+          "english": "At least try it.",
+          "spanish": "Por lo menos, pruébalo.",
+          "phonetic": "por lo ME-nos, PRWE-ba-lo",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-food-and-kitchen-at-least-try-it"
+        },
+        {
+          "english": "Just try a bit.",
+          "spanish": "Prueba solo un poco.",
+          "phonetic": "PRWE-ba SO-lo oon PO-ko",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-food-and-kitchen-just-try-a-bit"
+        },
+        {
+          "english": "You haven't even tried it.",
+          "spanish": "Ni siquiera lo has probado.",
+          "phonetic": "nee see-KYE-ra lo as pro-BA-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-food-and-kitchen-you-haven-t-even-tried-it"
+        },
+        {
+          "english": "Don't eat that now.",
+          "spanish": "No comas eso ahora.",
+          "phonetic": "no KO-mas E-so a-O-ra",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-food-and-kitchen-don-t-eat-that-now"
+        },
+        {
+          "english": "Dinner's nearly ready.",
+          "spanish": "La cena está casi lista.",
+          "phonetic": "la THE-na es-TA KA-see LEES-ta",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-dinner-s-nearly-ready"
+        },
+        {
+          "english": "It'll be ready in ten minutes.",
+          "spanish": "Estará listo en diez minutos.",
+          "phonetic": "es-ta-RA LEES-to en dyeth mee-NOO-tos",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-food-and-kitchen-it-ll-be-ready-in-ten-minutes"
+        },
+        {
+          "english": "Put your plate in the dishwasher.",
+          "spanish": "Pon tu plato en el lavavajillas.",
+          "phonetic": "pon too PLA-to en el la-ba-ba-HEE-yas",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-food-and-kitchen-put-your-plate-in-the-dishwasher"
+        },
+        {
+          "english": "Put that in the bin.",
+          "spanish": "Pon eso en la basura.",
+          "phonetic": "pon E-so en la ba-SOO-ra",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-food-and-kitchen-put-that-in-the-bin"
+        },
+        {
+          "english": "Put it back in the fridge.",
+          "spanish": "Vuelve a ponerlo en la nevera.",
+          "phonetic": "BWEL-be a po-NER-lo en la ne-BE-ra",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-food-and-kitchen-put-it-back-in-the-fridge"
+        },
+        {
+          "english": "Can you set the table?",
+          "spanish": "¿Puedes poner la mesa?",
+          "phonetic": "PWE-des po-NER la ME-sa",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "p2t-food-and-kitchen-can-you-set-the-table"
+        },
+        {
+          "english": "Can you clear the table?",
+          "spanish": "¿Puedes quitar la mesa?",
+          "phonetic": "PWE-des kee-TAR la ME-sa",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "p2t-food-and-kitchen-can-you-clear-the-table"
+        },
+        {
+          "english": "Can you empty the dishwasher?",
+          "spanish": "¿Puedes vaciar el lavavajillas?",
+          "phonetic": "PWE-des ba-THYAR el la-ba-ba-HEE-yas",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "p2t-food-and-kitchen-can-you-empty-the-dishwasher"
+        },
+        {
+          "english": "Can you load the dishwasher?",
+          "spanish": "¿Puedes llenar el lavavajillas?",
+          "phonetic": "PWE-des ye-NAR el la-ba-ba-HEE-yas",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "p2t-food-and-kitchen-can-you-load-the-dishwasher"
+        },
+        {
+          "english": "Who left this here?",
+          "spanish": "¿Quién ha dejado esto aquí?",
+          "phonetic": "kyen a de-HA-do ES-to a-KEE",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-food-and-kitchen-who-left-this-here"
+        },
+        {
+          "english": "Who ate the last one?",
+          "spanish": "¿Quién se ha comido el último?",
+          "phonetic": "kyen se a ko-MEE-do el OOL-tee-mo",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-food-and-kitchen-who-ate-the-last-one"
+        },
+        {
+          "english": "Don't leave that there.",
+          "spanish": "No dejes eso ahí.",
+          "phonetic": "no DE-hes E-so a-EE",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-food-and-kitchen-don-t-leave-that-there"
+        }
+      ],
+      "school_and_homework": [
+        {
+          "english": "How was school?",
+          "spanish": "¿Qué tal el instituto?",
+          "phonetic": "ke tal el eens-tee-TOO-to",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-school-and-homework-how-was-school"
+        },
+        {
+          "english": "How was your day?",
+          "spanish": "¿Qué tal el día?",
+          "phonetic": "ke tal el DEE-a",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-school-and-homework-how-was-your-day"
+        },
+        {
+          "english": "What did you do today?",
+          "spanish": "¿Qué has hecho hoy?",
+          "phonetic": "ke as E-cho oy",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-school-and-homework-what-did-you-do-today"
+        },
+        {
+          "english": "Did anything interesting happen?",
+          "spanish": "¿Ha pasado algo interesante?",
+          "phonetic": "a pa-SA-do AL-go een-te-re-SAN-te",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-school-and-homework-did-anything-interesting-happen"
+        },
+        {
+          "english": "Have you got homework?",
+          "spanish": "¿Tienes deberes?",
+          "phonetic": "TYE-nes de-BE-res",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-school-and-homework-have-you-got-homework"
+        },
+        {
+          "english": "Have you done your homework?",
+          "spanish": "¿Has hecho los deberes?",
+          "phonetic": "as E-cho los de-BE-res",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-school-and-homework-have-you-done-your-homework"
+        },
+        {
+          "english": "When is it due?",
+          "spanish": "¿Para cuándo es?",
+          "phonetic": "PA-ra KWAN-do es",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-school-and-homework-when-is-it-due"
+        },
+        {
+          "english": "Have you finished it?",
+          "spanish": "¿Lo has terminado?",
+          "phonetic": "lo as ter-mee-NA-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-school-and-homework-have-you-finished-it"
+        },
+        {
+          "english": "Do you need any help?",
+          "spanish": "¿Necesitas ayuda?",
+          "phonetic": "ne-the-SEE-tas a-YOO-da",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-school-and-homework-do-you-need-any-help"
+        },
+        {
+          "english": "Have you got a test tomorrow?",
+          "spanish": "¿Tienes un examen mañana?",
+          "phonetic": "TYE-nes oon ek-SA-men ma-NYA-na",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-school-and-homework-have-you-got-a-test-tomorrow"
+        },
+        {
+          "english": "Have you revised?",
+          "spanish": "¿Has estudiado?",
+          "phonetic": "as es-too-DYA-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-school-and-homework-have-you-revised"
+        },
+        {
+          "english": "What lesson have you got first?",
+          "spanish": "¿Qué clase tienes primero?",
+          "phonetic": "ke KLA-se TYE-nes pree-ME-ro",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-school-and-homework-what-lesson-have-you-got-first"
+        },
+        {
+          "english": "What time do you finish?",
+          "spanish": "¿A qué hora terminas?",
+          "phonetic": "a ke O-ra ter-MEE-nas",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-school-and-homework-what-time-do-you-finish"
+        },
+        {
+          "english": "Do you need picking up?",
+          "spanish": "¿Tengo que recogerte?",
+          "phonetic": "TEN-go ke re-ko-HER-te",
+          "explanation": "Recoger is the usual verb for picking someone up in Spain.",
+          "id": "p2t-school-and-homework-do-you-need-picking-up"
+        },
+        {
+          "english": "Where should I pick you up?",
+          "spanish": "¿Dónde te recojo?",
+          "phonetic": "DON-de te re-KO-ho",
+          "explanation": "Recoger is the usual verb for picking someone up in Spain.",
+          "id": "p2t-school-and-homework-where-should-i-pick-you-up"
+        },
+        {
+          "english": "What time should I pick you up?",
+          "spanish": "¿A qué hora te recojo?",
+          "phonetic": "a ke O-ra te re-KO-ho",
+          "explanation": "Recoger is the usual verb for picking someone up in Spain.",
+          "id": "p2t-school-and-homework-what-time-should-i-pick-you-up"
+        },
+        {
+          "english": "Text me when you're finished.",
+          "spanish": "Escríbeme cuando termines.",
+          "phonetic": "es-KREE-be-me KWAN-do ter-MEE-nes",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-school-and-homework-text-me-when-you-re-finished"
+        },
+        {
+          "english": "Let me know when you're ready.",
+          "spanish": "Avísame cuando estés lista.",
+          "phonetic": "a-BEE-sa-me KWAN-do es-TES LEES-ta",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "p2t-school-and-homework-let-me-know-when-you-re-ready"
+        },
+        {
+          "english": "Don't forget your PE kit.",
+          "spanish": "No te olvides de la ropa de deporte.",
+          "phonetic": "no te ol-BEE-des de la RO-pa de de-POR-te",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-school-and-homework-don-t-forget-your-pe-kit"
+        },
+        {
+          "english": "Have you packed your bag?",
+          "spanish": "¿Has preparado la mochila?",
+          "phonetic": "as pre-pa-RA-do la mo-CHEE-la",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-school-and-homework-have-you-packed-your-bag"
+        },
+        {
+          "english": "Do you need anything for tomorrow?",
+          "spanish": "¿Necesitas algo para mañana?",
+          "phonetic": "ne-the-SEE-tas AL-go PA-ra ma-NYA-na",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-school-and-homework-do-you-need-anything-for-tomorrow"
+        }
+      ],
+      "bedroom_and_housework": [
+        {
+          "english": "Go and tidy your bedroom.",
+          "spanish": "Ve a ordenar tu habitación.",
+          "phonetic": "be a or-de-NAR too a-bee-ta-THYON",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-go-and-tidy-your-bedroom"
+        },
+        {
+          "english": "Your room is a mess.",
+          "spanish": "Tu habitación está hecha un desastre.",
+          "phonetic": "too a-bee-ta-THYON es-TA E-cha oon de-SAS-tre",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-bedroom-and-housework-your-room-is-a-mess"
+        },
+        {
+          "english": "Have you tidied your room?",
+          "spanish": "¿Has ordenado tu habitación?",
+          "phonetic": "as or-de-NA-do too a-bee-ta-THYON",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-bedroom-and-housework-have-you-tidied-your-room"
+        },
+        {
+          "english": "Pick that up.",
+          "spanish": "Recoge eso.",
+          "phonetic": "re-KO-he E-so",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-pick-that-up"
+        },
+        {
+          "english": "Put that away.",
+          "spanish": "Guarda eso.",
+          "phonetic": "GWAR-da E-so",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-put-that-away"
+        },
+        {
+          "english": "Put your clothes away.",
+          "spanish": "Guarda tu ropa.",
+          "phonetic": "GWAR-da too RO-pa",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-put-your-clothes-away"
+        },
+        {
+          "english": "Put your dirty clothes in the wash.",
+          "spanish": "Pon la ropa sucia para lavar.",
+          "phonetic": "pon la RO-pa SOO-thya PA-ra la-BAR",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-put-your-dirty-clothes-in-the-wash"
+        },
+        {
+          "english": "Is that clean or dirty?",
+          "spanish": "¿Eso está limpio o sucio?",
+          "phonetic": "E-so es-TA LEEM-pyo o SOO-thyo",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "p2t-bedroom-and-housework-is-that-clean-or-dirty"
+        },
+        {
+          "english": "Don't leave it on the floor.",
+          "spanish": "No lo dejes en el suelo.",
+          "phonetic": "no lo DE-hes en el SWE-lo",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-don-t-leave-it-on-the-floor"
+        },
+        {
+          "english": "Make your bed.",
+          "spanish": "Haz la cama.",
+          "phonetic": "ath la KA-ma",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-make-your-bed"
+        },
+        {
+          "english": "Open the curtains.",
+          "spanish": "Abre las cortinas.",
+          "phonetic": "A-bre las kor-TEE-nas",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-open-the-curtains"
+        },
+        {
+          "english": "Open the window.",
+          "spanish": "Abre la ventana.",
+          "phonetic": "A-bre la ben-TA-na",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-open-the-window"
+        },
+        {
+          "english": "Close the window.",
+          "spanish": "Cierra la ventana.",
+          "phonetic": "THYE-ra la ben-TA-na",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-close-the-window"
+        },
+        {
+          "english": "Shut the door.",
+          "spanish": "Cierra la puerta.",
+          "phonetic": "THYE-ra la PWER-ta",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-shut-the-door"
+        },
+        {
+          "english": "Leave the door open.",
+          "spanish": "Deja la puerta abierta.",
+          "phonetic": "DE-ha la PWER-ta a-BYER-ta",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-leave-the-door-open"
+        },
+        {
+          "english": "Turn the light off.",
+          "spanish": "Apaga la luz.",
+          "phonetic": "a-PA-ga la looth",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-turn-the-light-off"
+        },
+        {
+          "english": "Turn the light on.",
+          "spanish": "Enciende la luz.",
+          "phonetic": "en-THYEN-de la looth",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedroom-and-housework-turn-the-light-on"
+        },
+        {
+          "english": "Can you bring that downstairs?",
+          "spanish": "¿Puedes bajar eso?",
+          "phonetic": "PWE-des ba-HAR E-so",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "p2t-bedroom-and-housework-can-you-bring-that-downstairs"
+        },
+        {
+          "english": "Can you take this upstairs?",
+          "spanish": "¿Puedes subir esto?",
+          "phonetic": "PWE-des soo-BEER ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "p2t-bedroom-and-housework-can-you-take-this-upstairs"
+        },
+        {
+          "english": "Can you help me with this?",
+          "spanish": "¿Puedes ayudarme con esto?",
+          "phonetic": "PWE-des a-yoo-DAR-me kon ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "p2t-bedroom-and-housework-can-you-help-me-with-this"
+        },
+        {
+          "english": "Give me a hand.",
+          "spanish": "Échame una mano.",
+          "phonetic": "E-cha-me OO-na MA-no",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-bedroom-and-housework-give-me-a-hand"
+        },
+        {
+          "english": "Whose is this?",
+          "spanish": "¿De quién es esto?",
+          "phonetic": "de kyen es ES-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-bedroom-and-housework-whose-is-this"
+        },
+        {
+          "english": "Is this yours?",
+          "spanish": "¿Esto es tuyo?",
+          "phonetic": "ES-to es TOO-yo",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-bedroom-and-housework-is-this-yours"
+        },
+        {
+          "english": "Where does this go?",
+          "spanish": "¿Dónde va esto?",
+          "phonetic": "DON-de ba ES-to",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-bedroom-and-housework-where-does-this-go"
+        }
+      ],
+      "phone_tv_and_technology": [
+        {
+          "english": "Put your phone down.",
+          "spanish": "Deja el móvil.",
+          "phonetic": "DE-ha el MO-beel",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-phone-tv-and-technology-put-your-phone-down"
+        },
+        {
+          "english": "Get off your phone.",
+          "spanish": "Deja ya el móvil.",
+          "phonetic": "DE-ha ya el MO-beel",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "p2t-phone-tv-and-technology-get-off-your-phone"
+        },
+        {
+          "english": "How long have you been on your phone?",
+          "spanish": "¿Cuánto tiempo llevas con el móvil?",
+          "phonetic": "KWAN-to TYEM-po YE-bas kon el MO-beel",
+          "explanation": "Llevar is often used for taking a person somewhere or wearing/carrying something.",
+          "id": "p2t-phone-tv-and-technology-how-long-have-you-been-on-your-phone"
+        },
+        {
+          "english": "Turn your music down.",
+          "spanish": "Baja la música.",
+          "phonetic": "BA-ha la MOO-see-ka",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-phone-tv-and-technology-turn-your-music-down"
+        },
+        {
+          "english": "Turn it down.",
+          "spanish": "Bájalo.",
+          "phonetic": "BA-ha-lo",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-phone-tv-and-technology-turn-it-down"
+        },
+        {
+          "english": "That's too loud.",
+          "spanish": "Está demasiado alto.",
+          "phonetic": "es-TA de-ma-SYA-do AL-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-phone-tv-and-technology-that-s-too-loud"
+        },
+        {
+          "english": "Put your headphones on.",
+          "spanish": "Ponte los auriculares.",
+          "phonetic": "PON-te los ow-ree-koo-LA-res",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-phone-tv-and-technology-put-your-headphones-on"
+        },
+        {
+          "english": "Turn the TV down.",
+          "spanish": "Baja la tele.",
+          "phonetic": "BA-ha la TE-le",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-phone-tv-and-technology-turn-the-tv-down"
+        },
+        {
+          "english": "What are you watching?",
+          "spanish": "¿Qué estás viendo?",
+          "phonetic": "ke es-TAS BYEN-do",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-phone-tv-and-technology-what-are-you-watching"
+        },
+        {
+          "english": "What are you playing?",
+          "spanish": "¿A qué estás jugando?",
+          "phonetic": "a ke es-TAS hoo-GAN-do",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-phone-tv-and-technology-what-are-you-playing"
+        },
+        {
+          "english": "Who are you talking to?",
+          "spanish": "¿Con quién hablas?",
+          "phonetic": "kon kyen A-blas",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-phone-tv-and-technology-who-are-you-talking-to"
+        },
+        {
+          "english": "Are you still on FaceTime?",
+          "spanish": "¿Sigues en FaceTime?",
+          "phonetic": "SEE-ges en FAYS-taym",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-phone-tv-and-technology-are-you-still-on-facetime"
+        },
+        {
+          "english": "Your phone needs charging.",
+          "spanish": "Tienes que cargar el móvil.",
+          "phonetic": "TYE-nes ke kar-GAR el MO-beel",
+          "explanation": "Tener que + infinitive is the standard simple pattern for “have to/need to”.",
+          "id": "p2t-phone-tv-and-technology-your-phone-needs-charging"
+        },
+        {
+          "english": "Where's your charger?",
+          "spanish": "¿Dónde está tu cargador?",
+          "phonetic": "DON-de es-TA too kar-ga-DOR",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "p2t-phone-tv-and-technology-where-s-your-charger"
+        },
+        {
+          "english": "Don't forget to charge your phone.",
+          "spanish": "No te olvides de cargar el móvil.",
+          "phonetic": "no te ol-BEE-des de kar-GAR el MO-beel",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-phone-tv-and-technology-don-t-forget-to-charge-your-phone"
+        },
+        {
+          "english": "You've had enough screen time.",
+          "spanish": "Ya has tenido bastante pantalla.",
+          "phonetic": "ya as te-NEE-do bas-TAN-te pan-TA-ya",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "p2t-phone-tv-and-technology-you-ve-had-enough-screen-time"
+        },
+        {
+          "english": "It's time to come off.",
+          "spanish": "Es hora de dejarlo.",
+          "phonetic": "es O-ra de de-HAR-lo",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-phone-tv-and-technology-it-s-time-to-come-off"
+        },
+        {
+          "english": "Five more minutes, then off.",
+          "spanish": "Cinco minutos más y lo dejas.",
+          "phonetic": "THEEN-ko mee-NOO-tos mas ee lo DE-has",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-phone-tv-and-technology-five-more-minutes-then-off"
+        },
+        {
+          "english": "No, I'm not extending your time limit.",
+          "spanish": "No, no voy a darte más tiempo.",
+          "phonetic": "no, no boy a DAR-te mas TYEM-po",
+          "explanation": "Ir a + infinitive is the simple, everyday way to say what is going to happen.",
+          "id": "p2t-phone-tv-and-technology-no-i-m-not-extending-your-time-limit"
+        },
+        {
+          "english": "Why do you need more time?",
+          "spanish": "¿Por qué necesitas más tiempo?",
+          "phonetic": "por ke ne-the-SEE-tas mas TYEM-po",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-phone-tv-and-technology-why-do-you-need-more-time"
+        },
+        {
+          "english": "Give your eyes a break.",
+          "spanish": "Descansa la vista.",
+          "phonetic": "des-KAN-sa la BEES-ta",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-phone-tv-and-technology-give-your-eyes-a-break"
+        }
+      ],
+      "siblings_and_arguments": [
+        {
+          "english": "Stop annoying your brother.",
+          "spanish": "Deja de molestar a tu hermano.",
+          "phonetic": "DE-ha de mo-les-TAR a too er-MA-no",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-siblings-and-arguments-stop-annoying-your-brother"
+        },
+        {
+          "english": "Leave your brother alone.",
+          "spanish": "Deja en paz a tu hermano.",
+          "phonetic": "DE-ha en path a too er-MA-no",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-siblings-and-arguments-leave-your-brother-alone"
+        },
+        {
+          "english": "Stop arguing.",
+          "spanish": "Dejad de discutir.",
+          "phonetic": "de-HAD de dees-koo-TEER",
+          "explanation": "This uses the informal plural vosotros form, standard in Spain when speaking to more than one person.",
+          "id": "p2t-siblings-and-arguments-stop-arguing"
+        },
+        {
+          "english": "Both of you, stop.",
+          "spanish": "Los dos, parad.",
+          "phonetic": "los dos, pa-RAD",
+          "explanation": "This uses the informal plural vosotros form, standard in Spain when speaking to more than one person.",
+          "id": "p2t-siblings-and-arguments-both-of-you-stop"
+        },
+        {
+          "english": "What happened?",
+          "spanish": "¿Qué ha pasado?",
+          "phonetic": "ke a pa-SA-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-siblings-and-arguments-what-happened"
+        },
+        {
+          "english": "What did you do?",
+          "spanish": "¿Qué has hecho?",
+          "phonetic": "ke as E-cho",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-siblings-and-arguments-what-did-you-do"
+        },
+        {
+          "english": "What did he do?",
+          "spanish": "¿Qué ha hecho él?",
+          "phonetic": "ke a E-cho el",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-siblings-and-arguments-what-did-he-do"
+        },
+        {
+          "english": "Don't blame him.",
+          "spanish": "No le eches la culpa.",
+          "phonetic": "no le E-ches la KOOL-pa",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-siblings-and-arguments-don-t-blame-him"
+        },
+        {
+          "english": "Give it back.",
+          "spanish": "Devuélvelo.",
+          "phonetic": "de-BWEL-be-lo",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-siblings-and-arguments-give-it-back"
+        },
+        {
+          "english": "That's his.",
+          "spanish": "Eso es suyo.",
+          "phonetic": "E-so es SOO-yo",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-siblings-and-arguments-that-s-his"
+        },
+        {
+          "english": "That's hers.",
+          "spanish": "Eso es suyo.",
+          "phonetic": "E-so es SOO-yo",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-siblings-and-arguments-that-s-hers"
+        },
+        {
+          "english": "Ask before you take it.",
+          "spanish": "Pregunta antes de cogerlo.",
+          "phonetic": "pre-GOON-ta AN-tes de ko-HER-lo",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-siblings-and-arguments-ask-before-you-take-it"
+        },
+        {
+          "english": "Be nice.",
+          "spanish": "Sé buena.",
+          "phonetic": "se BWE-na",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "p2t-siblings-and-arguments-be-nice"
+        },
+        {
+          "english": "Stop winding him up.",
+          "spanish": "Deja de picarle.",
+          "phonetic": "DE-ha de pee-KAR-le",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-siblings-and-arguments-stop-winding-him-up"
+        },
+        {
+          "english": "Ignore him.",
+          "spanish": "No le hagas caso.",
+          "phonetic": "no le A-gas KA-so",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-siblings-and-arguments-ignore-him"
+        },
+        {
+          "english": "Just leave it.",
+          "spanish": "Déjalo.",
+          "phonetic": "DE-ha-lo",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-siblings-and-arguments-just-leave-it"
+        },
+        {
+          "english": "Enough!",
+          "spanish": "¡Basta!",
+          "phonetic": "BAS-ta",
+          "explanation": "Casual and mildly impatient, but common in family speech.",
+          "id": "p2t-siblings-and-arguments-enough"
+        },
+        {
+          "english": "I don't care who started it.",
+          "spanish": "Me da igual quién empezó.",
+          "phonetic": "me da ee-GWAL kyen em-pe-THO",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-siblings-and-arguments-i-don-t-care-who-started-it"
+        },
+        {
+          "english": "Sort it out.",
+          "spanish": "Arregladlo.",
+          "phonetic": "a-re-GLAD-lo",
+          "explanation": "This uses the informal plural vosotros form, standard in Spain when speaking to more than one person.",
+          "id": "p2t-siblings-and-arguments-sort-it-out"
+        },
+        {
+          "english": "Say sorry.",
+          "spanish": "Pide perdón.",
+          "phonetic": "PEE-de per-DON",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-siblings-and-arguments-say-sorry"
+        },
+        {
+          "english": "Give him some space.",
+          "spanish": "Déjale un poco de espacio.",
+          "phonetic": "DE-ha-le oon PO-ko de es-PA-thyo",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-siblings-and-arguments-give-him-some-space"
+        },
+        {
+          "english": "Go away for five minutes and calm down.",
+          "spanish": "Vete cinco minutos y cálmate.",
+          "phonetic": "BE-te THEEN-ko mee-NOO-tos ee KAL-ma-te",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-siblings-and-arguments-go-away-for-five-minutes-and-calm-down"
+        }
+      ],
+      "the_dog_and_monty": [
+        {
+          "english": "Where's Monty?",
+          "spanish": "¿Dónde está Monty?",
+          "phonetic": "DON-de es-TA MON-tee",
+          "explanation": "Spanish normally uses the pet’s name or el perro; both sound natural here.",
+          "id": "p2t-the-dog-and-monty-where-s-monty"
+        },
+        {
+          "english": "Where's the dog?",
+          "spanish": "¿Dónde está el perro?",
+          "phonetic": "DON-de es-TA el PE-ro",
+          "explanation": "Spanish normally uses the pet’s name or el perro; both sound natural here.",
+          "id": "p2t-the-dog-and-monty-where-s-the-dog"
+        },
+        {
+          "english": "Have you seen Monty?",
+          "spanish": "¿Has visto a Monty?",
+          "phonetic": "as BEES-to a MON-tee",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-the-dog-and-monty-have-you-seen-monty"
+        },
+        {
+          "english": "Can you let Monty out?",
+          "spanish": "¿Puedes dejar salir a Monty?",
+          "phonetic": "PWE-des de-HAR sa-LEER a MON-tee",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "p2t-the-dog-and-monty-can-you-let-monty-out"
+        },
+        {
+          "english": "Let the dog in.",
+          "spanish": "Deja entrar al perro.",
+          "phonetic": "DE-ha en-TRAR al PE-ro",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-the-dog-and-monty-let-the-dog-in"
+        },
+        {
+          "english": "Let the dog out.",
+          "spanish": "Deja salir al perro.",
+          "phonetic": "DE-ha sa-LEER al PE-ro",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-the-dog-and-monty-let-the-dog-out"
+        },
+        {
+          "english": "Can you take Monty for a walk?",
+          "spanish": "¿Puedes sacar a pasear a Monty?",
+          "phonetic": "PWE-des sa-KAR a pa-se-AR a MON-tee",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "p2t-the-dog-and-monty-can-you-take-monty-for-a-walk"
+        },
+        {
+          "english": "Has Monty been for a walk?",
+          "spanish": "¿Monty ha salido a pasear?",
+          "phonetic": "MON-tee a sa-LEE-do a pa-se-AR",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-the-dog-and-monty-has-monty-been-for-a-walk"
+        },
+        {
+          "english": "Has he been fed?",
+          "spanish": "¿Le han dado de comer?",
+          "phonetic": "le an DA-do de ko-MER",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-the-dog-and-monty-has-he-been-fed"
+        },
+        {
+          "english": "Can you feed the dog?",
+          "spanish": "¿Puedes dar de comer al perro?",
+          "phonetic": "PWE-des dar de ko-MER al PE-ro",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "p2t-the-dog-and-monty-can-you-feed-the-dog"
+        },
+        {
+          "english": "Give him some water.",
+          "spanish": "Dale agua.",
+          "phonetic": "DA-le A-gwa",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-the-dog-and-monty-give-him-some-water"
+        },
+        {
+          "english": "His water bowl is empty.",
+          "spanish": "Su cuenco de agua está vacío.",
+          "phonetic": "soo KWEN-ko de A-gwa es-TA ba-THEE-o",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "p2t-the-dog-and-monty-his-water-bowl-is-empty"
+        },
+        {
+          "english": "Where's his lead?",
+          "spanish": "¿Dónde está su correa?",
+          "phonetic": "DON-de es-TA soo ko-RE-a",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "p2t-the-dog-and-monty-where-s-his-lead"
+        },
+        {
+          "english": "Put his lead on.",
+          "spanish": "Ponle la correa.",
+          "phonetic": "PON-le la ko-RE-a",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-the-dog-and-monty-put-his-lead-on"
+        },
+        {
+          "english": "Don't let him out.",
+          "spanish": "No le dejes salir.",
+          "phonetic": "no le DE-hes sa-LEER",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-the-dog-and-monty-don-t-let-him-out"
+        },
+        {
+          "english": "Shut the gate.",
+          "spanish": "Cierra la puerta.",
+          "phonetic": "THYE-ra la PWER-ta",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-the-dog-and-monty-shut-the-gate"
+        },
+        {
+          "english": "Call Monty.",
+          "spanish": "Llama a Monty.",
+          "phonetic": "YA-ma a MON-tee",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-the-dog-and-monty-call-monty"
+        },
+        {
+          "english": "Get him off the sofa.",
+          "spanish": "Bájalo del sofá.",
+          "phonetic": "BA-ha-lo del so-FA",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-the-dog-and-monty-get-him-off-the-sofa"
+        },
+        {
+          "english": "What's he got?",
+          "spanish": "¿Qué tiene?",
+          "phonetic": "ke TYE-ne",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-the-dog-and-monty-what-s-he-got"
+        },
+        {
+          "english": "Take that off him.",
+          "spanish": "Quítale eso.",
+          "phonetic": "KEE-ta-le E-so",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-the-dog-and-monty-take-that-off-him"
+        },
+        {
+          "english": "Stop giving him food.",
+          "spanish": "Deja de darle comida.",
+          "phonetic": "DE-ha de DAR-le ko-MEE-da",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-the-dog-and-monty-stop-giving-him-food"
+        },
+        {
+          "english": "Don't feed him that.",
+          "spanish": "No le des eso.",
+          "phonetic": "no le des E-so",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-the-dog-and-monty-don-t-feed-him-that"
+        }
+      ],
+      "going_out": [
+        {
+          "english": "Where are you going?",
+          "spanish": "¿Adónde vas?",
+          "phonetic": "a-DON-de bas",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-going-out-where-are-you-going"
+        },
+        {
+          "english": "Who are you going with?",
+          "spanish": "¿Con quién vas?",
+          "phonetic": "kon kyen bas",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-going-out-who-are-you-going-with"
+        },
+        {
+          "english": "Who's going?",
+          "spanish": "¿Quién va?",
+          "phonetic": "kyen ba",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-going-out-who-s-going"
+        },
+        {
+          "english": "What are you doing?",
+          "spanish": "¿Qué vas a hacer?",
+          "phonetic": "ke bas a a-THER",
+          "explanation": "Ir a + infinitive is the simple, everyday way to say what is going to happen.",
+          "id": "p2t-going-out-what-are-you-doing"
+        },
+        {
+          "english": "What time are you going?",
+          "spanish": "¿A qué hora vas?",
+          "phonetic": "a ke O-ra bas",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-going-out-what-time-are-you-going"
+        },
+        {
+          "english": "What time will you be back?",
+          "spanish": "¿A qué hora vuelves?",
+          "phonetic": "a ke O-ra BWEL-bes",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-going-out-what-time-will-you-be-back"
+        },
+        {
+          "english": "How are you getting there?",
+          "spanish": "¿Cómo vas a ir?",
+          "phonetic": "KO-mo bas a eer",
+          "explanation": "Ir a + infinitive is the simple, everyday way to say what is going to happen.",
+          "id": "p2t-going-out-how-are-you-getting-there"
+        },
+        {
+          "english": "Do you need a lift?",
+          "spanish": "¿Necesitas que te lleve?",
+          "phonetic": "ne-the-SEE-tas ke te YE-be",
+          "explanation": "Llevar is often used for taking a person somewhere or wearing/carrying something.",
+          "id": "p2t-going-out-do-you-need-a-lift"
+        },
+        {
+          "english": "Do you want me to take you?",
+          "spanish": "¿Quieres que te lleve?",
+          "phonetic": "KYE-res ke te YE-be",
+          "explanation": "Llevar is often used for taking a person somewhere or wearing/carrying something.",
+          "id": "p2t-going-out-do-you-want-me-to-take-you"
+        },
+        {
+          "english": "Do you need picking up?",
+          "spanish": "¿Tengo que recogerte?",
+          "phonetic": "TEN-go ke re-ko-HER-te",
+          "explanation": "Recoger is the usual verb for picking someone up in Spain.",
+          "id": "p2t-going-out-do-you-need-picking-up"
+        },
+        {
+          "english": "Message me when you get there.",
+          "spanish": "Escríbeme cuando llegues.",
+          "phonetic": "es-KREE-be-me KWAN-do YE-ges",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-going-out-message-me-when-you-get-there"
+        },
+        {
+          "english": "Let me know if your plans change.",
+          "spanish": "Avísame si cambian los planes.",
+          "phonetic": "a-BEE-sa-me see KAM-byan los PLA-nes",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-going-out-let-me-know-if-your-plans-change"
+        },
+        {
+          "english": "Keep your phone on.",
+          "spanish": "Ten el móvil encendido.",
+          "phonetic": "ten el MO-beel en-then-DEE-do",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-going-out-keep-your-phone-on"
+        },
+        {
+          "english": "Make sure your phone has some charge.",
+          "spanish": "Asegúrate de que el móvil tenga batería.",
+          "phonetic": "a-se-GOO-ra-te de ke el MO-beel TEN-ga ba-te-REE-a",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-going-out-make-sure-your-phone-has-some-charge"
+        },
+        {
+          "english": "Have you got enough money?",
+          "spanish": "¿Tienes suficiente dinero?",
+          "phonetic": "TYE-nes soo-fee-THYEN-te dee-NE-ro",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-going-out-have-you-got-enough-money"
+        },
+        {
+          "english": "Have you got your coat?",
+          "spanish": "¿Tienes el abrigo?",
+          "phonetic": "TYE-nes el a-BREE-go",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-going-out-have-you-got-your-coat"
+        },
+        {
+          "english": "Take a coat.",
+          "spanish": "Lleva un abrigo.",
+          "phonetic": "YE-ba oon a-BREE-go",
+          "explanation": "Llevar is often used for taking a person somewhere or wearing/carrying something.",
+          "id": "p2t-going-out-take-a-coat"
+        },
+        {
+          "english": "It's cold outside.",
+          "spanish": "Hace frío fuera.",
+          "phonetic": "A-the FREE-o FWE-ra",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-going-out-it-s-cold-outside"
+        },
+        {
+          "english": "It's raining.",
+          "spanish": "Está lloviendo.",
+          "phonetic": "es-TA yo-BYEN-do",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-going-out-it-s-raining"
+        },
+        {
+          "english": "Don't be too late.",
+          "spanish": "No llegues muy tarde.",
+          "phonetic": "no YE-ges mooy TAR-de",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-going-out-don-t-be-too-late"
+        },
+        {
+          "english": "Be careful.",
+          "spanish": "Ten cuidado.",
+          "phonetic": "ten kwee-DA-do",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-going-out-be-careful"
+        },
+        {
+          "english": "Have fun.",
+          "spanish": "Pásalo bien.",
+          "phonetic": "PA-sa-lo byen",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-going-out-have-fun"
+        },
+        {
+          "english": "See you later.",
+          "spanish": "Hasta luego.",
+          "phonetic": "AS-ta LWE-go",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-going-out-see-you-later"
+        }
+      ],
+      "instructions_and_reactions": [
+        {
+          "english": "Come here.",
+          "spanish": "Ven aquí.",
+          "phonetic": "ben a-KEE",
+          "explanation": "Spanish uses venir when movement is towards the speaker, so it often matches English “come”.",
+          "id": "p2t-instructions-and-reactions-come-here"
+        },
+        {
+          "english": "Go away.",
+          "spanish": "Vete.",
+          "phonetic": "BE-te",
+          "explanation": "Natural but blunt family language; tone matters and it can sound rude.",
+          "id": "p2t-instructions-and-reactions-go-away"
+        },
+        {
+          "english": "Wait.",
+          "spanish": "Espera.",
+          "phonetic": "es-PE-ra",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-wait"
+        },
+        {
+          "english": "Wait there.",
+          "spanish": "Espera ahí.",
+          "phonetic": "es-PE-ra a-EE",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-wait-there"
+        },
+        {
+          "english": "Listen.",
+          "spanish": "Escucha.",
+          "phonetic": "es-KOO-cha",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-listen"
+        },
+        {
+          "english": "Look.",
+          "spanish": "Mira.",
+          "phonetic": "MEE-ra",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-look"
+        },
+        {
+          "english": "Stop.",
+          "spanish": "Para.",
+          "phonetic": "PA-ra",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-stop"
+        },
+        {
+          "english": "Don't.",
+          "spanish": "No.",
+          "phonetic": "no",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-instructions-and-reactions-don-t"
+        },
+        {
+          "english": "Don't do that.",
+          "spanish": "No hagas eso.",
+          "phonetic": "no A-gas E-so",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-don-t-do-that"
+        },
+        {
+          "english": "Leave it.",
+          "spanish": "Déjalo.",
+          "phonetic": "DE-ha-lo",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-leave-it"
+        },
+        {
+          "english": "Put it down.",
+          "spanish": "Déjalo ahí.",
+          "phonetic": "DE-ha-lo a-EE",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-put-it-down"
+        },
+        {
+          "english": "Give it to me.",
+          "spanish": "Dámelo.",
+          "phonetic": "DA-me-lo",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-give-it-to-me"
+        },
+        {
+          "english": "Bring it here.",
+          "spanish": "Tráelo aquí.",
+          "phonetic": "TRA-e-lo a-KEE",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-bring-it-here"
+        },
+        {
+          "english": "Take this.",
+          "spanish": "Toma.",
+          "phonetic": "TO-ma",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-instructions-and-reactions-take-this"
+        },
+        {
+          "english": "Hold this.",
+          "spanish": "Sujeta esto.",
+          "phonetic": "soo-HE-ta ES-to",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-hold-this"
+        },
+        {
+          "english": "Help me.",
+          "spanish": "Ayúdame.",
+          "phonetic": "a-YOO-da-me",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-help-me"
+        },
+        {
+          "english": "Watch out.",
+          "spanish": "¡Cuidado!",
+          "phonetic": "kwee-DA-do",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-instructions-and-reactions-watch-out"
+        },
+        {
+          "english": "Be careful.",
+          "spanish": "Ten cuidado.",
+          "phonetic": "ten kwee-DA-do",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-instructions-and-reactions-be-careful"
+        },
+        {
+          "english": "Hurry up.",
+          "spanish": "Date prisa.",
+          "phonetic": "DA-te PREE-sa",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-instructions-and-reactions-hurry-up"
+        },
+        {
+          "english": "Slow down.",
+          "spanish": "Más despacio.",
+          "phonetic": "mas des-PA-thyo",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-instructions-and-reactions-slow-down"
+        },
+        {
+          "english": "Calm down.",
+          "spanish": "Cálmate.",
+          "phonetic": "KAL-ma-te",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-instructions-and-reactions-calm-down"
+        },
+        {
+          "english": "Seriously?",
+          "spanish": "¿En serio?",
+          "phonetic": "en SE-ryo",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-instructions-and-reactions-seriously"
+        },
+        {
+          "english": "What are you doing?",
+          "spanish": "¿Qué haces?",
+          "phonetic": "ke A-thes",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-instructions-and-reactions-what-are-you-doing"
+        },
+        {
+          "english": "What have you done?",
+          "spanish": "¿Qué has hecho?",
+          "phonetic": "ke as E-cho",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-instructions-and-reactions-what-have-you-done"
+        },
+        {
+          "english": "Why?",
+          "spanish": "¿Por qué?",
+          "phonetic": "por ke",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-instructions-and-reactions-why"
+        },
+        {
+          "english": "How?",
+          "spanish": "¿Cómo?",
+          "phonetic": "KO-mo",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-instructions-and-reactions-how"
+        },
+        {
+          "english": "Where?",
+          "spanish": "¿Dónde?",
+          "phonetic": "DON-de",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-instructions-and-reactions-where"
+        },
+        {
+          "english": "When?",
+          "spanish": "¿Cuándo?",
+          "phonetic": "KWAN-do",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-instructions-and-reactions-when"
+        },
+        {
+          "english": "Who said that?",
+          "spanish": "¿Quién ha dicho eso?",
+          "phonetic": "kyen a DEE-cho E-so",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-instructions-and-reactions-who-said-that"
+        },
+        {
+          "english": "What do you mean?",
+          "spanish": "¿Qué quieres decir?",
+          "phonetic": "ke KYE-res de-THEER",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-instructions-and-reactions-what-do-you-mean"
+        },
+        {
+          "english": "I already told you.",
+          "spanish": "Ya te lo he dicho.",
+          "phonetic": "ya te lo e DEE-cho",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "p2t-instructions-and-reactions-i-already-told-you"
+        },
+        {
+          "english": "I've asked you three times.",
+          "spanish": "Te lo he pedido tres veces.",
+          "phonetic": "te lo e pe-DEE-do tres BE-thes",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-instructions-and-reactions-i-ve-asked-you-three-times"
+        },
+        {
+          "english": "Not now.",
+          "spanish": "Ahora no.",
+          "phonetic": "a-O-ra no",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-instructions-and-reactions-not-now"
+        },
+        {
+          "english": "In a minute.",
+          "spanish": "En un minuto.",
+          "phonetic": "en oon mee-NOO-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-instructions-and-reactions-in-a-minute"
+        },
+        {
+          "english": "Later.",
+          "spanish": "Luego.",
+          "phonetic": "LWE-go",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-instructions-and-reactions-later"
+        },
+        {
+          "english": "Maybe.",
+          "spanish": "Puede ser.",
+          "phonetic": "PWE-de ser",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-instructions-and-reactions-maybe"
+        },
+        {
+          "english": "We'll see.",
+          "spanish": "Ya veremos.",
+          "phonetic": "ya be-RE-mos",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "p2t-instructions-and-reactions-we-ll-see"
+        },
+        {
+          "english": "Absolutely not.",
+          "spanish": "De ninguna manera.",
+          "phonetic": "de neen-GOO-na ma-NE-ra",
+          "explanation": "Casual and mildly impatient, but common in family speech.",
+          "id": "p2t-instructions-and-reactions-absolutely-not"
+        },
+        {
+          "english": "Fine.",
+          "spanish": "Vale.",
+          "phonetic": "BA-le",
+          "explanation": "Vale is the everyday Spain-Spanish equivalent of “OK” or “fine”.",
+          "id": "p2t-instructions-and-reactions-fine"
+        },
+        {
+          "english": "Okay, go on then.",
+          "spanish": "Vale, venga.",
+          "phonetic": "BA-le, BEN-ga",
+          "explanation": "Venga is an extremely common informal prompt meaning “come on” or “let’s get moving”.",
+          "id": "p2t-instructions-and-reactions-okay-go-on-then"
+        }
+      ],
+      "bedtime_and_evening": [
+        {
+          "english": "Are you tired?",
+          "spanish": "¿Estás cansada?",
+          "phonetic": "es-TAS kan-SA-da",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "p2t-bedtime-and-evening-are-you-tired"
+        },
+        {
+          "english": "What time are you going to bed?",
+          "spanish": "¿A qué hora te vas a la cama?",
+          "phonetic": "a ke O-ra te bas a la KA-ma",
+          "explanation": "The reflexive verb is the natural Spanish way to describe doing this to or for yourself.",
+          "id": "p2t-bedtime-and-evening-what-time-are-you-going-to-bed"
+        },
+        {
+          "english": "You need to go to bed.",
+          "spanish": "Tienes que irte a la cama.",
+          "phonetic": "TYE-nes ke EER-te a la KA-ma",
+          "explanation": "Tener que + infinitive is the standard simple pattern for “have to/need to”.",
+          "id": "p2t-bedtime-and-evening-you-need-to-go-to-bed"
+        },
+        {
+          "english": "It's getting late.",
+          "spanish": "Se está haciendo tarde.",
+          "phonetic": "se es-TA a-THYEN-do TAR-de",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-bedtime-and-evening-it-s-getting-late"
+        },
+        {
+          "english": "You've got school tomorrow.",
+          "spanish": "Mañana tienes instituto.",
+          "phonetic": "ma-NYA-na TYE-nes eens-tee-TOO-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-bedtime-and-evening-you-ve-got-school-tomorrow"
+        },
+        {
+          "english": "Go and get ready for bed.",
+          "spanish": "Ve a prepararte para dormir.",
+          "phonetic": "be a pre-pa-RAR-te PA-ra dor-MEER",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedtime-and-evening-go-and-get-ready-for-bed"
+        },
+        {
+          "english": "Go and brush your teeth.",
+          "spanish": "Ve a lavarte los dientes.",
+          "phonetic": "be a la-BAR-te los DYEN-tes",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedtime-and-evening-go-and-brush-your-teeth"
+        },
+        {
+          "english": "Have you brushed your teeth?",
+          "spanish": "¿Te has lavado los dientes?",
+          "phonetic": "te as la-BA-do los DYEN-tes",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "p2t-bedtime-and-evening-have-you-brushed-your-teeth"
+        },
+        {
+          "english": "Put your phone down.",
+          "spanish": "Deja el móvil.",
+          "phonetic": "DE-ha el MO-beel",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedtime-and-evening-put-your-phone-down"
+        },
+        {
+          "english": "Put your phone on charge.",
+          "spanish": "Pon el móvil a cargar.",
+          "phonetic": "pon el MO-beel a kar-GAR",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedtime-and-evening-put-your-phone-on-charge"
+        },
+        {
+          "english": "Turn your light off.",
+          "spanish": "Apaga la luz.",
+          "phonetic": "a-PA-ga la looth",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedtime-and-evening-turn-your-light-off"
+        },
+        {
+          "english": "Don't stay up too late.",
+          "spanish": "No te quedes despierta hasta muy tarde.",
+          "phonetic": "no te KE-des des-PYER-ta AS-ta mooy TAR-de",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "p2t-bedtime-and-evening-don-t-stay-up-too-late"
+        },
+        {
+          "english": "Are you still awake?",
+          "spanish": "¿Sigues despierta?",
+          "phonetic": "SEE-ges des-PYER-ta",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "p2t-bedtime-and-evening-are-you-still-awake"
+        },
+        {
+          "english": "Why are you still awake?",
+          "spanish": "¿Por qué sigues despierta?",
+          "phonetic": "por ke SEE-ges des-PYER-ta",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "p2t-bedtime-and-evening-why-are-you-still-awake"
+        },
+        {
+          "english": "Go to sleep.",
+          "spanish": "Duérmete.",
+          "phonetic": "DWER-me-te",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "p2t-bedtime-and-evening-go-to-sleep"
+        },
+        {
+          "english": "Goodnight.",
+          "spanish": "Buenas noches.",
+          "phonetic": "BWE-nas NO-ches",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-bedtime-and-evening-goodnight"
+        },
+        {
+          "english": "Sleep well.",
+          "spanish": "Que duermas bien.",
+          "phonetic": "ke DWER-mas byen",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "p2t-bedtime-and-evening-sleep-well"
+        },
+        {
+          "english": "See you in the morning.",
+          "spanish": "Hasta mañana.",
+          "phonetic": "AS-ta ma-NYA-na",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "p2t-bedtime-and-evening-see-you-in-the-morning"
+        }
+      ]
+    },
+    "teenager_to_parent": {
+      "food_and_kitchen": [
+        {
+          "english": "What's for dinner?",
+          "spanish": "¿Qué hay para cenar?",
+          "phonetic": "ke eye PA-ra the-NAR",
+          "explanation": "Hay means “there is/are” and is useful for asking what is available.",
+          "id": "t2p-food-and-kitchen-what-s-for-dinner"
+        },
+        {
+          "english": "When's dinner?",
+          "spanish": "¿Cuándo cenamos?",
+          "phonetic": "KWAN-do the-NA-mos",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-food-and-kitchen-when-s-dinner"
+        },
+        {
+          "english": "Is dinner ready?",
+          "spanish": "¿Está lista la cena?",
+          "phonetic": "es-TA LEES-ta la THE-na",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-food-and-kitchen-is-dinner-ready"
+        },
+        {
+          "english": "What are we having?",
+          "spanish": "¿Qué vamos a comer?",
+          "phonetic": "ke BA-mos a ko-MER",
+          "explanation": "Ir a + infinitive is the simple, everyday way to say what is going to happen.",
+          "id": "t2p-food-and-kitchen-what-are-we-having"
+        },
+        {
+          "english": "I'm hungry.",
+          "spanish": "Tengo hambre.",
+          "phonetic": "TEN-go AM-bre",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-food-and-kitchen-i-m-hungry"
+        },
+        {
+          "english": "I'm starving.",
+          "spanish": "Me muero de hambre.",
+          "phonetic": "me MWE-ro de AM-bre",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-food-and-kitchen-i-m-starving"
+        },
+        {
+          "english": "Is there anything to eat?",
+          "spanish": "¿Hay algo de comer?",
+          "phonetic": "eye AL-go de ko-MER",
+          "explanation": "Hay means “there is/are” and is useful for asking what is available.",
+          "id": "t2p-food-and-kitchen-is-there-anything-to-eat"
+        },
+        {
+          "english": "Can I have something to eat?",
+          "spanish": "¿Puedo comer algo?",
+          "phonetic": "PWE-do ko-MER AL-go",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-food-and-kitchen-can-i-have-something-to-eat"
+        },
+        {
+          "english": "Can I have a snack?",
+          "spanish": "¿Puedo tomar algo?",
+          "phonetic": "PWE-do to-MAR AL-go",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-food-and-kitchen-can-i-have-a-snack"
+        },
+        {
+          "english": "Can I have some more?",
+          "spanish": "¿Puedo comer más?",
+          "phonetic": "PWE-do ko-MER mas",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-food-and-kitchen-can-i-have-some-more"
+        },
+        {
+          "english": "Can you make me something?",
+          "spanish": "¿Puedes hacerme algo?",
+          "phonetic": "PWE-des a-THER-me AL-go",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-food-and-kitchen-can-you-make-me-something"
+        },
+        {
+          "english": "Can we have pizza?",
+          "spanish": "¿Podemos comer pizza?",
+          "phonetic": "po-DE-mos ko-MER PEET-sa",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-food-and-kitchen-can-we-have-pizza"
+        },
+        {
+          "english": "Can we get a takeaway?",
+          "spanish": "¿Podemos pedir comida?",
+          "phonetic": "po-DE-mos pe-DEER ko-MEE-da",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-food-and-kitchen-can-we-get-a-takeaway"
+        },
+        {
+          "english": "Can we go to McDonald's?",
+          "spanish": "¿Podemos ir al McDonald's?",
+          "phonetic": "po-DE-mos eer al mak-DON-alds",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-food-and-kitchen-can-we-go-to-mcdonald-s"
+        },
+        {
+          "english": "I don't like that.",
+          "spanish": "Eso no me gusta.",
+          "phonetic": "E-so no me GOOS-ta",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-food-and-kitchen-i-don-t-like-that"
+        },
+        {
+          "english": "I don't want that.",
+          "spanish": "No quiero eso.",
+          "phonetic": "no KYE-ro E-so",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-food-and-kitchen-i-don-t-want-that"
+        },
+        {
+          "english": "I'm not hungry.",
+          "spanish": "No tengo hambre.",
+          "phonetic": "no TEN-go AM-bre",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-food-and-kitchen-i-m-not-hungry"
+        },
+        {
+          "english": "I've already eaten.",
+          "spanish": "Ya he comido.",
+          "phonetic": "ya e ko-MEE-do",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-food-and-kitchen-i-ve-already-eaten"
+        },
+        {
+          "english": "I'll eat later.",
+          "spanish": "Comeré luego.",
+          "phonetic": "ko-me-RE LWE-go",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-food-and-kitchen-i-ll-eat-later"
+        },
+        {
+          "english": "Can I eat in my room?",
+          "spanish": "¿Puedo comer en mi habitación?",
+          "phonetic": "PWE-do ko-MER en mee a-bee-ta-THYON",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-food-and-kitchen-can-i-eat-in-my-room"
+        },
+        {
+          "english": "Where are the snacks?",
+          "spanish": "¿Dónde están los aperitivos?",
+          "phonetic": "DON-de es-TAN los a-pe-ree-TEE-bos",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-food-and-kitchen-where-are-the-snacks"
+        },
+        {
+          "english": "Have we got any crisps?",
+          "spanish": "¿Hay patatas fritas?",
+          "phonetic": "eye pa-TA-tas FREE-tas",
+          "explanation": "Hay means “there is/are” and is useful for asking what is available.",
+          "id": "t2p-food-and-kitchen-have-we-got-any-crisps"
+        },
+        {
+          "english": "Have we got any chocolate?",
+          "spanish": "¿Hay chocolate?",
+          "phonetic": "eye cho-ko-LA-te",
+          "explanation": "Hay means “there is/are” and is useful for asking what is available.",
+          "id": "t2p-food-and-kitchen-have-we-got-any-chocolate"
+        },
+        {
+          "english": "Who ate my food?",
+          "spanish": "¿Quién se ha comido mi comida?",
+          "phonetic": "kyen se a ko-MEE-do mee ko-MEE-da",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-food-and-kitchen-who-ate-my-food"
+        },
+        {
+          "english": "I was saving that!",
+          "spanish": "¡Eso era para mí!",
+          "phonetic": "E-so E-ra PA-ra mee",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-food-and-kitchen-i-was-saving-that"
+        },
+        {
+          "english": "Can I have a drink?",
+          "spanish": "¿Puedo beber algo?",
+          "phonetic": "PWE-do be-BER AL-go",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-food-and-kitchen-can-i-have-a-drink"
+        },
+        {
+          "english": "Can you get me some water?",
+          "spanish": "¿Me puedes traer agua?",
+          "phonetic": "me PWE-des tra-ER A-gwa",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-food-and-kitchen-can-you-get-me-some-water"
+        }
+      ],
+      "phone_and_internet": [
+        {
+          "english": "Where's my phone?",
+          "spanish": "¿Dónde está mi móvil?",
+          "phonetic": "DON-de es-TA mee MO-beel",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-phone-and-internet-where-s-my-phone"
+        },
+        {
+          "english": "Have you seen my phone?",
+          "spanish": "¿Has visto mi móvil?",
+          "phonetic": "as BEES-to mee MO-beel",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-phone-and-internet-have-you-seen-my-phone"
+        },
+        {
+          "english": "Can you ring my phone?",
+          "spanish": "¿Puedes llamar a mi móvil?",
+          "phonetic": "PWE-des ya-MAR a mee MO-beel",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-phone-and-internet-can-you-ring-my-phone"
+        },
+        {
+          "english": "My phone's dead.",
+          "spanish": "Mi móvil no tiene batería.",
+          "phonetic": "mee MO-beel no TYE-ne ba-te-REE-a",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-phone-and-internet-my-phone-s-dead"
+        },
+        {
+          "english": "Where's my charger?",
+          "spanish": "¿Dónde está mi cargador?",
+          "phonetic": "DON-de es-TA mee kar-ga-DOR",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-phone-and-internet-where-s-my-charger"
+        },
+        {
+          "english": "Have you seen my charger?",
+          "spanish": "¿Has visto mi cargador?",
+          "phonetic": "as BEES-to mee kar-ga-DOR",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-phone-and-internet-have-you-seen-my-charger"
+        },
+        {
+          "english": "Can I borrow your charger?",
+          "spanish": "¿Me prestas tu cargador?",
+          "phonetic": "me PRES-tas too kar-ga-DOR",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-phone-and-internet-can-i-borrow-your-charger"
+        },
+        {
+          "english": "What's the Wi-Fi password?",
+          "spanish": "¿Cuál es la contraseña del wifi?",
+          "phonetic": "kwal es la kon-tra-SE-nya del WEE-fee",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-phone-and-internet-what-s-the-wi-fi-password"
+        },
+        {
+          "english": "The Wi-Fi isn't working.",
+          "spanish": "El wifi no funciona.",
+          "phonetic": "el WEE-fee no foon-THYO-na",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-phone-and-internet-the-wi-fi-isn-t-working"
+        },
+        {
+          "english": "The internet's really slow.",
+          "spanish": "Internet va muy lento.",
+          "phonetic": "een-ter-NET ba mooy LEN-to",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-phone-and-internet-the-internet-s-really-slow"
+        },
+        {
+          "english": "Can you turn off the time limit?",
+          "spanish": "¿Puedes quitar el límite de tiempo?",
+          "phonetic": "PWE-des kee-TAR el LEE-mee-te de TYEM-po",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-phone-and-internet-can-you-turn-off-the-time-limit"
+        },
+        {
+          "english": "Can I have more time?",
+          "spanish": "¿Puedo tener más tiempo?",
+          "phonetic": "PWE-do te-NER mas TYEM-po",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-phone-and-internet-can-i-have-more-time"
+        },
+        {
+          "english": "Just five more minutes.",
+          "spanish": "Solo cinco minutos más.",
+          "phonetic": "SO-lo THEEN-ko mee-NOO-tos mas",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-phone-and-internet-just-five-more-minutes"
+        },
+        {
+          "english": "Why have you blocked it?",
+          "spanish": "¿Por qué lo has bloqueado?",
+          "phonetic": "por ke lo as blo-ke-A-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-phone-and-internet-why-have-you-blocked-it"
+        },
+        {
+          "english": "I need it for school.",
+          "spanish": "Lo necesito para el instituto.",
+          "phonetic": "lo ne-the-SEE-to PA-ra el eens-tee-TOO-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-phone-and-internet-i-need-it-for-school"
+        },
+        {
+          "english": "I'm talking to my friends.",
+          "spanish": "Estoy hablando con mis amigas.",
+          "phonetic": "es-TOY a-BLAN-do kon mees a-MEE-gas",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "t2p-phone-and-internet-i-m-talking-to-my-friends"
+        },
+        {
+          "english": "I'm nearly finished.",
+          "spanish": "Ya casi he terminado.",
+          "phonetic": "ya KA-see e ter-mee-NA-do",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-phone-and-internet-i-m-nearly-finished"
+        },
+        {
+          "english": "Wait, I'm just replying to someone.",
+          "spanish": "Espera, estoy contestando a alguien.",
+          "phonetic": "es-PE-ra, es-TOY kon-tes-TAN-do a AL-gyen",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-phone-and-internet-wait-i-m-just-replying-to-someone"
+        },
+        {
+          "english": "My battery's nearly dead.",
+          "spanish": "Casi no me queda batería.",
+          "phonetic": "KA-see no me KE-da ba-te-REE-a",
+          "explanation": "Quedar is commonly used for time remaining or arrangements; the exact sense comes from context.",
+          "id": "t2p-phone-and-internet-my-battery-s-nearly-dead"
+        },
+        {
+          "english": "Can I use your phone?",
+          "spanish": "¿Puedo usar tu móvil?",
+          "phonetic": "PWE-do oo-SAR too MO-beel",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-phone-and-internet-can-i-use-your-phone"
+        },
+        {
+          "english": "Can you hotspot me?",
+          "spanish": "¿Me puedes compartir internet?",
+          "phonetic": "me PWE-des kom-par-TEER een-ter-NET",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-phone-and-internet-can-you-hotspot-me"
+        }
+      ],
+      "getting_ready_and_bathroom": [
+        {
+          "english": "I'm getting dressed.",
+          "spanish": "Me estoy vistiendo.",
+          "phonetic": "me es-TOY bees-TYEN-do",
+          "explanation": "The reflexive verb is the natural Spanish way to describe doing this to or for yourself.",
+          "id": "t2p-getting-ready-and-bathroom-i-m-getting-dressed"
+        },
+        {
+          "english": "I'm having a shower.",
+          "spanish": "Me estoy duchando.",
+          "phonetic": "me es-TOY doo-CHAN-do",
+          "explanation": "The reflexive verb is the natural Spanish way to describe doing this to or for yourself.",
+          "id": "t2p-getting-ready-and-bathroom-i-m-having-a-shower"
+        },
+        {
+          "english": "I'm in the shower.",
+          "spanish": "Estoy en la ducha.",
+          "phonetic": "es-TOY en la DOO-cha",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-getting-ready-and-bathroom-i-m-in-the-shower"
+        },
+        {
+          "english": "I'm doing my hair.",
+          "spanish": "Me estoy arreglando el pelo.",
+          "phonetic": "me es-TOY a-re-GLAN-do el PE-lo",
+          "explanation": "The reflexive verb is the natural Spanish way to describe doing this to or for yourself.",
+          "id": "t2p-getting-ready-and-bathroom-i-m-doing-my-hair"
+        },
+        {
+          "english": "I'm doing my makeup.",
+          "spanish": "Me estoy maquillando.",
+          "phonetic": "me es-TOY ma-kee-YAN-do",
+          "explanation": "The reflexive verb is the natural Spanish way to describe doing this to or for yourself.",
+          "id": "t2p-getting-ready-and-bathroom-i-m-doing-my-makeup"
+        },
+        {
+          "english": "I'm brushing my teeth.",
+          "spanish": "Me estoy lavando los dientes.",
+          "phonetic": "me es-TOY la-BAN-do los DYEN-tes",
+          "explanation": "The reflexive verb is the natural Spanish way to describe doing this to or for yourself.",
+          "id": "t2p-getting-ready-and-bathroom-i-m-brushing-my-teeth"
+        },
+        {
+          "english": "I'm nearly ready.",
+          "spanish": "Ya casi estoy lista.",
+          "phonetic": "ya KA-see es-TOY LEES-ta",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "t2p-getting-ready-and-bathroom-i-m-nearly-ready"
+        },
+        {
+          "english": "I'll be ready in five minutes.",
+          "spanish": "Estaré lista en cinco minutos.",
+          "phonetic": "es-ta-RE LEES-ta en THEEN-ko mee-NOO-tos",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "t2p-getting-ready-and-bathroom-i-ll-be-ready-in-five-minutes"
+        },
+        {
+          "english": "Just a minute.",
+          "spanish": "Un minuto.",
+          "phonetic": "oon mee-NOO-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-getting-ready-and-bathroom-just-a-minute"
+        },
+        {
+          "english": "Give me a minute.",
+          "spanish": "Dame un minuto.",
+          "phonetic": "DA-me oon mee-NOO-to",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "t2p-getting-ready-and-bathroom-give-me-a-minute"
+        },
+        {
+          "english": "Wait!",
+          "spanish": "¡Espera!",
+          "phonetic": "es-PE-ra",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "t2p-getting-ready-and-bathroom-wait"
+        },
+        {
+          "english": "I'm coming!",
+          "spanish": "¡Ya voy!",
+          "phonetic": "ya boy",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-getting-ready-and-bathroom-i-m-coming"
+        },
+        {
+          "english": "I'll be there in a minute.",
+          "spanish": "Voy en un minuto.",
+          "phonetic": "boy en oon mee-NOO-to",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-getting-ready-and-bathroom-i-ll-be-there-in-a-minute"
+        },
+        {
+          "english": "I'm coming downstairs.",
+          "spanish": "Ya bajo.",
+          "phonetic": "ya BA-ho",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-getting-ready-and-bathroom-i-m-coming-downstairs"
+        },
+        {
+          "english": "Where are my clothes?",
+          "spanish": "¿Dónde está mi ropa?",
+          "phonetic": "DON-de es-TA mee RO-pa",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-getting-ready-and-bathroom-where-are-my-clothes"
+        },
+        {
+          "english": "Where's my hoodie?",
+          "spanish": "¿Dónde está mi sudadera?",
+          "phonetic": "DON-de es-TA mee soo-da-DE-ra",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-getting-ready-and-bathroom-where-s-my-hoodie"
+        },
+        {
+          "english": "Have you seen my jeans?",
+          "spanish": "¿Has visto mis vaqueros?",
+          "phonetic": "as BEES-to mees ba-KE-ros",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-getting-ready-and-bathroom-have-you-seen-my-jeans"
+        },
+        {
+          "english": "Where are my shoes?",
+          "spanish": "¿Dónde están mis zapatos?",
+          "phonetic": "DON-de es-TAN mees tha-PA-tos",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-getting-ready-and-bathroom-where-are-my-shoes"
+        },
+        {
+          "english": "Is this clean?",
+          "spanish": "¿Esto está limpio?",
+          "phonetic": "ES-to es-TA LEEM-pyo",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-getting-ready-and-bathroom-is-this-clean"
+        },
+        {
+          "english": "Is this dry?",
+          "spanish": "¿Esto está seco?",
+          "phonetic": "ES-to es-TA SE-ko",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-getting-ready-and-bathroom-is-this-dry"
+        },
+        {
+          "english": "Can you wash this?",
+          "spanish": "¿Puedes lavar esto?",
+          "phonetic": "PWE-des la-BAR ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-getting-ready-and-bathroom-can-you-wash-this"
+        },
+        {
+          "english": "I need this tomorrow.",
+          "spanish": "Necesito esto mañana.",
+          "phonetic": "ne-the-SEE-to ES-to ma-NYA-na",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-getting-ready-and-bathroom-i-need-this-tomorrow"
+        },
+        {
+          "english": "Get out of my room.",
+          "spanish": "Sal de mi habitación.",
+          "phonetic": "sal de mee a-bee-ta-THYON",
+          "explanation": "Natural but blunt family language; tone matters and it can sound rude.",
+          "id": "t2p-getting-ready-and-bathroom-get-out-of-my-room"
+        },
+        {
+          "english": "Shut the door.",
+          "spanish": "Cierra la puerta.",
+          "phonetic": "THYE-ra la PWER-ta",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "t2p-getting-ready-and-bathroom-shut-the-door"
+        },
+        {
+          "english": "Don't come in!",
+          "spanish": "¡No entres!",
+          "phonetic": "no EN-tres",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "t2p-getting-ready-and-bathroom-don-t-come-in"
+        },
+        {
+          "english": "I'm changing.",
+          "spanish": "Me estoy cambiando.",
+          "phonetic": "me es-TOY kam-BYAN-do",
+          "explanation": "The reflexive verb is the natural Spanish way to describe doing this to or for yourself.",
+          "id": "t2p-getting-ready-and-bathroom-i-m-changing"
+        }
+      ],
+      "school_and_homework": [
+        {
+          "english": "I don't have any homework.",
+          "spanish": "No tengo deberes.",
+          "phonetic": "no TEN-go de-BE-res",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-i-don-t-have-any-homework"
+        },
+        {
+          "english": "I've already done it.",
+          "spanish": "Ya lo he hecho.",
+          "phonetic": "ya lo e E-cho",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-school-and-homework-i-ve-already-done-it"
+        },
+        {
+          "english": "I'll do it later.",
+          "spanish": "Lo haré luego.",
+          "phonetic": "lo a-RE LWE-go",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-i-ll-do-it-later"
+        },
+        {
+          "english": "I need help with my homework.",
+          "spanish": "Necesito ayuda con los deberes.",
+          "phonetic": "ne-the-SEE-to a-YOO-da kon los de-BE-res",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-i-need-help-with-my-homework"
+        },
+        {
+          "english": "Can you help me with this?",
+          "spanish": "¿Puedes ayudarme con esto?",
+          "phonetic": "PWE-des a-yoo-DAR-me kon ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-school-and-homework-can-you-help-me-with-this"
+        },
+        {
+          "english": "I don't understand this.",
+          "spanish": "No entiendo esto.",
+          "phonetic": "no en-TYEN-do ES-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-i-don-t-understand-this"
+        },
+        {
+          "english": "Can you check this?",
+          "spanish": "¿Puedes mirar esto?",
+          "phonetic": "PWE-des mee-RAR ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-school-and-homework-can-you-check-this"
+        },
+        {
+          "english": "I need to print something.",
+          "spanish": "Tengo que imprimir algo.",
+          "phonetic": "TEN-go ke eem-pree-MEER AL-go",
+          "explanation": "Tener que + infinitive is the standard simple pattern for “have to/need to”.",
+          "id": "t2p-school-and-homework-i-need-to-print-something"
+        },
+        {
+          "english": "The printer isn't working.",
+          "spanish": "La impresora no funciona.",
+          "phonetic": "la eem-pre-SO-ra no foon-THYO-na",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-the-printer-isn-t-working"
+        },
+        {
+          "english": "I need something for school tomorrow.",
+          "spanish": "Necesito algo para el instituto mañana.",
+          "phonetic": "ne-the-SEE-to AL-go PA-ra el eens-tee-TOO-to ma-NYA-na",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-i-need-something-for-school-tomorrow"
+        },
+        {
+          "english": "I forgot.",
+          "spanish": "Se me olvidó.",
+          "phonetic": "se me ol-bee-DO",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-school-and-homework-i-forgot"
+        },
+        {
+          "english": "I need money for school.",
+          "spanish": "Necesito dinero para el instituto.",
+          "phonetic": "ne-the-SEE-to dee-NE-ro PA-ra el eens-tee-TOO-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-i-need-money-for-school"
+        },
+        {
+          "english": "I need you to sign this.",
+          "spanish": "Necesito que firmes esto.",
+          "phonetic": "ne-the-SEE-to ke FEER-mes ES-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-i-need-you-to-sign-this"
+        },
+        {
+          "english": "I've got a test tomorrow.",
+          "spanish": "Tengo un examen mañana.",
+          "phonetic": "TEN-go oon ek-SA-men ma-NYA-na",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-i-ve-got-a-test-tomorrow"
+        },
+        {
+          "english": "I don't want to go to school.",
+          "spanish": "No quiero ir al instituto.",
+          "phonetic": "no KYE-ro eer al eens-tee-TOO-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-i-don-t-want-to-go-to-school"
+        },
+        {
+          "english": "I'm tired.",
+          "spanish": "Estoy cansada.",
+          "phonetic": "es-TOY kan-SA-da",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "t2p-school-and-homework-i-m-tired"
+        },
+        {
+          "english": "School was boring.",
+          "spanish": "El instituto ha sido aburrido.",
+          "phonetic": "el eens-tee-TOO-to a SEE-do a-boo-REE-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-school-and-homework-school-was-boring"
+        },
+        {
+          "english": "School was fine.",
+          "spanish": "El instituto, bien.",
+          "phonetic": "el eens-tee-TOO-to, byen",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-school-was-fine"
+        },
+        {
+          "english": "Nothing happened.",
+          "spanish": "No ha pasado nada.",
+          "phonetic": "no a pa-SA-do NA-da",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-school-and-homework-nothing-happened"
+        },
+        {
+          "english": "I don't know.",
+          "spanish": "No sé.",
+          "phonetic": "no se",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-school-and-homework-i-don-t-know"
+        },
+        {
+          "english": "I can't remember.",
+          "spanish": "No me acuerdo.",
+          "phonetic": "no me a-KWER-do",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-school-and-homework-i-can-t-remember"
+        },
+        {
+          "english": "We didn't do anything.",
+          "spanish": "No hemos hecho nada.",
+          "phonetic": "no E-mos E-cho NA-da",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-school-and-homework-we-didn-t-do-anything"
+        },
+        {
+          "english": "Can you pick me up?",
+          "spanish": "¿Puedes recogerme?",
+          "phonetic": "PWE-des re-ko-HER-me",
+          "explanation": "Recoger is the usual verb for picking someone up in Spain.",
+          "id": "t2p-school-and-homework-can-you-pick-me-up"
+        },
+        {
+          "english": "Can you pick me up early?",
+          "spanish": "¿Puedes recogerme antes?",
+          "phonetic": "PWE-des re-ko-HER-me AN-tes",
+          "explanation": "Recoger is the usual verb for picking someone up in Spain.",
+          "id": "t2p-school-and-homework-can-you-pick-me-up-early"
+        },
+        {
+          "english": "What time are you picking me up?",
+          "spanish": "¿A qué hora me recoges?",
+          "phonetic": "a ke O-ra me re-KO-hes",
+          "explanation": "Recoger is the usual verb for picking someone up in Spain.",
+          "id": "t2p-school-and-homework-what-time-are-you-picking-me-up"
+        }
+      ],
+      "friends_and_social_life": [
+        {
+          "english": "Can I go out?",
+          "spanish": "¿Puedo salir?",
+          "phonetic": "PWE-do sa-LEER",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-friends-and-social-life-can-i-go-out"
+        },
+        {
+          "english": "Can we go?",
+          "spanish": "¿Podemos ir?",
+          "phonetic": "po-DE-mos eer",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-friends-and-social-life-can-we-go"
+        },
+        {
+          "english": "Can you take me?",
+          "spanish": "¿Me puedes llevar?",
+          "phonetic": "me PWE-des ye-BAR",
+          "explanation": "Llevar is often used for taking a person somewhere or wearing/carrying something.",
+          "id": "t2p-friends-and-social-life-can-you-take-me"
+        },
+        {
+          "english": "Can you give me a lift?",
+          "spanish": "¿Me puedes llevar?",
+          "phonetic": "me PWE-des ye-BAR",
+          "explanation": "Llevar is often used for taking a person somewhere or wearing/carrying something.",
+          "id": "t2p-friends-and-social-life-can-you-give-me-a-lift"
+        },
+        {
+          "english": "Can you pick me up?",
+          "spanish": "¿Me puedes recoger?",
+          "phonetic": "me PWE-des re-ko-HER",
+          "explanation": "Recoger is the usual verb for picking someone up in Spain.",
+          "id": "t2p-friends-and-social-life-can-you-pick-me-up"
+        },
+        {
+          "english": "Can you take us there?",
+          "spanish": "¿Nos puedes llevar?",
+          "phonetic": "nos PWE-des ye-BAR",
+          "explanation": "Llevar is often used for taking a person somewhere or wearing/carrying something.",
+          "id": "t2p-friends-and-social-life-can-you-take-us-there"
+        },
+        {
+          "english": "Can you pick us up later?",
+          "spanish": "¿Nos puedes recoger luego?",
+          "phonetic": "nos PWE-des re-ko-HER LWE-go",
+          "explanation": "Recoger is the usual verb for picking someone up in Spain.",
+          "id": "t2p-friends-and-social-life-can-you-pick-us-up-later"
+        },
+        {
+          "english": "Can my friend come over?",
+          "spanish": "¿Puede venir mi amiga?",
+          "phonetic": "PWE-de be-NEER mee a-MEE-ga",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "t2p-friends-and-social-life-can-my-friend-come-over"
+        },
+        {
+          "english": "Can I have a friend over?",
+          "spanish": "¿Puede venir una amiga a casa?",
+          "phonetic": "PWE-de be-NEER OO-na a-MEE-ga a KA-sa",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "t2p-friends-and-social-life-can-i-have-a-friend-over"
+        },
+        {
+          "english": "Can she come round?",
+          "spanish": "¿Puede venir a casa?",
+          "phonetic": "PWE-de be-NEER a KA-sa",
+          "explanation": "Spanish uses venir when movement is towards the speaker, so it often matches English “come”.",
+          "id": "t2p-friends-and-social-life-can-she-come-round"
+        },
+        {
+          "english": "Can she stay for dinner?",
+          "spanish": "¿Se puede quedar a cenar?",
+          "phonetic": "se PWE-de ke-DAR a the-NAR",
+          "explanation": "Quedar is commonly used for time remaining or arrangements; the exact sense comes from context.",
+          "id": "t2p-friends-and-social-life-can-she-stay-for-dinner"
+        },
+        {
+          "english": "Can she stay over tonight?",
+          "spanish": "¿Se puede quedar a dormir esta noche?",
+          "phonetic": "se PWE-de ke-DAR a dor-MEER ES-ta NO-che",
+          "explanation": "Quedar is commonly used for time remaining or arrangements; the exact sense comes from context.",
+          "id": "t2p-friends-and-social-life-can-she-stay-over-tonight"
+        },
+        {
+          "english": "Can I stay at her house?",
+          "spanish": "¿Me puedo quedar en su casa?",
+          "phonetic": "me PWE-do ke-DAR en soo KA-sa",
+          "explanation": "Quedar is commonly used for time remaining or arrangements; the exact sense comes from context.",
+          "id": "t2p-friends-and-social-life-can-i-stay-at-her-house"
+        },
+        {
+          "english": "Can I sleep over?",
+          "spanish": "¿Me puedo quedar a dormir?",
+          "phonetic": "me PWE-do ke-DAR a dor-MEER",
+          "explanation": "Quedar is commonly used for time remaining or arrangements; the exact sense comes from context.",
+          "id": "t2p-friends-and-social-life-can-i-sleep-over"
+        },
+        {
+          "english": "What time do I have to be home?",
+          "spanish": "¿A qué hora tengo que estar en casa?",
+          "phonetic": "a ke O-ra TEN-go ke es-TAR en KA-sa",
+          "explanation": "Tener que + infinitive is the standard simple pattern for “have to/need to”.",
+          "id": "t2p-friends-and-social-life-what-time-do-i-have-to-be-home"
+        },
+        {
+          "english": "Do I have to come home that early?",
+          "spanish": "¿Tengo que volver tan pronto?",
+          "phonetic": "TEN-go ke bol-BER tan PRON-to",
+          "explanation": "Tener que + infinitive is the standard simple pattern for “have to/need to”.",
+          "id": "t2p-friends-and-social-life-do-i-have-to-come-home-that-early"
+        },
+        {
+          "english": "Everyone else is staying later.",
+          "spanish": "Todos los demás se quedan hasta más tarde.",
+          "phonetic": "TO-dos los de-MAS se KE-dan AS-ta mas TAR-de",
+          "explanation": "Quedar is commonly used for time remaining or arrangements; the exact sense comes from context.",
+          "id": "t2p-friends-and-social-life-everyone-else-is-staying-later"
+        },
+        {
+          "english": "I'll message you.",
+          "spanish": "Te escribo.",
+          "phonetic": "te es-KREE-bo",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-friends-and-social-life-i-ll-message-you"
+        },
+        {
+          "english": "I'll let you know.",
+          "spanish": "Te aviso.",
+          "phonetic": "te a-BEE-so",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-friends-and-social-life-i-ll-let-you-know"
+        },
+        {
+          "english": "I'm on my way.",
+          "spanish": "Estoy de camino.",
+          "phonetic": "es-TOY de ka-MEE-no",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-friends-and-social-life-i-m-on-my-way"
+        },
+        {
+          "english": "We're leaving now.",
+          "spanish": "Salimos ya.",
+          "phonetic": "sa-LEE-mos ya",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-friends-and-social-life-we-re-leaving-now"
+        },
+        {
+          "english": "We're nearly there.",
+          "spanish": "Ya casi hemos llegado.",
+          "phonetic": "ya KA-see E-mos ye-GA-do",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-friends-and-social-life-we-re-nearly-there"
+        },
+        {
+          "english": "I'm here.",
+          "spanish": "Ya estoy aquí.",
+          "phonetic": "ya es-TOY a-KEE",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-friends-and-social-life-i-m-here"
+        },
+        {
+          "english": "I'm outside.",
+          "spanish": "Estoy fuera.",
+          "phonetic": "es-TOY FWE-ra",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-friends-and-social-life-i-m-outside"
+        },
+        {
+          "english": "Where are you?",
+          "spanish": "¿Dónde estás?",
+          "phonetic": "DON-de es-TAS",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-friends-and-social-life-where-are-you"
+        },
+        {
+          "english": "How long will you be?",
+          "spanish": "¿Cuánto vas a tardar?",
+          "phonetic": "KWAN-to bas a tar-DAR",
+          "explanation": "Ir a + infinitive is the simple, everyday way to say what is going to happen.",
+          "id": "t2p-friends-and-social-life-how-long-will-you-be"
+        },
+        {
+          "english": "Can you hurry up?",
+          "spanish": "¿Puedes darte prisa?",
+          "phonetic": "PWE-des DAR-te PREE-sa",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-friends-and-social-life-can-you-hurry-up"
+        }
+      ],
+      "money_and_buying_things": [
+        {
+          "english": "Can I have some money?",
+          "spanish": "¿Me das dinero?",
+          "phonetic": "me das dee-NE-ro",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-money-and-buying-things-can-i-have-some-money"
+        },
+        {
+          "english": "Can you send me some money?",
+          "spanish": "¿Me puedes mandar dinero?",
+          "phonetic": "me PWE-des man-DAR dee-NE-ro",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-money-and-buying-things-can-you-send-me-some-money"
+        },
+        {
+          "english": "Can I borrow some money?",
+          "spanish": "¿Me prestas dinero?",
+          "phonetic": "me PRES-tas dee-NE-ro",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-money-and-buying-things-can-i-borrow-some-money"
+        },
+        {
+          "english": "I'll pay you back.",
+          "spanish": "Te lo devuelvo.",
+          "phonetic": "te lo de-BWEL-bo",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-money-and-buying-things-i-ll-pay-you-back"
+        },
+        {
+          "english": "Can I buy this?",
+          "spanish": "¿Puedo comprar esto?",
+          "phonetic": "PWE-do kom-PRAR ES-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-money-and-buying-things-can-i-buy-this"
+        },
+        {
+          "english": "Can you buy this for me?",
+          "spanish": "¿Me puedes comprar esto?",
+          "phonetic": "me PWE-des kom-PRAR ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-money-and-buying-things-can-you-buy-this-for-me"
+        },
+        {
+          "english": "Can I order something?",
+          "spanish": "¿Puedo pedir algo?",
+          "phonetic": "PWE-do pe-DEER AL-go",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-money-and-buying-things-can-i-order-something"
+        },
+        {
+          "english": "Can I use your card?",
+          "spanish": "¿Puedo usar tu tarjeta?",
+          "phonetic": "PWE-do oo-SAR too tar-HE-ta",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-money-and-buying-things-can-i-use-your-card"
+        },
+        {
+          "english": "How much is it?",
+          "spanish": "¿Cuánto cuesta?",
+          "phonetic": "KWAN-to KWES-ta",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-money-and-buying-things-how-much-is-it"
+        },
+        {
+          "english": "It's only five pounds.",
+          "spanish": "Solo cuesta cinco libras.",
+          "phonetic": "SO-lo KWES-ta THEEN-ko LEE-bras",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-money-and-buying-things-it-s-only-five-pounds"
+        },
+        {
+          "english": "It's on sale.",
+          "spanish": "Está de oferta.",
+          "phonetic": "es-TA de o-FER-ta",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-money-and-buying-things-it-s-on-sale"
+        },
+        {
+          "english": "I need it.",
+          "spanish": "Lo necesito.",
+          "phonetic": "lo ne-the-SEE-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-money-and-buying-things-i-need-it"
+        },
+        {
+          "english": "Everyone has one.",
+          "spanish": "Todo el mundo tiene uno.",
+          "phonetic": "TO-do el MOON-do TYE-ne OO-no",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-money-and-buying-things-everyone-has-one"
+        },
+        {
+          "english": "Can we go shopping?",
+          "spanish": "¿Podemos ir de compras?",
+          "phonetic": "po-DE-mos eer de KOM-pras",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-money-and-buying-things-can-we-go-shopping"
+        },
+        {
+          "english": "Can we go into town?",
+          "spanish": "¿Podemos ir al centro?",
+          "phonetic": "po-DE-mos eer al THEN-tro",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-money-and-buying-things-can-we-go-into-town"
+        },
+        {
+          "english": "Can you take me to the shops?",
+          "spanish": "¿Me puedes llevar a las tiendas?",
+          "phonetic": "me PWE-des ye-BAR a las TYEN-das",
+          "explanation": "Llevar is often used for taking a person somewhere or wearing/carrying something.",
+          "id": "t2p-money-and-buying-things-can-you-take-me-to-the-shops"
+        },
+        {
+          "english": "I don't have any money left.",
+          "spanish": "No me queda dinero.",
+          "phonetic": "no me KE-da dee-NE-ro",
+          "explanation": "Quedar is commonly used for time remaining or arrangements; the exact sense comes from context.",
+          "id": "t2p-money-and-buying-things-i-don-t-have-any-money-left"
+        }
+      ],
+      "chores_and_classic_responses": [
+        {
+          "english": "I'll do it later.",
+          "spanish": "Lo haré luego.",
+          "phonetic": "lo a-RE LWE-go",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-chores-and-classic-responses-i-ll-do-it-later"
+        },
+        {
+          "english": "I'll do it in a minute.",
+          "spanish": "Lo hago en un minuto.",
+          "phonetic": "lo A-go en oon mee-NOO-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-chores-and-classic-responses-i-ll-do-it-in-a-minute"
+        },
+        {
+          "english": "I was going to do it!",
+          "spanish": "¡Iba a hacerlo!",
+          "phonetic": "EE-ba a a-THER-lo",
+          "explanation": "Ir a + infinitive is the simple, everyday way to say what is going to happen.",
+          "id": "t2p-chores-and-classic-responses-i-was-going-to-do-it"
+        },
+        {
+          "english": "I know.",
+          "spanish": "Ya lo sé.",
+          "phonetic": "ya lo se",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-chores-and-classic-responses-i-know"
+        },
+        {
+          "english": "You already told me.",
+          "spanish": "Ya me lo has dicho.",
+          "phonetic": "ya me lo as DEE-cho",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-chores-and-classic-responses-you-already-told-me"
+        },
+        {
+          "english": "I heard you.",
+          "spanish": "Te he oído.",
+          "phonetic": "te e o-EE-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-chores-and-classic-responses-i-heard-you"
+        },
+        {
+          "english": "I'm doing it!",
+          "spanish": "¡Lo estoy haciendo!",
+          "phonetic": "lo es-TOY a-THYEN-do",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-chores-and-classic-responses-i-m-doing-it"
+        },
+        {
+          "english": "Wait.",
+          "spanish": "Espera.",
+          "phonetic": "es-PE-ra",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "t2p-chores-and-classic-responses-wait"
+        },
+        {
+          "english": "Hang on.",
+          "spanish": "Espera un momento.",
+          "phonetic": "es-PE-ra oon mo-MEN-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-chores-and-classic-responses-hang-on"
+        },
+        {
+          "english": "Just a second.",
+          "spanish": "Un segundo.",
+          "phonetic": "oon se-GOON-do",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-chores-and-classic-responses-just-a-second"
+        },
+        {
+          "english": "Why?",
+          "spanish": "¿Por qué?",
+          "phonetic": "por ke",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-chores-and-classic-responses-why"
+        },
+        {
+          "english": "Why do I have to do it?",
+          "spanish": "¿Por qué tengo que hacerlo yo?",
+          "phonetic": "por ke TEN-go ke a-THER-lo yo",
+          "explanation": "Tener que + infinitive is the standard simple pattern for “have to/need to”.",
+          "id": "t2p-chores-and-classic-responses-why-do-i-have-to-do-it"
+        },
+        {
+          "english": "Why can't he do it?",
+          "spanish": "¿Por qué no puede hacerlo él?",
+          "phonetic": "por ke no PWE-de a-THER-lo el",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-chores-and-classic-responses-why-can-t-he-do-it"
+        },
+        {
+          "english": "It's not mine.",
+          "spanish": "No es mío.",
+          "phonetic": "no es MEE-o",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-chores-and-classic-responses-it-s-not-mine"
+        },
+        {
+          "english": "I didn't do it.",
+          "spanish": "Yo no lo he hecho.",
+          "phonetic": "yo no lo e E-cho",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-chores-and-classic-responses-i-didn-t-do-it"
+        },
+        {
+          "english": "That wasn't me.",
+          "spanish": "Yo no he sido.",
+          "phonetic": "yo no e SEE-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-chores-and-classic-responses-that-wasn-t-me"
+        },
+        {
+          "english": "I didn't leave it there.",
+          "spanish": "Yo no lo he dejado ahí.",
+          "phonetic": "yo no lo e de-HA-do a-EE",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-chores-and-classic-responses-i-didn-t-leave-it-there"
+        },
+        {
+          "english": "I'll tidy it later.",
+          "spanish": "Lo ordeno luego.",
+          "phonetic": "lo or-DE-no LWE-go",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-chores-and-classic-responses-i-ll-tidy-it-later"
+        },
+        {
+          "english": "My room isn't that bad.",
+          "spanish": "Mi habitación no está tan mal.",
+          "phonetic": "mee a-bee-ta-THYON no es-TA tan mal",
+          "explanation": "Casual and mildly impatient, but common in family speech.",
+          "id": "t2p-chores-and-classic-responses-my-room-isn-t-that-bad"
+        },
+        {
+          "english": "I can't find it.",
+          "spanish": "No lo encuentro.",
+          "phonetic": "no lo en-KWEN-tro",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-chores-and-classic-responses-i-can-t-find-it"
+        },
+        {
+          "english": "Where does this go?",
+          "spanish": "¿Dónde va esto?",
+          "phonetic": "DON-de ba ES-to",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-chores-and-classic-responses-where-does-this-go"
+        },
+        {
+          "english": "What do you want me to do?",
+          "spanish": "¿Qué quieres que haga?",
+          "phonetic": "ke KYE-res ke A-ga",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-chores-and-classic-responses-what-do-you-want-me-to-do"
+        },
+        {
+          "english": "Do I have to?",
+          "spanish": "¿Tengo que hacerlo?",
+          "phonetic": "TEN-go ke a-THER-lo",
+          "explanation": "Tener que + infinitive is the standard simple pattern for “have to/need to”.",
+          "id": "t2p-chores-and-classic-responses-do-i-have-to"
+        }
+      ],
+      "everyday_conversation": [
+        {
+          "english": "Dad?",
+          "spanish": "¿Papá?",
+          "phonetic": "pa-PA",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-dad"
+        },
+        {
+          "english": "Mum?",
+          "spanish": "¿Mamá?",
+          "phonetic": "ma-MA",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-mum"
+        },
+        {
+          "english": "What?",
+          "spanish": "¿Qué?",
+          "phonetic": "ke",
+          "explanation": "Casual and mildly impatient, but common in family speech.",
+          "id": "t2p-everyday-conversation-what"
+        },
+        {
+          "english": "What are you doing?",
+          "spanish": "¿Qué haces?",
+          "phonetic": "ke A-thes",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-what-are-you-doing"
+        },
+        {
+          "english": "Where are you?",
+          "spanish": "¿Dónde estás?",
+          "phonetic": "DON-de es-TAS",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-everyday-conversation-where-are-you"
+        },
+        {
+          "english": "Where are you going?",
+          "spanish": "¿Adónde vas?",
+          "phonetic": "a-DON-de bas",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-where-are-you-going"
+        },
+        {
+          "english": "Where's Mum?",
+          "spanish": "¿Dónde está mamá?",
+          "phonetic": "DON-de es-TA ma-MA",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-everyday-conversation-where-s-mum"
+        },
+        {
+          "english": "Where's Dad?",
+          "spanish": "¿Dónde está papá?",
+          "phonetic": "DON-de es-TA pa-PA",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-everyday-conversation-where-s-dad"
+        },
+        {
+          "english": "Where's Monty?",
+          "spanish": "¿Dónde está Monty?",
+          "phonetic": "DON-de es-TA MON-tee",
+          "explanation": "Spanish normally uses the pet’s name or el perro; both sound natural here.",
+          "id": "t2p-everyday-conversation-where-s-monty"
+        },
+        {
+          "english": "What time is it?",
+          "spanish": "¿Qué hora es?",
+          "phonetic": "ke O-ra es",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-what-time-is-it"
+        },
+        {
+          "english": "What day is it?",
+          "spanish": "¿Qué día es?",
+          "phonetic": "ke DEE-a es",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-what-day-is-it"
+        },
+        {
+          "english": "What time are we leaving?",
+          "spanish": "¿A qué hora salimos?",
+          "phonetic": "a ke O-ra sa-LEE-mos",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-what-time-are-we-leaving"
+        },
+        {
+          "english": "What are we doing today?",
+          "spanish": "¿Qué hacemos hoy?",
+          "phonetic": "ke a-THE-mos oy",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-what-are-we-doing-today"
+        },
+        {
+          "english": "Are we going anywhere?",
+          "spanish": "¿Vamos a algún sitio?",
+          "phonetic": "BA-mos a al-GOON SEE-tyo",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-are-we-going-anywhere"
+        },
+        {
+          "english": "Can we go now?",
+          "spanish": "¿Podemos ir ya?",
+          "phonetic": "po-DE-mos eer ya",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-everyday-conversation-can-we-go-now"
+        },
+        {
+          "english": "Are you ready?",
+          "spanish": "¿Estás listo?",
+          "phonetic": "es-TAS LEES-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-are-you-ready"
+        },
+        {
+          "english": "How long are you going to be?",
+          "spanish": "¿Cuánto vas a tardar?",
+          "phonetic": "KWAN-to bas a tar-DAR",
+          "explanation": "Ir a + infinitive is the simple, everyday way to say what is going to happen.",
+          "id": "t2p-everyday-conversation-how-long-are-you-going-to-be"
+        },
+        {
+          "english": "Come and look at this.",
+          "spanish": "Ven a ver esto.",
+          "phonetic": "ben a ber ES-to",
+          "explanation": "Spanish uses venir when movement is towards the speaker, so it often matches English “come”.",
+          "id": "t2p-everyday-conversation-come-and-look-at-this"
+        },
+        {
+          "english": "Look at this.",
+          "spanish": "Mira esto.",
+          "phonetic": "MEE-ra ES-to",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "t2p-everyday-conversation-look-at-this"
+        },
+        {
+          "english": "Watch this.",
+          "spanish": "Mira esto.",
+          "phonetic": "MEE-ra ES-to",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "t2p-everyday-conversation-watch-this"
+        },
+        {
+          "english": "Listen to this.",
+          "spanish": "Escucha esto.",
+          "phonetic": "es-KOO-cha ES-to",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "t2p-everyday-conversation-listen-to-this"
+        },
+        {
+          "english": "Guess what.",
+          "spanish": "Adivina qué.",
+          "phonetic": "a-dee-BEE-na ke",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-guess-what"
+        },
+        {
+          "english": "Do you know what happened?",
+          "spanish": "¿Sabes qué ha pasado?",
+          "phonetic": "SA-bes ke a pa-SA-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-everyday-conversation-do-you-know-what-happened"
+        },
+        {
+          "english": "You'll never guess what happened.",
+          "spanish": "Nunca adivinarás qué ha pasado.",
+          "phonetic": "NOON-ka a-dee-bee-na-RAS ke a pa-SA-do",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-everyday-conversation-you-ll-never-guess-what-happened"
+        },
+        {
+          "english": "That's funny.",
+          "spanish": "Qué gracioso.",
+          "phonetic": "ke gra-THYO-so",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-that-s-funny"
+        },
+        {
+          "english": "That's weird.",
+          "spanish": "Qué raro.",
+          "phonetic": "ke RA-ro",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-that-s-weird"
+        },
+        {
+          "english": "That's annoying.",
+          "spanish": "Qué pesado.",
+          "phonetic": "ke pe-SA-do",
+          "explanation": "Casual and mildly impatient, but common in family speech.",
+          "id": "t2p-everyday-conversation-that-s-annoying"
+        },
+        {
+          "english": "That's disgusting.",
+          "spanish": "Qué asco.",
+          "phonetic": "ke AS-ko",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-everyday-conversation-that-s-disgusting"
+        },
+        {
+          "english": "That's embarrassing.",
+          "spanish": "Qué vergüenza.",
+          "phonetic": "ke ber-GWEN-tha",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-everyday-conversation-that-s-embarrassing"
+        },
+        {
+          "english": "That's not fair.",
+          "spanish": "No es justo.",
+          "phonetic": "no es HOOS-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-that-s-not-fair"
+        },
+        {
+          "english": "I don't care.",
+          "spanish": "Me da igual.",
+          "phonetic": "me da ee-GWAL",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-everyday-conversation-i-don-t-care"
+        },
+        {
+          "english": "I don't know.",
+          "spanish": "No sé.",
+          "phonetic": "no se",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-i-don-t-know"
+        },
+        {
+          "english": "Maybe.",
+          "spanish": "Puede ser.",
+          "phonetic": "PWE-de ser",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-everyday-conversation-maybe"
+        },
+        {
+          "english": "Probably.",
+          "spanish": "Seguramente.",
+          "phonetic": "se-goo-ra-MEN-te",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-probably"
+        },
+        {
+          "english": "Fine.",
+          "spanish": "Vale.",
+          "phonetic": "BA-le",
+          "explanation": "Vale is the everyday Spain-Spanish equivalent of “OK” or “fine”.",
+          "id": "t2p-everyday-conversation-fine"
+        },
+        {
+          "english": "Okay.",
+          "spanish": "Vale.",
+          "phonetic": "BA-le",
+          "explanation": "Vale is the everyday Spain-Spanish equivalent of “OK” or “fine”.",
+          "id": "t2p-everyday-conversation-okay"
+        },
+        {
+          "english": "Whatever.",
+          "spanish": "Lo que sea.",
+          "phonetic": "lo ke SE-a",
+          "explanation": "Casual and mildly impatient, but common in family speech.",
+          "id": "t2p-everyday-conversation-whatever"
+        },
+        {
+          "english": "Seriously?",
+          "spanish": "¿En serio?",
+          "phonetic": "en SE-ryo",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-seriously"
+        },
+        {
+          "english": "Really?",
+          "spanish": "¿De verdad?",
+          "phonetic": "de ber-DAD",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-really"
+        },
+        {
+          "english": "No way!",
+          "spanish": "¡Qué va!",
+          "phonetic": "ke ba",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-everyday-conversation-no-way"
+        },
+        {
+          "english": "Obviously.",
+          "spanish": "Obviamente.",
+          "phonetic": "ob-bya-MEN-te",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-obviously"
+        },
+        {
+          "english": "Exactly.",
+          "spanish": "Exacto.",
+          "phonetic": "ek-SAK-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-everyday-conversation-exactly"
+        },
+        {
+          "english": "I know!",
+          "spanish": "¡Ya lo sé!",
+          "phonetic": "ya lo se",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-everyday-conversation-i-know"
+        },
+        {
+          "english": "Stop!",
+          "spanish": "¡Para!",
+          "phonetic": "PA-ra",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "t2p-everyday-conversation-stop"
+        },
+        {
+          "english": "Leave me alone.",
+          "spanish": "Déjame en paz.",
+          "phonetic": "DE-ha-me en path",
+          "explanation": "Natural but blunt family language; tone matters and it can sound rude.",
+          "id": "t2p-everyday-conversation-leave-me-alone"
+        },
+        {
+          "english": "Go away.",
+          "spanish": "Vete.",
+          "phonetic": "BE-te",
+          "explanation": "Natural but blunt family language; tone matters and it can sound rude.",
+          "id": "t2p-everyday-conversation-go-away"
+        },
+        {
+          "english": "You're annoying.",
+          "spanish": "Eres pesada.",
+          "phonetic": "E-res pe-SA-da",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "t2p-everyday-conversation-you-re-annoying"
+        },
+        {
+          "english": "You're so annoying.",
+          "spanish": "Eres muy pesada.",
+          "phonetic": "E-res mooy pe-SA-da",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "t2p-everyday-conversation-you-re-so-annoying"
+        }
+      ],
+      "asking_for_help": [
+        {
+          "english": "Can you help me?",
+          "spanish": "¿Me puedes ayudar?",
+          "phonetic": "me PWE-des a-yoo-DAR",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-help-me"
+        },
+        {
+          "english": "Can you help me with this?",
+          "spanish": "¿Me puedes ayudar con esto?",
+          "phonetic": "me PWE-des a-yoo-DAR kon ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-help-me-with-this"
+        },
+        {
+          "english": "Can you do this for me?",
+          "spanish": "¿Puedes hacer esto por mí?",
+          "phonetic": "PWE-des a-THER ES-to por mee",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-do-this-for-me"
+        },
+        {
+          "english": "Can you open this?",
+          "spanish": "¿Puedes abrir esto?",
+          "phonetic": "PWE-des a-BREER ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-open-this"
+        },
+        {
+          "english": "Can you reach that?",
+          "spanish": "¿Llegas a eso?",
+          "phonetic": "YE-gas a E-so",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-asking-for-help-can-you-reach-that"
+        },
+        {
+          "english": "Can you fix this?",
+          "spanish": "¿Puedes arreglar esto?",
+          "phonetic": "PWE-des a-re-GLAR ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-fix-this"
+        },
+        {
+          "english": "Can you look at this?",
+          "spanish": "¿Puedes mirar esto?",
+          "phonetic": "PWE-des mee-RAR ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-look-at-this"
+        },
+        {
+          "english": "Can you check this?",
+          "spanish": "¿Puedes revisar esto?",
+          "phonetic": "PWE-des re-bee-SAR ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-check-this"
+        },
+        {
+          "english": "How do I do this?",
+          "spanish": "¿Cómo hago esto?",
+          "phonetic": "KO-mo A-go ES-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-asking-for-help-how-do-i-do-this"
+        },
+        {
+          "english": "What does this mean?",
+          "spanish": "¿Qué significa esto?",
+          "phonetic": "ke seeg-nee-FEE-ka ES-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-asking-for-help-what-does-this-mean"
+        },
+        {
+          "english": "Where does this go?",
+          "spanish": "¿Dónde va esto?",
+          "phonetic": "DON-de ba ES-to",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-asking-for-help-where-does-this-go"
+        },
+        {
+          "english": "Can you show me?",
+          "spanish": "¿Me puedes enseñar?",
+          "phonetic": "me PWE-des en-se-NYAR",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-show-me"
+        },
+        {
+          "english": "Can you come here?",
+          "spanish": "¿Puedes venir?",
+          "phonetic": "PWE-des be-NEER",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-come-here"
+        },
+        {
+          "english": "Can you hold this?",
+          "spanish": "¿Puedes sujetar esto?",
+          "phonetic": "PWE-des soo-he-TAR ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-hold-this"
+        },
+        {
+          "english": "Can you carry this?",
+          "spanish": "¿Puedes llevar esto?",
+          "phonetic": "PWE-des ye-BAR ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-carry-this"
+        },
+        {
+          "english": "Can you get this for me?",
+          "spanish": "¿Me puedes traer esto?",
+          "phonetic": "me PWE-des tra-ER ES-to",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-get-this-for-me"
+        },
+        {
+          "english": "Can you find it?",
+          "spanish": "¿Puedes encontrarlo?",
+          "phonetic": "PWE-des en-kon-TRAR-lo",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-asking-for-help-can-you-find-it"
+        },
+        {
+          "english": "Have you seen it?",
+          "spanish": "¿Lo has visto?",
+          "phonetic": "lo as BEES-to",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-asking-for-help-have-you-seen-it"
+        }
+      ],
+      "car_journeys": [
+        {
+          "english": "Are we there yet?",
+          "spanish": "¿Ya hemos llegado?",
+          "phonetic": "ya E-mos ye-GA-do",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-car-journeys-are-we-there-yet"
+        },
+        {
+          "english": "How long is left?",
+          "spanish": "¿Cuánto falta?",
+          "phonetic": "KWAN-to FAL-ta",
+          "explanation": "Faltar expresses what is missing or how much remains; it is more natural than translating “left” literally.",
+          "id": "t2p-car-journeys-how-long-is-left"
+        },
+        {
+          "english": "How long will it take?",
+          "spanish": "¿Cuánto vamos a tardar?",
+          "phonetic": "KWAN-to BA-mos a tar-DAR",
+          "explanation": "Ir a + infinitive is the simple, everyday way to say what is going to happen.",
+          "id": "t2p-car-journeys-how-long-will-it-take"
+        },
+        {
+          "english": "Where are we going?",
+          "spanish": "¿Adónde vamos?",
+          "phonetic": "a-DON-de BA-mos",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-car-journeys-where-are-we-going"
+        },
+        {
+          "english": "Can I sit in the front?",
+          "spanish": "¿Puedo ir delante?",
+          "phonetic": "PWE-do eer de-LAN-te",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-car-journeys-can-i-sit-in-the-front"
+        },
+        {
+          "english": "Can you turn the music up?",
+          "spanish": "¿Puedes subir la música?",
+          "phonetic": "PWE-des soo-BEER la MOO-see-ka",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-car-journeys-can-you-turn-the-music-up"
+        },
+        {
+          "english": "Can you turn it down?",
+          "spanish": "¿Puedes bajarlo?",
+          "phonetic": "PWE-des ba-HAR-lo",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-car-journeys-can-you-turn-it-down"
+        },
+        {
+          "english": "Can I choose the music?",
+          "spanish": "¿Puedo elegir la música?",
+          "phonetic": "PWE-do e-le-HEER la MOO-see-ka",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-car-journeys-can-i-choose-the-music"
+        },
+        {
+          "english": "Can we stop somewhere?",
+          "spanish": "¿Podemos parar en algún sitio?",
+          "phonetic": "po-DE-mos pa-RAR en al-GOON SEE-tyo",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-car-journeys-can-we-stop-somewhere"
+        },
+        {
+          "english": "I need the toilet.",
+          "spanish": "Necesito ir al baño.",
+          "phonetic": "ne-the-SEE-to eer al BA-nyo",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-car-journeys-i-need-the-toilet"
+        },
+        {
+          "english": "I'm hungry.",
+          "spanish": "Tengo hambre.",
+          "phonetic": "TEN-go AM-bre",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-car-journeys-i-m-hungry"
+        },
+        {
+          "english": "I'm thirsty.",
+          "spanish": "Tengo sed.",
+          "phonetic": "TEN-go sed",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-car-journeys-i-m-thirsty"
+        },
+        {
+          "english": "I'm tired.",
+          "spanish": "Estoy cansada.",
+          "phonetic": "es-TOY kan-SA-da",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "t2p-car-journeys-i-m-tired"
+        },
+        {
+          "english": "I'm cold.",
+          "spanish": "Tengo frío.",
+          "phonetic": "TEN-go FREE-o",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-car-journeys-i-m-cold"
+        },
+        {
+          "english": "I'm hot.",
+          "spanish": "Tengo calor.",
+          "phonetic": "TEN-go ka-LOR",
+          "explanation": "This is the natural everyday expression rather than a word-for-word translation.",
+          "id": "t2p-car-journeys-i-m-hot"
+        },
+        {
+          "english": "Can you turn the heating on?",
+          "spanish": "¿Puedes poner la calefacción?",
+          "phonetic": "PWE-des po-NER la ka-le-fak-THYON",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-car-journeys-can-you-turn-the-heating-on"
+        },
+        {
+          "english": "Can you turn the air conditioning on?",
+          "spanish": "¿Puedes poner el aire acondicionado?",
+          "phonetic": "PWE-des po-NER el EYE-re a-kon-dee-thyo-NA-do",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-car-journeys-can-you-turn-the-air-conditioning-on"
+        },
+        {
+          "english": "Can you open the window?",
+          "spanish": "¿Puedes abrir la ventana?",
+          "phonetic": "PWE-des a-BREER la ben-TA-na",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-car-journeys-can-you-open-the-window"
+        },
+        {
+          "english": "Can we go home now?",
+          "spanish": "¿Podemos volver a casa ya?",
+          "phonetic": "po-DE-mos bol-BER a KA-sa ya",
+          "explanation": "Ya often means “now/already”; in a command it adds the sense of “right now”. Ahora is the more literal “now”.",
+          "id": "t2p-car-journeys-can-we-go-home-now"
+        }
+      ],
+      "before_bed": [
+        {
+          "english": "I'm tired.",
+          "spanish": "Estoy cansada.",
+          "phonetic": "es-TOY kan-SA-da",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "t2p-before-bed-i-m-tired"
+        },
+        {
+          "english": "I'm going to bed.",
+          "spanish": "Me voy a la cama.",
+          "phonetic": "me boy a la KA-ma",
+          "explanation": "The reflexive verb is the natural Spanish way to describe doing this to or for yourself.",
+          "id": "t2p-before-bed-i-m-going-to-bed"
+        },
+        {
+          "english": "I'm not tired.",
+          "spanish": "No estoy cansada.",
+          "phonetic": "no es-TOY kan-SA-da",
+          "explanation": "This wording uses the feminine form because the teenager is a daughter.",
+          "id": "t2p-before-bed-i-m-not-tired"
+        },
+        {
+          "english": "I'm not going to bed yet.",
+          "spanish": "Todavía no me voy a la cama.",
+          "phonetic": "to-da-BEE-a no me boy a la KA-ma",
+          "explanation": "The reflexive verb is the natural Spanish way to describe doing this to or for yourself.",
+          "id": "t2p-before-bed-i-m-not-going-to-bed-yet"
+        },
+        {
+          "english": "It's not that late.",
+          "spanish": "No es tan tarde.",
+          "phonetic": "no es tan TAR-de",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-before-bed-it-s-not-that-late"
+        },
+        {
+          "english": "Just five more minutes.",
+          "spanish": "Solo cinco minutos más.",
+          "phonetic": "SO-lo THEEN-ko mee-NOO-tos mas",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-before-bed-just-five-more-minutes"
+        },
+        {
+          "english": "I'm just finishing this.",
+          "spanish": "Estoy terminando esto.",
+          "phonetic": "es-TOY ter-mee-NAN-do ES-to",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-before-bed-i-m-just-finishing-this"
+        },
+        {
+          "english": "I'm having a shower first.",
+          "spanish": "Primero voy a ducharme.",
+          "phonetic": "pree-ME-ro boy a doo-CHAR-me",
+          "explanation": "Ir a + infinitive is the simple, everyday way to say what is going to happen.",
+          "id": "t2p-before-bed-i-m-having-a-shower-first"
+        },
+        {
+          "english": "Where's my charger?",
+          "spanish": "¿Dónde está mi cargador?",
+          "phonetic": "DON-de es-TA mee kar-ga-DOR",
+          "explanation": "Estar is used for location or a temporary state.",
+          "id": "t2p-before-bed-where-s-my-charger"
+        },
+        {
+          "english": "Have you seen my pyjamas?",
+          "spanish": "¿Has visto mi pijama?",
+          "phonetic": "as BEES-to mee pee-HA-ma",
+          "explanation": "In Spain, the present perfect is common for asking whether something has been done.",
+          "id": "t2p-before-bed-have-you-seen-my-pyjamas"
+        },
+        {
+          "english": "Can you turn the light off?",
+          "spanish": "¿Puedes apagar la luz?",
+          "phonetic": "PWE-des a-pa-GAR la looth",
+          "explanation": "A common, relaxed way to make a request using puedes.",
+          "id": "t2p-before-bed-can-you-turn-the-light-off"
+        },
+        {
+          "english": "Shut the door.",
+          "spanish": "Cierra la puerta.",
+          "phonetic": "THYE-ra la PWER-ta",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "t2p-before-bed-shut-the-door"
+        },
+        {
+          "english": "Leave the door open.",
+          "spanish": "Deja la puerta abierta.",
+          "phonetic": "DE-ha la PWER-ta a-BYER-ta",
+          "explanation": "A direct informal tú command; normal at home, though the tone can sound firm.",
+          "id": "t2p-before-bed-leave-the-door-open"
+        },
+        {
+          "english": "Goodnight.",
+          "spanish": "Buenas noches.",
+          "phonetic": "BWE-nas NO-ches",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-before-bed-goodnight"
+        },
+        {
+          "english": "See you tomorrow.",
+          "spanish": "Hasta mañana.",
+          "phonetic": "AS-ta ma-NYA-na",
+          "explanation": "A short, natural phrase for everyday family speech.",
+          "id": "t2p-before-bed-see-you-tomorrow"
+        }
+      ]
+    }
+  }
+}
