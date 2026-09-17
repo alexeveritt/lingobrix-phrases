@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LingoBrix — everyday languages at home</title>
+<meta name="description" content="Everyday Spanish, German and French phrases for families with children aged 11–16: search, learn by topic, hear it, and test yourself.">
+<meta name="theme-color" content="#1f2433">
+<link rel="icon" href="{{favicon}}">
+<style>
+:root{
+  --bg:#fbf6ee; --surface:#fff; --surface-2:#f5efe4; --ink:#1f2433; --muted:#6b7080; --line:#ebe2d3;
+  --brand:#e5484d; --shadow:0 1px 2px rgba(31,36,51,.06),0 8px 24px rgba(31,36,51,.08);
+  --font:ui-rounded,"SF Pro Rounded","Nunito","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#13151b; --surface:#1c1f27; --surface-2:#252935; --ink:#f2efe9; --muted:#9aa0ad; --line:#2d313c;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35); color-scheme:dark}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--font);-webkit-font-smoothing:antialiased}
+[hidden]{display:none!important}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+header .wrap{display:flex;align-items:center;gap:10px;height:64px;padding-top:env(safe-area-inset-top)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-.01em}
+.logo i{font-style:normal;display:grid;place-items:center;width:34px;height:34px;border-radius:10px;color:#fff;font-size:13px;font-weight:900;
+  background:linear-gradient(135deg,#e5484d 0 33%,#f5b82e 33% 67%,#2e5bd8 67%);text-shadow:0 0 3px rgba(0,0,0,.45)}
+h1,h2,h3{margin:0;letter-spacing:-.015em;line-height:1.15}
+.hero{padding:28px 0 8px}
+.hero h1{font-size:clamp(30px,8vw,44px);font-weight:900}
+.hero p{font-size:18px;color:var(--muted);margin:12px 0 0;max-width:36em}
+.sub{margin:36px 2px 12px;font-size:13px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
+.langs{display:grid;gap:12px}
+@media (min-width:620px){.langs{grid-template-columns:repeat(3,1fr)}}
+.lang{display:flex;align-items:center;gap:14px;background:var(--surface);border-radius:20px;padding:16px;box-shadow:var(--shadow);
+  color:inherit;text-decoration:none;border:2px solid transparent;transition:transform .15s,border-color .15s}
+@media (min-width:620px){.lang{flex-direction:column;align-items:flex-start;padding:20px}}
+.lang:hover{border-color:var(--line)}
+.lang:active{transform:scale(.98)}
+.lang .flag{font-size:44px;line-height:1}
+.lang b{display:block;font-size:20px}
+.lang small{color:var(--muted);font-size:14px}
+.lang .go{margin-left:auto;font-weight:800;color:var(--brand);white-space:nowrap}
+@media (min-width:620px){.lang .go{margin-left:0;margin-top:6px}}
+.steps{display:grid;gap:10px}
+@media (min-width:620px){.steps{grid-template-columns:1fr 1fr}}
+.step{background:var(--surface);border-radius:18px;padding:16px;box-shadow:var(--shadow);display:flex;gap:12px}
+.step span{font-size:26px;width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;background:var(--surface-2)}
+.step b{display:block;font-size:16px}
+.step p{margin:2px 0 0;color:var(--muted);font-size:14.5px}
+.panel{background:var(--surface);border-radius:20px;padding:18px;box-shadow:var(--shadow)}
+.panel p{margin:6px 0 0;color:var(--muted)}
+.panel p:first-of-type{margin-top:0}
+.eg{display:grid;gap:8px;margin-top:12px}
+.eg div{background:var(--surface-2);border-radius:12px;padding:10px 12px;font-size:15px}
+.eg em{font-style:normal;color:var(--muted)}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:40px 16px calc(40px + env(safe-area-inset-bottom))}
+.sheet{position:fixed;inset:0;z-index:30;background:rgba(0,0,0,.4);display:flex;align-items:flex-end;justify-content:center}
+.sheet>div{background:var(--surface);width:100%;max-width:640px;border-radius:24px 24px 0 0;padding:20px 20px calc(20px + env(safe-area-inset-bottom));animation:up .2s ease}
+@keyframes up{from{transform:translateY(24px);opacity:0}}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;height:54px;border:0;border-radius:14px;background:var(--ink);color:var(--bg);font:700 16px var(--font);cursor:pointer}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="logo"><i>LB</i> LingoBrix</div></div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Everyday languages,<br>at home.</h1>
+    <p>Short, real phrases for family life — getting up, mealtimes, homework, screens and bedtime. Made for families with children aged 11–16, to use alongside school and GCSE.</p>
+  </section>
+
+  <div class="sub">Choose a language</div>
+  <div class="langs">{{cards}}</div>
+
+  <div class="sub">How it works</div>
+  <div class="steps">
+    <div class="step"><span>🔍</span><div><b>Find a phrase</b><p>Search in English or the other language, and swipe through the matches.</p></div></div>
+    <div class="step"><span>🗂️</span><div><b>Learn by topic</b><p>{{topics}} topics, each split into things a parent says and things a kid says.</p></div></div>
+    <div class="step"><span>🔊</span><div><b>Hear it and say it</b><p>Every card shows an easy pronunciation guide and plays the phrase with your phone's voice.</p></div></div>
+    <div class="step"><span>🎯</span><div><b>Test yourself</b><p>Flashcards both ways, plus spelling practice that spots missing accents.</p></div></div>
+  </div>
+
+  <div class="sub">Why it helps</div>
+  <div class="panel">
+    <p>School teaches the grammar. LingoBrix is for using the language every day — the things you actually say at home, including the moaning and the backchat.</p>
+    <p>Each of the {{phrases}} phrases has a short, plain-English explanation of how it works.</p>
+    <div class="eg">
+      <div>☕ <b>¿Has hecho los deberes?</b> <em>— Have you done your homework?</em></div>
+      <div>🎒 <b>Noch fünf Minuten!</b> <em>— Five more minutes!</em></div>
+      <div>☕ <b>Arrête de chanter !</b> <em>— Stop singing!</em></div>
+    </div>
+  </div>
+
+  <div class="sub">Tip</div>
+  <div class="panel">
+    <p>Add your language to your phone's home screen so it opens like an app: in Safari tap <b>Share → Add to Home Screen</b>, or in Chrome tap <b>⋮ → Add to Home screen</b>.</p>
+  </div>
+
+  <div class="sub">Privacy</div>
+  <div class="panel">
+    <p>No cookies, no tracking and no accounts. Phrases you save and your practice scores are kept only in your browser on your device, and never sent anywhere.</p>
+  </div>
+</main>
+
+<footer>© LingoBrix · Everyday Spanish, German and French for families</footer>
+
+<div class="sheet" id="welcome" hidden role="dialog" aria-modal="true" aria-labelledby="welcomeTitle"><div>
+  <div style="font-size:40px">👋</div>
+  <h3 id="welcomeTitle" style="font-size:22px">Welcome to LingoBrix</h3>
+  <p style="color:var(--muted);margin:6px 0 12px">Everyday language practice for families — pick a language to start.</p>
+  <div class="panel" style="box-shadow:none;background:var(--surface-2);margin-bottom:16px">
+    <b>🔒 Your privacy</b>
+    <p style="margin-top:4px">No cookies, no tracking and no accounts. Anything you save stays in this browser on this device. Nothing is sent anywhere.</p>
+  </div>
+  <button class="btn" id="welcomeOk">OK, let's go</button>
+</div></div>
+
+<script id="sites" type="application/json">/*SITES*/</script>
+<script>
+(() => {
+  // the privacy notice, once per device (each language site shows its own once too)
+  const KEY = 'lb.v1';
+  let seen = false;
+  try { seen = !!JSON.parse(localStorage.getItem(KEY) || '{}').welcomed; } catch (e) {}
+  const sheet = document.getElementById('welcome');
+  if (!seen) sheet.hidden = false;
+  document.getElementById('welcomeOk').onclick = () => {
+    try { localStorage.setItem(KEY, JSON.stringify({ welcomed: true })); } catch (e) {}
+    sheet.hidden = true;
+  };
+  // away from lingobrix.com (local dev, workers.dev) the language sites live at /<code>/
+  if (!/(^|\.)lingobrix\.com$/.test(location.hostname)) {
+    const sites = JSON.parse(document.getElementById('sites').textContent);
+    document.querySelectorAll('.lang[data-code]').forEach((a) => {
+      if (sites.some((s) => s.code === a.dataset.code)) a.href = `/${a.dataset.code}/`;
+    });
+  }
+})();
+</script>
+</body>
+</html>

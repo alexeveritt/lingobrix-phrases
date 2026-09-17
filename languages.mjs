@@ -1,18 +1,20 @@
-// One entry per site. build.mjs fills src/index.html with these values.
+// One entry per language site. build.mjs fills src/app.html with these values and
+// writes dist/<code>/index.html; src/worker.js serves it on <subdomain>.lingobrix.com.
 //
-//   data    phrase file (ids, topics and English are shared across languages)
-//   field   the key holding the target-language text in that file
-//   out     output folder deployed by Cloudflare Pages
-import { phrasePh as spanishPh } from './tools/phonetic.mjs';
+//   data       phrase file (ids, topics and English are shared across languages)
+//   field      the key holding the target-language text in that file
+//   subdomain  served at https://<subdomain>.lingobrix.com (also add it to wrangler.jsonc)
+import { phrasePh as spanishPh } from './tools/phonetic-es.mjs';
 import { phrasePh as germanPh } from './tools/phonetic-de.mjs';
 import { phrasePh as frenchPh } from './tools/phonetic-fr.mjs';
 
 export default [
   {
     code: 'es',
-    data: 'phrases.json',
+    data: 'data/es.json',
     field: 'es',
-    out: 'public',
+    subdomain: 'spanish',
+    nativeName: 'Español',
     phonetic: spanishPh,
     page: {
       title: 'Spanish at Home',
@@ -57,9 +59,10 @@ export default [
   },
   {
     code: 'de',
-    data: 'phrases.de.json',
+    data: 'data/de.json',
     field: 'de',
-    out: 'public-de',
+    subdomain: 'german',
+    nativeName: 'Deutsch',
     phonetic: germanPh,
     page: {
       title: 'German at Home',
@@ -106,9 +109,10 @@ export default [
   },
   {
     code: 'fr',
-    data: 'phrases.fr.json',
+    data: 'data/fr.json',
     field: 'fr',
-    out: 'public-fr',
+    subdomain: 'french',
+    nativeName: 'Français',
     phonetic: frenchPh,
     page: {
       title: 'French at Home',

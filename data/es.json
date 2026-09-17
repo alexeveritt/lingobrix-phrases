@@ -1,11 +1,11 @@
 {
   "title": "Spanish at Home",
   "locale": "es-ES",
-  "audience": "A parent and their teenage daughter (plus a brother and Monty the dog)",
+  "audience": "Families with children at secondary school (ages 11–16)",
   "pronunciation_guide": "English-friendly respelling for Spain (Castilian) Spanish, generated from the Spanish by tools/phonetic.mjs. Vowels: ah, eh, ee, oh, oo. th = c/z, h = j and soft g (a strong, breathy h), b = b/v, y = ll, ny = ñ, rr = rolled r. CAPITALS mark the stressed syllable.",
   "directions": {
-    "p": "Parent says (to the teenager)",
-    "t": "Teen says (to the parent)"
+    "p": "Parent says (to their kid)",
+    "t": "Kid says (to their parent)"
   },
   "categories": [
     {
@@ -1118,7 +1118,7 @@
       "en": "Where are my shoes?",
       "es": "¿Dónde están mis zapatos?",
       "ph": "DOHN-deh ehs-TAHN mees thah-PAH-tohs",
-      "note": "Están (plural) goes with more than one thing. Trainers are las zapatillas — useful, as that's what most teenagers actually wear."
+      "note": "Están (plural) goes with more than one thing. Trainers are las zapatillas — useful, as that's what most kids actually wear."
     },
     {
       "id": 64,
@@ -2765,7 +2765,7 @@
       "en": "I'll do it later.",
       "es": "Lo haré luego.",
       "ph": "loh ah-REH LWEH-goh",
-      "note": "Haré means 'I will do'. It's the classic teenager reply — a parent might answer ¡No, ahora! (No, now!)."
+      "note": "Haré means 'I will do'. It's the classic kid reply — a parent might answer ¡No, ahora! (No, now!)."
     },
     {
       "id": 205,
@@ -3530,7 +3530,7 @@
       "en": "Later means now.",
       "es": "«Luego» significa ahora.",
       "ph": "LWEH-goh seeg-nee-FEE-kah ah-OH-rah",
-      "note": "Luego = 'later' — the teen's favourite word. Significa = 'means', like 'signify'."
+      "note": "Luego = 'later' — the kid's favourite word. Significa = 'means', like 'signify'."
     },
     {
       "id": 955,
@@ -3557,7 +3557,7 @@
       "en": "Don't \"whatever\" me.",
       "es": "¡A mí no me digas «me da igual»!",
       "ph": "ah mee noh meh DEE-gahs meh dah ee-GWAHL",
-      "note": "Spanish teens say me da igual or paso for 'whatever'. A mí no me digas… = 'don't you say … to ME'."
+      "note": "Spanish kids say me da igual or paso for 'whatever'. A mí no me digas… = 'don't you say … to ME'."
     },
     {
       "id": 958,
@@ -3719,7 +3719,7 @@
       "en": "I'll do it in a minute.",
       "es": "Lo hago en un minuto.",
       "ph": "loh AH-goh ehn oon mee-NOO-toh",
-      "note": "Lo hago is 'I do it' — Spanish uses the present for things you're about to do. Teens in Spain also say ahora lo hago."
+      "note": "Lo hago is 'I do it' — Spanish uses the present for things you're about to do. Kids in Spain also say ahora lo hago."
     },
     {
       "id": 271,
@@ -5933,7 +5933,7 @@
       "en": "Do I have to come home that early?",
       "es": "¿Tengo que volver tan pronto?",
       "ph": "TEHN-goh keh bohl-BEHR tahn PROHN-toh",
-      "note": "Volver means 'to come back'. Pronto here means 'early', and tan pronto is 'so early' — a classic teen complaint."
+      "note": "Volver means 'to come back'. Pronto here means 'early', and tan pronto is 'so early' — a classic kid complaint."
     },
     {
       "id": 472,
@@ -6698,7 +6698,7 @@
       "en": "Whatever.",
       "es": "Paso.",
       "ph": "PAH-soh",
-      "note": "Paso = 'I'll pass / can't be bothered'. Very Spain teen. Paso de ti = 'I'm ignoring you'."
+      "note": "Paso = 'I'll pass / can't be bothered'. Very Spanish. Paso de ti = 'I'm ignoring you'."
     },
     {
       "id": 1035,
@@ -7211,7 +7211,7 @@
       "en": "That's disgusting.",
       "es": "Qué asco.",
       "ph": "keh AHS-koh",
-      "note": "Asco means 'disgust'. Teens in Spain say ¡qué asco! constantly — about food, bugs, or anything gross."
+      "note": "Asco means 'disgust'. Kids in Spain say ¡qué asco! constantly — about food, bugs, or anything gross."
     },
     {
       "id": 569,
@@ -7787,7 +7787,7 @@
       "en": "Nobody understands me.",
       "es": "Nadie me entiende.",
       "ph": "NAH-dyeh meh ehn-TYEHN-deh",
-      "note": "Nadie = 'nobody'. Me entiende = 'understands me'. Peak teen drama, works just as well in Spanish."
+      "note": "Nadie = 'nobody'. Me entiende = 'understands me'. Peak drama, works just as well in Spanish."
     },
     {
       "id": 1140,
@@ -8201,7 +8201,7 @@
       "en": "Nailed it!",
       "es": "¡Lo he clavado!",
       "ph": "loh eh klah-BAH-doh",
-      "note": "Clavar = 'to nail'. Lo he clavado = 'I nailed it'. Same image as English, used by Spanish teens too."
+      "note": "Clavar = 'to nail'. Lo he clavado = 'I nailed it'. Same image as English, used by Spanish kids too."
     },
     {
       "id": 1163,
@@ -8228,7 +8228,7 @@
       "en": "That's so cool!",
       "es": "¡Qué guay!",
       "ph": "keh gwye",
-      "note": "Guay = 'cool' in Spain. Very common with teens. ¡Qué guay! = 'how cool!'"
+      "note": "Guay = 'cool' in Spain. Very common with kids. ¡Qué guay! = 'how cool!'"
     },
     {
       "id": 634,
@@ -8696,7 +8696,7 @@
       "en": "Can you set this up for me?",
       "es": "¿Me lo configuras?",
       "ph": "meh loh kohn-fee-GOO-rahs",
-      "note": "Configurar = 'to set up' a phone, app or TV. Classic parent-to-teen request!"
+      "note": "Configurar = 'to set up' a phone, app or TV. Classic parent-to-kid request!"
     },
     {
       "id": 1081,

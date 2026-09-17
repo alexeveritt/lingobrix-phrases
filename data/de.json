@@ -3,8 +3,8 @@
   "locale": "de-DE",
   "pronunciation_guide": "English-friendly respelling for standard German, built from tools/de-lexicon.json (one entry per word). CAPITALS mark the stressed syllable.",
   "directions": {
-    "p": "Parent says (to the teenager)",
-    "t": "Teen says (to the parent)"
+    "p": "Parent says (to their kid)",
+    "t": "Kid says (to their parent)"
   },
   "categories": [
     {
@@ -775,7 +775,7 @@
       "en": "Ugh, Mondays.",
       "de": "Boah, schon wieder Montag.",
       "ph": "BOH-ah, shohn VEE-der MOHN-tahk",
-      "note": "Schon wieder = yet again – great for complaining. Boah is a teen-style groan. Days are all der: der Montag."
+      "note": "Schon wieder = yet again – great for complaining. Boah is a classic groan. Days are all der: der Montag."
     },
     {
       "id": 872,
@@ -1675,7 +1675,7 @@
       "en": "Is dinner ready?",
       "de": "Ist das Essen schon fertig?",
       "ph": "ist das E-sen shohn FER-tish",
-      "note": "schon = already or yet. Adding it makes the question sound a bit impatient, which suits a hungry teenager."
+      "note": "schon = already or yet. Adding it makes the question sound a bit impatient, which suits a hungry kid."
     },
     {
       "id": 126,
@@ -1900,7 +1900,7 @@
       "en": "This is really good.",
       "de": "Das ist echt lecker.",
       "ph": "das ist esht LE-ker",
-      "note": "lecker = tasty, the everyday word for good food. echt = really, very common in teen speech."
+      "note": "lecker = tasty, the everyday word for good food. echt = really, very common in everyday slang."
     },
     {
       "id": 151,
@@ -1963,7 +1963,7 @@
       "en": "Thanks, it was delicious.",
       "de": "Danke, das war superlecker.",
       "ph": "DAN-kuh, das vahr ZOO-per-le-ker",
-      "note": "war is the past of ist (was). Teens stick super- in front of adjectives: superlecker, supernett."
+      "note": "war is the past of ist (was). Kids stick super- in front of adjectives: superlecker, supernett."
     },
     {
       "id": 158,
@@ -2881,7 +2881,7 @@
       "en": "I'm tired.",
       "de": "Ich bin müde.",
       "ph": "ish bin MEW-duh",
-      "note": "müde = tired. Add total or voll for teen emphasis: Ich bin total müde."
+      "note": "müde = tired. Add total or voll for extra emphasis: Ich bin total müde."
     },
     {
       "id": 218,
@@ -3394,7 +3394,7 @@
       "en": "I'll do it after this.",
       "de": "Mach ich gleich danach.",
       "ph": "makh ish glyesh da-NAHKH",
-      "note": "danach = after that; gleich = straight away. Together they mean \"right after this\" – the teen's favourite delay."
+      "note": "danach = after that; gleich = straight away. Together they mean \"right after this\" – the kid's favourite delay."
     },
     {
       "id": 940,
@@ -3493,7 +3493,7 @@
       "en": "Ugh, fine, I'm coming.",
       "de": "Boah, na gut, ich komm ja schon.",
       "ph": "BOH-ah, nah goot, ish kom yah shohn",
-      "note": "na gut = oh alright. ja schon adds \"I'm coming, OK!\" impatience. Boah is a big sigh – very teen."
+      "note": "na gut = oh alright. ja schon adds \"I'm coming, OK!\" impatience. Boah is a big sigh – very typical."
     },
     {
       "id": 951,
@@ -3763,7 +3763,7 @@
       "en": "I'm doing it!",
       "de": "Ich mach ja schon!",
       "ph": "ish makh yah shohn",
-      "note": "ja schon adds 'I'm already on it, OK?!' — pure teen irritation. German has no -ing form: ich mache = I do / I'm doing."
+      "note": "ja schon adds 'I'm already on it, OK?!' — pure irritation. German has no -ing form: ich mache = I do / I'm doing."
     },
     {
       "id": 276,
@@ -4348,7 +4348,7 @@
       "en": "The internet's really slow.",
       "de": "Das Internet ist total langsam.",
       "ph": "das IN-ter-net ist to-TAHL LANG-zahm",
-      "note": "total = really, totally — teens use it constantly. langsam = slow; schnell = fast."
+      "note": "total = really, totally — kids use it constantly. langsam = slow; schnell = fast."
     },
     {
       "id": 341,
@@ -4528,7 +4528,7 @@
       "en": "Stop annoying your brother.",
       "de": "Hör auf, deinen Bruder zu nerven!",
       "ph": "hur owf, DYE-nen BROO-der tsoo NER-fen",
-      "note": "nerven = to annoy, get on someone's nerves. For a sister: deine Schwester. Teen favourite: Nerv nicht!"
+      "note": "nerven = to annoy, get on someone's nerves. For a sister: deine Schwester. Kid favourite: Nerv nicht!"
     },
     {
       "id": 361,
@@ -6607,7 +6607,7 @@
       "en": "In a sec.",
       "de": "Ja, gleich!",
       "ph": "yah, glyesh",
-      "note": "gleich = in a moment. Ja, gleich! is the classic teen stalling answer – 'yeah, in a sec'."
+      "note": "gleich = in a moment. Ja, gleich! is the classic kid stalling answer – 'yeah, in a sec'."
     },
     {
       "id": 1025,
@@ -6616,7 +6616,7 @@
       "en": "Ugh, fine.",
       "de": "Boah, na gut.",
       "ph": "BOH-ah, nah goot",
-      "note": "boah is a teen sigh or groan, like 'ugh'. na gut = fine then."
+      "note": "boah is a sigh or groan, like 'ugh'. na gut = fine then."
     },
     {
       "id": 1026,
@@ -6697,7 +6697,7 @@
       "en": "Whatever.",
       "de": "Mir egal.",
       "ph": "meer ay-GAHL",
-      "note": "egal = all the same. Mir egal = '(It's) all the same to me' – the classic teen shrug."
+      "note": "egal = all the same. Mir egal = '(It's) all the same to me' – the classic shrug."
     },
     {
       "id": 1035,
@@ -6787,7 +6787,7 @@
       "en": "Really?",
       "de": "Wirklich?",
       "ph": "VIRK-lish",
-      "note": "wirklich = really. Casual swap: Echt? – you'll hear that from teens all the time."
+      "note": "wirklich = really. Casual swap: Echt? – you'll hear that from kids all the time."
     },
     {
       "id": 1045,
@@ -7201,7 +7201,7 @@
       "en": "That's annoying.",
       "de": "Das nervt.",
       "ph": "das nerft",
-      "note": "nerven = to annoy, to get on your nerves. Das nervt! is exactly what a German teenager would say."
+      "note": "nerven = to annoy, to get on your nerves. Das nervt! is exactly what a German kid would say."
     },
     {
       "id": 568,
@@ -7219,7 +7219,7 @@
       "en": "That's embarrassing.",
       "de": "Das ist peinlich.",
       "ph": "das ist PINE-lish",
-      "note": "peinlich = embarrassing. Wie peinlich! (How embarrassing!) is a favourite teen reaction to parents."
+      "note": "peinlich = embarrassing. Wie peinlich! (How embarrassing!) is a favourite kid reaction to parents."
     },
     {
       "id": 570,
@@ -7291,7 +7291,7 @@
       "en": "Whatever.",
       "de": "Egal.",
       "ph": "ay-GAHL",
-      "note": "Egal on its own is the dismissive teen 'Whatever.' Said with a shrug, it sounds rude to adults."
+      "note": "Egal on its own is the dismissive 'Whatever.' Said with a shrug, it sounds rude to adults."
     },
     {
       "id": 578,
@@ -7327,7 +7327,7 @@
       "en": "Obviously.",
       "de": "Na klar.",
       "ph": "nah klahr",
-      "note": "klar literally means 'clear', so Na klar = obviously, of course. Logisch! is a cheeky teen alternative."
+      "note": "klar literally means 'clear', so Na klar = obviously, of course. Logisch! is a cheeky alternative."
     },
     {
       "id": 582,
@@ -7435,7 +7435,7 @@
       "en": "That's cool.",
       "de": "Das ist cool.",
       "ph": "das ist kool",
-      "note": "cool is borrowed from English and used the same way. Voll cool = really cool; voll (full) is a common teen booster."
+      "note": "cool is borrowed from English and used the same way. Voll cool = really cool; voll (full) is a common booster."
     },
     {
       "id": 594,
@@ -8146,7 +8146,7 @@
       "en": "Thanks, Mum.",
       "de": "Danke, Mama.",
       "ph": "DAN-kuh, MA-ma",
-      "note": "Danke is the everyday thank you. Mama and Papa are what German teens actually call their parents – not Mutter or Vater."
+      "note": "Danke is the everyday thank you. Mama and Papa are what German kids actually call their parents – not Mutter or Vater."
     },
     {
       "id": 1157,
@@ -8173,7 +8173,7 @@
       "en": "That's amazing!",
       "de": "Das ist ja krass!",
       "ph": "das ist yah kras",
-      "note": "krass is teen slang for 'amazing' or 'extreme' – it can be good or bad depending on tone. ja just adds surprise."
+      "note": "krass is slang for 'amazing' or 'extreme' – it can be good or bad depending on tone. ja just adds surprise."
     },
     {
       "id": 1160,
@@ -8200,7 +8200,7 @@
       "en": "Nailed it!",
       "de": "Voll gut hingekriegt!",
       "ph": "fol goot HIN-ge-kreekt",
-      "note": "hinkriegen is chatty for 'to manage' or 'pull off'. voll in teen speak means 'totally', not 'full'."
+      "note": "hinkriegen is chatty for 'to manage' or 'pull off'. voll in slang means 'totally', not 'full'."
     },
     {
       "id": 1163,
@@ -8470,7 +8470,7 @@
       "en": "No worries.",
       "de": "Kein Stress.",
       "ph": "kine shtres",
-      "note": "Germans use Stress too. Kein Stress is a relaxed teen way to say 'no worries' or 'don't stress'."
+      "note": "Germans use Stress too. Kein Stress is a relaxed kid way to say 'no worries' or 'don't stress'."
     },
     {
       "id": 1180,
@@ -9262,7 +9262,7 @@
       "en": "Everyone has one.",
       "de": "Jeder hat so eins.",
       "ph": "YAY-der hat zoh ines",
-      "note": "Jeder = everyone, but it takes a singular verb: jeder hat, not jeder haben. The classic teen argument for buying something."
+      "note": "Jeder = everyone, but it takes a singular verb: jeder hat, not jeder haben. The classic kid argument for buying something."
     },
     {
       "id": 695,
@@ -10801,7 +10801,7 @@
       "en": "I'd like new trainers for my birthday.",
       "de": "Ich wünsch mir neue Turnschuhe zum Geburtstag.",
       "ph": "ish vewnsh meer NOY-uh TURN-shoo-uh tsum ge-BOORTS-tahk",
-      "note": "Turnschuhe = trainers, literally 'gym shoes'. Sneaker is also common with teens."
+      "note": "Turnschuhe = trainers, literally 'gym shoes'. Sneaker is also common with kids."
     },
     {
       "id": 790,
@@ -10936,7 +10936,7 @@
       "en": "You're so embarrassing.",
       "de": "Ihr seid so peinlich.",
       "ph": "eer zite zoh PINE-lish",
-      "note": "peinlich = embarrassing, a favourite teen word. Ihr seid is for several people; to one parent it's Du bist so peinlich."
+      "note": "peinlich = embarrassing, a favourite kid word. Ihr seid is for several people; to one parent it's Du bist so peinlich."
     },
     {
       "id": 1253,
@@ -11341,7 +11341,7 @@
       "en": "Goodnight.",
       "de": "Nacht!",
       "ph": "nakht",
-      "note": "Just Nacht! is the casual teen version of Gute Nacht. Fine with family, a bit short with anyone else."
+      "note": "Just Nacht! is the casual version of Gute Nacht. Fine with family, a bit short with anyone else."
     },
     {
       "id": 837,

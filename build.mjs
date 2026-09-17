@@ -1,26 +1,81 @@
-// Builds one single-file site per language (see languages.mjs).
+// Builds everything into dist/ (see languages.mjs):
 //
-//   node build.mjs          build every language
-//   node build.mjs de       build just German
+//   dist/index.html         the lingobrix.com home page (src/home.html)
+//   dist/<code>/index.html  one single-file app per language (src/app.html)
+//   dist/sites.json         subdomain → folder, read by src/worker.js
 //
-// For each language it:
-// - regenerates every pronunciation (ph) and saves it back to the phrase file
-// - checks the data (ids, categories, required fields)
-// - fills src/index.html with the language's text and phrases, and writes <out>/index.html + _headers
-import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from 'node:fs';
+//   node build.mjs          build everything
+//   node build.mjs de       build just German (plus the home page)
+//
+// For each language it regenerates every pronunciation (ph), saves it back to the
+// phrase file, and checks the data (ids, categories, required fields).
+import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs';
+import { dirname } from 'node:path';
 import languages from './languages.mjs';
 
+const DOMAIN = 'lingobrix.com';
 const only = process.argv.slice(2);
-const template = readFileSync('src/index.html', 'utf8');
+const app = readFileSync('src/app.html', 'utf8');
+const sites = [];
 let failed = false;
 
+if (!only.length) rmSync('dist', { recursive: true, force: true });
+
 for (const lang of languages) {
-  if (only.length && !only.includes(lang.code)) continue;
   const data = JSON.parse(readFileSync(lang.data, 'utf8'));
+  sites.push({
+    code: lang.code,
+    host: `${lang.subdomain}.${DOMAIN}`,
+    language: lang.page.language,
+    nativeName: lang.nativeName,
+    flag: lang.app.flag,
+    phrases: data.phrases.length,
+    topics: data.categories.length,
+  });
+  if (only.length && !only.includes(lang.code)) continue;
+
+  const errors = check(data, lang);
+  if (errors.length) {
+    console.error(`${lang.data}:\n  ${errors.join('\n  ')}`);
+    failed = true;
+    continue;
+  }
+
+  // only write when something changed, so `npm run watch` doesn't loop
+  const updated = JSON.stringify(data, null, 2) + '\n';
+  if (updated !== readFileSync(lang.data, 'utf8')) writeFileSync(lang.data, updated);
+
+  const page = { ...lang.page, logoGradient: gradient(lang.page), favicon: favicon(lang.page) };
+  const phrases = {
+    categories: data.categories,
+    phrases: data.phrases.map((p) => ({ id: p.id, cat: p.cat, dir: p.dir, en: p.en, tx: p[lang.field], ph: p.ph, note: p.note })),
+  };
+  const html = fill(app, page, `languages.mjs (${lang.code}.page)`)
+    .replace('/*PHRASES*/', () => json(phrases))
+    .replace('/*LANG*/', () => json(lang.app));
+  write(`dist/${lang.code}/index.html`, html);
+  console.log(`Built dist/${lang.code}/ — ${lang.page.title}, ${data.phrases.length} phrases, ${kb(html)}`);
+}
+
+const home = fill(readFileSync('src/home.html', 'utf8'), {
+  favicon: favicon({ stripes: ['#e5484d', '#f5b82e', '#2e5bd8'], logo: 'LB', logoInk: '#ffffff', logoHalo: 'rgba(0,0,0,.45)' }),
+  phrases: Math.min(...sites.map((s) => s.phrases)).toLocaleString('en-GB'),
+  topics: Math.min(...sites.map((s) => s.topics)),
+  cards: sites.map((s) => `
+    <a class="lang" data-code="${s.code}" href="https://${s.host}/"><span class="flag">${s.flag}</span>
+      <div><b>${s.language}</b><small>${s.nativeName} · ${s.phrases.toLocaleString('en-GB')} phrases</small></div>
+      <span class="go">Open →</span></a>`).join(''),
+}, 'src/home.html').replace('/*SITES*/', () => json(sites));
+write('dist/index.html', home);
+write('dist/sites.json', JSON.stringify(Object.fromEntries(sites.map((s) => [s.host, s.code])), null, 2) + '\n');
+console.log(`Built dist/ — home page, ${kb(home)}`);
+
+if (failed) process.exit(1);
+
+function check(data, lang) {
   const cats = new Set(data.categories.map((c) => c.id));
   const ids = new Set();
   const errors = [];
-
   for (const p of data.phrases) {
     if (ids.has(p.id)) errors.push(`duplicate id ${p.id}`);
     ids.add(p.id);
@@ -33,38 +88,27 @@ for (const lang of languages) {
       errors.push(`#${p.id} (${p[lang.field]}): ${e.message}`);
     }
   }
-  if (errors.length) {
-    console.error(`${lang.data}:\n  ${errors.join('\n  ')}`);
-    failed = true;
-    continue;
-  }
-
-  // only write when something changed, so `node --watch-path` doesn't loop
-  const updated = JSON.stringify(data, null, 2) + '\n';
-  if (updated !== readFileSync(lang.data, 'utf8')) writeFileSync(lang.data, updated);
-
-  const page = { ...lang.page, logoGradient: gradient(lang.page), favicon: favicon(lang.page) };
-  const phrases = {
-    categories: data.categories,
-    phrases: data.phrases.map((p) => ({ id: p.id, cat: p.cat, dir: p.dir, en: p.en, tx: p[lang.field], ph: p.ph, note: p.note })),
-  };
-  const html = template
-    .replace(/\{\{(\w+)\}\}/g, (m, k) => {
-      if (page[k] === undefined) throw new Error(`languages.mjs: ${lang.code}.page.${k} is not set`);
-      return page[k];
-    })
-    .replace('/*PHRASES*/', () => json(phrases))
-    .replace('/*LANG*/', () => json(lang.app));
-
-  mkdirSync(lang.out, { recursive: true });
-  writeFileSync(`${lang.out}/index.html`, html);
-  copyFileSync('src/_headers', `${lang.out}/_headers`);
-  console.log(`Built ${lang.out}/index.html — ${lang.page.title}, ${data.phrases.length} phrases, ${(html.length / 1024).toFixed(0)} KB`);
+  return errors;
 }
-if (failed) process.exit(1);
+
+function fill(template, values, source) {
+  return template.replace(/\{\{(\w+)\}\}/g, (m, k) => {
+    if (values[k] === undefined) throw new Error(`{{${k}}} has no value in ${source}`);
+    return values[k];
+  });
+}
+
+function write(file, text) {
+  mkdirSync(dirname(file), { recursive: true });
+  writeFileSync(file, text);
+}
 
 function json(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c');
+}
+
+function kb(text) {
+  return `${(Buffer.byteLength(text) / 1024).toFixed(0)} KB`;
 }
 
 function gradient({ stripes: [a, b, c], vertical }) {

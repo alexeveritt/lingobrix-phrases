@@ -1,0 +1,20 @@
+{
+  "name": "lingobrix",
+  "private": true,
+  "type": "module",
+  "description": "Everyday Spanish, German and French phrases for families — lingobrix.com",
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node --watch-path=src --watch-path=data --watch-path=tools --watch-path=languages.mjs build.mjs",
+    "dev": "node build.mjs && wrangler dev --ip 0.0.0.0",
+    "test": "node build.mjs && node tests/worker.test.mjs && node tests/smoke.mjs",
+    "deploy": "node build.mjs && wrangler deploy"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.63.0",
+    "wrangler": "^4.134.0"
+  }
+}

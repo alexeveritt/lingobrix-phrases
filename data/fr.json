@@ -3,8 +3,8 @@
   "locale": "fr-FR",
   "pronunciation_guide": "English-friendly respelling for standard French, written once per phrase in tools/fr-pronunciation.json. No capitals: French gives every syllable about the same weight. Linked words are joined with hyphens.",
   "directions": {
-    "p": "Parent says (to the teenager)",
-    "t": "Teen says (to the parent)"
+    "p": "Parent says (to their kid)",
+    "t": "Kid says (to their parent)"
   },
   "categories": [
     {
@@ -343,7 +343,7 @@
       "en": "Have you got your phone?",
       "fr": "Tu as ton portable ?",
       "ph": "tew a tohn por-tabl",
-      "note": "Un portable is a mobile phone — the word just means 'portable'. Lots of French teens shorten it to mon tél."
+      "note": "Un portable is a mobile phone — the word just means 'portable'. Lots of French kids shorten it to mon tél."
     },
     {
       "id": 23,
@@ -721,7 +721,7 @@
       "en": "I don't want to go to school.",
       "fr": "Je ne veux pas aller au collège.",
       "ph": "zhuh nuh vuh pa a-lay oh ko-lezh",
-      "note": "False friend: le collège is secondary school for 11 to 15-year-olds, not college. Older teens go to le lycée."
+      "note": "False friend: le collège is secondary school for 11 to 15-year-olds, not college. Older students go to le lycée."
     },
     {
       "id": 866,
@@ -1099,7 +1099,7 @@
       "en": "Where's my hoodie?",
       "fr": "Où est mon sweat ?",
       "ph": "oo ay mohn sweet",
-      "note": "Un sweat (from English sweatshirt) is what French teens call a hoodie; the full name is un sweat à capuche."
+      "note": "Un sweat (from English sweatshirt) is what French kids call a hoodie; the full name is un sweat à capuche."
     },
     {
       "id": 62,
@@ -1117,7 +1117,7 @@
       "en": "Where are my shoes?",
       "fr": "Où sont mes chaussures ?",
       "ph": "oo sohn may shoh-sewr",
-      "note": "Chaussures = shoes in general; trainers are des baskets. Où sont mes baskets ? is what many teens would actually say."
+      "note": "Chaussures = shoes in general; trainers are des baskets. Où sont mes baskets ? is what many kids would actually say."
     },
     {
       "id": 64,
@@ -1792,7 +1792,7 @@
       "en": "I don't want that.",
       "fr": "Je ne veux pas de ça.",
       "ph": "zhuh nuh vuh pa duh sa",
-      "note": "Vouloir de quelque chose is a common way to refuse. A shorter, blunter teen version: J'en veux pas !"
+      "note": "Vouloir de quelque chose is a common way to refuse. A shorter, blunter kid version: J'en veux pas !"
     },
     {
       "id": 139,
@@ -1864,7 +1864,7 @@
       "en": "Who ate my food?",
       "fr": "Qui a mangé ma bouffe ?",
       "ph": "kee a mahn-zhay ma boof",
-      "note": "La bouffe is slang for food – fine for a cross teenager at home, but say la nourriture or mon repas anywhere polite."
+      "note": "La bouffe is slang for food – fine for a cross kid at home, but say la nourriture or mon repas anywhere polite."
     },
     {
       "id": 147,
@@ -2764,7 +2764,7 @@
       "en": "I'll do it later.",
       "fr": "Je le ferai plus tard.",
       "ph": "zhuh luh fuh-ray plew tar",
-      "note": "Je ferai is the future of faire (I will do). Plus tard = later – the classic teenage stalling line."
+      "note": "Je ferai is the future of faire (I will do). Plus tard = later – the classic stalling line."
     },
     {
       "id": 205,
@@ -3385,7 +3385,7 @@
       "en": "Don't touch my stuff!",
       "fr": "Ne touche pas à mes affaires !",
       "ph": "nuh toosh pa a may-za-fehr",
-      "note": "Toucher à = to touch or mess with. Mes affaires = my stuff – a phrase teenagers use all the time."
+      "note": "Toucher à = to touch or mess with. Mes affaires = my stuff – a phrase kids use all the time."
     },
     {
       "id": 939,
@@ -4294,7 +4294,7 @@
       "en": "My phone's dead.",
       "fr": "Mon portable est à plat.",
       "ph": "mohn por-tabl eh-ta pla",
-      "note": "À plat = flat – French phone batteries go flat too. Teens also say mon portable est mort (dead)."
+      "note": "À plat = flat – French phone batteries go flat too. Kids also say mon portable est mort (dead)."
     },
     {
       "id": 335,
@@ -4456,7 +4456,7 @@
       "en": "I've run out of data.",
       "fr": "Je n'ai plus de données.",
       "ph": "zhuh neh plew duh do-nay",
-      "note": "Données = data, literally 'given things'. Lots of French teens just say Je n'ai plus de data."
+      "note": "Données = data, literally 'given things'. Lots of French kids just say Je n'ai plus de data."
     },
     {
       "id": 353,
@@ -4519,7 +4519,7 @@
       "en": "Can you top up my phone?",
       "fr": "Tu peux recharger mon crédit ?",
       "ph": "tew puh ruh-shar-zhay mohn kray-dee",
-      "note": "Recharger = to top up (and to recharge). Most French teens have a monthly plan, called un forfait."
+      "note": "Recharger = to top up (and to recharge). Most French kids have a monthly plan, called un forfait."
     },
     {
       "id": 360,
@@ -4888,7 +4888,7 @@
       "en": "You're so annoying!",
       "fr": "Tu es trop énervant !",
       "ph": "tew ay troh ay-nehr-vahn",
-      "note": "Teens use trop to mean 'so' or 'really', not just 'too'. Said to a girl it's énervante."
+      "note": "Kids use trop to mean 'so' or 'really', not just 'too'. Said to a girl it's énervante."
     },
     {
       "id": 984,
@@ -6040,7 +6040,7 @@
       "en": "Can I go to the cinema?",
       "fr": "Je peux aller au cinéma ?",
       "ph": "zhuh puh a-lay oh see-nay-ma",
-      "note": "Au is à + le squeezed together, so 'to the cinema' is au cinéma. Teens often shorten it to au ciné."
+      "note": "Au is à + le squeezed together, so 'to the cinema' is au cinéma. Kids often shorten it to au ciné."
     },
     {
       "id": 484,
@@ -6607,7 +6607,7 @@
       "en": "In a sec.",
       "fr": "Une seconde !",
       "ph": "ewn suh-gohnd",
-      "note": "Seconde is feminine, so it's une seconde. Teens also just say deux sec."
+      "note": "Seconde is feminine, so it's une seconde. Kids also just say deux sec."
     },
     {
       "id": 1025,
@@ -6697,7 +6697,7 @@
       "en": "Whatever.",
       "fr": "Bof.",
       "ph": "bof",
-      "note": "Bof is the French shrug word: not bothered, meh. Say it flatly for full teenage effect."
+      "note": "Bof is the French shrug word: not bothered, meh. Say it flatly for full effect."
     },
     {
       "id": 1035,
@@ -7210,7 +7210,7 @@
       "en": "That's disgusting.",
       "fr": "C'est dégoûtant !",
       "ph": "say day-goo-tahn",
-      "note": "Dégoûtant = disgusting; keep the hat on the û. Teens also just say Beurk ! (Yuck!)"
+      "note": "Dégoûtant = disgusting; keep the hat on the û. Kids also just say Beurk ! (Yuck!)"
     },
     {
       "id": 569,
@@ -7219,7 +7219,7 @@
       "en": "That's embarrassing.",
       "fr": "C'est la honte !",
       "ph": "say la ohnt",
-      "note": "La honte = shame, and C'est la honte ! is the teen way to say 'How embarrassing!'. The h blocks the apostrophe: la honte, never l'honte."
+      "note": "La honte = shame, and C'est la honte ! is the kid way to say 'How embarrassing!'. The h blocks the apostrophe: la honte, never l'honte."
     },
     {
       "id": 570,
@@ -7300,7 +7300,7 @@
       "en": "Seriously?",
       "fr": "Sérieux ?",
       "ph": "say-ryuh",
-      "note": "Sérieux ? is the casual teen version of Sérieusement ? Same meaning, more attitude."
+      "note": "Sérieux ? is the casual version of Sérieusement ? Same meaning, more attitude."
     },
     {
       "id": 579,
@@ -7435,7 +7435,7 @@
       "en": "That's cool.",
       "fr": "C'est cool.",
       "ph": "say kool",
-      "note": "French teens use cool just like English. Trop bien ! (literally 'too good') is another favourite."
+      "note": "French kids use cool just like English. Trop bien ! (literally 'too good') is another favourite."
     },
     {
       "id": 594,
@@ -7822,7 +7822,7 @@
       "en": "I'm so stressed!",
       "fr": "Je suis trop stressée !",
       "ph": "zhuh swee troh streh-say",
-      "note": "Trop really means 'too much', but teens use it for 'so' or 'really'. A boy says trop stressé."
+      "note": "Trop really means 'too much', but kids use it for 'so' or 'really'. A boy says trop stressé."
     },
     {
       "id": 1144,
@@ -8164,7 +8164,7 @@
       "en": "I'm so proud of myself.",
       "fr": "Je suis trop fière de moi.",
       "ph": "zhuh swee troh fyehr duh mwa",
-      "note": "Fière is 'proud' for a girl; a boy says fier. Trop normally means 'too', but teens use it for 'so' or 'really'."
+      "note": "Fière is 'proud' for a girl; a boy says fier. Trop normally means 'too', but kids use it for 'so' or 'really'."
     },
     {
       "id": 1159,
@@ -8227,7 +8227,7 @@
       "en": "That's so cool!",
       "fr": "Trop cool !",
       "ph": "troh kool",
-      "note": "Trop cool is pure teen French — trop (really) plus the borrowed English cool. Keep it for friends and family."
+      "note": "Trop cool is pure everyday French — trop (really) plus the borrowed English cool. Keep it for friends and family."
     },
     {
       "id": 634,
@@ -10504,7 +10504,7 @@
       "en": "Can I have a lie-in?",
       "fr": "Je peux faire la grasse matinée ?",
       "ph": "zhuh puh fehr la gras ma-tee-nay",
-      "note": "Faire la grasse matinée = to have a lie-in, literally 'to do the fat morning'. Teens shorten it to la grasse mat'."
+      "note": "Faire la grasse matinée = to have a lie-in, literally 'to do the fat morning'. Kids shorten it to la grasse mat'."
     },
     {
       "id": 1224,
@@ -10567,7 +10567,7 @@
       "en": "Walks are so boring.",
       "fr": "Les balades, c'est trop ennuyeux.",
       "ph": "lay ba-lad, say troh-pahn-nwee-yuh",
-      "note": "Une balade = a walk, the relaxed word. In teen speak trop means 'so' or 'really', not just 'too'."
+      "note": "Une balade = a walk, the relaxed word. In everyday slang trop means 'so' or 'really', not just 'too'."
     },
     {
       "id": 1231,
@@ -10846,7 +10846,7 @@
       "en": "What did you get me?",
       "fr": "Qu'est-ce que vous m'avez offert ?",
       "ph": "kes-kuh voo ma-vay-zo-fehr",
-      "note": "Offrir = to give as a present. Vous because the teen asks both parents; to one it's tu m'as offert."
+      "note": "Offrir = to give as a present. Vous because the kid asks both parents; to one it's tu m'as offert."
     },
     {
       "id": 1243,

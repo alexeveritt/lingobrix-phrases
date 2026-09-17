@@ -224,6 +224,9 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
 .sheet table{width:100%;border-collapse:collapse;font-size:15px;margin:8px 0}
 .sheet td{padding:6px 4px;border-bottom:1px solid var(--line);vertical-align:top}
 .sheet td:first-child{font-weight:800;white-space:nowrap;width:30%}
+.icons{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.icons button{width:46px;height:46px;border-radius:14px;font-size:24px;background:var(--surface);border:2px solid var(--line)}
+.icons button[aria-pressed="true"]{border-color:var(--brand);background:color-mix(in srgb,var(--brand) 12%,var(--surface))}
 .toast{position:fixed;left:50%;bottom:calc(var(--nav) + 20px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:40;
   background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:12px;font-weight:600;font-size:14px;box-shadow:var(--shadow);animation:up .2s}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
@@ -337,6 +340,9 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
   <div style="font-size:44px">👋</div>
   <h3 id="welcomeTitle" style="font-size:22px">{{hello}} Welcome to {{title}}</h3>
   <p style="margin:6px 0 12px;color:var(--muted)">Everyday {{language}} for around the house: search for a phrase, learn by topic, then test yourself.</p>
+  <h3 style="margin-bottom:2px">Pick your icon</h3>
+  <p style="margin:0 0 8px;font-size:14px;color:var(--muted)">It marks the things kids say. You can change it later in ⓘ.</p>
+  <div class="icons" data-icons></div>
   <div class="panel" style="box-shadow:none;background:var(--surface-2);margin:0 0 16px">
     <h3 style="margin-bottom:4px">🔒 Your privacy</h3>
     <p style="margin:0;font-size:14.5px">No cookies, no tracking and no accounts. Phrases you save and your practice scores are kept only in this browser on this device. Nothing is sent anywhere.</p>
@@ -351,6 +357,9 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
 {{helpRows}}
   </table>
   <p style="color:var(--muted);font-size:14px">Tap 🔊 on any card to hear it (uses your phone's {{language}} voice). 🐢 plays it slowly.</p>
+  <h3 style="margin-top:14px">Your icon</h3>
+  <p style="margin:0 0 8px;font-size:14px;color:var(--muted)">Shown next to the things kids say.</p>
+  <div class="icons" data-icons></div>
   <h3 style="margin-top:14px">Privacy</h3>
   <p style="color:var(--muted);font-size:14px;margin-top:0">No cookies, no tracking, no accounts. Your saved phrases and practice progress are kept only in this browser on this device, and never leave it. Clearing your browser data removes them.</p>
   <button class="btn primary block" data-close-sheet>Got it</button>
@@ -367,9 +376,11 @@ const CATS = DATA.categories;
 const CAT = Object.fromEntries(CATS.map(c => [c.id, c]));
 const ALL = DATA.phrases;
 const BY_ID = new Map(ALL.map(p => [p.id, p]));
+const KID_ICONS = ['🎒', '⚽', '🎮', '🎧', '🐶', '🐱', '🦊', '🚀', '👦', '👧'];
 const WHO = {
-  p: { icon: '🧑', label: 'Parent says', heading: 'Things a parent says' },
-  t: { icon: '👧', label: 'Teen says', heading: 'Things a teen says' },
+  p: { icon: '☕', label: 'Parent says', heading: 'Things a parent says' },
+  // the kid picks their own icon (welcome popup or ⓘ panel)
+  t: { get icon() { return KID_ICONS.includes(S.icon) ? S.icon : KID_ICONS[0]; }, label: 'Kid says', heading: 'Things a kid says' },
 };
 
 const $ = (s, el = document) => el.querySelector(s);
@@ -392,7 +403,7 @@ const unique = list => { const seen = new Set(); return list.filter(p => !seen.h
 
 /* ---------- storage ---------- */
 const store = (() => {
-  let s = { fav: [], prog: {}, welcomed: false, side: 'p', mode: 'fc-en', count: 10, topic: 'all', cover: 0 };
+  let s = { fav: [], prog: {}, welcomed: false, iconPicked: false, icon: '🎒', side: 'p', mode: 'fc-en', count: 10, topic: 'all', cover: 0 };
   try { Object.assign(s, JSON.parse(localStorage.getItem(L.storeKey) || '{}')); } catch (e) {}
   const save = () => { try { localStorage.setItem(L.storeKey, JSON.stringify(s)); } catch (e) {} };
   return { s, save };
@@ -442,10 +453,26 @@ function toast(msg) {
   const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg;
   document.body.append(t); clearTimeout(toastT); toastT = setTimeout(() => t.remove(), 1600);
 }
-$('#helpBtn').onclick = () => { $('#help').hidden = false; };
-if (!S.welcomed) {
+function renderIcons() {
+  $$('[data-icons]').forEach(el => {
+    el.innerHTML = KID_ICONS.map(i => `<button data-icon="${i}" aria-label="Use ${i}" aria-pressed="${i === WHO.t.icon}">${i}</button>`).join('');
+  });
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-icon]');
+  if (!b) return;
+  S.icon = b.dataset.icon; store.save();
+  renderIcons();
+  const y = window.scrollY;
+  route(); // redraw lists and tabs with the new icon
+  window.scrollTo(0, y);
+});
+renderIcons();
+$('#helpBtn').onclick = () => { renderIcons(); $('#help').hidden = false; };
+// iconPicked: people who saw the first version of this popup get it once more, to choose an icon
+if (!S.welcomed || !S.iconPicked) {
   $('#welcome').hidden = false;
-  $('#welcomeOk').onclick = () => { S.welcomed = true; store.save(); $('#welcome').hidden = true; };
+  $('#welcomeOk').onclick = () => { S.welcomed = S.iconPicked = true; store.save(); $('#welcome').hidden = true; };
 }
 // the logo always goes back to a clean home page
 $('#logo').onclick = e => {
