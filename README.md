@@ -45,9 +45,17 @@ npx wrangler pages dev public --ip 0.0.0.0 --port 8788
 
 Open http://localhost:8788 on the computer, and refresh after each change. To try it on a phone, connect it to the same Wi-Fi and open `http://<your-computer-ip>:8788` (on a Mac, `ipconfig getifaddr en0` shows the IP).
 
-## Deploying on Cloudflare Pages
+## Deploying
 
-- Build command: `node build.mjs` (or leave it blank, since `public/` is committed)
+Hosted on Cloudflare Pages (Bytechaser account) at https://spanish.lingobrix.com. The project uses Cloudflare's Git integration: every push to `main` deploys to production, and pushes to other branches get preview URLs.
+
+Pages build settings:
+
+- Framework preset: None
+- Build command: *(empty)*, because `public/` is committed
 - Build output directory: `public`
+- Production branch: `main`
+
+So always run `node build.mjs` and commit `public/index.html` along with any change to `phrases.json` or `src/`.
 
 `public/_headers` lets browsers cache the page for an hour, then refresh it in the background.
