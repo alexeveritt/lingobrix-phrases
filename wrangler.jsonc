@@ -13,6 +13,8 @@
     "run_worker_first": true
   },
   "workers_dev": true,
+  // builds from branches other than main get their own preview URL
+  "preview_urls": true,
   // `wrangler dev` would otherwise pretend every request is for lingobrix.com;
   // on localhost the Worker serves dist/ as-is, so /es/, /de/ and /fr/ all work
   "dev": { "host": "localhost" },
