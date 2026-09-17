@@ -5,6 +5,7 @@
 //   out     output folder deployed by Cloudflare Pages
 import { phrasePh as spanishPh } from './tools/phonetic.mjs';
 import { phrasePh as germanPh } from './tools/phonetic-de.mjs';
+import { phrasePh as frenchPh } from './tools/phonetic-fr.mjs';
 
 export default [
   {
@@ -22,10 +23,12 @@ export default [
       // flag stripes for the logo and favicon, top to bottom
       stripes: ['#e5484d', '#f5b82e', '#e5484d'],
       logoInk: '#1f2433',
+      logoHalo: 'transparent',
       brand: '#e5484d',
       sun: '#f5b82e',
       hello: '¡Hola!',
       searchExample: 'phone or cena',
+      helpIntro: 'Written for English speakers. <b>CAPITALS</b> show which part of the word to stress.',
       helpRows: `
     <tr><td>ah eh ee oh oo</td><td>Spanish vowels are short and clean: <i>ah</i> as in "father", <i>eh</i> as in "bed", <i>ee</i> as in "see", <i>oh</i> as in "hot", <i>oo</i> as in "food".</td></tr>
     <tr><td>th</td><td>Spain's c (before e/i) and z — like "<b>th</b>ink". <i>THEEN-koh</i> = cinco.</td></tr>
@@ -66,10 +69,12 @@ export default [
       logo: 'H!',
       stripes: ['#1f2433', '#dd3b3b', '#f2c230'],
       logoInk: '#ffffff',
+      logoHalo: 'rgba(0,0,0,.6)',
       brand: '#dd3b3b',
       sun: '#f2c230',
       hello: 'Hallo!',
       searchExample: 'phone or Hunger',
+      helpIntro: 'Written for English speakers. <b>CAPITALS</b> show which part of the word to stress.',
       helpRows: `
     <tr><td>ah ay ee oh oo</td><td>Long vowels: <i>ah</i> as in "father", <i>ay</i> as in "day", <i>ee</i> as in "see", <i>oh</i> as in "go", <i>oo</i> as in "food". <i>tahk</i> = Tag.</td></tr>
     <tr><td>a e i o u</td><td>Short vowels, quick and clipped: <i>a</i> as in "cat" (but further back), <i>e</i> as in "bed", <i>i</i> as in "sit", <i>o</i> as in "hot", <i>u</i> as in "put".</td></tr>
@@ -97,6 +102,55 @@ export default [
       umlautSpelling: true, // let "muede" match "müde" when searching
       results: ['Super! Perfect score', 'Sehr gut! Great work', 'Gut gemacht! Keep going', 'Weiter so! Practice makes perfect'],
       noMatchExample: '<i>phone</i>, <i>Hunger</i> or <i>tired</i>',
+    },
+  },
+  {
+    code: 'fr',
+    data: 'phrases.fr.json',
+    field: 'fr',
+    out: 'public-fr',
+    phonetic: frenchPh,
+    page: {
+      title: 'French at Home',
+      language: 'French',
+      shortTitle: 'French',
+      description: 'Everyday French phrases for families: search, browse, flashcards and spelling practice.',
+      logo: 'H!',
+      stripes: ['#2e5bd8', '#ffffff', '#e5484d'],
+      vertical: true,
+      logoInk: '#1f2433',
+      logoHalo: '#ffffff',
+      brand: '#2e5bd8',
+      sun: '#f5b82e',
+      hello: 'Bonjour !',
+      searchExample: 'phone or dîner',
+      helpIntro: 'Written for English speakers. French gives every syllable about the same weight, with a slight lift at the end of a phrase, so nothing is in capitals. Words that run together are joined with hyphens: <i>voo-za-vay</i> = vous avez.',
+      helpRows: `
+    <tr><td>a / ay / eh / uh</td><td><i>a</i> as in "cat", <i>ay</i> as in "day" (é, -er, -ez), <i>eh</i> as in "bed" (è, ê, ai), <i>uh</i> the weak e in le, de, je.</td></tr>
+    <tr><td>ee / oh / o / oo</td><td><i>ee</i> as in "see", <i>oh</i> as in "go" (au, eau), <i>o</i> as in "hot", <i>oo</i> as in "food" (ou).</td></tr>
+    <tr><td>ew</td><td>French u — say "ee" with your lips pushed into a tight circle. <i>tew</i> = tu.</td></tr>
+    <tr><td>ur</td><td>eu before a sounded consonant, like "fur" without the r. <i>sur</i> = sœur.</td></tr>
+    <tr><td>ohn / ahn / an / uhn</td><td>Nasal vowels (on, an/en, in/ain, un): <b>don't say the n</b> — let the sound come through your nose. <i>bohn</i> = bon, <i>ma-mahn</i> = maman, <i>pan</i> = pain.</td></tr>
+    <tr><td>wa / wee</td><td>oi and ui: <i>mwa</i> = moi, <i>nwee</i> = nuit.</td></tr>
+    <tr><td>zh</td><td>j, and g before e/i — like the s in "mea<b>s</b>ure". <i>zhuh</i> = je.</td></tr>
+    <tr><td>sh / ny</td><td>ch is "sh" (<i>sha</i> = chat); gn is like "ca<b>ny</b>on" (<i>mohn-tany</i> = montagne).</td></tr>
+    <tr><td>r</td><td>French r is made at the back of the throat, a bit like a soft gargle.</td></tr>
+    <tr><td>(silent)</td><td>h is never said, and most final consonants and final e are silent: <i>puh-tee</i> = petit, <i>tabl</i> = table.</td></tr>`,
+    },
+    app: {
+      code: 'fr',
+      speech: 'fr-FR',
+      flag: '🇫🇷',
+      language: 'French',
+      storeKey: 'fah.v1',
+      keys: ['é', 'è', 'ê', 'à', 'ç', 'â', 'î', 'ô', 'û', 'ù', 'ë', 'œ'],
+      perfect: 'Parfait !',
+      accentsMsg: 'Nearly — check the accents (the wavy words)',
+      accentsCountAsRight: false, // ou/où and a/à are different words
+      checkCapitals: false,
+      umlautSpelling: false,
+      results: ['Incroyable ! Perfect score', 'Très bien ! Great work', 'Bien joué ! Keep going', 'Courage ! Practice makes perfect'],
+      noMatchExample: '<i>phone</i>, <i>dîner</i> or <i>tired</i>',
     },
   },
 ];

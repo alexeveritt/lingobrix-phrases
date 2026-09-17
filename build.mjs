@@ -43,7 +43,7 @@ for (const lang of languages) {
   const updated = JSON.stringify(data, null, 2) + '\n';
   if (updated !== readFileSync(lang.data, 'utf8')) writeFileSync(lang.data, updated);
 
-  const page = { ...lang.page, logoGradient: gradient(lang.page.stripes), favicon: favicon(lang.page) };
+  const page = { ...lang.page, logoGradient: gradient(lang.page), favicon: favicon(lang.page) };
   const phrases = {
     categories: data.categories,
     phrases: data.phrases.map((p) => ({ id: p.id, cat: p.cat, dir: p.dir, en: p.en, tx: p[lang.field], ph: p.ph, note: p.note })),
@@ -67,11 +67,15 @@ function json(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c');
 }
 
-function gradient([a, b, c]) {
-  return `linear-gradient(180deg,${a} 0 33%,${b} 33% 67%,${c} 67%)`;
+function gradient({ stripes: [a, b, c], vertical }) {
+  return `linear-gradient(${vertical ? 90 : 180}deg,${a} 0 33%,${b} 33% 67%,${c} 67%)`;
 }
 
-function favicon({ stripes: [a, b, c], logo, logoInk }) {
-  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><clipPath id='r'><rect width='100' height='100' rx='24'/></clipPath><g clip-path='url(#r)'><rect width='100' height='34' fill='${a}'/><rect y='33' width='100' height='34' fill='${b}'/><rect y='66' width='100' height='34' fill='${c}'/></g><text x='50' y='64' font-size='40' text-anchor='middle' font-family='Arial' font-weight='700' fill='${logoInk}' stroke='${a}' stroke-width='3' paint-order='stroke'>${logo}</text></svg>`;
+function favicon({ stripes, vertical, logo, logoInk, logoHalo }) {
+  const band = (fill, i) => (vertical
+    ? `<rect x='${i * 33}' width='34' height='100' fill='${fill}'/>`
+    : `<rect y='${i * 33}' width='100' height='34' fill='${fill}'/>`);
+  const [a] = stripes;
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><clipPath id='r'><rect width='100' height='100' rx='24'/></clipPath><g clip-path='url(#r)'>${stripes.map(band).join('')}</g><text x='50' y='64' font-size='40' text-anchor='middle' font-family='Arial' font-weight='700' fill='${logoInk}' stroke='${logoHalo === 'transparent' ? a : logoHalo}' stroke-width='3' paint-order='stroke'>${logo}</text></svg>`;
   return 'data:image/svg+xml,' + encodeURIComponent(svg).replace(/'/g, '%27');
 }

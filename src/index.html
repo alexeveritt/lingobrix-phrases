@@ -43,7 +43,7 @@ main.wrap{padding-bottom:calc(var(--nav) + env(safe-area-inset-bottom) + 24px)}
 .top .wrap{display:flex;align-items:center;gap:10px;height:56px}
 .logo{color:inherit;text-decoration:none;display:flex;align-items:center;gap:8px;font-weight:800;font-size:19px;letter-spacing:-.01em}
 .logo i{font-style:normal;display:grid;place-items:center;width:32px;height:32px;border-radius:10px;
-  background:{{logoGradient}};font-size:13px;color:{{logoInk}};font-weight:900}
+  background:{{logoGradient}};font-size:13px;color:{{logoInk}};font-weight:900;text-shadow:0 0 3px {{logoHalo}},0 0 1px {{logoHalo}}}
 .top .sp{flex:1}
 .icon-btn{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:18px}
 .icon-btn:active{background:var(--surface-2)}
@@ -346,7 +346,7 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
 
 <div class="sheet" id="help" hidden><div>
   <h3>Reading the pronunciation</h3>
-  <p style="margin:0;color:var(--muted)">Written for English speakers. <b>CAPITALS</b> show which part of the word to stress.</p>
+  <p style="margin:0;color:var(--muted)">{{helpIntro}}</p>
   <table>
 {{helpRows}}
   </table>
@@ -380,7 +380,7 @@ const foldChar = c => c.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLower
 const foldChars = s => [...s.normalize('NFC')].map(foldChar).join('');
 // for matching: also treat ß as ss and (in German) ue/oe/ae as ü/ö/ä
 const fold = s => {
-  let f = foldChars(s).replace(/ß/g, 'ss');
+  let f = foldChars(s).replace(/ß/g, 'ss').replace(/œ/g, 'oe').replace(/æ/g, 'ae');
   if (L.umlautSpelling) f = f.replace(/([aou])e/g, '$1');
   return f;
 };
