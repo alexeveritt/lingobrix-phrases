@@ -69,6 +69,20 @@ h2{font-size:22px}
 .row{display:flex;gap:12px;align-items:center;width:100%;text-align:left;background:var(--surface);border-radius:16px;
   padding:12px 14px;box-shadow:var(--shadow);border-left:5px solid hsl(var(--hue) 75% var(--band-l))}
 .row:active{transform:scale(.99)}
+.row .go{flex:none;font-size:24px;line-height:1;color:var(--muted);opacity:.5;margin-right:-4px}
+@media (hover:hover){
+  .row:hover,.choice:hover,.tile:hover,.big-btn:hover{background:color-mix(in srgb,var(--ink) 4%,var(--surface))}
+  .row:hover .go{opacity:1}
+}
+/* one-time tips */
+.tip{display:flex;align-items:center;gap:10px;background:var(--ink);color:var(--bg);border-radius:14px;padding:10px 10px 10px 14px;
+  font-size:14px;font-weight:600;line-height:1.35;box-shadow:var(--shadow);margin:0 0 10px;animation:up .25s ease}
+.tip span{flex:1}
+.tip button{flex:none;background:color-mix(in srgb,var(--bg) 20%,transparent);color:inherit;border-radius:10px;padding:7px 11px;font-weight:800;font-size:13.5px}
+.tip-slot{max-width:640px;margin:0 auto;width:100%;padding:0 16px}
+.tip-slot .tip{margin:8px 0 0}
+@keyframes peek{20%{transform:translateX(-26px) rotate(-1.5deg)}40%{transform:none}60%{transform:translateX(26px) rotate(1.5deg)}80%{transform:none}}
+.peek{animation:peek 1.6s ease-in-out .5s 2}
 .row .t{flex:1;min-width:0}
 .row .tx{font-weight:700;font-size:16.5px}
 .row .en{color:var(--muted);font-size:14.5px}
@@ -325,6 +339,7 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
     <button data-c="0">Show both</button><button data-c="1">Hide {{language}}</button><button data-c="2">Hide English</button>
   </div>
   <div class="stage" id="stage"></div>
+  <div class="tip-slot" id="vTip"></div>
   <p class="hint" id="vHint"></p>
   <div class="ov-bottom">
     <button class="nav-btn" id="vPrev" aria-label="Previous">‹</button>
@@ -373,6 +388,7 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
 {{helpRows}}
   </table>
   <p style="color:var(--muted);font-size:14px">Tap 🔊 on any card to hear it (uses your phone's {{language}} voice). 🐢 plays it slowly.</p>
+  <button class="btn block" id="tipsReset" style="margin-top:14px">💡 Show the tips again</button>
   <h3 style="margin-top:14px">Your icon</h3>
   <p style="margin:0 0 8px;font-size:14px;color:var(--muted)">Shown next to the things kids say.</p>
   <div class="icons" data-icons></div>
@@ -419,7 +435,7 @@ const unique = list => { const seen = new Set(); return list.filter(p => !seen.h
 
 /* ---------- storage ---------- */
 const store = (() => {
-  let s = { fav: [], prog: {}, welcomed: false, iconPicked: false, icon: '🎒', side: 'p', mode: 'fc-en', count: 10, topic: 'all', cover: 0 };
+  let s = { fav: [], prog: {}, tips: {}, welcomed: false, iconPicked: false, icon: '🎒', side: 'p', mode: 'fc-en', count: 10, topic: 'all', cover: 0 };
   try { Object.assign(s, JSON.parse(localStorage.getItem(L.storeKey) || '{}')); } catch (e) {}
   const save = () => { try { localStorage.setItem(L.storeKey, JSON.stringify(s)); } catch (e) {} };
   return { s, save };
@@ -544,7 +560,7 @@ function highlight(text, terms) {
 }
 function rows(list, terms = []) {
   return `<ul class="list">${list.map((p, i) => `<li><button class="row" data-i="${i}" style="--hue:${CAT[p.cat].hue}">
-    <span class="t"><div class="tx">${highlight(p.tx, terms)}</div><div class="en">${highlight(p.en, terms)}</div></span></button></li>`).join('')}</ul>`;
+    <span class="t"><div class="tx">${highlight(p.tx, terms)}</div><div class="en">${highlight(p.en, terms)}</div></span><span class="go" aria-hidden="true">›</span></button></li>`).join('')}</ul>`;
 }
 function bindRows(el, list, title) {
   el.onclick = e => { const b = e.target.closest('.row[data-i]'); if (b) openViewer(list, +b.dataset.i, title); };
@@ -612,7 +628,7 @@ function renderSearch() {
   const el = $('#results');
   el.innerHTML = (topicHits.length ? `<div class="chips">${topicHits.map(c => `<button class="chip-btn" data-href="#topic/${c.id}">${c.emoji} ${esc(c.name)}</button>`).join('')}</div>` : '')
     + (list.length
-      ? `<p class="count">${list.length} phrase${list.length === 1 ? '' : 's'} — tap one to open the cards</p>${rows(list.slice(0, 200), marks)}`
+      ? `<p class="count">${list.length} phrase${list.length === 1 ? '' : 's'}</p>${tipHtml('list')}${rows(list.slice(0, 200), marks)}`
       : `<div class="empty"><b>🤔</b>No matches for “${esc(q)}”.<br>Try a single word like ${L.noMatchExample}.</div>`);
   bindRows(el, list, `“${q.trim()}”`);
 }
@@ -649,7 +665,7 @@ function renderTopic(id) {
       ? `<div class="cover-seg two" role="tablist">${sides.map(d => `<button role="tab" data-side="${d}" aria-pressed="${d === side}">${WHO[d].icon} ${WHO[d].label} <small>${list.filter(p => p.dir === d).length}</small></button>`).join('')}</div>`
       : `<div class="sub" style="margin-top:0">${WHO[side].icon} ${WHO[side].heading}</div>`}</div>
     <div class="actions"><button class="btn primary" id="tCards">▶ Cards</button><button class="btn" id="tTest">🎯 Test me</button></div>
-    <div id="tList">${rows(part)}</div>`;
+    ${tipHtml('list')}<div id="tList">${rows(part)}</div>`;
   bindRows($('#tList'), part, title);
   $$('[data-side]', body).forEach(b => b.onclick = () => {
     S.side = b.dataset.side; store.save();
@@ -705,6 +721,36 @@ function closeOverlay() { if (history.state?.ov) history.back(); else hideOverla
 $$('[data-close]').forEach(b => b.onclick = closeOverlay);
 window.addEventListener('popstate', () => { if (!history.state?.ov) hideOverlays(); });
 
+/* ---------- tips ---------- */
+// small "Got it" hints, each shown once; at most one per screen, the next one next time
+const TIPS = [
+  { id: 'swipe', where: 'cards', text: '👆 Swipe left or right to move between cards.' },
+  { id: 'listen', where: 'cards', text: canSpeak ? '🔊 Tap Listen to hear it. 🐢 plays it slowly.' : '' },
+  { id: 'hide', where: 'cards', text: `🙈 Tap “Hide ${L.language}” at the top to test yourself.` },
+  { id: 'tap', where: 'list', text: '👉 Tap any phrase to open it as a card.' },
+  { id: 'keys', where: 'type', text: `⌨️ Use the ${L.keys.slice(0, 3).join(' ')} … buttons for letters your keyboard is missing.` },
+];
+function tipHtml(where) {
+  const t = TIPS.find(x => x.where === where && x.text && !S.tips[x.id]);
+  return t ? `<div class="tip" role="status" data-tip-box="${t.id}"><span>${t.text}</span><button data-tip="${t.id}">Got it</button></div>` : '';
+}
+function dismissTip(id) {
+  if (S.tips[id]) return;
+  S.tips[id] = true; store.save();
+  $$(`[data-tip-box="${id}"]`).forEach(el => el.remove());
+  $$('.peek').forEach(el => el.classList.remove('peek'));
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-tip]');
+  if (b) { e.stopPropagation(); dismissTip(b.dataset.tip); }
+}, true);
+$('#tipsReset').onclick = () => {
+  S.tips = {}; store.save();
+  $('#help').hidden = true;
+  toast('💡 Tips will show again');
+  route();
+};
+
 /* ---------- card viewer ---------- */
 const V = { list: [], i: 0 };
 const stage = $('#stage');
@@ -714,6 +760,8 @@ function openViewer(list, i, title) {
   $('#vTitle').textContent = title || '';
   openOverlay($('#viewer'));
   drawCard(0);
+  $('#vTip').innerHTML = tipHtml('cards');
+  if (V.list.length > 1 && $('#vTip [data-tip="swipe"]')) stage.firstElementChild.classList.add('peek');
 }
 function drawCard(from) {
   const p = V.list[V.i];
@@ -786,7 +834,7 @@ document.addEventListener('keydown', e => {
     if (axis !== 'x') return;
     const card = stage.firstElementChild;
     const fast = Math.abs(dx) / Math.max(1, Date.now() - t0) > 0.5;
-    if ((Math.abs(dx) > 70 || (fast && Math.abs(dx) > 25)) && e.type === 'pointerup') go(dx < 0 ? 1 : -1);
+    if ((Math.abs(dx) > 70 || (fast && Math.abs(dx) > 25)) && e.type === 'pointerup') { dismissTip('swipe'); go(dx < 0 ? 1 : -1); }
     else { card.style.transition = 'transform .2s ease'; card.style.transform = ''; }
     // swallow the click that follows a drag (so it doesn't reveal a covered side)
     if (Math.abs(dx) > 8) stage.addEventListener('click', ev => ev.stopPropagation(), { capture: true, once: true });
@@ -879,6 +927,7 @@ function drawQ() {
     body.innerHTML = front + `<div class="type-box">
       <textarea id="tIn" lang="${L.code}" rows="2" placeholder="Type it in ${L.language}…" autocomplete="off" autocorrect="off" autocapitalize="sentences" spellcheck="false"></textarea>
       <div class="keys">${L.keys.map(k => `<button data-k="${k}">${k}</button>`).join('')}</div>
+      ${tipHtml('type')}
       <div class="answer-row"><button class="btn" id="tSkip">🤷 Show me</button><button class="btn primary" id="tCheck">Check ✓</button></div>
       <div id="tFb"></div></div>`;
     const ta = $('#tIn');

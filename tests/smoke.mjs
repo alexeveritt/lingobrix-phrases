@@ -86,8 +86,14 @@ for (const lang of languages) {
 
     await page.fill('#q', SEARCH[lang.code]);
     await check(`search "${SEARCH[lang.code]}" finds phrases`, count('#results .row', 3));
+    await check('rows show a › so they look tappable', count('#results .row .go', 3));
+    await check('list tip shows', visible('#results [data-tip="tap"]'));
     await page.locator('#results .row').first().click();
     await check('card opens', visible('#viewer'));
+    await check('first card shows the swipe tip and nudges', async (p) =>
+      (await p.locator('#vTip [data-tip="swipe"]').isVisible()) && (await p.locator('#stage .card.peek').count()) === 1);
+    await page.click('#vTip [data-tip="swipe"]');
+    await check('Got it hides the tip', async (p) => (await p.locator('#vTip .tip').count()) === 0);
     await check('card has a pronunciation', async (p) => (await p.textContent('#stage .ph')).trim().length > 0);
     await page.click('#vNext');
     await page.waitForTimeout(400);
@@ -99,6 +105,11 @@ for (const lang of languages) {
     await page.click('#vCover [data-c="0"]');
     await page.goBack();
     await check('back closes the cards', async (p) => !(await p.locator('#viewer').isVisible()));
+    await check('list tip remembered after a card was opened', async (p) => (await p.locator('#results [data-tip="tap"]').count()) === 1);
+    await page.click('#results [data-tip="tap"]');
+    await page.locator('#results .row').first().click();
+    await check('next time the cards show the next tip', visible('#vTip [data-tip="listen"]'));
+    await page.goBack();
 
     await page.click('[data-tab=topics]');
     await check('topic tiles', count('.tile', 10));
@@ -110,6 +121,7 @@ for (const lang of languages) {
 
     await page.click('#pMode [data-v=type]');
     await page.click('#pStart');
+    await check('spelling shows the special-letters tip', visible('#qBody [data-tip="keys"]'));
     const answers = await page.evaluate(() =>
       Object.fromEntries(JSON.parse(document.getElementById('data').textContent).phrases.map((p) => [p.en, p.tx])));
     const answer = answers[(await page.textContent('#qBody .big')).trim()];
