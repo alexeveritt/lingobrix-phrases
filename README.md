@@ -1,20 +1,30 @@
-# Spanish at Home
+# Spanish / German at Home
 
-A single-page, mobile-first web app of everyday Spain Spanish phrases for families: search, browse by topic, swipe through cards, flashcards and spelling practice.
+Single-page, mobile-first web apps of everyday phrases for families: search, browse by topic, swipe through cards, flashcards and spelling practice.
+
+| Site | Phrases | Built to | Live at |
+| --- | --- | --- | --- |
+| Spanish at Home | `phrases.json` | `public/` | https://spanish.lingobrix.com |
+| German at Home | `phrases.de.json` | `public-de/` | https://german.lingobrix.com |
+
+Both sites share the same app code, topics and phrase ids.
 
 ## Files
 
 | Path | What it is |
 | --- | --- |
-| `phrases.json` | The phrase list. **Edit this.** |
-| `src/index.html` | The app (HTML, CSS and JS in one file). The phrases get injected at `/*PHRASES*/`. |
-| `tools/phonetic.mjs` | Generates the English-friendly pronunciation (Spain accent) from the Spanish. |
-| `build.mjs` | Regenerates pronunciations, checks the data, writes `public/index.html`. |
-| `public/` | What gets deployed: `index.html` (everything inlined) and `_headers`. |
+| `phrases.json`, `phrases.de.json` | The phrase lists. **Edit these.** |
+| `languages.mjs` | Per-language settings: file names, text, colours, speech voice, accent keys, pronunciation help. |
+| `src/index.html` | The app (HTML, CSS and JS in one file). The build fills in `{{…}}`, `/*PHRASES*/` and `/*LANG*/`. |
+| `src/_headers` | Cloudflare caching headers, copied into each site. |
+| `tools/phonetic.mjs` | Generates Spanish pronunciation from the spelling. |
+| `tools/phonetic-de.mjs`, `tools/de-lexicon.json` | German pronunciation, looked up word by word. |
+| `build.mjs` | Regenerates pronunciations, checks the data, writes each site. |
+| `public/`, `public-de/` | Built sites (committed, and what Cloudflare Pages serves). |
 
 ## Editing phrases
 
-Each phrase in `phrases.json` looks like this:
+Each phrase looks like this (the German file uses `de` in place of `es`):
 
 ```json
 { "id": 12, "cat": "morning", "dir": "p", "en": "Time to get up.", "es": "Es hora de levantarse.", "ph": "...", "note": "..." }
@@ -22,24 +32,31 @@ Each phrase in `phrases.json` looks like this:
 
 - `dir`: `p` = parent says it, `t` = teen says it
 - `cat`: one of the `categories` ids at the top of the file
-- `id`: unique number. Add new phrases with the next free number, and don't reuse ids (practice progress is saved against them).
-- `ph`: leave it empty. The build fills it in. If a word isn't spelled the Spanish way (a brand or name), add it to `OVERRIDES` in `tools/phonetic.mjs`.
+- `id`: unique number, and the same id means the same phrase in both languages. Add new phrases with the next free number, and don't reuse ids (practice progress is saved against them).
+- `ph`: leave it empty. The build fills it in.
+  - Spanish: if a word isn't spelled the Spanish way (a brand or name), add it to `OVERRIDES` in `tools/phonetic.mjs`.
+  - German: every word must be in `tools/de-lexicon.json`. The build lists any that are missing. The sound key is in the German site's ⓘ panel.
 
 Then rebuild:
 
 ```sh
-node build.mjs
+node build.mjs        # both sites
+node build.mjs de     # just German
 ```
 
 No dependencies are needed, just Node 18 or newer.
 
+## Adding another language
+
+Add an entry to `languages.mjs` (copy the German one), create its phrase file with the same ids, and give it a pronunciation module. Then add a Cloudflare Pages project whose output directory is the new `out` folder.
+
 ## Running locally
 
 ```sh
-# terminal 1: rebuild whenever src/ or phrases.json changes
-node --watch-path=src --watch-path=phrases.json build.mjs
+# terminal 1: rebuild whenever src/, the phrase files or the lexicon change
+node --watch-path=src --watch-path=phrases.json --watch-path=phrases.de.json --watch-path=tools build.mjs
 
-# terminal 2: serve it the same way Cloudflare Pages does (with _headers)
+# terminal 2: serve a site the same way Cloudflare Pages does (use public-de for German)
 npx wrangler pages dev public --ip 0.0.0.0 --port 8788
 ```
 
@@ -47,15 +64,17 @@ Open http://localhost:8788 on the computer, and refresh after each change. To tr
 
 ## Deploying
 
-Hosted on Cloudflare Pages (Bytechaser account) at https://spanish.lingobrix.com. The project uses Cloudflare's Git integration: every push to `main` deploys to production, and pushes to other branches get preview URLs.
+Each site is its own Cloudflare Pages project (Bytechaser account), connected to this repo with Cloudflare's Git integration. Every push to `main` deploys both sites.
 
-Pages build settings:
+| Setting | Spanish | German |
+| --- | --- | --- |
+| Project name | `spanish-phrases` | `german-phrases` |
+| Production branch | `main` | `main` |
+| Framework preset | None | None |
+| Build command | *(empty)* | *(empty)* |
+| Build output directory | `public` | `public-de` |
+| Custom domain | `spanish.lingobrix.com` | `german.lingobrix.com` |
 
-- Framework preset: None
-- Build command: *(empty)*, because `public/` is committed
-- Build output directory: `public`
-- Production branch: `main`
+The built folders are committed, so always run `node build.mjs` and commit its output along with any change to the phrases or `src/`.
 
-So always run `node build.mjs` and commit `public/index.html` along with any change to `phrases.json` or `src/`.
-
-`public/_headers` lets browsers cache the page for an hour, then refresh it in the background.
+`_headers` lets browsers cache each page for an hour, then refresh it in the background.

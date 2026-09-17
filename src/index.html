@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Spanish at Home</title>
-<meta name="description" content="Everyday Spanish phrases for families: search, browse, flashcards and spelling practice.">
-<meta name="theme-color" content="#e5484d">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+<meta name="theme-color" content="{{brand}}">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Spanish">
+<meta name="apple-mobile-web-app-title" content="{{shortTitle}}">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23e5484d'/%3E%3Crect y='30' width='100' height='40' fill='%23f5b82e'/%3E%3Ctext x='50' y='66' font-size='40' text-anchor='middle' font-family='Arial' font-weight='700' fill='%231f2433'%3E%C2%A1H!%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="{{favicon}}">
 <style>
 :root{
   --bg:#fbf6ee; --surface:#fff; --surface-2:#f5efe4; --ink:#1f2433; --muted:#6b7080; --line:#ebe2d3;
-  --brand:#e5484d; --brand-ink:#fff; --sun:#f5b82e; --good:#1f9d63; --warn:#d98a00; --bad:#e5484d;
+  --brand:{{brand}}; --brand-ink:#fff; --sun:{{sun}}; --good:#1f9d63; --warn:#d98a00; --bad:#e5484d;
   --shadow:0 1px 2px rgba(31,36,51,.06),0 8px 24px rgba(31,36,51,.08);
   --chip-l:93%; --chip-s:85%; --band-l:62%;
   --r:22px; --nav:64px;
@@ -43,7 +43,7 @@ main.wrap{padding-bottom:calc(var(--nav) + env(safe-area-inset-bottom) + 24px)}
 .top .wrap{display:flex;align-items:center;gap:10px;height:56px}
 .logo{color:inherit;text-decoration:none;display:flex;align-items:center;gap:8px;font-weight:800;font-size:19px;letter-spacing:-.01em}
 .logo i{font-style:normal;display:grid;place-items:center;width:32px;height:32px;border-radius:10px;
-  background:linear-gradient(180deg,var(--brand) 0 28%,var(--sun) 28% 72%,var(--brand) 72%);font-size:13px;color:#1f2433;font-weight:900}
+  background:{{logoGradient}};font-size:13px;color:{{logoInk}};font-weight:900}
 .top .sp{flex:1}
 .icon-btn{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:18px}
 .icon-btn:active{background:var(--surface-2)}
@@ -70,7 +70,7 @@ h2{font-size:22px}
   padding:12px 14px;box-shadow:var(--shadow);border-left:5px solid hsl(var(--hue) 75% var(--band-l))}
 .row:active{transform:scale(.99)}
 .row .t{flex:1;min-width:0}
-.row .es{font-weight:700;font-size:16.5px}
+.row .tx{font-weight:700;font-size:16.5px}
 .row .en{color:var(--muted);font-size:14.5px}
 mark{background:color-mix(in srgb,var(--sun) 55%,transparent);color:inherit;border-radius:4px;padding:0 1px}
 .count{font-size:13px;color:var(--muted);margin:4px 2px 10px}
@@ -120,7 +120,7 @@ mark{background:color-mix(in srgb,var(--sun) 55%,transparent);color:inherit;bord
 .tag{display:inline-flex;align-items:center;gap:5px;height:28px;padding:0 10px;border-radius:999px;font-size:12.5px;font-weight:700;
   background:hsl(var(--hue) var(--chip-s) var(--chip-l))}
 .tag.plain{background:var(--surface-2);color:var(--muted)}
-.card .es{font-size:clamp(26px,7.4vw,36px);line-height:1.15;font-weight:800;margin:10px 0 6px;letter-spacing:-.015em}
+.card .tx{font-size:clamp(26px,7.4vw,36px);line-height:1.15;font-weight:800;margin:10px 0 6px;letter-spacing:-.015em}
 .card .ph{font-size:15px;color:var(--muted);margin:0 0 14px;font-weight:600;letter-spacing:.01em}
 .card .ph b{color:var(--ink)}
 .card .en{font-size:19px;margin:0 0 14px;font-weight:600}
@@ -231,7 +231,7 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
 </head>
 <body>
 <header class="top"><div class="wrap">
-  <a class="logo" href="#search" id="logo" aria-label="Home"><i>¡H!</i> Spanish at Home</a>
+  <a class="logo" href="#search" id="logo" aria-label="Home"><i>{{logo}}</i> {{title}}</a>
   <div class="sp"></div>
   <button class="icon-btn" id="helpBtn" aria-label="How to read the pronunciation">ⓘ</button>
 </div></header>
@@ -241,11 +241,11 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
   <section id="v-search" data-view>
     <div class="search">
       <span class="glass">🔍</span>
-      <input id="q" type="search" placeholder="Search… e.g. phone or cena" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+      <input id="q" type="search" placeholder="Search… e.g. {{searchExample}}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
       <button class="clear" id="qClear" aria-label="Clear search" hidden>✕</button>
     </div>
     <div id="home">
-      <p class="lead">Everyday Spanish for around the house. Search for a phrase, or pick one:</p>
+      <p class="lead">Everyday {{language}} for around the house. Search for a phrase, or pick one:</p>
       <div class="choices">
         <button class="choice" data-href="#topics"><span>🗂️</span><div><b>Learn by topic</b><small>Mornings, food, school, bedtime…</small></div><i>›</i></button>
         <button class="choice" data-href="#practice"><span>🎯</span><div><b>Test yourself</b><small>Flashcards or spelling practice</small></div><i>›</i></button>
@@ -311,7 +311,7 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
     <span style="width:40px"></span>
   </div>
   <div class="cover-seg" id="vCover" role="group" aria-label="Test yourself by hiding one language">
-    <button data-c="0">Show both</button><button data-c="1">Hide Spanish</button><button data-c="2">Hide English</button>
+    <button data-c="0">Show both</button><button data-c="1">Hide {{language}}</button><button data-c="2">Hide English</button>
   </div>
   <div class="stage" id="stage"></div>
   <p class="hint" id="vHint"></p>
@@ -335,8 +335,8 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
 
 <div class="sheet" id="welcome" hidden role="dialog" aria-modal="true" aria-labelledby="welcomeTitle"><div>
   <div style="font-size:44px">👋</div>
-  <h3 id="welcomeTitle" style="font-size:22px">¡Hola! Welcome to Spanish at Home</h3>
-  <p style="margin:6px 0 12px;color:var(--muted)">Everyday Spanish for around the house: search for a phrase, learn by topic, then test yourself.</p>
+  <h3 id="welcomeTitle" style="font-size:22px">{{hello}} Welcome to {{title}}</h3>
+  <p style="margin:6px 0 12px;color:var(--muted)">Everyday {{language}} for around the house: search for a phrase, learn by topic, then test yourself.</p>
   <div class="panel" style="box-shadow:none;background:var(--surface-2);margin:0 0 16px">
     <h3 style="margin-bottom:4px">🔒 Your privacy</h3>
     <p style="margin:0;font-size:14.5px">No cookies, no tracking and no accounts. Phrases you save and your practice scores are kept only in this browser on this device. Nothing is sent anywhere.</p>
@@ -346,28 +346,23 @@ select{width:100%;height:48px;border-radius:14px;border:1.5px solid var(--line);
 
 <div class="sheet" id="help" hidden><div>
   <h3>Reading the pronunciation</h3>
-  <p style="margin:0;color:var(--muted)">Written for English speakers, using the accent from Spain. <b>CAPITALS</b> show which part of the word to stress.</p>
+  <p style="margin:0;color:var(--muted)">Written for English speakers. <b>CAPITALS</b> show which part of the word to stress.</p>
   <table>
-    <tr><td>ah eh ee oh oo</td><td>Spanish vowels are short and clean: <i>ah</i> as in "father", <i>eh</i> as in "bed", <i>ee</i> as in "see", <i>oh</i> as in "hot", <i>oo</i> as in "food".</td></tr>
-    <tr><td>th</td><td>Spain's c (before e/i) and z — like "<b>th</b>ink". <i>THEEN-koh</i> = cinco.</td></tr>
-    <tr><td>h</td><td>Spanish j, and g before e/i — like an English h but stronger and breathier, from the back of the throat. <i>DEH-hah</i> = deja, <i>KEH-hehs</i> = quejes.</td></tr>
-    <tr><td>b</td><td>b and v sound the same, a soft b. <i>BAH-leh</i> = vale.</td></tr>
-    <tr><td>y</td><td>ll and y — like "<b>y</b>es". <i>YAH-behs</i> = llaves.</td></tr>
-    <tr><td>ny</td><td>ñ — like "ca<b>ny</b>on". <i>mah-NYAH-nah</i> = mañana.</td></tr>
-    <tr><td>rr</td><td>A rolled r (rr, or r at the start of a word). A single r is a quick tap, like the tt in American "better".</td></tr>
-    <tr><td>(silent)</td><td>A written Spanish h is never sounded: <i>OH-rah</i> = hora.</td></tr>
+{{helpRows}}
   </table>
-  <p style="color:var(--muted);font-size:14px">Tap 🔊 on any card to hear it (uses your phone's Spanish voice). 🐢 plays it slowly.</p>
+  <p style="color:var(--muted);font-size:14px">Tap 🔊 on any card to hear it (uses your phone's {{language}} voice). 🐢 plays it slowly.</p>
   <h3 style="margin-top:14px">Privacy</h3>
   <p style="color:var(--muted);font-size:14px;margin-top:0">No cookies, no tracking, no accounts. Your saved phrases and practice progress are kept only in this browser on this device, and never leave it. Clearing your browser data removes them.</p>
   <button class="btn primary block" data-close-sheet>Got it</button>
 </div></div>
 
 <script id="data" type="application/json">/*PHRASES*/</script>
+<script id="lang" type="application/json">/*LANG*/</script>
 <script>
 (() => {
 'use strict';
 const DATA = JSON.parse(document.getElementById('data').textContent);
+const L = JSON.parse(document.getElementById('lang').textContent);
 const CATS = DATA.categories;
 const CAT = Object.fromEntries(CATS.map(c => [c.id, c]));
 const ALL = DATA.phrases;
@@ -380,18 +375,26 @@ const WHO = {
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const foldChar = c => c.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase() || c;
-const fold = s => [...s.normalize('NFC')].map(foldChar).join('');
-const clean = s => s.normalize('NFC').toLowerCase().replace(/[¿¡?!.,;:"“”«»…()\-–—]/g, ' ').replace(/[’']/g, "'").replace(/\s+/g, ' ').trim();
+const foldChar = c => c.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase() || c;
+// one-to-one per character, so highlight() can map positions back
+const foldChars = s => [...s.normalize('NFC')].map(foldChar).join('');
+// for matching: also treat ß as ss and (in German) ue/oe/ae as ü/ö/ä
+const fold = s => {
+  let f = foldChars(s).replace(/ß/g, 'ss');
+  if (L.umlautSpelling) f = f.replace(/([aou])e/g, '$1');
+  return f;
+};
+const tidy = s => s.normalize('NFC').replace(/[¿¡?!.,;:"“”«»…()\-–—]/g, ' ').replace(/[’']/g, "'").replace(/\s+/g, ' ').trim();
 const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.random() * (i + 1) | 0; [a[i], a[j]] = [a[j], a[i]]; } return a; };
-const key = p => fold(p.es) + '|' + fold(p.en);
+const clean = s => tidy(s).toLowerCase();
+const key = p => fold(p.tx) + '|' + fold(p.en);
 const unique = list => { const seen = new Set(); return list.filter(p => !seen.has(key(p)) && seen.add(key(p))); };
 
 /* ---------- storage ---------- */
 const store = (() => {
   let s = { fav: [], prog: {}, welcomed: false, side: 'p', mode: 'fc-en', count: 10, topic: 'all', cover: 0 };
-  try { Object.assign(s, JSON.parse(localStorage.getItem('sah.v1') || '{}')); } catch (e) {}
-  const save = () => { try { localStorage.setItem('sah.v1', JSON.stringify(s)); } catch (e) {} };
+  try { Object.assign(s, JSON.parse(localStorage.getItem(L.storeKey) || '{}')); } catch (e) {}
+  const save = () => { try { localStorage.setItem(L.storeKey, JSON.stringify(s)); } catch (e) {} };
   return { s, save };
 })();
 const S = store.s;
@@ -416,15 +419,18 @@ const canSpeak = 'speechSynthesis' in window;
 let voice = null;
 function pickVoice() {
   const vs = speechSynthesis.getVoices();
-  voice = vs.find(v => /^es[-_]ES/i.test(v.lang) && /local|google|monica|jorge|m[oó]nica/i.test(v.name + (v.localService ? ' local' : '')))
-    || vs.find(v => /^es[-_]ES/i.test(v.lang)) || vs.find(v => /^es/i.test(v.lang)) || null;
+  const norm = l => l.replace('_', '-').toLowerCase();
+  const want = norm(L.speech);
+  const exact = vs.filter(v => norm(v.lang) === want);
+  // prefer the phone's own (usually better) voice for the exact locale, then any voice for the language
+  voice = exact.find(v => v.localService) || exact[0] || vs.find(v => norm(v.lang).startsWith(L.code)) || null;
 }
 if (canSpeak) { pickVoice(); speechSynthesis.addEventListener?.('voiceschanged', pickVoice); }
 function speak(text, slow) {
   if (!canSpeak) return toast('Speech isn’t available in this browser');
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
-  u.lang = 'es-ES'; if (voice) u.voice = voice;
+  u.lang = L.speech; if (voice) u.voice = voice;
   u.rate = slow ? 0.6 : 0.92;
   speechSynthesis.speak(u);
 }
@@ -462,7 +468,7 @@ function chips(el, options, value, onChange) {
 
 function highlight(text, terms) {
   if (!terms.length) return esc(text);
-  const t = text.normalize('NFC'); const f = fold(t);
+  const t = text.normalize('NFC'); const f = foldChars(t);
   const marks = new Array(t.length).fill(false);
   for (const term of terms) { let i = -1; while ((i = f.indexOf(term, i + 1)) > -1) for (let k = 0; k < term.length; k++) marks[i + k] = true; }
   let out = '', open = false; const chars = [...t];
@@ -475,7 +481,7 @@ function highlight(text, terms) {
 }
 function rows(list, terms = []) {
   return `<ul class="list">${list.map((p, i) => `<li><button class="row" data-i="${i}" style="--hue:${CAT[p.cat].hue}">
-    <span class="t"><div class="es">${highlight(p.es, terms)}</div><div class="en">${highlight(p.en, terms)}</div></span></button></li>`).join('')}</ul>`;
+    <span class="t"><div class="tx">${highlight(p.tx, terms)}</div><div class="en">${highlight(p.en, terms)}</div></span></button></li>`).join('')}</ul>`;
 }
 function bindRows(el, list, title) {
   el.onclick = e => { const b = e.target.closest('.row[data-i]'); if (b) openViewer(list, +b.dataset.i, title); };
@@ -489,7 +495,7 @@ function cardHtml(p, { cover = 0 } = {}) {
     <div class="band"></div>
     <div class="in">
       <div class="kicker">${c.emoji} ${esc(c.name)} · ${WHO[p.dir].label}</div>
-      <div class="rev${cov(1)}"><p class="es" lang="es">${esc(p.es)}</p><p class="ph">${phHtml(p.ph)}</p></div>
+      <div class="rev${cov(1)}"><p class="tx" lang="${L.code}">${esc(p.tx)}</p><p class="ph">${phHtml(p.ph)}</p></div>
       <div class="rev${cov(2)}"><p class="en">${esc(p.en)}</p></div>
       <div class="rev quiet${cover ? ' covered' : ''}"><p class="note">${esc(p.note)}</p></div>
       <div class="tools">
@@ -503,8 +509,8 @@ function cardHtml(p, { cover = 0 } = {}) {
 document.addEventListener('click', e => {
   const t = e.target.closest('[data-say],[data-slow],[data-fav],.covered,[data-href]');
   if (!t) return;
-  if (t.dataset.say) speak(BY_ID.get(+t.dataset.say).es);
-  else if (t.dataset.slow) speak(BY_ID.get(+t.dataset.slow).es, true);
+  if (t.dataset.say) speak(BY_ID.get(+t.dataset.say).tx);
+  else if (t.dataset.slow) speak(BY_ID.get(+t.dataset.slow).tx, true);
   else if (t.dataset.fav) { const on = toggleFav(+t.dataset.fav); t.classList.toggle('on', on); t.textContent = on ? '⭐' : '☆'; }
   else if (t.classList.contains('covered')) $$('.covered', t.closest('.card')).forEach(x => x.classList.remove('covered'));
   else if (t.dataset.href) location.hash = t.dataset.href;
@@ -514,10 +520,11 @@ document.addEventListener('click', e => {
 const qEl = $('#q');
 function search(q) {
   const terms = fold(clean(q)).split(' ').filter(Boolean);
-  if (!terms.length) return { terms, list: [] };
+  const marks = foldChars(clean(q)).split(' ').filter(Boolean); // for highlighting
+  if (!terms.length) return { terms, marks, list: [] };
   const scored = [];
   for (const p of ALL) {
-    const hay = ' ' + fold(clean(p.en)) + ' | ' + fold(clean(p.es)) + ' ';
+    const hay = ' ' + fold(clean(p.en)) + ' | ' + fold(clean(p.tx)) + ' ';
     let score = 0;
     for (const t of terms) {
       const i = hay.indexOf(t);
@@ -529,7 +536,7 @@ function search(q) {
     scored.push([score - p.en.length / 60, p]);
   }
   scored.sort((a, b) => b[0] - a[0]);
-  return { terms, list: unique(scored.map(x => x[1])) };
+  return { terms, marks, list: unique(scored.map(x => x[1])) };
 }
 function renderSearch() {
   const q = qEl.value;
@@ -537,13 +544,13 @@ function renderSearch() {
   const has = !!clean(q);
   $('#home').hidden = has; $('#results').hidden = !has;
   if (!has) return renderHome();
-  const { terms, list } = search(q);
+  const { terms, marks, list } = search(q);
   const topicHits = CATS.filter(c => terms.every(t => fold(c.name).includes(t)));
   const el = $('#results');
   el.innerHTML = (topicHits.length ? `<div class="chips">${topicHits.map(c => `<button class="chip-btn" data-href="#topic/${c.id}">${c.emoji} ${esc(c.name)}</button>`).join('')}</div>` : '')
     + (list.length
-      ? `<p class="count">${list.length} phrase${list.length === 1 ? '' : 's'} — tap one to open the cards</p>${rows(list.slice(0, 200), terms)}`
-      : `<div class="empty"><b>🤔</b>No matches for “${esc(q)}”.<br>Try a single word like <i>phone</i>, <i>cena</i> or <i>tired</i>.</div>`);
+      ? `<p class="count">${list.length} phrase${list.length === 1 ? '' : 's'} — tap one to open the cards</p>${rows(list.slice(0, 200), marks)}`
+      : `<div class="empty"><b>🤔</b>No matches for “${esc(q)}”.<br>Try a single word like ${L.noMatchExample}.</div>`);
   bindRows(el, list, `“${q.trim()}”`);
 }
 function renderHome() {
@@ -660,7 +667,7 @@ function drawCard(from) {
   $('#vPrev').disabled = V.i === 0;
   $('#vNext').disabled = V.i === V.list.length - 1;
   $$('#vCover [data-c]').forEach(b => b.setAttribute('aria-pressed', +b.dataset.c === S.cover));
-  $('#vHint').textContent = ['', 'Say it in Spanish, then tap the blurred part to check', 'What does it mean? Tap the blurred part to check'][S.cover];
+  $('#vHint').textContent = ['', `Say it in ${L.language}, then tap the blurred part to check`, 'What does it mean? Tap the blurred part to check'][S.cover];
 }
 function go(d) {
   const card = stage.firstElementChild;
@@ -727,9 +734,9 @@ document.addEventListener('keydown', e => {
 
 /* ---------- practice setup ---------- */
 const MODES = [
-  ['fc-en', '🇬🇧 → 🇪🇸 Flashcards', 'See the English, say the Spanish'],
-  ['fc-es', '🇪🇸 → 🇬🇧 Flashcards', 'See the Spanish, work out the English'],
-  ['type', '⌨️ Type the Spanish', 'Spelling practice — accents count'],
+  ['fc-en', `🇬🇧 → ${L.flag} Flashcards`, `See the English, say the ${L.language}`],
+  ['fc-es', `${L.flag} → 🇬🇧 Flashcards`, `See the ${L.language}, work out the English`],
+  ['type', `⌨️ Type the ${L.language}`, L.checkCapitals ? 'Spelling practice — umlauts and capitals count' : 'Spelling practice — accents count'],
 ];
 function poolFor(topic) {
   const [cat, side] = topic.split(':'); // e.g. "food", "food:t"
@@ -775,8 +782,8 @@ $('#pStart').onclick = () => {
 
 /* ---------- quiz ---------- */
 const Q = {};
-const ANSWERS = new Map(); // same English can have more than one right Spanish answer
-for (const p of ALL) { const k = fold(clean(p.en)); if (!ANSWERS.has(k)) ANSWERS.set(k, new Set()); ANSWERS.get(k).add(p.es); }
+const ANSWERS = new Map(); // same English can have more than one right answer
+for (const p of ALL) { const k = fold(clean(p.en)); if (!ANSWERS.has(k)) ANSWERS.set(k, new Set()); ANSWERS.get(k).add(p.tx); }
 function pickQuestions(pool, count) {
   // favour phrases you haven't practised or keep getting wrong
   const weight = p => { const r = S.prog[p.id]; return (r ? r[0] - r[1] * 1.5 : -1) + Math.random() * 3; };
@@ -800,15 +807,15 @@ function drawQ() {
   const fromEs = Q.mode === 'fc-es';
   const front = `<div class="prompt" style="--hue:${c.hue}"><div class="band" style="height:8px;background:hsl(var(--hue) 80% var(--band-l))"></div><div class="in">
       <div class="lang">${c.emoji} ${esc(c.name)} · ${WHO[p.dir].label}</div>
-      <div class="lang">${fromEs ? '🇪🇸 What does this mean?' : '🇬🇧 How do you say…'}</div>
-      <div class="big" ${fromEs ? 'lang="es"' : ''}>${esc(fromEs ? p.es : p.en)}</div>
+      <div class="lang">${fromEs ? `${L.flag} What does this mean?` : '🇬🇧 How do you say…'}</div>
+      <div class="big" ${fromEs ? `lang="${L.code}"` : ''}>${esc(fromEs ? p.tx : p.en)}</div>
       ${fromEs && canSpeak ? `<div><button class="tool spk" data-say="${p.id}">🔊 Listen</button></div>` : ''}
       ${Q.mode === 'type' ? '' : '<div class="tapme">Say it out loud, then tap to flip</div>'}
     </div></div>`;
   if (Q.mode === 'type') {
     body.innerHTML = front + `<div class="type-box">
-      <textarea id="tIn" lang="es" rows="2" placeholder="Type it in Spanish…" autocomplete="off" autocorrect="off" autocapitalize="sentences" spellcheck="false"></textarea>
-      <div class="keys">${'á é í ó ú ñ ü ¿ ¡'.split(' ').map(k => `<button data-k="${k}">${k}</button>`).join('')}</div>
+      <textarea id="tIn" lang="${L.code}" rows="2" placeholder="Type it in ${L.language}…" autocomplete="off" autocorrect="off" autocapitalize="sentences" spellcheck="false"></textarea>
+      <div class="keys">${L.keys.map(k => `<button data-k="${k}">${k}</button>`).join('')}</div>
       <div class="answer-row"><button class="btn" id="tSkip">🤷 Show me</button><button class="btn primary" id="tCheck">Check ✓</button></div>
       <div id="tFb"></div></div>`;
     const ta = $('#tIn');
@@ -831,7 +838,7 @@ function drawQ() {
       flip.firstElementChild.classList.add('flip-out');
       setTimeout(() => {
         flip.innerHTML = cardHtml(p); flip.firstElementChild.classList.add('flip-in');
-        if (!fromEs) speak(p.es);
+        if (!fromEs) speak(p.tx);
         $('#fcAns').innerHTML = `<div class="answer-row"><button class="btn bad" data-a="0">😅 Not yet</button><button class="btn ok" data-a="1">😎 Got it</button></div>`;
         $('#fcAns').onclick = ev => { const b = ev.target.closest('[data-a]'); if (!b) return; answer(p, b.dataset.a === '1'); };
       }, 140);
@@ -857,44 +864,54 @@ function lev(a, b) {
 }
 function grade(typed, p) {
   const t = clean(typed);
-  const answers = [p.es, ...(ANSWERS.get(fold(clean(p.en))) || [])];
-  let best = { level: 'wrong', es: p.es, d: Infinity };
-  for (const es of answers) {
-    const a = clean(es);
-    if (t === a) return { level: 'right', es };
-    if (fold(t) === fold(a)) { best = { level: 'accents', es, d: 0 }; continue; }
+  const answers = [p.tx, ...(ANSWERS.get(fold(clean(p.en))) || [])];
+  // capitals only count after the first letter (German nouns); the start of a sentence can be either
+  const caps = s => tidy(s).slice(1);
+  let best = { level: 'wrong', tx: p.tx, d: Infinity };
+  for (const tx of answers) {
+    const a = clean(tx);
+    if (t === a) {
+      if (L.checkCapitals && caps(typed) !== caps(tx)) { best = { level: 'caps', tx, d: 0 }; continue; }
+      return { level: 'right', tx };
+    }
+    if (fold(t) === fold(a)) { if (best.d > 0) best = { level: 'accents', tx, d: 0 }; continue; }
     const d = lev(fold(t), fold(a));
-    if (best.level !== 'accents' && d <= Math.max(1, Math.floor(a.length / 12)) && d < best.d) best = { level: 'close', es, d };
+    if (d <= Math.max(1, Math.floor(a.length / 12)) && d < best.d) best = { level: 'close', tx, d };
   }
   return best;
 }
-function diffHtml(typed, es) {
-  const have = clean(typed).split(' ');
-  const haveF = have.map(fold);
-  return es.split(' ').map(w => {
-    const c = clean(w);
-    const cls = !c ? '' : have.includes(c) ? 'w-ok' : haveF.includes(fold(c)) ? 'w-acc' : 'w-miss';
+function diffHtml(typed, tx) {
+  const have = tidy(typed).split(' ');
+  const lower = have.map(w => w.toLowerCase());
+  const folded = have.map(fold);
+  return tx.split(' ').map(w => {
+    const c = tidy(w);
+    const cls = !c ? ''
+      : have.includes(c) || (!L.checkCapitals && lower.includes(c.toLowerCase())) ? 'w-ok'
+      : folded.includes(fold(c)) ? 'w-acc'
+      : 'w-miss';
     return `<span class="${cls}">${esc(w)}</span>`;
   }).join(' ');
 }
 function markTyped(p, typed) {
   if ($('#tNext')) return;
-  const g = typed ? grade(typed, p) : { level: 'wrong', es: p.es };
+  const g = typed ? grade(typed, p) : { level: 'wrong', tx: p.tx };
   const msg = {
-    right: ['right', '🎉 ¡Perfecto!'],
-    accents: ['close', '✏️ So close — check the accents (the wavy words)'],
+    right: ['right', `🎉 ${L.perfect}`],
+    accents: ['close', `✏️ ${L.accentsMsg}`],
+    caps: ['close', '🔠 Nearly — check the capital letters (German nouns and names always start with one)'],
     close: ['close', '👀 Nearly! Just a small spelling slip'],
     wrong: ['wrong', typed ? '❌ Not quite — here’s the answer' : '👉 Here’s the answer'],
   }[g.level];
-  $('#tFb').innerHTML = `<div class="fb ${msg[0]}">${msg[1]}<div class="ans" lang="es">${typed ? diffHtml(typed, g.es) : esc(g.es)}</div></div>
+  $('#tFb').innerHTML = `<div class="fb ${msg[0]}">${msg[1]}<div class="ans" lang="${L.code}">${typed ? diffHtml(typed, g.tx) : esc(g.tx)}</div></div>
     <div style="margin-top:12px">${cardHtml(p)}</div>
     <button class="btn primary block" id="tNext" style="margin-top:12px;height:54px">Next →</button>`;
   $('#tIn').readOnly = true;
   $('.answer-row', $('.type-box')).hidden = true;
   $('.keys').hidden = true;
-  speak(g.es);
-  const ok = g.level === 'right' || g.level === 'accents';
-  $('#tNext').onclick = () => answer(p, ok, g.level === 'close');
+  speak(g.tx);
+  const ok = g.level === 'right' || (g.level === 'accents' && L.accentsCountAsRight);
+  $('#tNext').onclick = () => answer(p, ok, !ok && g.level !== 'wrong');
   $('#tNext').focus({ preventScroll: true });
   $('#tFb').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
@@ -902,7 +919,7 @@ function drawResult() {
   $('#qBar').style.width = '100%';
   $('#qScore').textContent = 'Done';
   const n = Q.list.length, pct = Math.round((Q.right / n) * 100);
-  const [emoji, words] = pct === 100 ? ['🏆', '¡Increíble! Perfect score'] : pct >= 80 ? ['🌟', '¡Muy bien! Great work'] : pct >= 50 ? ['💪', '¡Bien! Keep going'] : ['🌱', '¡Ánimo! Practice makes perfect'];
+  const [emoji, words] = pct === 100 ? ['🏆', L.results[0]] : pct >= 80 ? ['🌟', L.results[1]] : pct >= 50 ? ['💪', L.results[2]] : ['🌱', L.results[3]];
   const body = $('#qBody');
   body.innerHTML = `<div class="result"><div class="emoji">${emoji}</div><div class="score">${Q.right}/${n}</div><div>${words}</div>
     <div class="ring"><span style="color:var(--good)">${Q.right}<small>got it</small></span>
