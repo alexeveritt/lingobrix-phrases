@@ -1,8 +1,9 @@
 // Builds everything into dist/ (see languages.mjs):
 //
-//   dist/index.html         the lingobrix.com home page (src/home.html)
-//   dist/<code>/index.html  one single-file app per language (src/app.html)
-//   dist/sites.json         subdomain → folder, read by src/worker.js
+//   dist/index.html            the lingobrix.com home page (src/home.html)
+//   dist/<code>/index.html     one single-file app per language (src/app.html)
+//   dist/<code>/courses/…      the study courses, one page per section (tools/course.mjs)
+//   dist/sites.json            subdomain → folder, read by src/worker.js
 //
 //   node build.mjs          build everything
 //   node build.mjs de       build just German (plus the home page)
@@ -11,12 +12,25 @@
 // phrase file, and checks the data (ids, categories, required fields).
 import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs';
 import { dirname } from 'node:path';
+import { createHash } from 'node:crypto';
 import languages from './languages.mjs';
 import { phrasePh as spanishPh } from './tools/phonetic-es.mjs';
+import { loadCourses, checkCourses, enrich, renderCoursesPage, renderCoursePage, renderLevelPage, renderSectionPage } from './tools/course.mjs';
 
 const DOMAIN = 'lingobrix.com';
 const only = process.argv.slice(2);
 const app = readFileSync('src/app.html', 'utf8');
+const coursePage = readFileSync('src/course-page.html', 'utf8');
+const baseCss = readFileSync('src/base.css', 'utf8');
+const courseCss = readFileSync('src/course.css', 'utf8');
+// Scripts shared by the app and the course pages. They're plain scripts, not modules, so
+// they can be dropped straight into either bundle; sentence-tokens.mjs is a real module
+// (build-time code imports it too), so its export keywords come off on the way in.
+const shared = [
+  readFileSync('src/speech.js', 'utf8'),
+  readFileSync('tools/sentence-tokens.mjs', 'utf8').replace(/^export /gm, ''),
+  readFileSync('src/sentence-builder.js', 'utf8'),
+].join('\n');
 let failed = false;
 
 if (!only.length) rmSync('dist', { recursive: true, force: true });
@@ -58,12 +72,22 @@ for (const lang of languages) {
     categories: data.categories,
     phrases: data.phrases.map((p) => ({ id: p.id, cat: p.cat, dir: p.dir, en: p.en, tx: p[lang.field], ph: p.ph, note: p.note })),
   };
-  const html = fill(app, page, `languages.mjs (${lang.code}.page)`)
+  // the way in to the courses, kept separate from the everyday-phrase choices
+  const courseCard = lang.courses
+    ? `<div class="sub">For grown-ups</div><div class="choices">
+        <a class="choice" href="courses/"><span>🎓</span><div><b>${esc(lang.courses.title)}</b><small>${esc(lang.courses.blurb)}</small></div><i>›</i></a>
+      </div>`
+    : '';
+  const html = fill(app, { ...page, courseCard }, `languages.mjs (${lang.code}.page)`)
+    .replace('/*CSS*/', () => fill(baseCss, page, 'src/base.css'))
+    .replace('/*SHARED*/', () => shared)
     .replace('/*PHRASES*/', () => json(phrases))
     .replace('/*LANG*/', () => json({ ...lang.app, ...switcher }))
     .replace('/*ALPHABET*/', () => json(abc));
   write(`dist/${lang.code}/index.html`, html);
   console.log(`Built dist/${lang.code}/ — ${lang.page.title}, ${data.phrases.length} phrases, ${kb(html)}`);
+
+  if (lang.courses) buildCourses(lang, page);
 }
 
 const home = fill(readFileSync('src/home.html', 'utf8'), {
@@ -81,6 +105,78 @@ write('dist/sites.json', JSON.stringify(Object.fromEntries(sites.map((s) => [s.h
 console.log(`Built dist/ — home page, ${kb(home)}`);
 
 if (failed) process.exit(1);
+
+// data/courses/<code>/ → dist/<code>/courses/. The CSS and JS are shared by every page
+// and named after their contents, so they can be cached hard and still change when edited.
+function buildCourses(lang, page) {
+  const all = loadCourses(lang.courses.dir);
+  const errors = checkCourses(all, lang.phonetic);
+  if (errors.length) {
+    console.error(`${lang.courses.dir}:\n  ${errors.join('\n  ')}`);
+    failed = true;
+    return;
+  }
+  enrich(all, lang.phonetic);
+
+  const css = fill(baseCss + '\n' + courseCss, page, 'src/base.css + src/course.css');
+  const js = readFileSync('src/course.js', 'utf8').replace('/*SHARED*/', () => shared);
+  const cssFile = `course.${hash(css)}.css`;
+  const jsFile = `course.${hash(js)}.js`;
+  const root = `dist/${lang.code}/courses`;
+  write(`${root}/assets/${cssFile}`, css);
+  write(`${root}/assets/${jsFile}`, js);
+
+  const pages = [{ path: 'index.html', ...renderCoursesPage(all) }];
+  let sections = 0;
+  for (const course of all.courses) {
+    if (course.planned) continue;
+    // one flat list per course, so every section links to the one before and after it
+    const flat = course.levels.flatMap((level) => level.sections.map((section) => ({ level, section })));
+    sections += flat.length;
+    pages.push({ path: `${course.slug}/index.html`, ...renderCoursePage(course) });
+    for (const level of course.levels) {
+      pages.push({ path: `${course.slug}/${level.slug}/index.html`, ...renderLevelPage(level, course) });
+      // the whole level in one cacheable file: searching and level-wide practice fetch this
+      const { file, ...rest } = level;
+      write(`${root}/${course.slug}/data/${level.id}.json`, json(rest) + '\n');
+    }
+    for (const [i, x] of flat.entries()) {
+      pages.push({
+        path: `${course.slug}/${x.level.slug}/${x.section.slug}/index.html`,
+        ...renderSectionPage(x.section, x.level, course, { prev: flat[i - 1], next: flat[i + 1] }),
+      });
+    }
+  }
+
+  for (const p of pages) {
+    const html = fill(coursePage, {
+      ...page,
+      pageTitle: p.title,
+      pageDescription: p.description,
+      // p.up is the way back to /courses/; everything else hangs off the language root
+      assets: `${p.up}assets`,
+      cssFile,
+      jsFile,
+      appRoot: `${p.up}../`,
+      appTitle: lang.page.title,
+      homeRoot: `https://${DOMAIN}/`,
+      courseSource: lang.courses.source,
+      nav: p.nav,
+      body: p.body,
+    }, 'src/course-page.html').replace('/*PAGE*/', () => json({
+      code: lang.code,
+      speech: lang.app.speech,
+      language: lang.page.language,
+      storeKey: lang.courses.storeKey,
+      apex: DOMAIN,
+      localHome: `${p.up}../../`,
+      ...p.page,
+    }));
+    write(`${root}/${p.path}`, html);
+  }
+  const names = all.courses.filter((c) => !c.planned).map((c) => c.meta.shortTitle).join(', ');
+  console.log(`Built dist/${lang.code}/courses/ — ${names}, ${sections} sections, ${pages.length} pages`);
+}
 
 function check(data, lang) {
   const cats = new Set(data.categories.map((c) => c.id));
@@ -143,6 +239,14 @@ function write(file, text) {
 
 function json(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c');
+}
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+function hash(text) {
+  return createHash('sha256').update(text).digest('hex').slice(0, 8);
 }
 
 function kb(text) {

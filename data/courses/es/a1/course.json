@@ -1,0 +1,199 @@
+{
+  "schemaVersion": "1.0.0",
+  "contentVersion": "2026.09",
+  "id": "lingobrix-es-es-cervantes-a1-refresh",
+  "type": "pocket-study-guide",
+  "title": "A1 refresh",
+  "shortTitle": "A1",
+  "tagline": "Refresh A1.1 and A1.2 before starting A2.1",
+  "description": "A compact, production-led refresher for previously learned Instituto Cervantes Elementary 1 and 2 material.",
+  "locale": {
+    "learningLanguage": "es",
+    "variant": "es-ES",
+    "interfaceLanguage": "en-GB"
+  },
+  "audience": {
+    "assumedLevel": "Previously studied A1; preparing for A2.1",
+    "teachingMode": "refresh-not-from-zero"
+  },
+  "provenance": {
+    "syllabus": "User-supplied Instituto Cervantes Elementary 1 (A1.1) and Elementary 2 (A1.2) syllabus.",
+    "booksReferencedBySyllabus": [
+      {
+        "title": "Aula Internacional Plus 1",
+        "authors": "Corpas, J. et al.",
+        "publisher": "Difusión",
+        "isbn": "9788418032189",
+        "coverage": {
+          "a1-1": "Lessons 0–4",
+          "a1-2": "Lessons 5–8"
+        }
+      }
+    ],
+    "note": "This is an original study configuration aligned to the supplied topic scope; it does not reproduce textbook content."
+  },
+  "metadataDefinitions": {
+    "priority": {
+      "core": "Essential for automatic A1 production.",
+      "standard": "Expected A1 competence; refresh after core items.",
+      "supporting": "Useful connective knowledge added to make the syllabus operational."
+    },
+    "learningTarget": {
+      "active": "Learner should produce this without heavy prompting.",
+      "recognition": "Learner mainly needs to understand or identify it."
+    },
+    "syllabusRelationship": {
+      "explicit": "Named directly in the supplied syllabus.",
+      "supporting": "Added because it connects or clarifies named syllabus content."
+    },
+    "categories": [
+      "communication",
+      "grammar",
+      "vocabulary",
+      "pronunciation",
+      "reference"
+    ]
+  },
+  "uiHints": {
+    "defaultModes": [
+      "quick-refresh",
+      "study",
+      "practice"
+    ],
+    "quickRefreshFields": [
+      "objective",
+      "patterns",
+      "examples",
+      "commonMistakes",
+      "checkpoints"
+    ],
+    "sectionCardKey": "id",
+    "searchableFields": [
+      "title",
+      "tags",
+      "patterns.form",
+      "examples.es",
+      "reference"
+    ],
+    "recommendedProgressKey": "sectionId + checkpointIndex",
+    "renderNotes": [
+      "Render Spanish examples prominently with English collapsed by default.",
+      "Keep reference tables horizontally scrollable on small screens.",
+      "Allow filtering by level, category, priority, learningTarget and syllabusRelationship."
+    ]
+  },
+  "levels": [
+    {
+      "id": "a1-1",
+      "slug": "a1-1",
+      "file": "a1-1.json",
+      "cefr": "A1",
+      "localLabel": "Elementary 1",
+      "title": "A1.1 — Elementary 1",
+      "order": 1,
+      "purpose": "Reactivate foundational interaction, present-tense control and essential survival language.",
+      "syllabusCoverage": {
+        "communicative": [
+          "Greetings and farewells",
+          "Asking and giving personal information",
+          "Expressing intentions and interests",
+          "Describing places",
+          "Shopping",
+          "Using different resources for communication"
+        ],
+        "linguistic": [
+          "Numbers and alphabet",
+          "Gender, number and agreement",
+          "Present tense (-ar/-er/-ir)",
+          "Articles and demonstratives",
+          "Interrogatives"
+        ],
+        "vocabulary": [
+          "Jobs and nationalities",
+          "Places and weather"
+        ],
+        "pronunciation": [
+          "Vowels and consonants",
+          "Letters and sounds of Spanish"
+        ]
+      }
+    },
+    {
+      "id": "a1-2",
+      "slug": "a1-2",
+      "file": "a1-2.json",
+      "cefr": "A1",
+      "localLabel": "Elementary 2",
+      "title": "A1.2 — Elementary 2",
+      "order": 2,
+      "purpose": "Reactivate description, likes, routines, food, location and directions before A2.1.",
+      "syllabusCoverage": {
+        "communicative": [
+          "Describing people: appearance and personality",
+          "Asking and giving personal information",
+          "Talking about likes and leisure",
+          "Talking about habits",
+          "Ordering in a restaurant",
+          "Describing areas, villages and cities",
+          "Asking and giving directions"
+        ],
+        "linguistic": [
+          "Gustar, encantar and interesar",
+          "Present indicative: regular, irregular and reflexive verbs",
+          "Possessives",
+          "Quantifiers",
+          "Prepositions and place adverbs"
+        ],
+        "vocabulary": [
+          "Family",
+          "Appearance and personality",
+          "Daily routine",
+          "Food"
+        ],
+        "pronunciation": [
+          "Syllable division and stress",
+          "Diphthongs",
+          "R and RR"
+        ]
+      }
+    }
+  ],
+  "globalCheckpoints": [
+    {
+      "id": "a1-global-self-introduction",
+      "title": "Two-minute self-introduction",
+      "criteria": [
+        "identity and origin",
+        "work/study",
+        "family",
+        "routine",
+        "likes",
+        "reason for learning Spanish"
+      ],
+      "target": "active"
+    },
+    {
+      "id": "a1-global-transaction",
+      "title": "Travel transaction",
+      "criteria": [
+        "repair misunderstanding",
+        "ask price or direction",
+        "order food",
+        "pay"
+      ],
+      "target": "active"
+    },
+    {
+      "id": "a1-global-description",
+      "title": "Describe a person and place",
+      "criteria": [
+        "agreement",
+        "ser/estar/hay",
+        "location",
+        "personality and appearance"
+      ],
+      "target": "active"
+    }
+  ],
+  "subtitle": "Elementary 1 and 2 (A1.1 & A1.2)"
+}
