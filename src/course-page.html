@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{pageTitle}}</title>
+<meta name="description" content="{{pageDescription}}">
+<meta name="theme-color" content="{{brand}}">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="{{shortTitle}}">
+<link rel="icon" href="{{favicon}}">
+<link rel="stylesheet" href="{{assets}}/{{cssFile}}">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="logo" href="{{appRoot}}" aria-label="{{appTitle}} home"><i>{{logo}}</i> {{appTitle}}</a>
+</div></header>
+
+<main class="wrap">
+{{body}}
+<div class="foot">
+  <p><a href="{{appRoot}}">← {{appTitle}}</a> · <a data-home href="{{homeRoot}}">LingoBrix home</a></p>
+  <p>Aligned to the {{courseSource}} Nothing is sent anywhere: your progress is kept in this browser only.</p>
+</div>
+</main>
+
+<nav class="tabs" aria-label="Course"><div class="wrap">{{nav}}</div></nav>
+
+<div class="overlay" id="practice" hidden role="dialog" aria-modal="true" aria-label="Practice">
+  <div class="ov-top">
+    <button class="icon-btn" data-close aria-label="Stop">✕</button>
+    <div class="title" id="pTitle"></div>
+    <span class="tag plain" id="pScore" style="margin-right:4px"></span>
+  </div>
+  <div class="progress"><i id="pBar"></i></div>
+  <div class="q-wrap" id="pBody"></div>
+</div>
+
+<script id="page" type="application/json">/*PAGE*/</script>
+<script src="{{assets}}/{{jsFile}}"></script>
+</body>
+</html>

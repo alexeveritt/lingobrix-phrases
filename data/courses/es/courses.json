@@ -1,0 +1,10 @@
+{
+  "title": "Courses",
+  "description": "Structured study for adult learners, alongside the everyday phrases.",
+  "courses": [
+    {
+      "slug": "a1",
+      "dir": "a1"
+    }
+  ]
+}

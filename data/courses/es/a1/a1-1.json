@@ -1,0 +1,1865 @@
+{
+  "levelId": "a1-1",
+  "sections": [
+    {
+      "id": "a1-1-01-greetings-farewells",
+      "slug": "greetings-farewells",
+      "order": 1,
+      "levelId": "a1-1",
+      "category": "communication",
+      "title": "Greetings and farewells",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Open, maintain briefly, and close a simple interaction appropriately.",
+      "explanation": "Recall complete chunks; choose informal tú or polite usted according to the situation.",
+      "patterns": [
+        {
+          "form": "Hola / Buenos días / Buenas tardes / Buenas noches",
+          "meaning": "Hello / Good morning / Good afternoon / Good evening"
+        },
+        {
+          "form": "¿Qué tal? — Bien, gracias. ¿Y tú/usted?",
+          "meaning": "How are things? — Fine, thanks. And you?"
+        },
+        {
+          "form": "Hasta luego / Hasta mañana / Adiós",
+          "meaning": "See you later / tomorrow / Goodbye"
+        }
+      ],
+      "reference": {
+        "register": {
+          "informal": [
+            "¿Qué tal?",
+            "¿Cómo estás?"
+          ],
+          "formal": [
+            "¿Cómo está usted?",
+            "Encantado/a de conocerle."
+          ]
+        },
+        "notes": [
+          "Buenos días is normally used until lunch; buenas tardes afterwards."
+        ]
+      },
+      "examples": [
+        {
+          "es": "Hola, Ana. ¿Qué tal?",
+          "en": "Hi, Ana. How are things?"
+        },
+        {
+          "es": "Muy bien, gracias. ¿Y usted?",
+          "en": "Very well, thank you. And you?"
+        },
+        {
+          "es": "Encantada de conocerte.",
+          "en": "Pleased to meet you."
+        },
+        {
+          "es": "Hasta el lunes.",
+          "en": "See you on Monday."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Buenas días.",
+          "correct": "Buenos días.",
+          "explanation": "Día is masculine."
+        },
+        {
+          "incorrect": "¿Cómo eres? for “How are you?”",
+          "correct": "¿Cómo estás?",
+          "explanation": "Cómo eres asks what someone is like."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-01-greetings-farewells-p1",
+          "type": "roleplay",
+          "prompt": "Greet a friend, ask how they are, and say goodbye.",
+          "answerGuide": "Hola… ¿Qué tal?… Hasta luego."
+        },
+        {
+          "id": "a1-1-01-greetings-farewells-p2",
+          "type": "transform",
+          "prompt": "Make “¿Cómo estás?” formal.",
+          "answerGuide": "¿Cómo está usted?"
+        },
+        {
+          "id": "a1-1-01-greetings-farewells-p3",
+          "type": "recall",
+          "prompt": "Give three different farewells.",
+          "answerGuide": "For example: adiós, hasta luego, hasta mañana."
+        }
+      ],
+      "checkpoints": [
+        "I can greet someone formally and informally.",
+        "I can close a short conversation naturally."
+      ],
+      "tags": [
+        "chunks",
+        "register"
+      ]
+    },
+    {
+      "id": "a1-1-02-personal-information",
+      "slug": "personal-information",
+      "order": 2,
+      "levelId": "a1-1",
+      "category": "communication",
+      "title": "Personal information and introductions",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Ask for and give basic information about identity, origin, residence, languages and contact details.",
+      "explanation": "Build a short self-introduction from memorised frames, then answer predictable follow-up questions.",
+      "patterns": [
+        {
+          "form": "Me llamo… / Soy…",
+          "meaning": "My name is… / I am…"
+        },
+        {
+          "form": "Soy de… pero vivo en…",
+          "meaning": "I am from… but I live in…"
+        },
+        {
+          "form": "¿De dónde eres? / ¿Dónde vives?",
+          "meaning": "Where are you from? / Where do you live?"
+        },
+        {
+          "form": "¿Cuál es tu número de teléfono/correo electrónico?",
+          "meaning": "What is your phone number/email?"
+        }
+      ],
+      "reference": {
+        "usefulVerbs": [
+          "llamarse",
+          "ser",
+          "vivir",
+          "hablar",
+          "trabajar",
+          "estudiar",
+          "tener"
+        ],
+        "answerFrame": "Me llamo __. Soy de __. Vivo en __. Trabajo en __. Hablo __."
+      },
+      "examples": [
+        {
+          "es": "Me llamo Alex y soy de Inglaterra.",
+          "en": "My name is Alex and I am from England."
+        },
+        {
+          "es": "Vivo cerca de Manchester.",
+          "en": "I live near Manchester."
+        },
+        {
+          "es": "Hablo inglés y un poco de español.",
+          "en": "I speak English and a little Spanish."
+        },
+        {
+          "es": "¿A qué te dedicas?",
+          "en": "What do you do?"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Soy de Manchester but vivo Manchester.",
+          "correct": "Vivo en Manchester.",
+          "explanation": "Vivir needs en before a place."
+        },
+        {
+          "incorrect": "Mi llamo Alex.",
+          "correct": "Me llamo Alex.",
+          "explanation": "Llamarse uses the reflexive pronoun me."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-02-personal-information-p1",
+          "type": "production",
+          "prompt": "Introduce yourself in five sentences.",
+          "answerGuide": "Include name, origin, home, work/study and languages."
+        },
+        {
+          "id": "a1-1-02-personal-information-p2",
+          "type": "interview",
+          "prompt": "Ask another learner four personal-information questions.",
+          "answerGuide": "Use cómo, de dónde, dónde and qué."
+        },
+        {
+          "id": "a1-1-02-personal-information-p3",
+          "type": "listening",
+          "prompt": "Spell an email address aloud, including arroba and punto.",
+          "answerGuide": "Say each letter clearly."
+        }
+      ],
+      "checkpoints": [
+        "I can give a 30-second introduction without notes.",
+        "I can understand and answer five common personal questions."
+      ],
+      "tags": [
+        "identity",
+        "conversation"
+      ]
+    },
+    {
+      "id": "a1-1-03-numbers-alphabet",
+      "slug": "numbers-alphabet",
+      "order": 3,
+      "levelId": "a1-1",
+      "category": "reference",
+      "title": "Numbers, alphabet, spelling, dates and time",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Recognise and produce numbers, spell words, and exchange dates, times, prices and phone numbers.",
+      "explanation": "Numbers are easy to recognise on paper but need aloud retrieval practice. Spanish letter names also support repair in conversation.",
+      "patterns": [
+        {
+          "form": "¿Cómo se escribe? — Se escribe…",
+          "meaning": "How is it spelt? — It is spelt…"
+        },
+        {
+          "form": "¿Qué hora es? — Es la una / Son las dos.",
+          "meaning": "What time is it? — It is one / two."
+        },
+        {
+          "form": "¿Cuánto cuesta? — Cuesta… euros.",
+          "meaning": "How much is it? — It costs… euros."
+        }
+      ],
+      "reference": {
+        "numbers": {
+          "0-15": [
+            "cero",
+            "uno",
+            "dos",
+            "tres",
+            "cuatro",
+            "cinco",
+            "seis",
+            "siete",
+            "ocho",
+            "nueve",
+            "diez",
+            "once",
+            "doce",
+            "trece",
+            "catorce",
+            "quince"
+          ],
+          "tens": [
+            "veinte",
+            "treinta",
+            "cuarenta",
+            "cincuenta",
+            "sesenta",
+            "setenta",
+            "ochenta",
+            "noventa",
+            "cien"
+          ],
+          "examples": [
+            "veintiuno",
+            "treinta y cinco",
+            "ciento dos",
+            "doscientos"
+          ]
+        },
+        "alphabet": [
+          "a",
+          "be",
+          "ce",
+          "de",
+          "e",
+          "efe",
+          "ge",
+          "hache",
+          "i",
+          "jota",
+          "ka",
+          "ele",
+          "eme",
+          "ene",
+          "eñe",
+          "o",
+          "pe",
+          "cu",
+          "erre",
+          "ese",
+          "te",
+          "u",
+          "uve",
+          "uve doble",
+          "equis",
+          "ye",
+          "zeta"
+        ],
+        "symbols": {
+          "@": "arroba",
+          ".": "punto",
+          "-": "guion"
+        },
+        "time": [
+          "y cuarto",
+          "y media",
+          "menos cuarto"
+        ],
+        "datePattern": "Hoy es el veinte de septiembre."
+      },
+      "examples": [
+        {
+          "es": "Mi número es el seis, uno, dos, cero, cuatro…",
+          "en": "My number is six, one, two, zero, four…"
+        },
+        {
+          "es": "La clase empieza a las diez y media.",
+          "en": "The class starts at half past ten."
+        },
+        {
+          "es": "Cuesta treinta y cinco euros.",
+          "en": "It costs thirty-five euros."
+        },
+        {
+          "es": "¿Puedes deletrear tu apellido?",
+          "en": "Can you spell your surname?"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "veinte y uno",
+          "correct": "veintiuno",
+          "explanation": "21–29 are normally written as one word."
+        },
+        {
+          "incorrect": "Es las dos.",
+          "correct": "Son las dos.",
+          "explanation": "Use es only with one o’clock; son with other hours."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-03-numbers-alphabet-p1",
+          "type": "recall",
+          "prompt": "Say 17, 24, 38, 76 and 101 aloud.",
+          "answerGuide": "diecisiete, veinticuatro, treinta y ocho, setenta y seis, ciento uno"
+        },
+        {
+          "id": "a1-1-03-numbers-alphabet-p2",
+          "type": "production",
+          "prompt": "Say today’s date and three appointment times.",
+          "answerGuide": "Use el + number + de + month; a la/las for times."
+        },
+        {
+          "id": "a1-1-03-numbers-alphabet-p3",
+          "type": "roleplay",
+          "prompt": "Exchange and spell a surname, email address and telephone number.",
+          "answerGuide": "Use ¿Cómo se escribe? and ¿Puedes repetir?"
+        }
+      ],
+      "checkpoints": [
+        "I can understand prices and times at normal careful speed.",
+        "I can spell my name and email address."
+      ],
+      "tags": [
+        "numbers",
+        "alphabet",
+        "time"
+      ]
+    },
+    {
+      "id": "a1-1-04-gender-number-agreement",
+      "slug": "gender-number-agreement",
+      "order": 4,
+      "levelId": "a1-1",
+      "category": "grammar",
+      "title": "Gender, number and adjective agreement",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Make common nouns, articles and adjectives agree in gender and number.",
+      "explanation": "Agreement usually follows the noun: many -o forms change to -a, and plurals add -s or -es. Learn exceptions with their article.",
+      "patterns": [
+        {
+          "form": "un chico alto / una chica alta",
+          "meaning": "a tall boy / a tall girl"
+        },
+        {
+          "form": "unos restaurantes españoles",
+          "meaning": "some Spanish restaurants"
+        },
+        {
+          "form": "una ciudad grande / dos ciudades grandes",
+          "meaning": "a big city / two big cities"
+        }
+      ],
+      "reference": {
+        "commonEndings": {
+          "oftenMasculine": [
+            "-o",
+            "-ma (many Greek-origin nouns)"
+          ],
+          "oftenFeminine": [
+            "-a",
+            "-ción",
+            "-sión",
+            "-dad"
+          ],
+          "plural": [
+            "vowel + s",
+            "consonant + es",
+            "z → ces"
+          ]
+        },
+        "invariants": [
+          "interesante",
+          "grande",
+          "joven (gender-invariant, not number-invariant)"
+        ],
+        "exceptions": [
+          "el día",
+          "el problema",
+          "la mano",
+          "la foto"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Es una ciudad pequeña y tranquila.",
+          "en": "It is a small, quiet city."
+        },
+        {
+          "es": "Son dos hombres jóvenes.",
+          "en": "They are two young men."
+        },
+        {
+          "es": "Las casas blancas son bonitas.",
+          "en": "The white houses are pretty."
+        },
+        {
+          "es": "Tengo un problema importante.",
+          "en": "I have an important problem."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "una problema",
+          "correct": "un problema",
+          "explanation": "Problema is masculine."
+        },
+        {
+          "incorrect": "dos mujer joven",
+          "correct": "dos mujeres jóvenes",
+          "explanation": "Both noun and adjective must be plural."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-04-gender-number-agreement-p1",
+          "type": "transform",
+          "prompt": "Make “un restaurante pequeño” feminine and plural.",
+          "answerGuide": "unas cafeterías pequeñas"
+        },
+        {
+          "id": "a1-1-04-gender-number-agreement-p2",
+          "type": "correction",
+          "prompt": "Correct: “las chico españoles”.",
+          "answerGuide": "los chicos españoles"
+        },
+        {
+          "id": "a1-1-04-gender-number-agreement-p3",
+          "type": "production",
+          "prompt": "Describe three objects around you using noun + two adjectives.",
+          "answerGuide": "Check gender and number on every word."
+        }
+      ],
+      "checkpoints": [
+        "I can form regular noun and adjective plurals.",
+        "I usually match articles and adjectives to the noun."
+      ],
+      "tags": [
+        "agreement"
+      ]
+    },
+    {
+      "id": "a1-1-05-articles-demonstratives",
+      "slug": "articles-demonstratives",
+      "order": 5,
+      "levelId": "a1-1",
+      "category": "grammar",
+      "title": "Articles and demonstratives",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Select definite/indefinite articles and identify nearby things with demonstratives.",
+      "explanation": "Articles agree with the noun. Use a definite article for a known or general class, and an indefinite article to introduce a non-specific item.",
+      "patterns": [
+        {
+          "form": "el/la/los/las + noun",
+          "meaning": "the + noun"
+        },
+        {
+          "form": "un/una/unos/unas + noun",
+          "meaning": "a/an/some + noun"
+        },
+        {
+          "form": "este/esta/estos/estas + noun",
+          "meaning": "this/these + noun"
+        }
+      ],
+      "reference": {
+        "definite": [
+          "el",
+          "la",
+          "los",
+          "las"
+        ],
+        "indefinite": [
+          "un",
+          "una",
+          "unos",
+          "unas"
+        ],
+        "nearDemonstratives": [
+          "este",
+          "esta",
+          "estos",
+          "estas"
+        ],
+        "recognitionSupport": [
+          "ese/esa/esos/esas = that/those",
+          "aquel/aquella/aquellos/aquellas = that/those over there"
+        ],
+        "contractions": [
+          "a + el = al",
+          "de + el = del"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Quiero una botella de agua.",
+          "en": "I want a bottle of water."
+        },
+        {
+          "es": "La botella está en la mesa.",
+          "en": "The bottle is on the table."
+        },
+        {
+          "es": "¿Cuánto cuesta esta camisa?",
+          "en": "How much is this shirt?"
+        },
+        {
+          "es": "Voy al supermercado.",
+          "en": "I am going to the supermarket."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "este casa",
+          "correct": "esta casa",
+          "explanation": "Casa is feminine."
+        },
+        {
+          "incorrect": "Voy a el banco.",
+          "correct": "Voy al banco.",
+          "explanation": "A + el contracts to al."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-05-articles-demonstratives-p1",
+          "type": "choice",
+          "prompt": "Choose the correct form: __ libros (this/these).",
+          "answerGuide": "estos libros"
+        },
+        {
+          "id": "a1-1-05-articles-demonstratives-p2",
+          "type": "transform",
+          "prompt": "Change “una camisa” to definite plural.",
+          "answerGuide": "las camisas"
+        },
+        {
+          "id": "a1-1-05-articles-demonstratives-p3",
+          "type": "production",
+          "prompt": "Point out four nearby objects using este/esta/estos/estas.",
+          "answerGuide": "Match each demonstrative to its noun."
+        }
+      ],
+      "checkpoints": [
+        "I can use all four definite and indefinite article forms.",
+        "I can use este-series demonstratives with agreement."
+      ],
+      "tags": [
+        "articles",
+        "demonstratives"
+      ]
+    },
+    {
+      "id": "a1-1-06-present-regular",
+      "slug": "present-regular",
+      "order": 6,
+      "levelId": "a1-1",
+      "category": "grammar",
+      "title": "Present tense: regular -ar, -er and -ir verbs",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Form and use regular present-tense verbs in everyday statements and questions.",
+      "explanation": "Remove -ar, -er or -ir and add the ending for the subject. Spanish often omits subject pronouns because the verb ending identifies the person.",
+      "patterns": [
+        {
+          "form": "habl- + o/as/a/amos/áis/an",
+          "meaning": "hablar present"
+        },
+        {
+          "form": "com- + o/es/e/emos/éis/en",
+          "meaning": "comer present"
+        },
+        {
+          "form": "viv- + o/es/e/imos/ís/en",
+          "meaning": "vivir present"
+        }
+      ],
+      "reference": {
+        "subjectOrder": [
+          "yo",
+          "tú",
+          "él/ella/usted",
+          "nosotros/as",
+          "vosotros/as",
+          "ellos/ellas/ustedes"
+        ],
+        "conjugations": {
+          "hablar": [
+            "hablo",
+            "hablas",
+            "habla",
+            "hablamos",
+            "habláis",
+            "hablan"
+          ],
+          "comer": [
+            "como",
+            "comes",
+            "come",
+            "comemos",
+            "coméis",
+            "comen"
+          ],
+          "vivir": [
+            "vivo",
+            "vives",
+            "vive",
+            "vivimos",
+            "vivís",
+            "viven"
+          ]
+        },
+        "highValueVerbs": {
+          "ar": [
+            "trabajar",
+            "estudiar",
+            "necesitar",
+            "comprar",
+            "viajar"
+          ],
+          "er": [
+            "beber",
+            "aprender",
+            "leer",
+            "comer"
+          ],
+          "ir": [
+            "vivir",
+            "escribir",
+            "abrir"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "es": "Trabajo en tecnología.",
+          "en": "I work in technology."
+        },
+        {
+          "es": "¿Dónde vives?",
+          "en": "Where do you live?"
+        },
+        {
+          "es": "Aprendemos español en clase.",
+          "en": "We learn Spanish in class."
+        },
+        {
+          "es": "Los domingos comemos con la familia.",
+          "en": "On Sundays we eat with the family."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Yo trabajar en casa.",
+          "correct": "Trabajo en casa.",
+          "explanation": "Use a conjugated verb, not the infinitive."
+        },
+        {
+          "incorrect": "Nosotros viven aquí.",
+          "correct": "Nosotros vivimos aquí.",
+          "explanation": "Use the nosotros ending -imos."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-06-present-regular-p1",
+          "type": "conjugation",
+          "prompt": "Conjugate hablar, comer and vivir aloud in all six persons.",
+          "answerGuide": "Use the reference table, then repeat from memory."
+        },
+        {
+          "id": "a1-1-06-present-regular-p2",
+          "type": "production",
+          "prompt": "Make six true sentences about your week using six regular verbs.",
+          "answerGuide": "Vary the subject and verb group."
+        },
+        {
+          "id": "a1-1-06-present-regular-p3",
+          "type": "question",
+          "prompt": "Turn “Trabajas en Madrid” into a question and answer it.",
+          "answerGuide": "¿Trabajas en Madrid? Sí,… / No,…"
+        }
+      ],
+      "checkpoints": [
+        "I can retrieve regular endings without a table.",
+        "I can produce short present-tense sentences without always saying the subject pronoun."
+      ],
+      "tags": [
+        "present",
+        "conjugation"
+      ]
+    },
+    {
+      "id": "a1-1-07-essential-irregulars",
+      "slug": "essential-irregulars",
+      "order": 7,
+      "levelId": "a1-1",
+      "category": "grammar",
+      "title": "Essential irregular verbs",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "supporting",
+      "objective": "Use the most frequent irregular present-tense verbs as ready-to-speak forms.",
+      "explanation": "Prioritise high-frequency first-person forms and complete chunks rather than trying to infer every irregularity.",
+      "patterns": [
+        {
+          "form": "tengo / voy / hago / quiero / puedo / vengo / digo / sé / conozco",
+          "meaning": "high-value yo forms"
+        },
+        {
+          "form": "ir a + infinitive",
+          "meaning": "going to do something"
+        },
+        {
+          "form": "tener que + infinitive",
+          "meaning": "have to do something"
+        },
+        {
+          "form": "poder + infinitive",
+          "meaning": "can do something"
+        }
+      ],
+      "reference": {
+        "subjectOrder": [
+          "yo",
+          "tú",
+          "él/ella/usted",
+          "nosotros/as",
+          "vosotros/as",
+          "ellos/ellas/ustedes"
+        ],
+        "conjugations": {
+          "tener": [
+            "tengo",
+            "tienes",
+            "tiene",
+            "tenemos",
+            "tenéis",
+            "tienen"
+          ],
+          "ir": [
+            "voy",
+            "vas",
+            "va",
+            "vamos",
+            "vais",
+            "van"
+          ],
+          "hacer": [
+            "hago",
+            "haces",
+            "hace",
+            "hacemos",
+            "hacéis",
+            "hacen"
+          ],
+          "querer": [
+            "quiero",
+            "quieres",
+            "quiere",
+            "queremos",
+            "queréis",
+            "quieren"
+          ],
+          "poder": [
+            "puedo",
+            "puedes",
+            "puede",
+            "podemos",
+            "podéis",
+            "pueden"
+          ],
+          "venir": [
+            "vengo",
+            "vienes",
+            "viene",
+            "venimos",
+            "venís",
+            "vienen"
+          ],
+          "decir": [
+            "digo",
+            "dices",
+            "dice",
+            "decimos",
+            "decís",
+            "dicen"
+          ],
+          "saber": [
+            "sé",
+            "sabes",
+            "sabe",
+            "sabemos",
+            "sabéis",
+            "saben"
+          ],
+          "conocer": [
+            "conozco",
+            "conoces",
+            "conoce",
+            "conocemos",
+            "conocéis",
+            "conocen"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "es": "Tengo que trabajar esta tarde.",
+          "en": "I have to work this afternoon."
+        },
+        {
+          "es": "Vamos a cenar fuera.",
+          "en": "We are going to eat out."
+        },
+        {
+          "es": "¿Puedes repetir, por favor?",
+          "en": "Can you repeat, please?"
+        },
+        {
+          "es": "No conozco esta zona.",
+          "en": "I do not know this area."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Yo sabo.",
+          "correct": "Yo sé.",
+          "explanation": "Saber has the irregular first person sé."
+        },
+        {
+          "incorrect": "Puedo a pagar con tarjeta.",
+          "correct": "Puedo pagar con tarjeta.",
+          "explanation": "Poder takes the infinitive directly, without a."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-07-essential-irregulars-p1",
+          "type": "recall",
+          "prompt": "Say the yo form of all nine verbs.",
+          "answerGuide": "tengo, voy, hago, quiero, puedo, vengo, digo, sé, conozco"
+        },
+        {
+          "id": "a1-1-07-essential-irregulars-p2",
+          "type": "production",
+          "prompt": "Make one true sentence with ir a, tener que and poder.",
+          "answerGuide": "Use a conjugated first verb plus an infinitive."
+        },
+        {
+          "id": "a1-1-07-essential-irregulars-p3",
+          "type": "contrast",
+          "prompt": "Explain “sé” versus “conozco” using examples.",
+          "answerGuide": "Sé + fact/how; conozco + person/place/familiar thing."
+        }
+      ],
+      "checkpoints": [
+        "I can use the main yo forms immediately.",
+        "I can use ir a, tener que and poder with an infinitive."
+      ],
+      "tags": [
+        "irregular",
+        "high-frequency"
+      ]
+    },
+    {
+      "id": "a1-1-08-ser-estar",
+      "slug": "ser-estar",
+      "order": 8,
+      "levelId": "a1-1",
+      "category": "grammar",
+      "title": "Ser and estar",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "supporting",
+      "objective": "Choose ser or estar for basic identity, description, condition and location.",
+      "explanation": "Use ser for identity, origin, profession, defining characteristics and time; estar for location and current condition.",
+      "patterns": [
+        {
+          "form": "ser + identity/origin/profession/characteristic/time",
+          "meaning": "to be: what something is"
+        },
+        {
+          "form": "estar + location/state",
+          "meaning": "to be: where/how something is"
+        }
+      ],
+      "reference": {
+        "conjugations": {
+          "ser": [
+            "soy",
+            "eres",
+            "es",
+            "somos",
+            "sois",
+            "son"
+          ],
+          "estar": [
+            "estoy",
+            "estás",
+            "está",
+            "estamos",
+            "estáis",
+            "están"
+          ]
+        },
+        "coreUses": {
+          "ser": [
+            "identity",
+            "origin",
+            "profession",
+            "description",
+            "time/date"
+          ],
+          "estar": [
+            "location",
+            "temporary/current condition"
+          ]
+        },
+        "note": "Do not reduce the contrast to permanent versus temporary; use the functional categories."
+      },
+      "examples": [
+        {
+          "es": "Soy británico y soy programador.",
+          "en": "I am British and I am a programmer."
+        },
+        {
+          "es": "Estoy cansado pero estoy bien.",
+          "en": "I am tired but I am fine."
+        },
+        {
+          "es": "Valencia está en España.",
+          "en": "Valencia is in Spain."
+        },
+        {
+          "es": "La reunión es a las tres.",
+          "en": "The meeting is at three."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Soy en Madrid.",
+          "correct": "Estoy en Madrid.",
+          "explanation": "Location uses estar."
+        },
+        {
+          "incorrect": "Estoy ingeniero.",
+          "correct": "Soy ingeniero.",
+          "explanation": "Profession uses ser, normally without an article."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-08-ser-estar-p1",
+          "type": "choice",
+          "prompt": "Choose ser or estar for origin, location, profession and mood.",
+          "answerGuide": "ser, estar, ser, estar"
+        },
+        {
+          "id": "a1-1-08-ser-estar-p2",
+          "type": "production",
+          "prompt": "Give two true sentences with ser and two with estar.",
+          "answerGuide": "Cover identity/origin and location/state."
+        },
+        {
+          "id": "a1-1-08-ser-estar-p3",
+          "type": "correction",
+          "prompt": "Correct: “La clase está a las diez.”",
+          "answerGuide": "La clase es a las diez."
+        }
+      ],
+      "checkpoints": [
+        "I can give the present forms of ser and estar.",
+        "I can select the right verb in the main A1 situations."
+      ],
+      "tags": [
+        "ser",
+        "estar"
+      ]
+    },
+    {
+      "id": "a1-1-09-questions",
+      "slug": "questions",
+      "order": 9,
+      "levelId": "a1-1",
+      "category": "grammar",
+      "title": "Questions and interrogatives",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Ask and answer common information and yes/no questions with natural intonation.",
+      "explanation": "Spanish usually keeps statement word order and uses question marks and rising intonation; interrogative words carry written accents.",
+      "patterns": [
+        {
+          "form": "¿Interrogative + verb + …?",
+          "meaning": "information question"
+        },
+        {
+          "form": "¿Verb + …?",
+          "meaning": "yes/no question"
+        },
+        {
+          "form": "¿Por qué…? — Porque…",
+          "meaning": "Why…? — Because…"
+        }
+      ],
+      "reference": {
+        "words": {
+          "qué": "what",
+          "quién": "who",
+          "dónde": "where",
+          "cuándo": "when",
+          "cómo": "how",
+          "cuánto": "how much",
+          "cuántos": "how many",
+          "por_qué": "why",
+          "cuál": "which/what"
+        },
+        "punctuation": "Use both opening ¿ and closing ? marks.",
+        "personalA": "¿A quién…? when a person is the direct object."
+      },
+      "examples": [
+        {
+          "es": "¿Dónde trabajas?",
+          "en": "Where do you work?"
+        },
+        {
+          "es": "¿Qué haces los fines de semana?",
+          "en": "What do you do at weekends?"
+        },
+        {
+          "es": "¿Cuánto cuesta esta chaqueta?",
+          "en": "How much does this jacket cost?"
+        },
+        {
+          "es": "¿Por qué estudias español? Porque quiero trabajar en España.",
+          "en": "Why do you study Spanish? Because I want to work in Spain."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "¿Porque estudias español?",
+          "correct": "¿Por qué estudias español?",
+          "explanation": "The question phrase is two words and accented."
+        },
+        {
+          "incorrect": "Donde vives?",
+          "correct": "¿Dónde vives?",
+          "explanation": "Use the accent and both question marks."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-09-questions-p1",
+          "type": "production",
+          "prompt": "Ask eight questions about a new classmate using eight interrogatives.",
+          "answerGuide": "Keep the verb in the present tense."
+        },
+        {
+          "id": "a1-1-09-questions-p2",
+          "type": "transform",
+          "prompt": "Turn “Vives en Londres” into a yes/no and an information question.",
+          "answerGuide": "¿Vives en Londres? ¿Dónde vives?"
+        },
+        {
+          "id": "a1-1-09-questions-p3",
+          "type": "answer",
+          "prompt": "Answer “¿Por qué estudias español?” in two ways.",
+          "answerGuide": "Porque + reason."
+        }
+      ],
+      "checkpoints": [
+        "I can recall the main question words with accents.",
+        "I can ask follow-up questions without translating full English syntax."
+      ],
+      "tags": [
+        "questions"
+      ]
+    },
+    {
+      "id": "a1-1-10-intentions-wants-interests",
+      "slug": "intentions-wants-interests",
+      "order": 10,
+      "levelId": "a1-1",
+      "category": "communication",
+      "title": "Intentions, wants and interests",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Express plans, wants, needs and interests, and distinguish wanting from liking.",
+      "explanation": "Use conjugated modal-like verbs plus an infinitive. Treat me interesa/me gusta and polite ordering chunks as whole patterns.",
+      "patterns": [
+        {
+          "form": "Quiero + noun / infinitive",
+          "meaning": "I want + thing / to do"
+        },
+        {
+          "form": "Voy a + infinitive",
+          "meaning": "I am going to do"
+        },
+        {
+          "form": "Me interesa + singular/topic; me interesan + plural",
+          "meaning": "I am interested in…"
+        },
+        {
+          "form": "Me gustaría + noun / infinitive",
+          "meaning": "I would like…"
+        }
+      ],
+      "reference": {
+        "contrasts": [
+          {
+            "forms": [
+              "Quiero un café.",
+              "Me gustaría un café."
+            ],
+            "difference": "direct want versus softer request"
+          },
+          {
+            "forms": [
+              "Me gusta el café.",
+              "Quiero un café."
+            ],
+            "difference": "general liking versus wanting one now"
+          }
+        ],
+        "supportChunks": [
+          "Necesito…",
+          "Tengo intención de… (recognition)",
+          "Quisiera… (polite recognition/active restaurant chunk)"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Quiero mejorar mi español.",
+          "en": "I want to improve my Spanish."
+        },
+        {
+          "es": "Voy a trabajar en España.",
+          "en": "I am going to work in Spain."
+        },
+        {
+          "es": "Me interesa la tecnología.",
+          "en": "I am interested in technology."
+        },
+        {
+          "es": "Me gustaría reservar una mesa.",
+          "en": "I would like to book a table."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Quiero a aprender.",
+          "correct": "Quiero aprender.",
+          "explanation": "Querer takes the infinitive directly."
+        },
+        {
+          "incorrect": "Me interesa los idiomas.",
+          "correct": "Me interesan los idiomas.",
+          "explanation": "The verb agrees with the thing that is interesting."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-10-intentions-wants-interests-p1",
+          "type": "contrast",
+          "prompt": "Say that you like coffee, then order one.",
+          "answerGuide": "Me gusta el café. Me gustaría/Quiero un café."
+        },
+        {
+          "id": "a1-1-10-intentions-wants-interests-p2",
+          "type": "production",
+          "prompt": "State one plan, one need, one want and one interest.",
+          "answerGuide": "Use voy a, necesito, quiero and me interesa."
+        },
+        {
+          "id": "a1-1-10-intentions-wants-interests-p3",
+          "type": "roleplay",
+          "prompt": "Politely request a table and two drinks.",
+          "answerGuide": "Use me gustaría or quisiera."
+        }
+      ],
+      "checkpoints": [
+        "I can distinguish quiero, me gusta and me gustaría.",
+        "I can state an immediate want and a future plan."
+      ],
+      "tags": [
+        "intentions",
+        "querer",
+        "politeness"
+      ]
+    },
+    {
+      "id": "a1-1-11-jobs-nationalities",
+      "slug": "jobs-nationalities",
+      "order": 11,
+      "levelId": "a1-1",
+      "category": "vocabulary",
+      "title": "Jobs and nationalities",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "State and ask about occupations and nationality with correct agreement.",
+      "explanation": "Professions after ser normally have no article. Nationality adjectives are lower-case in Spanish and agree with the person.",
+      "patterns": [
+        {
+          "form": "Soy + profession/nationality",
+          "meaning": "I am…"
+        },
+        {
+          "form": "Trabajo de + profession / Trabajo en + sector/place",
+          "meaning": "I work as / in"
+        },
+        {
+          "form": "¿A qué te dedicas?",
+          "meaning": "What do you do?"
+        }
+      ],
+      "reference": {
+        "jobs": [
+          "profesor/a",
+          "ingeniero/a",
+          "médico/a",
+          "camarero/a",
+          "abogado/a",
+          "programador/a",
+          "empresario/a",
+          "estudiante"
+        ],
+        "nationalities": [
+          "español/española",
+          "británico/británica",
+          "inglés/inglesa",
+          "francés/francesa",
+          "alemán/alemana",
+          "italiano/italiana"
+        ],
+        "capitalization": "Nationality words are not capitalised."
+      },
+      "examples": [
+        {
+          "es": "Soy empresario y trabajo en tecnología.",
+          "en": "I am a business owner and work in technology."
+        },
+        {
+          "es": "Ella es médica.",
+          "en": "She is a doctor."
+        },
+        {
+          "es": "Somos británicos.",
+          "en": "We are British."
+        },
+        {
+          "es": "¿En qué trabajas?",
+          "en": "What field do you work in?"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Soy un ingeniero.",
+          "correct": "Soy ingeniero.",
+          "explanation": "Omit the article when simply naming a profession."
+        },
+        {
+          "incorrect": "Ella es Inglés.",
+          "correct": "Ella es inglesa.",
+          "explanation": "Use lower case and feminine agreement."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-11-jobs-nationalities-p1",
+          "type": "production",
+          "prompt": "Describe your work in three simple sentences.",
+          "answerGuide": "Use soy, trabajo en/de and one regular verb."
+        },
+        {
+          "id": "a1-1-11-jobs-nationalities-p2",
+          "type": "transform",
+          "prompt": "Make “un profesor español” feminine and plural.",
+          "answerGuide": "unas profesoras españolas"
+        },
+        {
+          "id": "a1-1-11-jobs-nationalities-p3",
+          "type": "interview",
+          "prompt": "Ask and answer nationality and occupation questions.",
+          "answerGuide": "¿De dónde eres? ¿A qué te dedicas?"
+        }
+      ],
+      "checkpoints": [
+        "I can say what I and other people do.",
+        "I can match common nationalities to gender and number."
+      ],
+      "tags": [
+        "jobs",
+        "nationalities"
+      ]
+    },
+    {
+      "id": "a1-1-12-describing-places",
+      "slug": "describing-places",
+      "order": 12,
+      "levelId": "a1-1",
+      "category": "communication",
+      "title": "Describing places",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Give a simple description of a home, area or destination.",
+      "explanation": "Combine hay for what exists with es/son for character and está/están for location. Add a small set of high-value adjectives.",
+      "patterns": [
+        {
+          "form": "En… hay + indefinite noun",
+          "meaning": "In… there is/are…"
+        },
+        {
+          "form": "Es/son + adjective",
+          "meaning": "It is/they are…"
+        },
+        {
+          "form": "Está/están + location phrase",
+          "meaning": "It is/they are located…"
+        }
+      ],
+      "reference": {
+        "adjectives": [
+          "grande",
+          "pequeño/a",
+          "bonito/a",
+          "tranquilo/a",
+          "ruidoso/a",
+          "moderno/a",
+          "antiguo/a",
+          "turístico/a"
+        ],
+        "connectors": [
+          "y",
+          "pero",
+          "también",
+          "porque"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Mi barrio es tranquilo y bastante moderno.",
+          "en": "My neighbourhood is quiet and quite modern."
+        },
+        {
+          "es": "Hay dos parques y muchos cafés.",
+          "en": "There are two parks and many cafés."
+        },
+        {
+          "es": "La estación está cerca del centro.",
+          "en": "The station is near the centre."
+        },
+        {
+          "es": "Es bonito, pero es muy turístico.",
+          "en": "It is pretty, but very touristy."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Está un parque.",
+          "correct": "Hay un parque.",
+          "explanation": "Use hay to introduce existence."
+        },
+        {
+          "incorrect": "La ciudad es en el norte.",
+          "correct": "La ciudad está en el norte.",
+          "explanation": "Geographical location uses estar."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-12-describing-places-p1",
+          "type": "production",
+          "prompt": "Describe your neighbourhood in five sentences.",
+          "answerGuide": "Use hay, es and está at least once each."
+        },
+        {
+          "id": "a1-1-12-describing-places-p2",
+          "type": "compare",
+          "prompt": "Compare two towns using pero, más and menos as supporting language.",
+          "answerGuide": "Keep descriptions simple and factual."
+        },
+        {
+          "id": "a1-1-12-describing-places-p3",
+          "type": "recall",
+          "prompt": "List six place adjectives with opposites where possible.",
+          "answerGuide": "For example grande/pequeño, tranquilo/ruidoso."
+        }
+      ],
+      "checkpoints": [
+        "I can describe a place for 30 seconds.",
+        "I can introduce facilities and locate them."
+      ],
+      "tags": [
+        "places",
+        "description"
+      ]
+    },
+    {
+      "id": "a1-1-13-weather",
+      "slug": "weather",
+      "order": 13,
+      "levelId": "a1-1",
+      "category": "vocabulary",
+      "title": "Weather and seasons",
+      "priority": "standard",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Understand and give a simple weather report and talk about seasonal conditions.",
+      "explanation": "Weather uses several fixed patterns: hace + noun/adjective, hay + noun, está + adjective/gerund, and impersonal verbs.",
+      "patterns": [
+        {
+          "form": "Hace frío/calor/sol/viento.",
+          "meaning": "It is cold/hot/sunny/windy."
+        },
+        {
+          "form": "Hay niebla/nubes/tormenta.",
+          "meaning": "There is fog/cloud/storm."
+        },
+        {
+          "form": "Está nublado. / Está lloviendo.",
+          "meaning": "It is cloudy/raining."
+        },
+        {
+          "form": "Llueve / Nieva.",
+          "meaning": "It rains/snows."
+        }
+      ],
+      "reference": {
+        "seasons": [
+          "la primavera",
+          "el verano",
+          "el otoño",
+          "el invierno"
+        ],
+        "temperature": [
+          "Hace veinte grados.",
+          "La temperatura máxima/mínima."
+        ],
+        "question": "¿Qué tiempo hace?"
+      },
+      "examples": [
+        {
+          "es": "Hoy hace sol, pero hace frío.",
+          "en": "Today it is sunny but cold."
+        },
+        {
+          "es": "En Manchester llueve mucho.",
+          "en": "It rains a lot in Manchester."
+        },
+        {
+          "es": "Mañana está nublado.",
+          "en": "Tomorrow it is cloudy."
+        },
+        {
+          "es": "En verano hace bastante calor.",
+          "en": "In summer it is quite hot."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Es frío.",
+          "correct": "Hace frío.",
+          "explanation": "General weather temperature uses hacer."
+        },
+        {
+          "incorrect": "Hace lluvia.",
+          "correct": "Llueve / Está lloviendo.",
+          "explanation": "Rain normally uses llover."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-13-weather-p1",
+          "type": "production",
+          "prompt": "Describe today’s weather and your preferred season.",
+          "answerGuide": "Use two weather patterns."
+        },
+        {
+          "id": "a1-1-13-weather-p2",
+          "type": "choice",
+          "prompt": "Choose hace, hay, está or llueve for four weather descriptions.",
+          "answerGuide": "Match each collocation, not an English “is”."
+        },
+        {
+          "id": "a1-1-13-weather-p3",
+          "type": "listening",
+          "prompt": "Listen to a short forecast and note temperature, rain and wind.",
+          "answerGuide": "Capture only key facts."
+        }
+      ],
+      "checkpoints": [
+        "I can answer ¿Qué tiempo hace? naturally.",
+        "I recognise the main weather constructions."
+      ],
+      "tags": [
+        "weather"
+      ]
+    },
+    {
+      "id": "a1-1-14-shopping",
+      "slug": "shopping",
+      "order": 14,
+      "levelId": "a1-1",
+      "category": "communication",
+      "title": "Shopping, prices and quantities",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Ask for items, sizes, prices and payment options in a shop.",
+      "explanation": "Use polite chunks plus demonstratives and numbers. Object pronouns can remain recognition-only at this stage.",
+      "patterns": [
+        {
+          "form": "Quiero / Quisiera / Busco + item",
+          "meaning": "I want / would like / am looking for…"
+        },
+        {
+          "form": "¿Cuánto cuesta? / ¿Cuánto cuestan?",
+          "meaning": "How much is it/are they?"
+        },
+        {
+          "form": "¿Tiene…? / ¿Hay…?",
+          "meaning": "Do you have…? / Is there…?"
+        },
+        {
+          "form": "¿Puedo pagar con tarjeta?",
+          "meaning": "Can I pay by card?"
+        }
+      ],
+      "reference": {
+        "sizes": [
+          "pequeño/a",
+          "mediano/a",
+          "grande",
+          "talla S/M/L"
+        ],
+        "quantities": [
+          "un kilo de",
+          "medio kilo de",
+          "una botella de",
+          "un paquete de",
+          "cien gramos de"
+        ],
+        "shopChunks": [
+          "Solo estoy mirando.",
+          "Me lo/la llevo. (recognition)",
+          "¿Puedo probármelo/a? (supporting)"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Busco una camisa azul.",
+          "en": "I am looking for a blue shirt."
+        },
+        {
+          "es": "¿Tiene esta chaqueta en otra talla?",
+          "en": "Do you have this jacket in another size?"
+        },
+        {
+          "es": "Quiero medio kilo de tomates.",
+          "en": "I want half a kilo of tomatoes."
+        },
+        {
+          "es": "Son cuarenta y nueve euros con noventa.",
+          "en": "They are €49.90."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "¿Cuánto cuestan esta camisa?",
+          "correct": "¿Cuánto cuesta esta camisa?",
+          "explanation": "The verb agrees with the singular item."
+        },
+        {
+          "incorrect": "Quiero medio kilo tomates.",
+          "correct": "Quiero medio kilo de tomates.",
+          "explanation": "Quantity expressions take de."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-14-shopping-p1",
+          "type": "roleplay",
+          "prompt": "Buy a shirt: ask for colour, size, price and card payment.",
+          "answerGuide": "Use complete shopping chunks."
+        },
+        {
+          "id": "a1-1-14-shopping-p2",
+          "type": "roleplay",
+          "prompt": "Order three market items in different quantities.",
+          "answerGuide": "Use kilo, medio kilo, gramos or botella."
+        },
+        {
+          "id": "a1-1-14-shopping-p3",
+          "type": "listening",
+          "prompt": "Practise hearing five prices and repeating them.",
+          "answerGuide": "Include euros and céntimos."
+        }
+      ],
+      "checkpoints": [
+        "I can complete a basic shop transaction.",
+        "I can understand and say common quantities and prices."
+      ],
+      "tags": [
+        "shopping",
+        "transactions"
+      ]
+    },
+    {
+      "id": "a1-1-15-communication-resources",
+      "slug": "communication-resources",
+      "order": 15,
+      "levelId": "a1-1",
+      "category": "communication",
+      "title": "Survival language and communication repair",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Keep an interaction going when vocabulary or comprehension fails.",
+      "explanation": "These phrases are high-value tools, not admissions of failure. Memorise them as immediate responses.",
+      "patterns": [
+        {
+          "form": "No entiendo. / No lo sé.",
+          "meaning": "I do not understand. / I do not know."
+        },
+        {
+          "form": "¿Puede(s) repetir, por favor?",
+          "meaning": "Can you repeat, please?"
+        },
+        {
+          "form": "Más despacio, por favor.",
+          "meaning": "More slowly, please."
+        },
+        {
+          "form": "¿Qué significa…? / ¿Cómo se dice… en español?",
+          "meaning": "What does… mean? / How do you say… in Spanish?"
+        }
+      ],
+      "reference": {
+        "strategies": [
+          "ask for repetition",
+          "ask for slower speech",
+          "ask for spelling",
+          "confirm what you heard",
+          "paraphrase or point"
+        ],
+        "confirmation": [
+          "¿Entonces…?",
+          "¿Quiere decir…? (recognition)",
+          "Vale, entiendo."
+        ]
+      },
+      "examples": [
+        {
+          "es": "Perdona, no entiendo. ¿Puedes repetir?",
+          "en": "Sorry, I do not understand. Can you repeat?"
+        },
+        {
+          "es": "¿Cómo se escribe “apellido”?",
+          "en": "How do you spell “apellido”?"
+        },
+        {
+          "es": "¿Qué significa “sobremesa”?",
+          "en": "What does “sobremesa” mean?"
+        },
+        {
+          "es": "Hablo un poco de español.",
+          "en": "I speak a little Spanish."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Repite! to a stranger",
+          "correct": "¿Puede repetir, por favor?",
+          "explanation": "Use a polite question with strangers."
+        },
+        {
+          "incorrect": "No comprendo nada and switching immediately",
+          "correct": "No entiendo. Más despacio, por favor.",
+          "explanation": "Use a targeted repair request."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-15-communication-resources-p1",
+          "type": "recall",
+          "prompt": "Say five repair phrases without looking.",
+          "answerGuide": "Include repeat, slower, spell, meaning and “I don’t understand”."
+        },
+        {
+          "id": "a1-1-15-communication-resources-p2",
+          "type": "roleplay",
+          "prompt": "Handle a speaker giving a phone number too quickly.",
+          "answerGuide": "Interrupt politely and ask them to repeat digit by digit."
+        },
+        {
+          "id": "a1-1-15-communication-resources-p3",
+          "type": "paraphrase",
+          "prompt": "Describe an unknown object using es una cosa que…",
+          "answerGuide": "Use simple known words, gesture or category."
+        }
+      ],
+      "checkpoints": [
+        "I can repair a misunderstanding in Spanish.",
+        "I can ask for meaning, spelling and slower repetition."
+      ],
+      "tags": [
+        "survival",
+        "repair"
+      ]
+    },
+    {
+      "id": "a1-1-16-pronunciation-core",
+      "slug": "pronunciation-core",
+      "order": 16,
+      "levelId": "a1-1",
+      "category": "pronunciation",
+      "title": "Core vowels, consonants and Spanish sounds",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Pronounce the five stable vowels and decode the principal letter-to-sound rules of es-ES.",
+      "explanation": "Spanish spelling is relatively regular. Keep vowels pure and short; focus on consonants whose sound changes by context.",
+      "patterns": [
+        {
+          "form": "a, e, i, o, u",
+          "meaning": "five stable vowel sounds"
+        },
+        {
+          "form": "c + e/i → /θ/ in standard central/northern es-ES; c + a/o/u → /k/",
+          "meaning": "c sound rule"
+        },
+        {
+          "form": "g + e/i → strong /x/; g + a/o/u → /g/",
+          "meaning": "g sound rule"
+        },
+        {
+          "form": "h is silent; j is strong /x/",
+          "meaning": "key consonants"
+        }
+      ],
+      "reference": {
+        "esESRules": {
+          "c_z": "c before e/i and z commonly use the “th” sound /θ/; seseo is also valid in many regions",
+          "g_j": "ge/gi and j use a strong velar sound",
+          "b_v": "b and v generally represent the same phoneme",
+          "ll_y": "often share a sound (yeísmo)",
+          "qu": "qu before e/i gives /k/ and u is silent",
+          "ñ": "similar to ny in canyon"
+        },
+        "minimalPractice": [
+          "casa / queso / cine",
+          "gato / guerra / gente",
+          "pero / perro"
+        ]
+      },
+      "examples": [
+        {
+          "es": "casa, café, cine, cinco",
+          "en": "house, coffee, cinema, five"
+        },
+        {
+          "es": "gato, guitarra, gente",
+          "en": "cat, guitar, people"
+        },
+        {
+          "es": "hola, ahora, hotel",
+          "en": "hello, now, hotel"
+        },
+        {
+          "es": "España, mañana, niño",
+          "en": "Spain, tomorrow, boy"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Pronouncing Spanish vowels as English diphthongs.",
+          "correct": "Keep each vowel steady and pure.",
+          "explanation": "Spanish vowels change less during articulation."
+        },
+        {
+          "incorrect": "Pronouncing h in hola.",
+          "correct": "The h is silent: /ola/.",
+          "explanation": "Written h has no sound in standard Spanish."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-1-16-pronunciation-core-p1",
+          "type": "shadowing",
+          "prompt": "Read the example word sets slowly, then at natural speed.",
+          "answerGuide": "Keep vowels stable."
+        },
+        {
+          "id": "a1-1-16-pronunciation-core-p2",
+          "type": "sorting",
+          "prompt": "Sort words by hard/soft c and g sounds.",
+          "answerGuide": "Use the following letter to decide."
+        },
+        {
+          "id": "a1-1-16-pronunciation-core-p3",
+          "type": "recording",
+          "prompt": "Record a 30-second introduction and check vowels, h, j, c/z and ñ.",
+          "answerGuide": "Prioritise clarity over accent imitation."
+        }
+      ],
+      "checkpoints": [
+        "I consistently produce the five Spanish vowels.",
+        "I can predict the main sounds of c, g, j, h, qu, ñ, ll and y."
+      ],
+      "tags": [
+        "pronunciation",
+        "es-ES"
+      ]
+    }
+  ]
+}

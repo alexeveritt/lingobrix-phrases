@@ -1,0 +1,2176 @@
+{
+  "levelId": "a1-2",
+  "sections": [
+    {
+      "id": "a1-2-01-appearance",
+      "slug": "appearance",
+      "order": 1,
+      "levelId": "a1-2",
+      "category": "communication",
+      "title": "Describing appearance",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Describe someone’s basic physical appearance respectfully and identify people.",
+      "explanation": "Use ser for general build/features, tener for hair/eyes and llevar for clothing or accessories currently worn.",
+      "patterns": [
+        {
+          "form": "ser + alto/a, bajo/a, joven…",
+          "meaning": "general appearance"
+        },
+        {
+          "form": "tener + el pelo/los ojos + adjective",
+          "meaning": "hair/eyes"
+        },
+        {
+          "form": "llevar + clothing/accessory",
+          "meaning": "to be wearing"
+        }
+      ],
+      "reference": {
+        "build": [
+          "alto/a",
+          "bajo/a",
+          "delgado/a",
+          "fuerte"
+        ],
+        "hair": [
+          "rubio",
+          "moreno",
+          "castaño",
+          "canoso",
+          "largo",
+          "corto",
+          "rizado",
+          "liso"
+        ],
+        "eyes": [
+          "azules",
+          "verdes",
+          "marrones"
+        ],
+        "accessories": [
+          "gafas",
+          "barba",
+          "bigote"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Es alto y tiene el pelo corto.",
+          "en": "He is tall and has short hair."
+        },
+        {
+          "es": "Tiene los ojos marrones.",
+          "en": "She has brown eyes."
+        },
+        {
+          "es": "Lleva gafas y una camisa azul.",
+          "en": "He/she is wearing glasses and a blue shirt."
+        },
+        {
+          "es": "¿Quién es la mujer de pelo rizado?",
+          "en": "Who is the woman with curly hair?"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Es pelo rubio.",
+          "correct": "Tiene el pelo rubio.",
+          "explanation": "Hair is normally described with tener."
+        },
+        {
+          "incorrect": "Tiene ojos marrón.",
+          "correct": "Tiene los ojos marrones.",
+          "explanation": "Use the article and plural adjective."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-01-appearance-p1",
+          "type": "production",
+          "prompt": "Describe two people in a photo without naming them.",
+          "answerGuide": "Use ser, tener and llevar."
+        },
+        {
+          "id": "a1-2-01-appearance-p2",
+          "type": "identification",
+          "prompt": "Ask who someone is based on one visual feature.",
+          "answerGuide": "¿Quién es el/la…?"
+        },
+        {
+          "id": "a1-2-01-appearance-p3",
+          "type": "transform",
+          "prompt": "Change a masculine description to feminine.",
+          "answerGuide": "Adjust only forms that mark gender."
+        }
+      ],
+      "checkpoints": [
+        "I can describe build, hair, eyes and clothing.",
+        "I can identify a person from a simple description."
+      ],
+      "tags": [
+        "appearance"
+      ]
+    },
+    {
+      "id": "a1-2-02-personality",
+      "slug": "personality",
+      "order": 2,
+      "levelId": "a1-2",
+      "category": "communication",
+      "title": "Describing personality",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Describe personality and give a simple reason or contrast.",
+      "explanation": "Personality normally uses ser + adjective. Agreement still applies; many -e adjectives do not change for gender.",
+      "patterns": [
+        {
+          "form": "ser + personality adjective",
+          "meaning": "to be…"
+        },
+        {
+          "form": "Es…, pero también es…",
+          "meaning": "He/she is…, but also…"
+        },
+        {
+          "form": "Parece + adjective (supporting)",
+          "meaning": "He/she seems…"
+        }
+      ],
+      "reference": {
+        "adjectives": [
+          "simpático/a",
+          "antipático/a",
+          "amable",
+          "divertido/a",
+          "serio/a",
+          "tranquilo/a",
+          "hablador/a",
+          "tímido/a",
+          "trabajador/a",
+          "generoso/a",
+          "responsable",
+          "paciente"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Mi hermana es muy divertida.",
+          "en": "My sister is very funny."
+        },
+        {
+          "es": "Soy bastante tranquilo, pero sociable.",
+          "en": "I am quite calm but sociable."
+        },
+        {
+          "es": "Mis compañeros son amables.",
+          "en": "My colleagues are kind."
+        },
+        {
+          "es": "Parece serio, pero es muy simpático.",
+          "en": "He seems serious, but is very friendly."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Está simpático.",
+          "correct": "Es simpático.",
+          "explanation": "A general personality trait uses ser."
+        },
+        {
+          "incorrect": "Una mujer trabajador.",
+          "correct": "Una mujer trabajadora.",
+          "explanation": "This adjective marks feminine with -a."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-02-personality-p1",
+          "type": "production",
+          "prompt": "Describe yourself using three adjectives and one contrast.",
+          "answerGuide": "Use soy…, pero…"
+        },
+        {
+          "id": "a1-2-02-personality-p2",
+          "type": "production",
+          "prompt": "Describe two family members without repeating adjectives.",
+          "answerGuide": "Check agreement."
+        },
+        {
+          "id": "a1-2-02-personality-p3",
+          "type": "choice",
+          "prompt": "Sort adjectives into positive, neutral or context-dependent.",
+          "answerGuide": "Meaning depends on context; justify one choice."
+        }
+      ],
+      "checkpoints": [
+        "I can describe personality with varied adjectives.",
+        "I can connect two traits with y, pero or también."
+      ],
+      "tags": [
+        "personality"
+      ]
+    },
+    {
+      "id": "a1-2-03-family-relationships",
+      "slug": "family-relationships",
+      "order": 3,
+      "levelId": "a1-2",
+      "category": "vocabulary",
+      "title": "Family and relationships",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Describe a simple family network and state relationships, names, ages and occupations.",
+      "explanation": "Use tener for family members and possessives to show relationships. Spanish kinship terms generally use an article or possessive.",
+      "patterns": [
+        {
+          "form": "Tengo + number + family noun",
+          "meaning": "I have…"
+        },
+        {
+          "form": "Mi/tu/su… se llama…",
+          "meaning": "My/your/his/her… is called…"
+        },
+        {
+          "form": "Es el/la … de…",
+          "meaning": "He/she is …’s …"
+        }
+      ],
+      "reference": {
+        "family": [
+          "madre",
+          "padre",
+          "padres",
+          "hijo/a",
+          "hermano/a",
+          "marido",
+          "mujer",
+          "pareja",
+          "abuelo/a",
+          "nieto/a",
+          "tío/a",
+          "primo/a"
+        ],
+        "relationshipStatus": [
+          "soltero/a",
+          "casado/a",
+          "separado/a",
+          "divorciado/a"
+        ],
+        "note": "padres can mean parents; parientes means relatives, not parents."
+      },
+      "examples": [
+        {
+          "es": "Tengo dos hijos y una hermana.",
+          "en": "I have two children and one sister."
+        },
+        {
+          "es": "Mi mujer se llama Ana.",
+          "en": "My wife’s name is Ana."
+        },
+        {
+          "es": "Carlos es el hermano de Marta.",
+          "en": "Carlos is Marta’s brother."
+        },
+        {
+          "es": "Mis padres viven en Londres.",
+          "en": "My parents live in London."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Mis parentes viven…",
+          "correct": "Mis padres viven…",
+          "explanation": "Parientes means relatives; padres means parents."
+        },
+        {
+          "incorrect": "La mi hermana",
+          "correct": "Mi hermana",
+          "explanation": "Do not combine a normal possessive adjective with an article."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-03-family-relationships-p1",
+          "type": "production",
+          "prompt": "Describe your real or invented family in six sentences.",
+          "answerGuide": "Use at least four kinship words."
+        },
+        {
+          "id": "a1-2-03-family-relationships-p2",
+          "type": "mapping",
+          "prompt": "Explain three relationships in a family tree.",
+          "answerGuide": "Use es el/la … de…"
+        },
+        {
+          "id": "a1-2-03-family-relationships-p3",
+          "type": "question",
+          "prompt": "Ask about siblings, children and relationship status politely.",
+          "answerGuide": "¿Tienes hermanos/hijos?"
+        }
+      ],
+      "checkpoints": [
+        "I can explain who is who in a family.",
+        "I can ask and answer basic family questions."
+      ],
+      "tags": [
+        "family"
+      ]
+    },
+    {
+      "id": "a1-2-04-gustar-encantar-interesar",
+      "slug": "gustar-encantar-interesar",
+      "order": 4,
+      "levelId": "a1-2",
+      "category": "grammar",
+      "title": "Gustar, encantar and interesar",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Express and ask about likes, strong likes and interests with correct pronouns and verb agreement.",
+      "explanation": "The thing liked controls singular/plural agreement; the indirect-object pronoun identifies the experiencer. Use gusta with an infinitive or singular noun and gustan with plural nouns.",
+      "patterns": [
+        {
+          "form": "me/te/le/nos/os/les + gusta + singular noun/infinitive",
+          "meaning": "like"
+        },
+        {
+          "form": "… + gustan + plural noun",
+          "meaning": "like plural things"
+        },
+        {
+          "form": "… + encanta/n or interesa/n",
+          "meaning": "love / be interested in"
+        },
+        {
+          "form": "A + person + pronoun…",
+          "meaning": "clarify or emphasise who"
+        }
+      ],
+      "reference": {
+        "pronouns": [
+          "me",
+          "te",
+          "le",
+          "nos",
+          "os",
+          "les"
+        ],
+        "agreement": {
+          "singular": [
+            "Me gusta el café.",
+            "Me gusta viajar."
+          ],
+          "plural": [
+            "Me gustan los museos."
+          ]
+        },
+        "clarification": [
+          "A mí me…",
+          "A ti te…",
+          "A Ana le…",
+          "A mis hijos les…"
+        ],
+        "negative": "no goes before the pronoun: No me gusta."
+      },
+      "examples": [
+        {
+          "es": "Me gusta cocinar.",
+          "en": "I like cooking."
+        },
+        {
+          "es": "Nos encantan los restaurantes pequeños.",
+          "en": "We love small restaurants."
+        },
+        {
+          "es": "A Marta le interesa la historia.",
+          "en": "Marta is interested in history."
+        },
+        {
+          "es": "¿Te gustan las películas españolas?",
+          "en": "Do you like Spanish films?"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Me gusta los restaurantes.",
+          "correct": "Me gustan los restaurantes.",
+          "explanation": "Plural things require gustan."
+        },
+        {
+          "incorrect": "Yo gusto el café.",
+          "correct": "Me gusta el café.",
+          "explanation": "Use an indirect-object pronoun; the coffee is grammatically the subject."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-04-gustar-encantar-interesar-p1",
+          "type": "transform",
+          "prompt": "Make “Me gusta el museo” plural.",
+          "answerGuide": "Me gustan los museos."
+        },
+        {
+          "id": "a1-2-04-gustar-encantar-interesar-p2",
+          "type": "survey",
+          "prompt": "Ask five likes questions and record short answers.",
+          "answerGuide": "Use ¿Te gusta…? / ¿Te gustan…?"
+        },
+        {
+          "id": "a1-2-04-gustar-encantar-interesar-p3",
+          "type": "production",
+          "prompt": "State two likes, one strong like, one dislike and one interest.",
+          "answerGuide": "Use all three verbs and no."
+        }
+      ],
+      "checkpoints": [
+        "I reliably choose gusta versus gustan.",
+        "I can use all six indirect-object pronouns in recognition and me/te/le/nos actively."
+      ],
+      "tags": [
+        "gustar",
+        "likes"
+      ]
+    },
+    {
+      "id": "a1-2-05-leisure",
+      "slug": "leisure",
+      "order": 5,
+      "levelId": "a1-2",
+      "category": "communication",
+      "title": "Likes and leisure",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Talk about free-time activities, frequency and preferences, and invite someone simply.",
+      "explanation": "Combine gustar-type verbs with activity infinitives and present-tense action verbs. Add frequency expressions to make answers conversational.",
+      "patterns": [
+        {
+          "form": "En mi tiempo libre + present verb",
+          "meaning": "In my free time…"
+        },
+        {
+          "form": "Me gusta + infinitive",
+          "meaning": "I like doing…"
+        },
+        {
+          "form": "Normalmente / a veces / nunca + present verb",
+          "meaning": "frequency"
+        },
+        {
+          "form": "¿Quieres + infinitive?",
+          "meaning": "Do you want to…?"
+        }
+      ],
+      "reference": {
+        "activities": [
+          "leer",
+          "viajar",
+          "cocinar",
+          "hacer deporte",
+          "salir con amigos",
+          "ver series",
+          "escuchar música",
+          "pasear",
+          "ir al cine"
+        ],
+        "frequency": [
+          "siempre",
+          "normalmente",
+          "a menudo",
+          "a veces",
+          "casi nunca",
+          "nunca",
+          "todos los días",
+          "los fines de semana"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Los fines de semana salgo con amigos.",
+          "en": "At weekends I go out with friends."
+        },
+        {
+          "es": "Me gusta escuchar música mientras cocino.",
+          "en": "I like listening to music while I cook."
+        },
+        {
+          "es": "A veces vamos al cine.",
+          "en": "Sometimes we go to the cinema."
+        },
+        {
+          "es": "¿Quieres tomar algo esta tarde?",
+          "en": "Do you want to have a drink this afternoon?"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Me gusta salgo con amigos.",
+          "correct": "Me gusta salir con amigos.",
+          "explanation": "After gusta, use the infinitive."
+        },
+        {
+          "incorrect": "Nunca no juego.",
+          "correct": "Nunca juego. / No juego nunca.",
+          "explanation": "Avoid double placement of no and preverbal nunca."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-05-leisure-p1",
+          "type": "production",
+          "prompt": "Speak for 45 seconds about your leisure time.",
+          "answerGuide": "Include three activities and three frequencies."
+        },
+        {
+          "id": "a1-2-05-leisure-p2",
+          "type": "interview",
+          "prompt": "Ask what someone likes doing and when.",
+          "answerGuide": "¿Qué te gusta hacer…? ¿Cuándo…?"
+        },
+        {
+          "id": "a1-2-05-leisure-p3",
+          "type": "invitation",
+          "prompt": "Invite someone to two activities and accept/decline.",
+          "answerGuide": "¿Quieres…? Sí, vale. / Lo siento, no puedo."
+        }
+      ],
+      "checkpoints": [
+        "I can describe my usual leisure activities.",
+        "I can ask about preferences and make a simple invitation."
+      ],
+      "tags": [
+        "leisure",
+        "frequency"
+      ]
+    },
+    {
+      "id": "a1-2-06-present-irregular",
+      "slug": "present-irregular",
+      "order": 6,
+      "levelId": "a1-2",
+      "category": "grammar",
+      "title": "Present tense: irregular verbs",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Use frequent stem-changing, first-person irregular and fully irregular verbs in conversation.",
+      "explanation": "Group irregulars by pattern: e→ie, o→ue, e→i, irregular yo forms, and unique verbs. Nosotros/vosotros usually do not stem-change.",
+      "patterns": [
+        {
+          "form": "e→ie: querer, pensar, empezar",
+          "meaning": "stem change except nosotros/vosotros"
+        },
+        {
+          "form": "o→ue: poder, dormir, volver",
+          "meaning": "stem change except nosotros/vosotros"
+        },
+        {
+          "form": "e→i: pedir, repetir",
+          "meaning": "stem change except nosotros/vosotros"
+        },
+        {
+          "form": "-go/-zco yo forms",
+          "meaning": "tengo, hago, salgo, pongo, conozco"
+        }
+      ],
+      "reference": {
+        "subjectOrder": [
+          "yo",
+          "tú",
+          "él/ella/usted",
+          "nosotros/as",
+          "vosotros/as",
+          "ellos/ellas/ustedes"
+        ],
+        "conjugations": {
+          "pensar": [
+            "pienso",
+            "piensas",
+            "piensa",
+            "pensamos",
+            "pensáis",
+            "piensan"
+          ],
+          "poder": [
+            "puedo",
+            "puedes",
+            "puede",
+            "podemos",
+            "podéis",
+            "pueden"
+          ],
+          "pedir": [
+            "pido",
+            "pides",
+            "pide",
+            "pedimos",
+            "pedís",
+            "piden"
+          ],
+          "salir": [
+            "salgo",
+            "sales",
+            "sale",
+            "salimos",
+            "salís",
+            "salen"
+          ],
+          "oír": [
+            "oigo",
+            "oyes",
+            "oye",
+            "oímos",
+            "oís",
+            "oyen"
+          ]
+        },
+        "common": [
+          "tener",
+          "venir",
+          "hacer",
+          "poner",
+          "salir",
+          "conocer",
+          "dar",
+          "ver",
+          "oír",
+          "jugar"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Empiezo a trabajar a las nueve.",
+          "en": "I start work at nine."
+        },
+        {
+          "es": "¿Puedes venir mañana?",
+          "en": "Can you come tomorrow?"
+        },
+        {
+          "es": "Pedimos dos cafés.",
+          "en": "We order two coffees."
+        },
+        {
+          "es": "Oigo música en la calle.",
+          "en": "I hear music in the street."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Nosotros puedemos.",
+          "correct": "Nosotros podemos.",
+          "explanation": "Nosotros normally keeps the infinitive stem."
+        },
+        {
+          "incorrect": "Yo conozo Madrid.",
+          "correct": "Yo conozco Madrid.",
+          "explanation": "Conocer has the yo form conozco."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-06-present-irregular-p1",
+          "type": "sorting",
+          "prompt": "Sort ten verbs by e→ie, o→ue, e→i, irregular yo or unique.",
+          "answerGuide": "Use the reference patterns."
+        },
+        {
+          "id": "a1-2-06-present-irregular-p2",
+          "type": "conjugation",
+          "prompt": "Conjugate pensar, poder and pedir aloud.",
+          "answerGuide": "Notice unchanged nosotros/vosotros stems."
+        },
+        {
+          "id": "a1-2-06-present-irregular-p3",
+          "type": "production",
+          "prompt": "Make five true sentences using five different irregular verbs.",
+          "answerGuide": "Include at least one nosotros form."
+        }
+      ],
+      "checkpoints": [
+        "I recognise the main irregular patterns.",
+        "I can actively use common yo, tú and nosotros forms."
+      ],
+      "tags": [
+        "present",
+        "irregular"
+      ]
+    },
+    {
+      "id": "a1-2-07-reflexive-verbs",
+      "slug": "reflexive-verbs",
+      "order": 7,
+      "levelId": "a1-2",
+      "category": "grammar",
+      "title": "Reflexive verbs",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Use reflexive pronouns with common daily-routine and personal-care verbs.",
+      "explanation": "A reflexive pronoun matches the subject and normally goes before a conjugated verb. The verb itself still conjugates normally or irregularly.",
+      "patterns": [
+        {
+          "form": "me/te/se/nos/os/se + conjugated verb",
+          "meaning": "reflexive present"
+        },
+        {
+          "form": "infinitive with attached pronoun: levantarme",
+          "meaning": "to get myself up"
+        },
+        {
+          "form": "ir a + infinitive-pronoun",
+          "meaning": "voy a ducharme"
+        }
+      ],
+      "reference": {
+        "pronouns": [
+          "me",
+          "te",
+          "se",
+          "nos",
+          "os",
+          "se"
+        ],
+        "conjugation": {
+          "levantarse": [
+            "me levanto",
+            "te levantas",
+            "se levanta",
+            "nos levantamos",
+            "os levantáis",
+            "se levantan"
+          ]
+        },
+        "common": [
+          "llamarse",
+          "levantarse",
+          "ducharse",
+          "vestirse",
+          "acostarse",
+          "despertarse",
+          "lavarse",
+          "afeitarse"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Me levanto a las siete.",
+          "en": "I get up at seven."
+        },
+        {
+          "es": "¿A qué hora te acuestas?",
+          "en": "What time do you go to bed?"
+        },
+        {
+          "es": "Nos duchamos después del gimnasio.",
+          "en": "We shower after the gym."
+        },
+        {
+          "es": "Voy a vestirme.",
+          "en": "I am going to get dressed."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Me levanto me.",
+          "correct": "Me levanto.",
+          "explanation": "Use one reflexive pronoun before the conjugated verb."
+        },
+        {
+          "incorrect": "Nos levantan a las siete.",
+          "correct": "Nos levantamos a las siete.",
+          "explanation": "The verb ending must also agree with nosotros."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-07-reflexive-verbs-p1",
+          "type": "conjugation",
+          "prompt": "Conjugate levantarse in all six persons.",
+          "answerGuide": "Say pronoun and verb together."
+        },
+        {
+          "id": "a1-2-07-reflexive-verbs-p2",
+          "type": "transform",
+          "prompt": "Change “Me ducho” to nosotros and ellos.",
+          "answerGuide": "Nos duchamos. Se duchan."
+        },
+        {
+          "id": "a1-2-07-reflexive-verbs-p3",
+          "type": "production",
+          "prompt": "Describe a morning using four reflexive verbs.",
+          "answerGuide": "Sequence with primero, después and luego."
+        }
+      ],
+      "checkpoints": [
+        "I can match all reflexive pronouns to subjects.",
+        "I can use reflexive verbs before conjugated verbs and attached to infinitives."
+      ],
+      "tags": [
+        "reflexive"
+      ]
+    },
+    {
+      "id": "a1-2-08-daily-routines",
+      "slug": "daily-routines",
+      "order": 8,
+      "levelId": "a1-2",
+      "category": "communication",
+      "title": "Daily routines and habits",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Describe a normal day, sequence events and say when and how often they happen.",
+      "explanation": "Mix reflexive and non-reflexive verbs with time and frequency. Spanish uses a la/las for clock times and por la mañana/tarde/noche for parts of day.",
+      "patterns": [
+        {
+          "form": "A las… + present verb",
+          "meaning": "At… I…"
+        },
+        {
+          "form": "Por la mañana/tarde/noche…",
+          "meaning": "In the morning/afternoon/evening"
+        },
+        {
+          "form": "Primero…, después/luego…, al final…",
+          "meaning": "sequence"
+        },
+        {
+          "form": "Soler + infinitive (supporting)",
+          "meaning": "usually do"
+        }
+      ],
+      "reference": {
+        "routineVerbs": [
+          "despertarse",
+          "levantarse",
+          "ducharse",
+          "vestirse",
+          "desayunar",
+          "ir",
+          "trabajar",
+          "comer",
+          "volver",
+          "cenar",
+          "acostarse"
+        ],
+        "frequency": [
+          "cada día",
+          "normalmente",
+          "a veces",
+          "los lunes",
+          "una vez a la semana"
+        ],
+        "time": [
+          "a la una",
+          "a las ocho",
+          "de nueve a cinco"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Me despierto a las seis y media.",
+          "en": "I wake up at half past six."
+        },
+        {
+          "es": "Trabajo de nueve a cinco.",
+          "en": "I work from nine to five."
+        },
+        {
+          "es": "Después de cenar, veo la televisión.",
+          "en": "After dinner, I watch television."
+        },
+        {
+          "es": "Los viernes suelo trabajar en casa.",
+          "en": "On Fridays I usually work at home."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "En las ocho me levanto.",
+          "correct": "A las ocho me levanto.",
+          "explanation": "Clock time uses a la/las."
+        },
+        {
+          "incorrect": "Después cenar…",
+          "correct": "Después de cenar…",
+          "explanation": "Después de is followed by noun or infinitive."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-08-daily-routines-p1",
+          "type": "timeline",
+          "prompt": "Create a six-event weekday timeline and narrate it.",
+          "answerGuide": "Include exact times and sequence words."
+        },
+        {
+          "id": "a1-2-08-daily-routines-p2",
+          "type": "compare",
+          "prompt": "Compare your weekday and weekend routines.",
+          "answerGuide": "Use normalmente, pero and los fines de semana."
+        },
+        {
+          "id": "a1-2-08-daily-routines-p3",
+          "type": "question",
+          "prompt": "Ask a partner five routine questions.",
+          "answerGuide": "Use ¿A qué hora…? and ¿Con qué frecuencia…?"
+        }
+      ],
+      "checkpoints": [
+        "I can narrate a typical day for one minute.",
+        "I can ask and answer about times and frequency."
+      ],
+      "tags": [
+        "routines",
+        "habits"
+      ]
+    },
+    {
+      "id": "a1-2-09-possessives",
+      "slug": "possessives",
+      "order": 9,
+      "levelId": "a1-2",
+      "category": "grammar",
+      "title": "Possessive adjectives",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Express ownership and family relationships using short-form possessives.",
+      "explanation": "Possessives agree with the thing owned, not the owner. Mi, tu and su vary only for number; nuestro and vuestro vary for gender and number.",
+      "patterns": [
+        {
+          "form": "mi/mis, tu/tus, su/sus + noun",
+          "meaning": "my, your, his/her/your/their"
+        },
+        {
+          "form": "nuestro/a/os/as + noun",
+          "meaning": "our"
+        },
+        {
+          "form": "vuestro/a/os/as + noun",
+          "meaning": "your plural informal"
+        }
+      ],
+      "reference": {
+        "forms": {
+          "yo": [
+            "mi",
+            "mis"
+          ],
+          "tú": [
+            "tu",
+            "tus"
+          ],
+          "él_ella_usted_ellos_ustedes": [
+            "su",
+            "sus"
+          ],
+          "nosotros": [
+            "nuestro",
+            "nuestra",
+            "nuestros",
+            "nuestras"
+          ],
+          "vosotros": [
+            "vuestro",
+            "vuestra",
+            "vuestros",
+            "vuestras"
+          ]
+        },
+        "disambiguation": "Use de + person where su is unclear: la hermana de Ana."
+      },
+      "examples": [
+        {
+          "es": "Mi hermano vive con sus hijos.",
+          "en": "My brother lives with his children."
+        },
+        {
+          "es": "Nuestra casa es pequeña.",
+          "en": "Our house is small."
+        },
+        {
+          "es": "¿Cómo se llama tu empresa?",
+          "en": "What is your company called?"
+        },
+        {
+          "es": "Es el coche de Marta.",
+          "en": "It is Marta’s car."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "nuestro casas",
+          "correct": "nuestras casas",
+          "explanation": "Nuestro agrees with the feminine plural noun casas."
+        },
+        {
+          "incorrect": "su de Ana",
+          "correct": "el libro de Ana / su libro",
+          "explanation": "Use either de + person or a possessive, not both."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-09-possessives-p1",
+          "type": "transform",
+          "prompt": "Change “mi casa” to plural, then to “our houses”.",
+          "answerGuide": "mis casas; nuestras casas"
+        },
+        {
+          "id": "a1-2-09-possessives-p2",
+          "type": "choice",
+          "prompt": "Choose su/sus/nuestro/nuestra for four nouns.",
+          "answerGuide": "Agree with the possessed noun."
+        },
+        {
+          "id": "a1-2-09-possessives-p3",
+          "type": "production",
+          "prompt": "Describe five people or objects in your family/home using possessives.",
+          "answerGuide": "Include mi, su and nuestro forms."
+        }
+      ],
+      "checkpoints": [
+        "I can choose singular versus plural possessives.",
+        "I can disambiguate su with de + person."
+      ],
+      "tags": [
+        "possessives"
+      ]
+    },
+    {
+      "id": "a1-2-10-quantifiers",
+      "slug": "quantifiers",
+      "order": 10,
+      "levelId": "a1-2",
+      "category": "grammar",
+      "title": "Quantifiers and amounts",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Express approximate amounts with count and non-count nouns.",
+      "explanation": "Some quantifiers agree in gender and number; adverbial poco/mucho with verbs does not. Learn countable and uncountable examples.",
+      "patterns": [
+        {
+          "form": "mucho/a/os/as + noun",
+          "meaning": "a lot of/many"
+        },
+        {
+          "form": "poco/a/os/as + noun",
+          "meaning": "little/few"
+        },
+        {
+          "form": "algún/alguna/algunos/algunas + noun",
+          "meaning": "some/any"
+        },
+        {
+          "form": "verb + mucho/poco",
+          "meaning": "do something a lot/little"
+        }
+      ],
+      "reference": {
+        "forms": {
+          "mucho": [
+            "mucho",
+            "mucha",
+            "muchos",
+            "muchas"
+          ],
+          "poco": [
+            "poco",
+            "poca",
+            "pocos",
+            "pocas"
+          ],
+          "alguno": [
+            "algún",
+            "alguna",
+            "algunos",
+            "algunas"
+          ]
+        },
+        "other": [
+          "bastante(s)",
+          "demasiado/a/os/as",
+          "nada de",
+          "ningún/ninguna"
+        ],
+        "examplesByType": {
+          "countable": [
+            "muchos libros",
+            "pocas tiendas"
+          ],
+          "uncountable": [
+            "mucha agua",
+            "poco tiempo"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "es": "Hay muchos restaurantes en el centro.",
+          "en": "There are many restaurants in the centre."
+        },
+        {
+          "es": "Tengo poco tiempo.",
+          "en": "I have little time."
+        },
+        {
+          "es": "Necesitamos algunas cosas.",
+          "en": "We need some things."
+        },
+        {
+          "es": "Trabajo mucho durante la semana.",
+          "en": "I work a lot during the week."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "mucho tiendas",
+          "correct": "muchas tiendas",
+          "explanation": "The quantifier agrees with feminine plural tiendas."
+        },
+        {
+          "incorrect": "Trabajo muchos.",
+          "correct": "Trabajo mucho.",
+          "explanation": "With a verb, mucho is an invariable adverb."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-10-quantifiers-p1",
+          "type": "choice",
+          "prompt": "Complete six noun phrases with the correct quantifier form.",
+          "answerGuide": "Check noun gender and number."
+        },
+        {
+          "id": "a1-2-10-quantifiers-p2",
+          "type": "contrast",
+          "prompt": "Use poco/pocos and mucha/muchas in four sentences.",
+          "answerGuide": "Include countable and uncountable nouns."
+        },
+        {
+          "id": "a1-2-10-quantifiers-p3",
+          "type": "production",
+          "prompt": "Describe what your town has a lot of and little of.",
+          "answerGuide": "Use hay + quantifier + noun."
+        }
+      ],
+      "checkpoints": [
+        "I can make quantifiers agree with nouns.",
+        "I distinguish mucho with a noun from mucho modifying a verb."
+      ],
+      "tags": [
+        "quantifiers"
+      ]
+    },
+    {
+      "id": "a1-2-11-food-drink",
+      "slug": "food-drink",
+      "order": 11,
+      "levelId": "a1-2",
+      "category": "vocabulary",
+      "title": "Food and drink",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Name common foods, express preferences and dietary needs, and discuss meals.",
+      "explanation": "Learn food in meal and shopping contexts rather than as isolated lists. Use tomar for food/drink in common meal expressions in Spain.",
+      "patterns": [
+        {
+          "form": "Para desayunar/comer/cenar, tomo…",
+          "meaning": "For breakfast/lunch/dinner, I have…"
+        },
+        {
+          "form": "Me gusta/n… / Prefiero…",
+          "meaning": "I like / prefer…"
+        },
+        {
+          "form": "Soy alérgico/a a… / No como…",
+          "meaning": "I am allergic to / I do not eat…"
+        }
+      ],
+      "reference": {
+        "meals": [
+          "el desayuno",
+          "la comida",
+          "la cena"
+        ],
+        "foods": [
+          "pan",
+          "arroz",
+          "pasta",
+          "carne",
+          "pollo",
+          "pescado",
+          "huevos",
+          "queso",
+          "verduras",
+          "fruta",
+          "patatas"
+        ],
+        "drinks": [
+          "agua",
+          "café",
+          "té",
+          "leche",
+          "vino",
+          "cerveza"
+        ],
+        "dietary": [
+          "vegetariano/a",
+          "vegano/a",
+          "sin gluten",
+          "sin lactosa",
+          "alérgico/a a"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Para desayunar tomo café y tostadas.",
+          "en": "For breakfast I have coffee and toast."
+        },
+        {
+          "es": "Me encantan las verduras.",
+          "en": "I love vegetables."
+        },
+        {
+          "es": "No como carne.",
+          "en": "I do not eat meat."
+        },
+        {
+          "es": "Soy alérgica a los frutos secos.",
+          "en": "I am allergic to nuts."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Estoy alérgico a…",
+          "correct": "Soy alérgico a…",
+          "explanation": "A stable allergy is normally expressed with ser."
+        },
+        {
+          "incorrect": "Me gustan el pescado.",
+          "correct": "Me gusta el pescado.",
+          "explanation": "Singular food noun takes gusta."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-11-food-drink-p1",
+          "type": "sorting",
+          "prompt": "Sort foods into meals or food groups, allowing overlaps.",
+          "answerGuide": "Explain one choice in Spanish."
+        },
+        {
+          "id": "a1-2-11-food-drink-p2",
+          "type": "production",
+          "prompt": "Describe what you normally eat in a day.",
+          "answerGuide": "Use meal phrases and quantities."
+        },
+        {
+          "id": "a1-2-11-food-drink-p3",
+          "type": "roleplay",
+          "prompt": "Explain one dietary need to a server.",
+          "answerGuide": "Use no como, sin or soy alérgico/a a."
+        }
+      ],
+      "checkpoints": [
+        "I can discuss normal meals and preferences.",
+        "I can clearly state a dietary restriction."
+      ],
+      "tags": [
+        "food",
+        "diet"
+      ]
+    },
+    {
+      "id": "a1-2-12-restaurants",
+      "slug": "restaurants",
+      "order": 12,
+      "levelId": "a1-2",
+      "category": "communication",
+      "title": "Ordering in restaurants",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Handle the main stages of a simple restaurant interaction from table request to payment.",
+      "explanation": "Use polite fixed chunks. Quiero is direct but possible; quisiera and me gustaría are softer. Me gusta states a preference and does not itself order an item.",
+      "patterns": [
+        {
+          "form": "Una mesa para dos, por favor.",
+          "meaning": "A table for two, please."
+        },
+        {
+          "form": "Para mí… / Quisiera… / Me gustaría…",
+          "meaning": "For me / I would like…"
+        },
+        {
+          "form": "¿Qué lleva…? / ¿Tiene…?",
+          "meaning": "What is in…? / Do you have…?"
+        },
+        {
+          "form": "La cuenta, por favor.",
+          "meaning": "The bill, please."
+        }
+      ],
+      "reference": {
+        "stages": {
+          "arrival": [
+            "¿Tiene una mesa para…?",
+            "Tengo una reserva."
+          ],
+          "ordering": [
+            "¿Nos trae…?",
+            "Para mí…",
+            "De primero/segundo…"
+          ],
+          "problems": [
+            "Esto no es lo que he pedido. (recognition)",
+            "Perdone, falta…"
+          ],
+          "payment": [
+            "La cuenta, por favor.",
+            "¿Podemos pagar por separado?",
+            "¿Puedo pagar con tarjeta?"
+          ]
+        },
+        "contrast": {
+          "Me gusta el café.": "general liking",
+          "Quiero un café.": "direct order",
+          "Me gustaría/Quisiera un café.": "polite order"
+        }
+      },
+      "examples": [
+        {
+          "es": "Quisiera una tortilla y agua sin gas.",
+          "en": "I would like an omelette and still water."
+        },
+        {
+          "es": "¿Qué lleva la ensalada?",
+          "en": "What is in the salad?"
+        },
+        {
+          "es": "Para mí, el menú del día.",
+          "en": "For me, the set menu."
+        },
+        {
+          "es": "¿Nos trae la cuenta, por favor?",
+          "en": "Can you bring us the bill, please?"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Me gusta un café to order",
+          "correct": "Me gustaría un café.",
+          "explanation": "Me gusta states a liking; gustaría makes the request."
+        },
+        {
+          "incorrect": "Quisiera de una cerveza.",
+          "correct": "Quisiera una cerveza.",
+          "explanation": "No de is needed before the ordered item."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-12-restaurants-p1",
+          "type": "roleplay",
+          "prompt": "Complete a restaurant dialogue: arrival, order, request and payment.",
+          "answerGuide": "Use at least five standard chunks."
+        },
+        {
+          "id": "a1-2-12-restaurants-p2",
+          "type": "contrast",
+          "prompt": "Say you like wine, then order a glass politely.",
+          "answerGuide": "Me gusta el vino. Me gustaría una copa de vino."
+        },
+        {
+          "id": "a1-2-12-restaurants-p3",
+          "type": "problem-solving",
+          "prompt": "Report a missing drink and ask for it.",
+          "answerGuide": "Perdone, falta… / ¿Nos trae…?"
+        }
+      ],
+      "checkpoints": [
+        "I can complete a basic restaurant interaction.",
+        "I distinguish liking, wanting and politely requesting."
+      ],
+      "tags": [
+        "restaurant",
+        "ordering"
+      ]
+    },
+    {
+      "id": "a1-2-13-cities-neighbourhoods",
+      "slug": "cities-neighbourhoods",
+      "order": 13,
+      "levelId": "a1-2",
+      "category": "communication",
+      "title": "Describing areas, villages and cities",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Describe and evaluate a neighbourhood, village or city and its facilities.",
+      "explanation": "Combine existence, location, adjectives and quantifiers. Give a personal evaluation with me gusta because or es + adjective.",
+      "patterns": [
+        {
+          "form": "Hay + facilities",
+          "meaning": "There is/are…"
+        },
+        {
+          "form": "Está en / cerca de…",
+          "meaning": "It is located…"
+        },
+        {
+          "form": "Es una ciudad + adjective",
+          "meaning": "It is a … city"
+        },
+        {
+          "form": "Me gusta porque…",
+          "meaning": "I like it because…"
+        }
+      ],
+      "reference": {
+        "facilities": [
+          "ayuntamiento",
+          "estación",
+          "parada",
+          "mercado",
+          "supermercado",
+          "farmacia",
+          "centro de salud",
+          "parque",
+          "museo",
+          "biblioteca",
+          "plaza",
+          "zona peatonal"
+        ],
+        "descriptors": [
+          "céntrico/a",
+          "residencial",
+          "animado/a",
+          "tranquilo/a",
+          "seguro/a",
+          "bien comunicado/a"
+        ]
+      },
+      "examples": [
+        {
+          "es": "Es un pueblo pequeño y tranquilo.",
+          "en": "It is a small, quiet village."
+        },
+        {
+          "es": "Hay bastantes tiendas en el centro.",
+          "en": "There are quite a few shops in the centre."
+        },
+        {
+          "es": "Mi barrio está bien comunicado.",
+          "en": "My neighbourhood has good transport links."
+        },
+        {
+          "es": "Me gusta porque hay muchas zonas verdes.",
+          "en": "I like it because there are many green areas."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "La ciudad hay muchos museos.",
+          "correct": "En la ciudad hay muchos museos.",
+          "explanation": "Hay does not take the place as its subject; introduce it with en."
+        },
+        {
+          "incorrect": "Es cerca del mar.",
+          "correct": "Está cerca del mar.",
+          "explanation": "Location uses estar."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-13-cities-neighbourhoods-p1",
+          "type": "production",
+          "prompt": "Give a one-minute description of your area.",
+          "answerGuide": "Use hay, está, es, a quantifier and an opinion."
+        },
+        {
+          "id": "a1-2-13-cities-neighbourhoods-p2",
+          "type": "compare",
+          "prompt": "Compare a village and a city using simple contrasts.",
+          "answerGuide": "Use más/menos as supporting language."
+        },
+        {
+          "id": "a1-2-13-cities-neighbourhoods-p3",
+          "type": "recommend",
+          "prompt": "Recommend an area and give two reasons.",
+          "answerGuide": "Use me gusta porque…"
+        }
+      ],
+      "checkpoints": [
+        "I can describe facilities and overall character.",
+        "I can say where an area is and why I like/dislike it."
+      ],
+      "tags": [
+        "cities",
+        "neighbourhoods"
+      ]
+    },
+    {
+      "id": "a1-2-14-hay-vs-estar",
+      "slug": "hay-vs-estar",
+      "order": 14,
+      "levelId": "a1-2",
+      "category": "grammar",
+      "title": "Hay versus estar",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "supporting",
+      "objective": "Distinguish introducing the existence of something from locating a known, specific thing.",
+      "explanation": "Use hay with indefinite or quantified nouns to say what exists. Use está/están with definite, demonstrative, possessive or named subjects to say where they are.",
+      "patterns": [
+        {
+          "form": "Hay + un/una/algunos/muchos/numeral + noun",
+          "meaning": "there is/are"
+        },
+        {
+          "form": "El/La/Los/Las… está/están + place",
+          "meaning": "the known thing is located"
+        },
+        {
+          "form": "¿Hay…? versus ¿Dónde está…?",
+          "meaning": "existence versus location"
+        }
+      ],
+      "reference": {
+        "hay": "Invariant in the present: hay for singular and plural.",
+        "estarAgreement": {
+          "singular": "está",
+          "plural": "están"
+        },
+        "determinerCue": {
+          "hay": [
+            "un/una",
+            "numbers",
+            "muchos/pocos",
+            "no article"
+          ],
+          "estar": [
+            "el/la/los/las",
+            "este/esta",
+            "mi/tu/su",
+            "proper names"
+          ]
+        }
+      },
+      "examples": [
+        {
+          "es": "Hay una farmacia cerca.",
+          "en": "There is a pharmacy nearby."
+        },
+        {
+          "es": "La farmacia está al lado del banco.",
+          "en": "The pharmacy is next to the bank."
+        },
+        {
+          "es": "Hay dos plazas en el barrio.",
+          "en": "There are two squares in the neighbourhood."
+        },
+        {
+          "es": "¿Dónde están mis llaves?",
+          "en": "Where are my keys?"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Hay la estación cerca.",
+          "correct": "La estación está cerca.",
+          "explanation": "A definite known item is located with estar."
+        },
+        {
+          "incorrect": "Hayn dos bancos.",
+          "correct": "Hay dos bancos.",
+          "explanation": "Present hay never changes for plural."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-14-hay-vs-estar-p1",
+          "type": "choice",
+          "prompt": "Choose hay, está or están in ten short location sentences.",
+          "answerGuide": "Look at the determiner and meaning."
+        },
+        {
+          "id": "a1-2-14-hay-vs-estar-p2",
+          "type": "two-step",
+          "prompt": "Introduce a café, then locate it.",
+          "answerGuide": "Hay un café. El café está…"
+        },
+        {
+          "id": "a1-2-14-hay-vs-estar-p3",
+          "type": "production",
+          "prompt": "Describe a room using three hay and three estar sentences.",
+          "answerGuide": "Introduce first; refer back as definite."
+        }
+      ],
+      "checkpoints": [
+        "I can explain and use the existence/location contrast.",
+        "I never pluralise present hay."
+      ],
+      "tags": [
+        "hay",
+        "estar",
+        "location"
+      ]
+    },
+    {
+      "id": "a1-2-15-location-prepositions",
+      "slug": "location-prepositions",
+      "order": 15,
+      "levelId": "a1-2",
+      "category": "grammar",
+      "title": "Prepositions and place adverbs",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Locate people, objects and places relative to landmarks.",
+      "explanation": "Most compound location phrases use de, which contracts with el to del. Use estar to locate a specific item.",
+      "patterns": [
+        {
+          "form": "estar + en",
+          "meaning": "be in/on/at"
+        },
+        {
+          "form": "estar + cerca/lejos de",
+          "meaning": "be near/far from"
+        },
+        {
+          "form": "estar + delante/detrás/encima/debajo/al lado de",
+          "meaning": "be in front/behind/above/below/next to"
+        },
+        {
+          "form": "estar entre A y B",
+          "meaning": "be between A and B"
+        }
+      ],
+      "reference": {
+        "phrases": [
+          "en",
+          "a la derecha de",
+          "a la izquierda de",
+          "cerca de",
+          "lejos de",
+          "delante de",
+          "detrás de",
+          "encima de",
+          "debajo de",
+          "al lado de",
+          "enfrente de",
+          "entre"
+        ],
+        "contractions": [
+          "de + el = del",
+          "a + el = al"
+        ]
+      },
+      "examples": [
+        {
+          "es": "El móvil está encima de la mesa.",
+          "en": "The phone is on top of the table."
+        },
+        {
+          "es": "El banco está enfrente del mercado.",
+          "en": "The bank is opposite the market."
+        },
+        {
+          "es": "La farmacia está entre el café y la panadería.",
+          "en": "The pharmacy is between the café and bakery."
+        },
+        {
+          "es": "Vivimos lejos del centro.",
+          "en": "We live far from the centre."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "cerca el banco",
+          "correct": "cerca del banco",
+          "explanation": "Cerca requires de; de + el becomes del."
+        },
+        {
+          "incorrect": "entre del banco y…",
+          "correct": "entre el banco y…",
+          "explanation": "Entre does not take de."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-15-location-prepositions-p1",
+          "type": "spatial",
+          "prompt": "Place five objects and describe their positions.",
+          "answerGuide": "Use five different phrases."
+        },
+        {
+          "id": "a1-2-15-location-prepositions-p2",
+          "type": "map",
+          "prompt": "Describe the location of four places on a simple map.",
+          "answerGuide": "Use landmarks and del/al correctly."
+        },
+        {
+          "id": "a1-2-15-location-prepositions-p3",
+          "type": "correction",
+          "prompt": "Correct five phrases missing de or contractions.",
+          "answerGuide": "Check each multiword preposition."
+        }
+      ],
+      "checkpoints": [
+        "I can use at least ten location expressions.",
+        "I form al and del automatically."
+      ],
+      "tags": [
+        "prepositions",
+        "location"
+      ]
+    },
+    {
+      "id": "a1-2-16-directions",
+      "slug": "directions",
+      "order": 16,
+      "levelId": "a1-2",
+      "category": "communication",
+      "title": "Asking for and giving directions",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Ask where a place is and follow or give a short route.",
+      "explanation": "Use polite questions for help and memorise common direction commands as chunks. At A1, intelligibility matters more than explaining the imperative system.",
+      "patterns": [
+        {
+          "form": "Perdone, ¿dónde está…? / ¿Cómo se va a…?",
+          "meaning": "Excuse me, where is…? / How do you get to…?"
+        },
+        {
+          "form": "Sigue todo recto.",
+          "meaning": "Continue straight ahead."
+        },
+        {
+          "form": "Gira a la derecha/izquierda.",
+          "meaning": "Turn right/left."
+        },
+        {
+          "form": "Toma la primera/segunda calle.",
+          "meaning": "Take the first/second street."
+        }
+      ],
+      "reference": {
+        "routeChunks": [
+          "cruza la calle",
+          "pasa el semáforo",
+          "sigue hasta…",
+          "está al final de la calle",
+          "está en la esquina",
+          "está a cinco minutos"
+        ],
+        "transport": [
+          "a pie",
+          "en autobús",
+          "en metro",
+          "en coche"
+        ],
+        "politeness": [
+          "Perdone…",
+          "Gracias.",
+          "De nada."
+        ]
+      },
+      "examples": [
+        {
+          "es": "Perdone, ¿cómo se va a la estación?",
+          "en": "Excuse me, how do you get to the station?"
+        },
+        {
+          "es": "Sigue todo recto y gira a la izquierda.",
+          "en": "Go straight on and turn left."
+        },
+        {
+          "es": "Toma la segunda calle a la derecha.",
+          "en": "Take the second street on the right."
+        },
+        {
+          "es": "Está a unos cinco minutos a pie.",
+          "en": "It is about five minutes on foot."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "¿Cómo voy la estación?",
+          "correct": "¿Cómo se va a la estación?",
+          "explanation": "Use a before the destination; the impersonal chunk is common."
+        },
+        {
+          "incorrect": "Gira en la derecha.",
+          "correct": "Gira a la derecha.",
+          "explanation": "Direction uses a la derecha."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-16-directions-p1",
+          "type": "map",
+          "prompt": "Give a three-step route between two points.",
+          "answerGuide": "Use sigue, gira and toma/cruza."
+        },
+        {
+          "id": "a1-2-16-directions-p2",
+          "type": "roleplay",
+          "prompt": "Ask a stranger for the station and confirm one detail.",
+          "answerGuide": "Use Perdone and ¿Entonces…?"
+        },
+        {
+          "id": "a1-2-16-directions-p3",
+          "type": "listening",
+          "prompt": "Follow spoken directions on a map.",
+          "answerGuide": "Mark each turn and landmark."
+        }
+      ],
+      "checkpoints": [
+        "I can ask for directions politely.",
+        "I can give and follow a route of three or four steps."
+      ],
+      "tags": [
+        "directions"
+      ]
+    },
+    {
+      "id": "a1-2-17-syllables-stress",
+      "slug": "syllables-stress",
+      "order": 17,
+      "levelId": "a1-2",
+      "category": "pronunciation",
+      "title": "Syllable division and word stress",
+      "priority": "standard",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Divide common words into syllables and place stress correctly from spelling.",
+      "explanation": "A written accent marks the stressed vowel. Without one, words ending in a vowel, n or s usually stress the penultimate syllable; other endings usually stress the final syllable.",
+      "patterns": [
+        {
+          "form": "vowel/n/s ending → penultimate stress",
+          "meaning": "casa, hablan, jueves"
+        },
+        {
+          "form": "other consonant ending → final stress",
+          "meaning": "hotel, ciudad, comer"
+        },
+        {
+          "form": "written accent overrides default",
+          "meaning": "teléfono, inglés, también"
+        }
+      ],
+      "reference": {
+        "syllableExamples": {
+          "casa": [
+            "ca",
+            "sa"
+          ],
+          "trabajo": [
+            "tra",
+            "ba",
+            "jo"
+          ],
+          "español": [
+            "es",
+            "pa",
+            "ñol"
+          ],
+          "teléfono": [
+            "te",
+            "lé",
+            "fo",
+            "no"
+          ]
+        },
+        "stressTypes": {
+          "aguda": "final syllable",
+          "llana": "penultimate syllable",
+          "esdrújula": "antepenultimate syllable"
+        },
+        "note": "Knowing the labels is recognition-only; applying stress is active."
+      },
+      "examples": [
+        {
+          "es": "casa → CA-sa",
+          "en": "house"
+        },
+        {
+          "es": "hotel → ho-TEL",
+          "en": "hotel"
+        },
+        {
+          "es": "teléfono → te-LÉ-fo-no",
+          "en": "telephone"
+        },
+        {
+          "es": "inglés → in-GLÉS",
+          "en": "English"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Ignoring written accents.",
+          "correct": "Stress the accented vowel.",
+          "explanation": "The accent explicitly marks stress."
+        },
+        {
+          "incorrect": "Giving every Spanish word penultimate stress.",
+          "correct": "Check the ending and written accent.",
+          "explanation": "Consonant endings other than n/s default to final stress."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-17-syllables-stress-p1",
+          "type": "marking",
+          "prompt": "Divide ten familiar words into syllables and mark stress.",
+          "answerGuide": "Apply accent first, then ending rule."
+        },
+        {
+          "id": "a1-2-17-syllables-stress-p2",
+          "type": "reading",
+          "prompt": "Read a mixed list of accented and unaccented words aloud.",
+          "answerGuide": "Exaggerate stress once, then speak naturally."
+        },
+        {
+          "id": "a1-2-17-syllables-stress-p3",
+          "type": "diagnosis",
+          "prompt": "Explain why café, joven and jóvenes are stressed differently.",
+          "answerGuide": "Use written accent and ending rules."
+        }
+      ],
+      "checkpoints": [
+        "I can predict stress in regular written words.",
+        "I notice and respect written accent marks."
+      ],
+      "tags": [
+        "stress",
+        "syllables"
+      ]
+    },
+    {
+      "id": "a1-2-18-diphthongs",
+      "slug": "diphthongs",
+      "order": 18,
+      "levelId": "a1-2",
+      "category": "pronunciation",
+      "title": "Diphthongs and vowel combinations",
+      "priority": "standard",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Recognise common diphthongs so syllable division and stress remain accurate.",
+      "explanation": "A weak vowel i/u beside another vowel often stays in one syllable. A written accent on the weak vowel can break the pair into separate syllables (hiatus).",
+      "patterns": [
+        {
+          "form": "ai/ay, ei/ey, oi/oy, au, eu, ia, ie, io, ua, ue, uo",
+          "meaning": "common diphthong spellings"
+        },
+        {
+          "form": "í/ú next to another vowel often creates hiatus",
+          "meaning": "día, país, río"
+        }
+      ],
+      "reference": {
+        "weakVowels": [
+          "i",
+          "u"
+        ],
+        "strongVowels": [
+          "a",
+          "e",
+          "o"
+        ],
+        "examples": {
+          "diphthong": [
+            "bue-no",
+            "ciu-dad",
+            "tie-ne",
+            "hoy",
+            "Eu-ro-pa"
+          ],
+          "hiatus": [
+            "dí-a",
+            "pa-ís",
+            "rí-o"
+          ]
+        },
+        "note": "Silent u in que/qui and gue/gui is not a pronounced diphthong component unless marked ü."
+      },
+      "examples": [
+        {
+          "es": "bueno → bue-no",
+          "en": "good"
+        },
+        {
+          "es": "ciudad → ciu-dad",
+          "en": "city"
+        },
+        {
+          "es": "tiene → tie-ne",
+          "en": "has"
+        },
+        {
+          "es": "día → dí-a",
+          "en": "day"
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Splitting bueno as bu-e-no.",
+          "correct": "bue-no",
+          "explanation": "ue forms one syllable here."
+        },
+        {
+          "incorrect": "Treating día as one syllable.",
+          "correct": "dí-a",
+          "explanation": "The accented weak vowel breaks the diphthong."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-18-diphthongs-p1",
+          "type": "sorting",
+          "prompt": "Sort words into diphthong or hiatus.",
+          "answerGuide": "Look for accented í/ú and pronounce aloud."
+        },
+        {
+          "id": "a1-2-18-diphthongs-p2",
+          "type": "clapping",
+          "prompt": "Clap syllables for ten target words.",
+          "answerGuide": "One clap per syllable."
+        },
+        {
+          "id": "a1-2-18-diphthongs-p3",
+          "type": "reading",
+          "prompt": "Read sentences rich in ie/ue words.",
+          "answerGuide": "Keep the two vowels within one syllable."
+        }
+      ],
+      "checkpoints": [
+        "I can hear and produce common diphthongs.",
+        "I recognise when í or ú creates a separate syllable."
+      ],
+      "tags": [
+        "diphthongs"
+      ]
+    },
+    {
+      "id": "a1-2-19-r-rr",
+      "slug": "r-rr",
+      "order": 19,
+      "levelId": "a1-2",
+      "category": "pronunciation",
+      "title": "R and RR",
+      "priority": "core",
+      "learningTarget": "active",
+      "syllabusRelationship": "explicit",
+      "objective": "Distinguish the single tap from the strong trill well enough to keep words intelligible.",
+      "explanation": "Single r between vowels is usually a tap. rr between vowels is strong. A single r is also strong at the beginning of a word and commonly after n, l or s.",
+      "patterns": [
+        {
+          "form": "intervocalic r → tap",
+          "meaning": "pero, caro"
+        },
+        {
+          "form": "intervocalic rr → trill/strong r",
+          "meaning": "perro, carro"
+        },
+        {
+          "form": "word-initial r → strong r",
+          "meaning": "rojo, restaurante"
+        }
+      ],
+      "reference": {
+        "minimalPairs": [
+          [
+            "pero",
+            "perro"
+          ],
+          [
+            "caro",
+            "carro"
+          ],
+          [
+            "coro",
+            "corro"
+          ]
+        ],
+        "strongContexts": [
+          "initial r: rápido",
+          "after n: Enrique",
+          "after l: alrededor"
+        ],
+        "practiceAdvice": "Aim first for a clear contrast; a perfect sustained trill is not required for successful communication."
+      },
+      "examples": [
+        {
+          "es": "pero / perro",
+          "en": "but / dog"
+        },
+        {
+          "es": "caro / carro",
+          "en": "expensive / car"
+        },
+        {
+          "es": "Quiero arroz.",
+          "en": "I want rice."
+        },
+        {
+          "es": "El restaurante está cerrado.",
+          "en": "The restaurant is closed."
+        }
+      ],
+      "commonMistakes": [
+        {
+          "incorrect": "Using an English approximant r.",
+          "correct": "Use a brief tongue contact for the tap.",
+          "explanation": "The Spanish sound is made nearer the alveolar ridge."
+        },
+        {
+          "incorrect": "Writing rr at the beginning: rrestaurante.",
+          "correct": "restaurante",
+          "explanation": "The initial single r is already pronounced strongly."
+        }
+      ],
+      "practicePrompts": [
+        {
+          "id": "a1-2-19-r-rr-p1",
+          "type": "minimal-pairs",
+          "prompt": "Alternate pero/perro and caro/carro slowly.",
+          "answerGuide": "Make duration/contact clearly different."
+        },
+        {
+          "id": "a1-2-19-r-rr-p2",
+          "type": "build-up",
+          "prompt": "Practise the strong r in syllables ra-re-ri-ro-ru, then words.",
+          "answerGuide": "Relax and use airflow; avoid excessive tension."
+        },
+        {
+          "id": "a1-2-19-r-rr-p3",
+          "type": "recording",
+          "prompt": "Record the four example phrases and compare clarity.",
+          "answerGuide": "Judge contrast, not native-like perfection."
+        }
+      ],
+      "checkpoints": [
+        "I make a perceptible tap/strong-r contrast.",
+        "I know when written r and rr represent the strong sound."
+      ],
+      "tags": [
+        "pronunciation",
+        "r",
+        "rr"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+/* Course pages only (dist/<code>/course/…). Loaded after base.css, which supplies the
+   colours, buttons, cards, overlays and the sentence builder. */
+
+.crumb{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);margin:10px 2px 6px;flex-wrap:wrap}
+.crumb a{color:inherit;text-decoration:none;font-weight:600}
+.crumb a:hover{text-decoration:underline}
+.crumb b{color:var(--ink)}
+
+.page-head{margin:2px 2px 16px}
+.page-head h1{font-size:28px;line-height:1.15;letter-spacing:-.02em;margin:0}
+.page-head .lede{color:var(--muted);margin:8px 0 0;font-size:15.5px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.badge{display:inline-flex;align-items:center;gap:5px;height:26px;padding:0 10px;border-radius:999px;font-size:12px;font-weight:700;
+  background:var(--surface-2);color:var(--muted)}
+.badge.core{background:color-mix(in srgb,var(--brand) 16%,var(--surface));color:var(--brand)}
+.badge.active{background:color-mix(in srgb,var(--good) 16%,var(--surface));color:var(--good)}
+.badge.hue{background:hsl(var(--hue) var(--chip-s) var(--chip-l));color:var(--ink)}
+
+/* level and section cards */
+/* the bottom margin collapses with a following .sub (18px), so it only shows itself
+   where a card list runs straight into a panel */
+.card-list{display:flex;flex-direction:column;gap:10px;margin-bottom:14px}
+#continue{margin-bottom:14px}
+.card-link{display:flex;align-items:center;gap:14px;background:var(--surface);border-radius:18px;padding:14px 16px;box-shadow:var(--shadow);
+  text-decoration:none;color:inherit;border-left:5px solid hsl(var(--hue,210) 75% var(--band-l))}
+.card-link:active{transform:scale(.99)}
+.card-link .n{flex:none;width:34px;height:34px;border-radius:11px;display:grid;place-items:center;font-weight:800;font-size:14px;
+  background:hsl(var(--hue,210) var(--chip-s) var(--chip-l))}
+.card-link .t{flex:1;min-width:0}
+.card-link b{display:block;font-size:16px;line-height:1.25}
+.card-link small{color:var(--muted);font-size:13px}
+.card-link .go{flex:none;font-size:24px;color:var(--muted);opacity:.5}
+.card-link.done .n{background:var(--good);color:#fff}
+@media (hover:hover){.card-link:hover{background:color-mix(in srgb,var(--ink) 4%,var(--surface))}.card-link:hover .go{opacity:1}}
+
+/* progress */
+/* both of these sit inside a <span> on the cards, so they have to be made blocks */
+.bar{display:block;height:8px;border-radius:8px;background:var(--line);overflow:hidden;margin:6px 0}
+.bar i{display:block;height:100%;background:var(--good);border-radius:8px;transition:width .3s}
+.pct{display:block;font-size:13px;color:var(--muted)}
+
+/* patterns, examples and reference */
+.pattern{display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}
+.pattern:last-child{border-bottom:0}
+.pattern .t{flex:1;min-width:0}
+.pattern .form{font-weight:700;font-size:16.5px}
+.pattern .mean{color:var(--muted);font-size:14px}
+.pattern .ph{color:var(--muted);font-size:13px;font-weight:600}
+.pattern .ph b{color:var(--ink)}
+
+.ex{padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:flex-start}
+.ex:last-child{border-bottom:0}
+.ex .t{flex:1;min-width:0}
+.ex .es{font-weight:700;font-size:17px}
+.ex .en{color:var(--muted);font-size:14.5px;margin-top:2px}
+.ex .ph{color:var(--muted);font-size:13px;font-weight:600;margin-top:2px}
+.ex .ph b{color:var(--ink)}
+.ex .tools{display:flex;gap:6px;flex:none}
+
+.tbl{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:2px -4px;padding:0 4px}
+.tbl table{border-collapse:collapse;font-size:15px;min-width:100%}
+.tbl th,.tbl td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+.tbl th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.tbl tbody th{text-transform:none;letter-spacing:0;font-size:15px;color:var(--ink);font-weight:800}
+.tbl tr:last-child td,.tbl tr:last-child th{border-bottom:0}
+
+.wordlist{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 0}
+.word{display:inline-flex;align-items:center;height:32px;padding:0 11px;border-radius:999px;background:var(--surface-2);font-size:14.5px;font-weight:600}
+.ref-key{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+.ref-key:first-child{margin-top:0}
+.ref-note{margin:4px 0 0;font-size:15px}
+
+.pair{display:flex;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid var(--line)}
+.pair:last-child{border-bottom:0}
+.pair b{font-size:17px}
+.pair .vs{color:var(--muted);font-size:13px;flex:none}
+
+/* common mistakes */
+.miss{border-radius:14px;background:var(--surface-2);padding:12px 14px;margin-bottom:8px}
+.miss:last-child{margin-bottom:0}
+.miss .no{color:var(--bad);text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--bad) 50%,transparent);font-weight:600}
+.miss .yes{color:var(--good);font-weight:800;font-size:16.5px;margin-top:3px}
+.miss p{margin:6px 0 0;font-size:14px;color:var(--muted)}
+
+/* the tabs on a section page — radio inputs, so they work with no JavaScript */
+.tabset{margin:2px 0 0}
+.tab-in{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.tab-bar{position:sticky;top:calc(56px + env(safe-area-inset-top));z-index:4;display:grid;gap:4px;padding:4px;margin:0 0 14px;
+  border-radius:14px;background:var(--surface-2);grid-auto-flow:column;grid-auto-columns:minmax(0,1fr)}
+.tab-bar label{display:flex;align-items:center;justify-content:center;gap:5px;height:38px;border-radius:10px;cursor:pointer;
+  font-size:13px;font-weight:700;color:var(--muted);white-space:nowrap;overflow:hidden;padding:0 4px}
+/* the words carry it on a phone; the icons only earn their space once there's room */
+.tab-bar label span{display:none;font-size:15px}
+@media (min-width:520px){.tab-bar label{font-size:14px}.tab-bar label span{display:inline}}
+.pane{display:none}
+#pane-learn:checked ~ [data-pane="learn"],
+#pane-ex:checked ~ [data-pane="ex"],
+#pane-ref:checked ~ [data-pane="ref"],
+#pane-do:checked ~ [data-pane="do"]{display:block}
+#pane-learn:checked ~ .tab-bar label[for="pane-learn"],
+#pane-ex:checked ~ .tab-bar label[for="pane-ex"],
+#pane-ref:checked ~ .tab-bar label[for="pane-ref"],
+#pane-do:checked ~ .tab-bar label[for="pane-do"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.tab-in:focus-visible ~ .tab-bar label[for]{outline:none}
+#pane-learn:focus-visible ~ .tab-bar label[for="pane-learn"],
+#pane-ex:focus-visible ~ .tab-bar label[for="pane-ex"],
+#pane-ref:focus-visible ~ .tab-bar label[for="pane-ref"],
+#pane-do:focus-visible ~ .tab-bar label[for="pane-do"]{outline:2px solid var(--brand);outline-offset:1px}
+.pane>.sub:first-child{margin-top:4px}
+
+/* where a section has got to */
+.pill{display:inline-flex;align-items:center;height:24px;padding:0 9px;border-radius:999px;font-size:11.5px;font-weight:800;
+  letter-spacing:.02em;white-space:nowrap;flex:none}
+.pill.ok{background:color-mix(in srgb,var(--good) 18%,var(--surface));color:var(--good)}
+.pill.mid{background:color-mix(in srgb,var(--warn) 20%,var(--surface));color:var(--warn)}
+.card-link[data-state="refreshed"] .n{background:var(--good);color:#fff}
+.card-link.planned{opacity:.6}
+.card-link.planned .go{display:none}
+
+/* "can you do this?" — the syllabus checkpoints, as a prompt rather than a checklist */
+.can{margin:0;padding:0 0 0 20px}
+.can li{margin:5px 0;font-size:15px}
+
+/* practice prompts */
+.prompt-row{padding:11px 0;border-bottom:1px solid var(--line)}
+.prompt-row:last-child{border-bottom:0}
+.prompt-row .kind{font-size:11.5px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.prompt-row b{display:block;font-weight:600;font-size:15.5px;margin:2px 0}
+.prompt-row details{margin-top:4px}
+.prompt-row summary{font-size:13.5px;color:var(--brand);font-weight:700;cursor:pointer;list-style:none}
+.prompt-row summary::-webkit-details-marker{display:none}
+.prompt-row details p{margin:6px 0 0;font-size:14.5px;color:var(--muted)}
+
+
+/* section nav */
+.updown{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0 0}
+.updown a{display:flex;flex-direction:column;gap:2px;background:var(--surface);border-radius:16px;padding:12px 14px;box-shadow:var(--shadow);
+  text-decoration:none;color:inherit;min-height:66px;justify-content:center}
+.updown a.next{text-align:right;align-items:flex-end}
+.updown small{color:var(--muted);font-size:12.5px}
+.updown b{font-size:14.5px;line-height:1.25}
+.updown span.spacer{display:block}
+
+/* course search */
+.hit{display:block;background:var(--surface);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow);text-decoration:none;color:inherit}
+.hit b{display:block;font-size:15.5px}
+.hit small{color:var(--muted);font-size:13px}
+
+.foot{margin:26px 0 8px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+.foot a{color:inherit;font-weight:700}
+.foot p{margin:4px 0}
+
+/* The app's nav is always four tabs; the course grows one per level, so lay it out
+   flexibly — adding A2 shouldn't need a CSS change. */
+.tabs .wrap{display:flex;grid-template-columns:none}
+.tabs .tab{flex:1;min-width:0;padding:0 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

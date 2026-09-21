@@ -17,6 +17,16 @@ export default [
     subdomain: 'spanish',
     nativeName: 'Español',
     phonetic: spanishPh,
+    // Structured courses, built into their own pages under /courses/ (see
+    // tools/course.mjs). Leave this off a language and it simply has no courses.
+    courses: {
+      dir: 'data/courses/es',
+      storeKey: 'sac.v1', // keep: course progress lives under this key
+      // the link on the app's home screen, kept away from the everyday phrases
+      title: 'Advanced study',
+      blurb: 'Full courses for adult learners — A1 now, more to come',
+      source: 'Instituto Cervantes Elementary 1 and 2 syllabus.',
+    },
     page: {
       title: 'Spanish at Home',
       language: 'Spanish',
